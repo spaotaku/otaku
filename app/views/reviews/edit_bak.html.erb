@@ -1,0 +1,21 @@
+<h1>Editing review</h1>
+
+<% form_tag({:action => 'update', :id => @review.id}, :multipart => true) do %>
+
+  <%= render :partial => 'form' %>
+
+
+<p><label for="status"><%= h 'status' %></label>
+<%=
+  options = [[ _('select status'), ""]] + Review::STATUS
+  select(:review, :status, options)
+%>
+</p>
+
+
+  <%= submit_tag %>
+
+<% end %>
+
+<%= link_to 'Show', :action => 'show', :id => @review %> |
+<%= link_to 'Back', :action => 'index' %>

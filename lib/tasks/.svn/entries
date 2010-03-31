@@ -1,0 +1,52 @@
+8
+
+dir
+78
+svn://192.168.0.7/bukken/lib/tasks
+svn://192.168.0.7
+
+
+
+2008-04-30T14:30:39.915110Z
+78
+murakami
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+956af1cf-7ece-484f-8e0a-ea02e7629058
+
+gettext.rake
+file
+
+
+
+
+2008-04-30T15:20:19.000000Z
+61fe17fe7f7104d01a678c6c618ab32f
+2008-04-30T14:30:39.915110Z
+78
+murakami
+
+db_setup.rake
+file
+
+
+
+
+2008-04-30T15:20:19.000000Z
+aae68f94b4b8b098e8ede93117079622
+2008-04-30T14:30:39.915110Z
+78
+murakami
+

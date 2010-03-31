@@ -1,0 +1,25 @@
+<h1><%= h _('group list') %></h1>
+<hr />
+<table>
+  <tr>
+    <th><%= h _('group name') %></th>
+    <th><%= h _('description') %></th>
+  </tr>
+  
+<% for group in @groups %>
+  <tr>
+  <td><%= h(group.name) %></td>
+  <td><%= h(group.description) %></td>
+  <td><%= link_to(_('group user'), :action => 'list_user_by_l3', :id => group) %></td>
+  <td><%= link_to(_('edit'), :action => 'edit_group_by_l3', :id => group) %></td>
+  </tr>
+<% end %>
+</table>
+
+<div class="pagination_link">
+  <%= will_paginate @groups, :prev_label => _("prev"), :next_label => _("next") %>
+</div>
+
+
+<br />
+

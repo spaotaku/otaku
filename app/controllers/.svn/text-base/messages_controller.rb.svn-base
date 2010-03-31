@@ -1,0 +1,89 @@
+class MessagesController < ApplicationController
+
+  before_filter :authorize, :except => [
+                                         :list,
+                                         :show,
+                                       ]
+  def authorize
+    unless session[:user]
+      flash.now['notice'] = _('Login unsuccessful')
+      redirect_to(:controller => 'account', :action => 'login')
+    end
+  end
+
+
+
+# level_0: full function
+  before_filter(:chk_user_level_0, :only => [:new,
+                                             :destroy,
+                                             :edit,
+                                            ])
+
+
+
+  def index
+    list
+    render :action => 'list'
+  end
+
+  # GETs should be safe (see http://www.w3.org/2001/tag/doc/whenToUseGet.html)
+  verify :method => :post, :only => [ :destroy, :create, :update ],
+         :redirect_to => { :action => :list }
+
+  def list
+    @message_pages, @messages = paginate :messages, :order => 'priority ASC', :per_page => 20
+  end
+
+  def show
+    @message = Message.find(params[:id])
+  end
+
+  def new
+#    chk_user_level_0
+    @message = Message.new
+  end
+
+  def create
+    @message = Message.new(params[:message])
+    if @message.save
+      flash[:notice] = 'Message was successfully created.'
+      redirect_to :action => 'list'
+    else
+      render :action => 'new'
+    end
+  end
+
+  def edit
+#    chk_user_level_0
+    @message = Message.find(params[:id])
+  end
+
+  def update
+    @message = Message.find(params[:id])
+    if @message.update_attributes(params[:message])
+      flash[:notice] = 'Message was successfully updated.'
+      redirect_to :action => 'show', :id => @message
+    else
+      render :action => 'edit'
+    end
+  end
+
+  def destroy
+#    chk_user_level_0
+#    if chk_user_level_0
+      Message.find(params[:id]).destroy
+      flash[:notice] = 'Message was successfully deleted.'
+      redirect_to :action => 'list'
+#    end
+  end
+
+  private
+  
+  def chk_user_level_0
+    unless session[:user][:level] == 0
+      flash[:notice] = _('user level too low !!')
+      redirect_to(:action => 'list')
+    end
+  end  
+
+end

@@ -1,0 +1,23 @@
+
+<p><b><%=h _('book_title') %>:</b><%=h @review_comment.review.shopitem.name %></p>
+<b><%=h _('book_review') %>:</b>
+<p><%=h @review_comment.review.body %></p>
+
+<p>
+  <b><%=h _('comment_title') %>:</b>
+  <%=h @review_comment.name %>
+</p>
+
+<p>
+  <b><%=h _('comment_content') %>:</b>
+  <%=h @review_comment.content %>
+</p>
+
+<p>
+  <b><%=h _('commenter') %>:</b>
+  <%=h @review_comment.student.alias + '.' + @review_comment.student.l_name_initial %>
+</p>
+
+
+<%= link_to _('Edit'), :action => 'edit', :id => @review_comment %> |
+<%= link_to _('Back'), :action => 'index' %>

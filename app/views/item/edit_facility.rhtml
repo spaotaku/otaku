@@ -1,0 +1,8 @@
+<h1><%= h _('edit facility') %></h1>
+<hr />
+<% form_tag(:action => 'update_facility', :id => @facility) do %>
+  <%= render :partial => 'form_facility' %>
+  <%= submit_tag _('update') %>
+<% end %>
+
+<%= link_to( _('back'), :action => 'list_facility', :id => @facility) %>

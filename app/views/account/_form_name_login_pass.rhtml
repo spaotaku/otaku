@@ -1,0 +1,18 @@
+<table align="center">
+  <tr>
+    <td><label for="user_name"><%= h _('user name') %></label></td>
+    <td><%= text_field('user', 'name', :size => 20 ) %></td>
+  </tr>
+  <tr>
+    <td><label for="user_login"><%= h _('login id(3ch upto 40)') %></label></td>
+    <td><%= text_field('user', 'login', :size => 20 ) %></td>
+  </tr>
+  <tr>
+    <td><label for="user_password"><%= h _('password(5ch upto 40ch)') %></label></td>
+    <td><%= password_field_tag('password', value = nil) %></td>
+  </tr>
+  <tr>
+    <td><label for="user_password_confirmation"><%= h _('password confirmation') %></label></td>
+    <td><%= password_field_tag('password_confirmation') %></td>
+  </tr>
+</table>

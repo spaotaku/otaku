@@ -1,0 +1,35 @@
+<h1><%=h _('Editing review') %></h1>
+
+<% form_tag({:action => 'update', :id => @review.id}, :multipart => true) do %>
+
+  <%= render :partial => 'form' %>
+
+
+
+
+  <p><%= h _('delete_pic') %></p>
+  <% @review.pictures.each do |pic| %>
+    <%= check_box :pic, pic.id, :onclick => "new Effect.Pulsate($(pic#{pic.id}));" %>
+    <%= image_tag(url_for(:action => :image, :id => pic.id), :width => '200',
+                  :id => "pic#{pic.id}") %>
+  <% end %>
+  
+<p><label for="status"><%= h _('status') %></label>
+<%=
+  options = [[ _('select status'), ""]] + [
+    [ _('working'),       0 ],
+    [ _('submited'),      1 ],
+    [ _('reviewing'),     2 ],
+    [ _('published'),     3 ],
+    [ _('holding'),       4 ]
+  ]
+  select(:review, :status, options)
+%>
+</p>
+
+  <p><%= submit_tag _('update') %></p>
+
+<% end %>
+
+<%= link_to _('Show'), :action => 'show', :id => @review %> |
+<%= link_to _('Back'), :action => 'index' %>

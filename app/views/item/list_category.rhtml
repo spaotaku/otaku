@@ -1,0 +1,26 @@
+<h1><%= h _('category list ')%></h1>
+<hr />
+<table>
+  <tr>
+    <th><%= h _('category name') %></th>
+  </tr>
+  
+<% for category in @categories %>
+  <tr>
+  <td><%= h(category.name) %></td>
+  <td><%= link_to( _('edit'), :action => 'edit_category', :id => category) %></td>
+  <td><%= link_to( _('destroy'), {:action => 'destroy_category', :id => category}, :confirm => _('Delete ?')) %></td>
+  </tr>
+<% end %>
+</table>
+
+<div class="pagination_link">
+  <%= will_paginate @categories, :prev_label => _('prev'), :next_label => _('next') %>
+</div>
+
+
+<br />
+
+<%= link_to( _('add new category'), :action => 'new_category') %> |
+<%= link_to( _('back'), :action => 'list_category') %>
+ 

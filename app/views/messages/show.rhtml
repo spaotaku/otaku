@@ -1,0 +1,36 @@
+<div class="spotitem">
+<h1><%=h _('Showing message') %></h1>
+</div>
+<div class="sumlist">
+
+  <b><%= h _('title') %>:</b> <%=h @message.title %><br/>
+
+<table width="600px" align="center">
+    
+        <tr><td><font size=2><%= simple_format(sanitize(@message.body)) %></font></td></tr>
+   <!--     <tr><td><b><%=h _('by') %>:　</b> -->
+
+</table>
+
+
+<% if @message.attribute_present?('memo') %>
+  <b><%= h _('memo') %>:</b>
+<table width="600px" align="center">
+
+        <tr><td><font size=2><%= simple_format(sanitize(@message.memo)) %></font></td></tr>
+   <!--     <tr><td><b><%=h _('by') %>:　</b> -->
+
+</table>
+
+ <% end %>
+  <b><a href="<%=h @message.source_url %>"><%=h _('source_url') %></a></b><br/>
+  
+  <b><%= h _('updated_on') %>:</b> <%=h @message.updated_on.strftime('%y/%m/%d %H:%M') %> by <b><a href="mailto:<%=h @message.org_e_mail %>"><%=h @message.org_name %></a></b> <a href="<%=h @message.org_url %>"><%=h @message.org_url %></a><br/><br/>
+  
+  <a href="<%=h @message.link_prev %>"><%= h _('ref_link_prev') %></a> | <a href="<%=h @message.link_next %>"><%= h _('ref_link_next') %></a><br/>
+ <% if session[:user] %>
+<%= link_to _('Edit'), :action => 'edit', :id => @message %> |
+ <% end %>
+<%= link_to _('Back'), :action => 'list' %>
+ <br/><br/>
+</div>

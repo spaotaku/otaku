@@ -1,0 +1,132 @@
+<div class="spot_form">
+  <%= error_messages_for :spot %>
+  <%= hidden_field :spot, :id %>
+
+  <%= hidden_field :spot, :longitude %>
+  <%= hidden_field :spot, :latitude %>
+
+  <label for="spot_name"><%= h _('spot_name') %>:<%= h _('spot_name_input_note_1') %></label><br/>
+  <%= text_field :spot, :name, :size => 70 %><br/>
+
+  <!--label for="spot_longitude"--><%#= h _('spot_longitude:') %><!--/label-->
+  <%#= text_field :spot, :longitude %>
+  <!--label for="spot_latitude"--><%#= h _('spot_latitude:') %><!--/label-->
+  <%#= text_field :spot, :latitude %><!--br/-->
+  
+
+ <label for="spot_zip"><%= h _('zip_code') %>:<%= h _('zip_code_input_note_1') %></label><br/>
+ <%= text_field :spot, :zip, :size => 9 %>::<%= link_to_remote( _('get_address'), :url => { :action => 'zip_spot' }, :with => "'zip='+$F('spot_zip')") %> <%= h _('get_address_note_1') %><br/>
+
+<!--<p><label for="spot_prefecture"--><%#= h _('prefecture') %><!--:</label><br/-->
+<%#= text_field :spot, :prefecture, :size => 9 %><!--/p-->
+
+<!--p><label for="spot_address1"--><%#= h _('address1') %><!--:</label><br/-->
+<%#= text_field :spot, :address1 %><!--/p-->
+
+<!--p><label for="spot_address2"--><%#= h _('address2') %><!--:</label><br/-->
+<%#= text_field :spot, :address2 %><!--/p-->
+
+
+  <label for="spot_address"><%= h _('address') %>:<%= h _('address_input_note_1') %></label><br/>
+    <span id='geocoding_form'>
+
+      <%= text_field :spot, :address, :size => 70 %><br/>
+
+  <label for="spot_building"><%= h _('building') %></label><br/>
+      <%= text_field :spot, :building, :size => 70 %><br/>
+
+      <%= h _('select_address_or_station') %>:<%= h _('select_address_or_station_note_1') %><br/>
+      <%= select_tag 'series',
+        _('<option SELECTED></option><option value="ADDRESS">address</option><option value="STATION">station</optione>') %>
+
+      <span id='geo_query' style='display: none'>
+        <%= observe_field 'series', {:update => 'query_result', :on => 'changed',
+          :url => {:action => 'geocoding_spot'}, :submit => 'geocoding_form',
+          :condition => "$F('spot_address').length > 0 && $F('series').length > 0",
+          :before => "$('geocoding_form').show_query()",
+          :complete => '$("geocoding_form").display_map()'} %>
+
+        <span id="query_result"></span>
+
+        <%= h _('map_address') %>:<%= text_field :spot, :address_wk1 %>
+
+        <%=content_tag :div, '', :id => "mapa" %>
+      </span>
+
+      <script type="text/javascript"  id="aaa">
+        $('geocoding_form').show_query = function() {
+          $('geo_query').style.display = 'inline';
+        }
+
+        $('geocoding_form').display_map = function() {
+          a = $F('candidates').split('?');
+          longitude = a[0];
+          latitude = a[1];
+          $('spot_address_wk1').value = a[2];
+          level = 0;
+          if (a[3].indexOf(':') < 0) {
+            level = 17 - (7 - parseInt(a[3]));
+          }
+          var point = new GLatLng(latitude, longitude);
+          $('geocoding_form').set_geometry(longitude, latitude);
+
+          var map = new GMap2($('mapa'));
+          map.setCenter(point, level);
+          map.addControl(new GLargeMapControl());
+          map.addControl(new GScaleControl());
+          map.addControl(new GMapTypeControl());
+          var marker = new GMarker(point);
+          map.addOverlay(marker);
+          GEvent.addListener(map, 'click', function(overlay, point) {
+            if (overlay == null) {
+              map.removeOverlay(marker);
+              marker = new GMarker(point);
+              map.addOverlay(marker);
+              map.panTo(point);
+              $('geocoding_form').set_geometry(point.x, point.y);
+            }
+          });
+        }
+
+        $('geocoding_form').set_geometry = function(longitude, latitude) {
+          $('spot_longitude').value = longitude;
+          $('spot_latitude').value = latitude;
+        }
+      </script>
+    </span>
+  <br/>
+
+
+
+  <label for="spot_homepage"><%= h _('homepage') %>:</label><br/>
+  <%= text_field :spot, :homepage %><br/>
+
+  <label for="spot_image_url"><%= h _('image_url') %>:</label><br/>
+  <%= text_field :spot, :image_url %><br/>
+
+  <label for="spot_text1"><%= h _('text1') %>:</label><br/>
+  <%= text_field :spot, :text1 %><br/>
+
+  <label for="spot_phone"><%= h _('phone') %>:</label><br/>
+  <%= text_field :spot, :phone %><br/>
+
+  <label for="spot_fax"><%= h _('fax') %>:</label><br/>
+  <%= text_field :spot, :fax %><br/>
+
+  <label for="spot_email_1"><%= h _('email_1') %>:</label><br/>
+  <%= text_field :spot, :email_1 %><br/>
+
+  <label for="spot_memo"><%= h _('memo') %>:</label><br/>
+  <%= text_area :spot, :memo, :cols => 50, :rows =>3 %><br/>
+
+  <label for="spot_publish_level"><%= h _('publish_level') %>:</label>
+<%=
+  options = [[ _('select publish_level'), ""]] + [
+    [ _('close'),      0 ],
+    [ _('open_group'), 5 ],
+    [ _('open_all'),   9 ]
+  ]
+  select(:spot, :publish_level, options)
+%>
+  
+</div>

@@ -1,0 +1,17 @@
+<div class="reviewslistpage">
+  <br/>
+<% form_tag(:action => 'list_grade_4_6', :controller => 'reviews' ) do %>
+  <%=h _('keyword for search')%>
+  <%=h _('book_title_n_review_genre_n_review_hiro')%>:
+  <input name="keyword_booktitle"           value="<%=h params[:keyword_booktitle] %>"/>
+　<%= submit_tag _('search') -%>
+<% end %>
+
+<%= render :partial => 'link_title_grade' %>
+
+
+<h1><%=h _('Listing title') %>::<%=h _('grade_4_6') %></h1>
+
+<%= render :partial => 'title_list' %>
+
+</div>

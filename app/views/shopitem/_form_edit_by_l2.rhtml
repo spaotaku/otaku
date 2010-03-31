@@ -1,0 +1,108 @@
+<%= error_messages_for :shopitem %>
+
+<p><%=h _('input or set where * items.')%></p>
+<p><label for="shopitem_name"><%= h _('shop_item_nm') %>*</label>
+  <%= text_field :shopitem, :name, :size => '70' %>
+<label for=shopitem_di_flg"><%=h _('di_flg') %></label><%= check_box :shopitem, :di_flg %></p>
+<p><label for="shopitem_name_kana"><%= h _('shop_item_nm_kana') %>*</label>
+  <%= text_field :shopitem, :name_kana, :size => '70' %></p>
+
+<!--
+<p><%= h _('note1 for author, illustrator, translator') %></p>
+<p><%= h _('note2 for author, illustrator, translator') %></p>
+<p><label for="shopitem_author"><%= h _('shop_item_author') %>*</label>
+  <%= text_field :shopitem, :author %></p>
+<p><label for="shopitem_author_kana"><%= h _('shop_item_author_kana') %>*</label>
+  <%= text_field :shopitem, :author_kana %></p>
+<p><label for="shopitem_illustrator"><%= h _('shop_item_illustrator') %></label>
+  <%= text_field :shopitem, :illustrator %></p>
+<p><label for="shopitem_illustrator_kana"><%= h _('shop_item_illustrator_kana') %></label>
+  <%= text_field :shopitem, :illustrator_kana %></p>
+<p><label for="shopitem_translator"><%= h _('shop_item_translator') %></label>
+  <%= text_field :shopitem, :translator %></p>
+<p><label for="shopitem_translator_kana"><%= h _('shop_item_translator_kana') %></label>
+  <%= text_field :shopitem, :translator_kana %></p>
+-->
+<p><label for="shopitem_genre"><%= h _('shop_item_genre_select') %>:</label>
+  <%= collection_select(:shopitem, :genre, Shopitem.find(:all, :order => 'genre', :group => 'genre'), :genre, :genre, :options => {:include_blank => true})%>
+</p>
+
+<p><label for="shopitem_genre_wk"><%= h _('shop_item_genre_wk') %></label>
+  <%= text_field :shopitem, :genre_wk, :size => '50' %></p>
+
+<p><label for="shopitem_theme"><%= h _('shop_item_theme_select') %>:</label>
+  <%= collection_select(:shopitem, :theme, Shopitem.find(:all, :order => 'theme', :group => 'theme'), :theme, :theme, :options => {:include_blank => true})%>
+</p>
+
+<p><label for="shopitem_theme_wk"><%= h _('shop_item_theme_wk') %></label>
+  <%= text_field :shopitem, :theme_wk, :size => '50' %></p>
+
+<!--
+<p><label for="shopitem_nr_pages"><%= h _('shop_item_nr_pages') %></label>
+  <%= text_field :shopitem, :nr_pages %></p>
+-->
+<p><label for="shopitem_hero"><%= h _('shop_item_lecturer') %></label>
+  <%= text_field :shopitem, :hero, :size => '50' %></p>
+
+
+<%= render :partial => 'spot' %>
+
+
+<p><label for="shopitem_str_val_1"><%= h _('shop_item_place') %>:</label>
+  <%= collection_select(:shopitem, :str_val_1, Shopitem.find(:all, :order => 'str_val_1', :group => 'str_val_1'), :str_val_1, :str_val_1, :options => {:include_blank => true})%>
+  <label for="shopitem_str_val_2"><%= h _('shop_item_place_wk') %></label>
+  <%= text_field :shopitem, :str_val_2, :size => '30' %></p>
+
+<p><label for="shopitem_str_val_5"><%= h _('shop_item_for_who') %>:</label>
+  <%= collection_select(:shopitem, :str_val_5, Shopitem.find(:all, :order => 'str_val_5', :group => 'str_val_5'), :str_val_5, :str_val_5, :options => {:include_blank => true})%>
+
+  <label for="shopitem_str_val_6"><%= h _('shop_item_for_who_wk') %></label>
+  <%= text_field :shopitem, :str_val_6 %></p>
+
+<%= render :partial => 'form_fee' %>
+
+<%= render :partial => 'form_capacity' %>
+
+<p><label for="shopitem_publish_date"><%= h _('shop_item_publish_date') %>:</label>
+<%= date_select :shopitem, :publish_date, :use_month_numbers => true, :start_year => 1950, :end_year => Time.now.years_since(3).year, :include_blank => true %></p>
+<!--
+<p><%= h _('note1 for amazon_url') %></p>
+<p><label for="shopitem_amazon_url"><%= h _('shop_item_amazon_url') %></label>
+  <%= text_field :shopitem, :amazon_url %></p>
+-->
+<p><%= h _('note1 for shop') %></p>
+
+<!--<p><label for="shop_name"><%= h _('shop_name') %>*:</label><br/>
+  <%= text_field :shop, :name, :size => 70 %></p> -->
+
+<%= render :partial => 'shop' %>
+
+<label for="shopitem_item_id"><%= h _('item') %>*</label>
+    <%= collection_select(:shopitem, :item_id, Item.find(:all, :order => 'name'), :id, :name, :include_blank => true)%>
+
+<%= render :partial => 'form_date_val_123' %>
+
+<p><%= h _('note1 for tag') %><br/>
+<%= h _('note2 for tag') %><br/>
+<%= h _('note3 for tag') %></p>
+
+<p><label for="shopitem_tag"><%= h _('tag') %></label>
+  <%= text_field :shopitem, :tag %></p>
+
+<%= render :partial => 'form_recommend_grade' %>
+
+<p><label for="shopitem_publish_level"><%= h _('publish_level') %>*</label>
+<%=
+  options = [[ _('select publish_level'), ""]] +  [
+    [ _('close'),      0 ],
+    [ _('open_group'), 5 ],
+    [ _('open_all'),   9 ]
+  ]
+  select(:shopitem, :publish_level, options)
+%>
+</p>
+
+<%= render :partial => 'form_file_upload' %>
+
+<p><label for="shopitem_memo"><%= h _('memo') %></label>
+  <%= text_area :shopitem, :memo, :cols => 70, :rows =>20 %></p>

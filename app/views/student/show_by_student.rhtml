@@ -1,0 +1,92 @@
+<% if session[:user] %><% if session[:user].level <= 3 %><% if session[:user].group.id == @student.user.group.id %>
+<p>
+  <b>ID:</b>
+  <%=h @student.id %>
+</p>
+<% end %><% end %><% end %>
+
+<% @student.pictures.each do |pic| %>
+	  <%= pic.title %><br/>
+      <%= link_to(image_tag(url_for(:action => 'image', :id => pic.id), :width => '150',
+        :class => 'image'),
+        url_for(:action => 'image', :id => pic.id), :target => '_blank') %>
+
+<% end %>
+
+<p>
+  <b><%=h _('School or Group') %>:</b>
+  <%= link_to @student.item.name, :controller => 'item', :action => 'show', :id => @student.item_id %>
+</p>
+
+<% if session[:user] %><% if session[:user].level <= 3 %><% if session[:user].group.id == @student.user.group.id %>
+<p>
+  <b><%=h _('l_name') %>:</b>
+  <%=h @student.l_name %><% if @student.l_name_kana != "" %>(<%= h @student.l_name_kana %>)<% end %>
+</p>
+<% end %><% end %><% end %>
+<p>
+  <b><%=h _('l_name_initial') %>:</b>
+  <%=h @student.l_name_initial %>
+</p>
+
+<% if session[:user] %><% if session[:user].level <= 3 %><% if session[:user].group.id == @student.user.group.id %>
+<p>
+  <b><%=h _('m_name') %>:</b>
+  <%=h @student.m_name %>
+</p>
+<% end %><% end %><% end %>
+
+<% if session[:user] %><% if session[:user].level <= 3 %><% if session[:user].group.id == @student.user.group.id %>
+<p>
+  <b><%=h _('f_name') %>:</b>
+  <%=h @student.f_name %><% if @student.f_name_kana != "" %>(<%= h @student.f_name_kana %>)<% end %>
+</p>
+<% end %><% end %><% end %>
+
+<p>
+  <b><%=h _('alias') %>:</b>
+  <%=h @student.alias %><% if @student.alias_kana != "" %>(<%= h @student.alias_kana %>)<% end %>
+</p>
+
+
+<% if @student.grade %><b><%=h _('grade') %>:</b><%= @grade_list[@student.grade] %><% end %>
+
+<% if session[:user] %><% if session[:user].level <= 3 %><% if session[:user].group.id == @student.user.group.id %>
+<p>
+  <b><%=h _('birthday') %>:</b>
+  <% if @student.birthday %><%= @student.birthday.strftime('%Y/%m/%d') %><% end %>
+</p>
+<% end %><% end %><% end %>
+
+<p>
+  <b><%=h _('age') %>:</b>
+  <%=h @student.age %>
+</p>
+<p>
+<% if @student.sex %><b><%=h _('sex') %>:</b><%= @sex_list[@student.sex] %><% end %>
+</p>
+
+<table align="center" width="300px">
+  <tr><th><%=h _('memo') %>:</th></tr>
+  <tr><td><%=h @student.memo %></td></tr>
+</table>
+
+
+<p>
+  <b><%=h _('reviewed_books') %>:</b>
+</p>
+
+      <% @student.reviews.each do |review| %>
+ 	  <%= link_to review.shopitem.name, :controller => 'reviews', :action => 'show', :id => review.id %>
+        <br/>
+      <% end %>
+
+
+
+<p/>
+
+
+
+
+<%= link_to _('Edit'), :action => 'edit_by_student', :id => @student %> |
+<%= link_to _('Back'), :action => 'index' %>

@@ -1,0 +1,15 @@
+<%= error_messages_for :spot %>
+<%= hidden_field :spot, :id %>
+<p><label for="spot_name"><%= h _('spot_name') %></label>
+  <%= text_field :spot, :name %>
+</p>
+<p><label for="spot_address"><%= h _('address') %></label>
+  <%= text_field :spot, :address %>
+</p>
+<p><label for="spot_phone"><%= h _('phone') %></label>
+  <%= text_field :spot, :phone %>
+</p>
+<p><label for="spot_memo"><%= h _('memo') %></label>
+  <%= text_area :spot, :memo, :cols => 50, :rows => 3 %>
+</p>
+

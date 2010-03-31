@@ -1,0 +1,23 @@
+<h1><%= h _('structure list ')%></h1>
+<hr />
+<table>
+  <tr>
+    <th><%= h _('structure name') %></th>
+  </tr>
+  
+<% for structure in @structures %>
+  <tr>
+  <td><%= h(structure.name) %></td>
+  <td><%= link_to(_('edit'), :action => 'edit_structure', :id => structure) %></td>
+  <td><%= link_to(_('destroy'), {:action => 'destroy_structure', :id => structure}, :confirm => 'Delete ?') %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to(_('previous page'), :page => @structure_pages.current.previous) if @structure_pages.current.previous %>
+<%= link_to(_('next page'), :page => @structure_pages.current.next) if @structure_pages.current.next %>
+
+<br />
+
+<%= link_to(_('add new structure'), :action => 'new_structure') %> |
+<%= link_to(_('back'), :action => 'list_structure') %>

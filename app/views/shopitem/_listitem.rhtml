@@ -1,0 +1,25 @@
+    <tr>
+      <td><%= listitem.date_val_2.strftime('%Y/%m/%d') if listitem.date_val_2 %></td>
+      <td><%= listitem.date_val_2.strftime('%a') if listitem.date_val_2 %></td>
+      <td><%= listitem.date_val_2.strftime('%H:%M') if listitem.date_val_2 %></td>
+      <td>-</td>
+      <td><%= listitem.date_val_3.strftime('%H:%M') if listitem.date_val_3 %></td>
+      <% if listitem.name.length > 60 %>
+          <td><%= link_to (listitem.name[0,69] + '...'), :controller => 'shopitem', :action => 'show', :id => listitem.id %></td>
+      <% else %>
+          <td><%= link_to listitem.name, :controller => 'shopitem', :action => 'show', :id => listitem.id %></td>
+      <% end %>
+      <% if listitem.spot_id != nil %>
+        <td><font size=1><%= link_to listitem.spot.name, :controller => 'item', :action => 'show_spot_map', :id => listitem.spot_id%></font></td>
+      <% else %>
+       <td></td>
+      <% end %>
+      <td>(<%= listitem.reviews.count %>)</td>
+<!--
+      <% if session[:user] %>
+        <% if session[:user].level == 0 %>
+          (<%= link_to _('shop_detail'), :action => 'show_shop', :id => listitem.shop.id %>)
+        <% end %>
+      <% end %>
+-->
+    </tr>

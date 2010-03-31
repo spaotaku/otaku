@@ -1,0 +1,57 @@
+<h1><%=h _('Listing_review_comments') %></h1>
+
+<table align="center">
+  <tr>
+    <th><%=h _('title') %></th>
+    <th><%=h _('reviewer') %></th>
+    <th><%=h _('comment_title') %></th>
+    <th><%=h _('comment_content') %></th>
+    <th><%=h _('commenter') %></th>
+    <th><%=h _('status') %></th>
+  </tr>
+<% @review_comments.each do |review_comment| %>
+<tr>
+  <% if session[:user] %>
+    <% if session[:user].level == 0 %>
+        <td><%= link_to review_comment.review.shopitem.name.first(20), :action => 'show', :controller => 'shopitem', :id => review_comment.review.shopitem.id %></td>
+        <td><%= link_to review_comment.review.student.alias + ' ' + review_comment.review.student.l_name_initial + '.', :action => 'show', :controller => 'student', :id => review_comment.review.student.id  %></td>
+        <td><%=h review_comment.name %></td>
+        <td><%=h review_comment.content.first(30) %></td>
+        <td><%= link_to review_comment.student.alias + ' ' + review_comment.student.l_name_initial + '.', :action => 'show', :controller => 'student', :id => review_comment.student.id  %></td>
+        <td><%=h @status_list[review_comment.status] %></td>
+        <td><%= link_to _('Show'), :action => 'show', :id => review_comment %></td>
+        <td><%= link_to _('Edit'), :action => 'edit_by_teachar', :id => review_comment %></td>
+        <td><%= link_to( _('destroy'), {:action => 'destroy_from_index', :id => review_comment}, :confirm => _('Delete ?')) %></td>
+    <% elsif session[:user].level <= 3 %>
+      <% if session[:user].group.id == review_comment.student.user.group.id %>
+        <td><%= link_to review_comment.review.shopitem.name.first(20), :action => 'show', :controller => 'shopitem', :id => review_comment.review.shopitem.id %></td>
+        <td><%= link_to review_comment.review.student.alias + ' ' + review_comment.review.student.l_name_initial + '.', :action => 'show', :controller => 'student', :id => review_comment.review.student.id  %></td>
+        <td><%=h review_comment.name %></td>
+        <td><%=h review_comment.content.first(30) %></td>
+        <td><%= link_to review_comment.student.alias + ' ' + review_comment.student.l_name_initial + '.', :action => 'show', :controller => 'student', :id => review_comment.student.id  %></td>
+        <td><%=h @status_list[review_comment.status] %></td>
+        <td><%= link_to _('Show'), :action => 'show', :id => review_comment %></td>
+        <td><%= link_to _('Edit'), :action => 'edit_by_teachar', :id => review_comment %></td>
+        <td><%= link_to( _('destroy'), {:action => 'destroy_from_index', :id => review_comment}, :confirm => _('Delete ?')) %></td>
+      <% end %>
+    <% else %>
+      <% if session[:user].id == review_comment.student.user_id %>
+        <td><%= link_to review_comment.review.shopitem.name.first(20), :action => 'show', :controller => 'shopitem', :id => review_comment.review.shopitem.id %></td>
+        <td><%= link_to review_comment.review.student.alias + ' ' + review_comment.review.student.l_name_initial + '.', :action => 'show', :controller => 'student', :id => review_comment.review.student.id  %></td>
+        <td><%=h review_comment.name %></td>
+        <td><%=h review_comment.content.first(30) %></td>
+        <td><%= link_to review_comment.student.alias + ' ' + review_comment.student.l_name_initial + '.', :action => 'show', :controller => 'student', :id => review_comment.student.id  %></td>
+        <td><%=h @status_list[review_comment.status] %></td>
+        <td><%= link_to _('Show'), :action => 'show', :id => review_comment %></td>
+        <td><%= link_to _('Edit'), :action => 'edit_by_student', :id => review_comment %></td>
+        <td><%= link_to( _('destroy'), {:action => 'destroy_from_index', :id => review_comment}, :confirm => _('Delete ?')) %></td>
+      <% end %>
+    <% end %>
+  <% end %>
+</tr>
+<% end %>
+</table>
+
+<br />
+
+<!--<%= link_to 'New review_comment', :action => 'new' %>-->

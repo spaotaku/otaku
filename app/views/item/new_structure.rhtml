@@ -1,0 +1,8 @@
+<h1><%= h _('new structure input') %></h1>
+<hr />
+<% form_tag(:action => 'create_structure') do %>
+  <%= render(:partial => 'form_structure') %>
+  <%= submit_tag( _('regist'))%>
+<% end %>
+
+<%= link_to( _('back'), :action => 'list_structure') %>

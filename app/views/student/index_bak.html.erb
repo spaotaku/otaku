@@ -1,0 +1,31 @@
+<h1>Listing students</h1>
+
+<table>
+  <tr>
+    <th>Item</th>
+    <th>L name</th>
+    <th>F name</th>
+    <th>Grade_n</th>
+    <th><%=h _('grade') %></th>
+    <th>Age</th>
+  </tr>
+
+<% @students.each do |student| %>
+  <tr>
+    <td><%=h student.item_id %></td>
+    <td><%=h student.l_name %></td>
+    <td><%=h student.f_name %></td>
+    <td><%=h student.grade %></td>
+    <td><% if student.grade %><%= @grade_list[student.grade] %><% end %></td>
+    <td><%=h student.age %></td>
+    <td><%= link_to 'Show', :action => 'show', :id => student %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => student %></td>
+    <td><%= link_to( _('destroy'), {:action => 'destroy', :id => student}, :confirm => _('Delete ?')) %></td>
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New student', :action => 'new' %>

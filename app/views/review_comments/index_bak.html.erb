@@ -1,0 +1,29 @@
+<h1><%=h _('Listing_review_comments') %></h1>
+
+<table>
+  <tr>
+    <th><%=h _('title') %></th>
+    <th><%=h _('comment_title') %></th>
+    <th><%=h _('comment_content') %></th>
+    <th><%=h _('commenter') %></th>
+    <th><%=h _('status') %></th>
+  </tr>
+
+<% @review_comments.each do |review_comment| %>
+  <tr>
+    <td><%=h review_comment.review.shopitem.name %></td>
+    <td><%=h review_comment.name %></td>
+    <td><%=h review_comment.content %></td>
+    <td><%=h review_comment.student.alias + review_comment.student.l_name_initial %></td>
+    <td><%=h @status_list[review_comment.status] %></td>
+    <td><%= link_to _('Show'), :action => 'show', :id => review_comment %></td>
+    <td><%= link_to _('Edit3'), :action => 'edit_comment_by_teachar', :controller => 'reviews', :id => review_comment.review_id, :comment_id => review_comment %></td>
+    <td><%= link_to _('Edit5'), :action => 'edit', :id => review_comment %></td>
+    <td><%= link_to _('Destroy'), :action => 'destroy', :id => review_comment, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New review_comment', :action => 'new' %>

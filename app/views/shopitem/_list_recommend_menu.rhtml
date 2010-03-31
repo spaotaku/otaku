@@ -1,0 +1,82 @@
+<table align ="center">
+  <tr>
+    <td width="80px"><%=h _('genre') %>:</td>
+  <td><b><%= link_to _('【学習】'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '学習' } %></b></td>
+<td><%= link_to _('人権'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '人権' } %>
+| <%= link_to _('環境'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '環境' } %>
+| <%= link_to _('平和'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '平和' } %>
+| <%= link_to _('暮らし'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '暮らし' } %>
+| <%= link_to _('文化'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '文化' } %>
+| <%= link_to _('国際交流'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '国際交流' } %>
+| <%= link_to _('日本語教室'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '日本語教室' } %>
+| <%= link_to _('パソコン'), { :controller => 'shopitem', :action => :list_recommend, :keyword => 'パソコン' } %>
+</td>
+</tr><tr>
+<td></td>
+<td><b><%= link_to _('【芸術】'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '芸術' } %></b></td>
+<td><%= link_to _('絵画'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '絵画' } %>
+| <%= link_to _('書道'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '書道' } %>
+| <%= link_to _('映像'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '映像' } %>
+| <%= link_to _('舞踊'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '舞踊' } %>
+| <%= link_to _('フラワー'), { :controller => 'shopitem', :action => :list_recommend, :keyword => 'フラワー' } %>
+| <%= link_to _('彫刻'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '彫刻' } %>
+| <%= link_to _('音楽'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '音楽' } %></td>
+</tr>
+<tr>
+  <td></td>
+<td><b><%= link_to _('【スポーツ】'), { :controller => 'shopitem', :action => :list_recommend, :keyword => 'スポーツ' } %></b></td>
+<td><%= link_to _('ダンス'), { :controller => 'shopitem', :action => :list_recommend, :keyword => 'ダンス' } %>
+| <%= link_to _('バレーボール'), { :controller => 'shopitem', :action => :list_recommend, :keyword => 'バレーボール' } %>
+| <%= link_to _('武道'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '武道' } %>
+| <%= link_to _('体操'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '体操' } %>
+| <%= link_to _('水泳'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '水泳' } %>
+| <%= link_to _('ウォーキング'), { :controller => 'shopitem', :action => :list_recommend, :keyword => 'ウォーキング' } %>
+| <%= link_to _('ハイキング'), { :controller => 'shopitem', :action => :list_recommend, :keyword => 'ハイキング' } %></td>
+
+<td></td>
+</tr>
+<tr>
+  <td><%=h _('theme') %>:</td>
+<td colspan="2"><%= link_to _('家族'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '家族' } %>
+| <%= link_to _('友だち'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '友だち' } %>
+| <%= link_to _('先生'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '先生' } %>
+| <%= link_to _('愛'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '愛' } %>
+| <%= link_to _('動物'), { :controller => 'shopitem', :action => :list_recommend, :keyword => '動物' } %>
+</td>
+</tr>
+<tr><td valign="top"><%=h _('tag') %>:</td><td colspan="2"><% @tags = Shopitem.tag_counts %>
+        <% tag_cloud @tags, %w(tiny small large hurge) do |tag, css_class| %>
+         <% if tag.name != '学習'and
+             tag.name != '人権' and
+             tag.name != '環境' and
+             tag.name != '平和' and
+             tag.name != '暮らし' and
+             tag.name != '文化' and
+             tag.name != '国際交流' and
+             tag.name != '日本語教室' and
+             tag.name != '芸術' and
+             tag.name != '絵画' and
+             tag.name != '書道' and
+             tag.name != '映像' and
+             tag.name != '舞踊' and
+             tag.name != 'フラワー' and
+             tag.name != '彫刻' and
+             tag.name != 'スポーツ' and
+             tag.name != 'ダンス' and
+             tag.name != 'バレーボール' and
+             tag.name != '武道' and
+             tag.name != '水泳' and
+             tag.name != 'ウォーキング' and
+             tag.name != 'ハイキング' and
+             tag.name != '家族' and
+             tag.name != '友だち' and
+             tag.name != '先生' and
+             tag.name != 'パソコン' and
+             tag.name != '愛'
+         %>
+          <%= link_to tag.name, { :controller => 'shopitem', :action => :list_recommend, :keyword => tag.name }, :class => css_class %> |
+         <% end %>
+        <% end %>
+  </td>
+</tr>
+</table>

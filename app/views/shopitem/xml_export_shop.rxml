@@ -1,0 +1,78 @@
+xml.instruct!
+xml.Workbook 'xmlns'=>'urn:schemas-microsoft-com:office:spreadsheet',
+  'xmlns:ss'=>'urn:schemas-microsoft-com:office:spreadsheet' do
+  xml.Styles do
+    xml.Style 'ss:ID' => 1 do
+      xml.Font 'ss:Bold' => 1
+    end
+  end
+  xml.Worksheet 'ss:Name' => 'Sheet1' do
+    xml.Table do
+      5.times do
+        xml.Column 'ss:Width' => 80
+      end
+      xml.Row 'ss:StyleID' => 1 do
+          xml.Cell { xml.Data 'name', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'address', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'phone', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'fax', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'memo', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'longitude', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'latitude', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'homepage', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'email_1', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'image_url', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'longitude_tokyo_datum_dec', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'latitude_tokyo_datum_dec', 'ss:Type' => 'String'  }  
+          xml.Cell { xml.Data 'longitude_tokyo_datum_ddmmsss', 'ss:Type' => 'String'  }  
+          xml.Cell { xml.Data 'latitude_tokyo_datum_ddmmsss', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'user_id', 'ss:Type' => 'String'  }  
+          xml.Cell { xml.Data 'group_id', 'ss:Type' => 'String'  }                   
+          xml.Cell { xml.Data 'publish_level', 'ss:Type' => 'String'  }              
+          xml.Cell { xml.Data 'address_wk1', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'zip', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'prefecture', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'address1', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'address2', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'building', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'text1', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'text2', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'text3', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'text4', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'text5', 'ss:Type' => 'String'  }
+      end
+      @shops.each do |shop|
+        xml.Row do
+          xml.Cell { xml.Data shop.name, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.address, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.phone, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.fax, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.memo, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shop.longitude, 'ss:Type' => 'Number' }
+          xml.Cell { xml.Data shop.latitude, 'ss:Type' => 'Number' } 
+          xml.Cell { xml.Data shop.homepage, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.email_1, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.image_url, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.longitude_tokyo_datum_dec, 'ss:Type' => 'Number' }  
+          xml.Cell { xml.Data shop.latitude_tokyo_datum_dec, 'ss:Type' => 'Number' }   
+          xml.Cell { xml.Data shop.longitude_tokyo_datum_ddmmsss, 'ss:Type' => ',Number' } 
+          xml.Cell { xml.Data shop.latitude_tokyo_datum_ddmmsss, 'ss:Type' => 'Number' }
+          xml.Cell { xml.Data shop.user_id, 'ss:Type' => 'Number' }                    
+          xml.Cell { xml.Data shop.group_id, 'ss:Type' => 'Number' }                   
+          xml.Cell { xml.Data shop.publish_level, 'ss:Type' => 'Number' }              
+          xml.Cell { xml.Data shop.address_wk1, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.zip, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.prefecture, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.address1, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.address2, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.building, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.text1, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.text2, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.text3, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.text4, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data shop.text5, 'ss:Type' => 'String'  }
+        end
+      end
+    end
+  end
+end

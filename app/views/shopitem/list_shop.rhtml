@@ -1,0 +1,17 @@
+<% form_tag :action => 'list_shop', :method => 'get' do %>
+  <%=h _('keyword for search shop:') %><%= text_field_tag 'keyword', params[:keyword] -%>
+  <%= submit_tag _('Search') -%>
+<% end %>
+<div class="spotlist">
+  <table align="center">
+  <%= render :partial => 'listshop', :collection => @shops,
+             :locals => {:size => ''} %>
+  </table>
+</div>
+
+<div class="pagination_link">
+
+  <%=h _('display_record_1') %>:　<%= @shops.offset + 1 %>　<%=h _('display_record_2') %>　<%= @shops.size %>　<%=h _('display_record_3') %>
+  <%= will_paginate @shops, :previous_label => _("prev"), :next_label => _("next") %>
+
+</div>

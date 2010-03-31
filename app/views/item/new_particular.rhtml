@@ -1,0 +1,8 @@
+<h1><%= h _('new particular input') %></h1>
+<hr />
+<% form_tag(:action => 'create_particular') do %>
+  <%= render(:partial => 'form_particular') %>
+  <%= submit_tag( _('regist'))%>
+<% end %>
+
+<%= link_to( _('back'), :action => 'list_particular') %>

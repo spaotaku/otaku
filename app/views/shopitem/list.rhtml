@@ -1,0 +1,70 @@
+<div class="shopitemlistpage">
+  <br/>
+
+<% form_tag(:action => 'list', :method => 'get' ) do %>
+  <%=h _('keyword for search')%>
+  <br/>
+  <br/>
+  <%=h _('keyword for search shopitem_name or shop_name:')%>:
+  <input size="18" name="keyword_name"           value="<%=h params[:keyword_name] %>"/>
+
+<%= h _('period') %>:
+<% if params[:period] %>
+<% current_period = params[:period] %>
+<% else %>
+<% current_period = 0 %>
+<% end %>
+
+ <%= select_tag('period',options_for_select([[_('all'),56],
+                                             [_('today'),50],
+                                             [_('1y-'),45],
+                                             [_('6m-'),46],
+                                             [_('3m-'),47],
+                                             [_('1m-'),48],
+                                             [_('1w-'),49],
+                                             [_('-1w'),51],
+                                             [_('-1m'),52],
+                                             [_('-3m'),53],
+                                             [_('-6m'),54],
+                                             [_('-1y'),55]],
+                                             params[:period].to_i)) %>
+
+
+ <%= submit_tag _('search') -%>
+<% end %>
+
+  <%= _('Grade of reviewers') %>: 
+  　<%= link_to _('k_1'),   :action => 'list_grade_k_1',   :controller => 'reviews' %>
+  　<%= link_to _('2_3'),   :action => 'list_grade_2_3',   :controller => 'reviews' %>
+  　<%= link_to _('4_6'),   :action => 'list_grade_4_6',   :controller => 'reviews' %>
+  　<%= link_to _('7_9'),   :action => 'list_grade_7_9',   :controller => 'reviews' %>
+  　<%= link_to _('10_12'), :action => 'list_grade_10_12', :controller => 'reviews' %>
+  　<%= link_to _('13_16'), :action => 'list_grade_13_16', :controller => 'reviews' %>
+  　<%= link_to _('t'),     :action => 'list_grade_t',     :controller => 'reviews' %>
+  　<%= link_to _('17'),    :action => 'list_grade_17',    :controller => 'reviews' %>
+  <br/>
+  <span style="text-align: right;font-size:small;"><p>備考:　( )内はレビュー件数　　</p></span>
+<div class="spotlist">
+  <table align="center">
+    <tr>
+      <th><font size=1><%=h _('yyyy/mm/dd') %></font></th>
+      <th><font size=1><%=h _('day') %></font></th>
+      <th><font size=1><%=h _('hh:mm') %></font></th>
+      <th></th>
+      <th><font size=1><%=h _('hh:mm') %></font></th>
+      <th><font size=1><%=h _('title') %></font></th>
+      <th><font size=1><%=h _('place') %></font></th>
+    </tr>
+    <%= render :partial => 'listitem', :collection => @shopitems,
+             :locals => {:size => ''} %>
+  </table>
+</div>
+
+<div class="pagination_link">
+ 
+  <%=h _('display_record_1') %>:　<%= @shopitems.offset + 1 %>　<%=h _('display_record_2') %>　<%= @shopitems.size %>　<%=h _('display_record_3') %>
+  <%= will_paginate @shopitems, :previous_label => _("prev"), :next_label => _("next") %>
+
+</div>
+
+</div>

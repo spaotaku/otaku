@@ -1,0 +1,28 @@
+<%= render :partial => 'search' %>
+
+<h1><%=h _('Listing_my_reviews') %></h1>
+
+<table align="center">
+  <tr>
+    <th><%=h _('book title') %></th>
+    <th><%=h _('class name') %></th>
+    <th><%=h _('reviewer name') %></th>
+    <th><%=h _('review body') %></th>
+    <th><%=h _('review status') %></th>
+  </tr>
+
+<% @reviews.each do |review| %>
+  <tr>
+    <td><%= link_to review.shopitem.name.first(20), :action => 'show', :controller => 'shopitem', :id => review.shopitem.id %></td>
+    <td><%=h review.item.name.first(20) %></td>
+    <td><%=h review.student.l_name + review.student.f_name %></td>
+    <td><%=h review.body.first(30) %></td>
+    <td><% if review.status %><%= @status_list[review.status] %><% end %></td>
+    <td><%= link_to _('Show'), :action => 'show_my_review', :id => review %></td>
+    <td><%= link_to _('Edit'), :action => 'edit_by_student', :id => review %></td>
+    <td><%= link_to( _('destroy'), {:action => 'destroy', :id => review}, :confirm => _('Delete ?')) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

@@ -1,0 +1,9 @@
+  <tr>
+    <td><%=h "#{listitem.name}" %></td>
+    <td><%=h "#{listitem.address}" %></td>
+    <td><%=h "#{listitem.phone}" %></td>
+    <td class="show"><%= link_to _('Show'), :action => 'show', :id => listitem %></td>
+    <% if user? %>
+      <td class="edit"><%= link_to _('Edit'), :action => 'edit', :id => listitem %></td>    
+    <% end %>
+  </tr>

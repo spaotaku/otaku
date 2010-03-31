@@ -1,0 +1,6 @@
+<%= error_messages_for('facilitycat') %>
+
+<p><label for="facilitycat_name"><%= h _('facilitycat name') %></label><br />
+<%= text_field('facilitycat', 'name') %></p>
+<p><label for="facilitycat_memo"><%= h _('memo') %></label><br />
+<%= text_field('facilitycat', 'memo') %></p>

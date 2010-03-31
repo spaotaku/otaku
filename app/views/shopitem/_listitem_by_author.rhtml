@@ -1,0 +1,42 @@
+      <tr>
+      <td><font size=1><%= link_to listitem_by_author.shop.name, :action => 'show_shop', :id => listitem_by_author.shop.id %></font></td>
+      <td><font size=1><%= listitem_by_author.date_val_2.strftime('%Y/%m/%d') if listitem_by_author.date_val_2 %></font></td>
+      <td><font size=1><%= listitem_by_author.date_val_2.strftime('%a') if listitem_by_author.date_val_2 %></font></td>
+      <td><font size=1><%= listitem_by_author.date_val_2.strftime('%H:%M') if listitem_by_author.date_val_2 %></font></td>
+      <td>-</td>
+      <td><font size=1><%= listitem_by_author.date_val_3.strftime('%H:%M') if listitem_by_author.date_val_3 %></font></td>
+
+      <% if listitem_by_author.name.length > 60 %>
+          <td><%= link_to (listitem_by_author.name[0,69] + '...'), :controller => 'shopitem', :action => 'show', :id => listitem_by_author.id %></td>
+      <% else %>
+          <td><%= link_to listitem_by_author.name, :controller => 'shopitem', :action => 'show', :id => listitem_by_author.id %></td>
+      <% end %>
+
+      <% if listitem_by_author.spot_id != nil %>
+       <td><font size=1><%= link_to listitem_by_author.spot.name, :controller => 'item', :action => 'show_spot_map', :id => listitem_by_author.spot_id%></font></td>
+      <% else %>
+       <td></td>
+      <% end %>
+      <td>(<%= listitem_by_author.reviews.count %>)</td>
+<!--
+      <% if session[:user] %>
+        <% if session[:user].level == 0 %>
+          (<%= link_to _('shop_detail'), :action => 'show_shop', :id => listitem_by_author.shop.id %>)
+        <% end %>
+      <% end %>
+-->
+    </tr>
+<!--<div class='spotitem'>
+  <div class='shopitem'>
+    <p>
+       <font size=1><%= link_to listitem_by_author.shop.name, :action => 'show_shop', :id => listitem_by_author.shop.id %><span class='spacing'></span> ::
+       <%= listitem_by_author.date_val_2.strftime('%Y/%m/%d %a %H:%M') if listitem_by_author.date_val_2 %>-
+       <%= listitem_by_author.date_val_3.strftime('%H:%M') if listitem_by_author.date_val_3 %>
+       </font>
+       <%= link_to sanitize(listitem_by_author.name), :controller => 'shopitem', :action => 'show', :id => listitem_by_author.id %>
+       　(<%= listitem_by_author.reviews.count %>)
+
+    </p>
+  </div>              
+</div>
+-->

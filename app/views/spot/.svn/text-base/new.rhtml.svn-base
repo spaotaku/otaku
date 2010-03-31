@@ -1,0 +1,7 @@
+<%= render :partial => 'flash' %>
+
+<% form_tag 'create' do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag %>
+  <%= link_to _('Finish'), :action => 'list' %>
+<% end %>

@@ -1,0 +1,116 @@
+<div class='spotitem'>
+  <div class='date'
+    <p><%=h _('updated_at') %>:<%= listitem.created_at.strftime('%Y/%m/%d %H:%M') %></p>
+  </div>
+  <div class='shopitem_show'>
+    <h3>
+
+      <%= h listitem.name %><br/><% if listitem.name_kana != "" %>(<%= h listitem.name_kana %>)<% end %><% if listitem.di_flg %>(<%= h _('foreign') %>)<% end %><span class='spacing'></span>
+      <% if session[:user] and session[:user].level == 0 %>
+      (<%= link_to _('shop_detail'), :action => 'show_shop', :id => listitem.shop.id %>)
+      <% end %>
+    </h3>
+    <span class='content'>
+    <table align="center">
+      <tr>
+      <% pictures_count = 0 %>
+      <% listitem.pictures.each do |pic| %>
+        <% pictures_count += 1 %>
+        <td><%= link_to(image_tag(url_for(:action => 'image', :id => pic.id), :width => '100',
+        :class => 'immage'),
+        url_for(:action => 'image', :id => pic.id), :target => '_blank') %>
+        <br/><%= pic.title %>
+        </td>
+        <% if pictures_count == 4 or pictures_count == 8 %>
+          </tr><tr>
+        <% else %>
+        <% end %>      
+      <% end %>
+      </tr>
+    </table>
+
+
+<% if listitem.author != "" and listitem.author != nil %><p><b><%= h _('shop_item_author') %>:　</b><%= listitem.author %><% if listitem.author_kana != "" %>(<%= listitem.author_kana  and listitem.author_kana != nil %>)<% end %></p><% end %>
+<% if listitem.illustrator != "" and listitem.illustrator != nil %><p><b><%= h _('shop_item_illustrator') %>:　</b><%= listitem.illustrator %><% end %><% if listitem.illustrator_kana != "" and listitem.illustrator_kana != nil %>(<%= listitem.illustrator_kana %>)<% end %></p>
+<% if listitem.translator != "" and listitem.translator != nil %><p><b><%= h _('shop_item_translator') %>:　</b><%= listitem.translator %><% end %><% if listitem.translator_kana != "" and listitem.translator_kana != nil %>(<%= listitem.translator_kana %>)<% end %></p>
+<% if listitem.genre != "" %><p><b><%= h _('shop_item_genre') %>:　</b><%= listitem.genre %></p><% end %>
+<% if listitem.theme != "" %><p><b><%= h _('shop_item_theme') %>:　</b><%= listitem.theme %></p><% end %>
+<% if listitem.tag != "" %><p><b><%= h _('shop_item_tag') %>:　</b><%= listitem.tag %></p><% end %>
+<!--
+<% if listitem.nr_pages != nil %><p><b><%= h _('shop_item_nr_pages') %>:　</b><%= listitem.nr_pages %></p><% end %>
+-->
+<% if listitem.hero != "" %><p><b><%= h _('shop_item_hero') %>:　</b><%= listitem.hero %></p><% end %>
+
+<% if listitem.item_id != nil %><p><b><%= h _('shop_item_item_name') %>:　</b><%= link_to listitem.item.name, :action => 'show', :controller => 'item', :id => listitem.item.id %></p><% end %>
+
+<p>
+<% if listitem.spot_id != nil %><b><%= h _('shop_item_spot_name') %>:　</b><%= link_to listitem.spot.name, :action => 'show_spot_map', :controller => 'item', :id => listitem.spot_id %><% end %>
+
+<% if listitem.str_val_1 != nil %><b>　<%= h _('shop_item_place') %>:　</b><%= listitem.str_val_1 %><% end %>
+</p>
+      <% if listitem.date_val_1 %>
+        <br/> <b><%= h _('shopitem_date_val_1') %>:　</b><%= listitem.date_val_1.strftime('%Y/%m/%d %a %H:%M') %>
+      <% end %>
+      <% if listitem.date_val_2 %>
+        <br/> <b><%= h _('shopitem_date_val_2') %>:　</b><%= listitem.date_val_2.strftime('%Y/%m/%d %a %H:%M') %>
+      <% end %>
+      <% if listitem.date_val_3 %>
+        <br/> <b><%= h _('shopitem_date_val_3') %>:　</b><%= listitem.date_val_3.strftime('%Y/%m/%d %a %H:%M') %>
+      <% end %>
+
+<p>
+<% if listitem.str_val_5 != nil and listitem.str_val_5 != "" %><b><%= h _('shop_item_for_who') %>:　</b><%= listitem.str_val_5 %><% end %>
+</p>
+
+<p>
+<% if listitem.num_val_1 != nil %><b><%= h _('shop_item_fee') %>:　</b><%= listitem.num_val_1 %><% end %>
+<% if listitem.str_val_3 != nil and listitem.str_val_3 != "" %> <b><%= h _('shop_item_fee_remark') %>:　</b><%= listitem.str_val_3 %><% end %>
+</p>
+<p>
+<% if listitem.num_val_2 != nil %><b><%= h _('shop_item_capacity') %>:　</b><%= listitem.num_val_2 %><% end %>
+<% if listitem.str_val_4 != nil and listitem.str_val_4 != "" %> <b><%= h _('shop_item_capacity_remark') %>:　</b><%= listitem.str_val_4 %><% end %>
+</p>
+
+<% if listitem.shop.id != nil %><p><b><%= h _('shop_item_shop_name') %>:　</b><%= listitem.shop.name %></p><% end %>
+
+<% if listitem.publish_date != nil %><p><b><%= h _('shop_item_publish_date') %>:　</b><%= listitem.publish_date.strftime('%Y/%m/%d') %></p><% end %>
+<!--
+<% if listitem.amazon_url != "" %><p><b><%=h _('shop_item_amazon_url') %>:　</b><a href="<%=h listitem.amazon_url %>" target="_blank"><%=h listitem.amazon_url %></a><br/><% end %>
+-->
+
+
+
+<div id="shop_item_show_memo_center">
+      <table width="600px" align="center">
+        <td><%= simple_format(sanitize(listitem.memo)) %></td>
+      </table>
+</div>
+
+
+
+<% if listitem.reviews.count > 0 %>
+
+<p><b><%= h listitem.name %> <%= h _('Reviews have been submitted by') %>:</b></p>
+
+  <table align ="center">
+    <tr>
+      <th><%=h _('reviewer') %></th>
+      <th></th>
+    </tr>
+
+        <% listitem.reviews.each do |review| %>
+        <% if review.status == 3 %>
+    <tr>
+      <td><%= link_to review.student.alias + ' ' + review.student.l_name_initial + '. (' + review.student.age.to_s + ')', :controller => 'student', :action => 'show', :id => review.student.id %></td>
+      <td><%= link_to '<' + _('show_this_review') + '>', :controller => 'reviews', :action => 'show', :id => review.id %></td>
+    </tr>
+        <% end %>
+      <% end %>
+  </table>
+
+<% end %>
+
+    </span>
+    <div class='num_val_1'><%= h _('num_val_1_name') %><%= h listitem.num_val_1 %><%= h listitem.tag_list %><%= h _('num_val_1_unit') %></div>
+  </div>
+</div>

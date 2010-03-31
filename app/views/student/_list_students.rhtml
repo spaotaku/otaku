@@ -1,0 +1,56 @@
+<table align ="center">
+  <tr>
+<!--
+    <th><%=h _('student_id') %></th>
+-->
+    <th><%=h _('alias') %></th>
+    <th><%=h _('l_name_initial') %></th>
+
+    <% if session[:user] %><% if session[:user].level <= 3 %><th><%=h _('l_name') %></th><% end %><% end %>
+    <% if session[:user] %><% if session[:user].level <= 3 %><th><%=h _('f_name') %></th><% end %><% end %>
+
+    <th><%=h _('grade') %></th>
+    <% if session[:user] %><% if session[:user].level <= 3 %><th><%=h _('birthday') %></th><% end %><% end %>
+    <th><%=h _('age') %></th>
+    <th><%=h _('sex') %></th>
+    <th><%=h _('reviews_count') %></th>
+    <th><%=h _('school or group') %></th>
+  </tr>
+
+<% @students.each do |student| %>
+  <% if student.id != nil %>
+  <tr>
+<!--
+    <td><%=h student.id %></td>
+-->
+    <td><%=h student.alias %></td>
+    <td><% if student.l_name_initial != "" %><%=h student.l_name_initial %>.<% end %></td>
+    <% if session[:user] %><% if session[:user].level <= 3 %><% if session[:user].group.id == student.user.group.id %><td><%=h student.l_name %></td><% else %><td/><% end %><% end %><% end %>
+    <% if session[:user] %><% if session[:user].level <= 3 %><% if session[:user].group.id == student.user.group.id %><td><%=h student.f_name %></td><% else %><td/><% end %><% end %><% end %>
+    <td><% if student.grade %><%= @grade_list[student.grade] %><% end %></td>
+    <% if session[:user] %><% if session[:user].level <= 3 %><% if session[:user].group.id == student.user.group.id %><td><% if student.birthday %><%=h student.birthday.strftime('%Y/%m/%d') %><% end %></td><% else %><td/><% end %><% end %><% end %>
+    <td><%=h student.age %></td>
+    <td><% if student.sex %><%= @sex_list[student.sex] %><% end %></td>
+    <td><%=h student.reviews.count %>
+    <td><%=h student.item.name %></td>
+    <td><%= link_to _('show'), :action => 'show', :id => student.id %></td>
+    <% if session[:user] %>
+      <% if session[:user].level == 0 %>
+          <td><%= link_to _('edit'), :action => 'edit', :id => student.id %></td>
+          <td><%= link_to( _('destroy'), {:action => 'destroy', :id => student}, :confirm => _('Delete ?')) %></td>
+      <% elsif session[:user].level <= 3 %>
+        <% if session[:user].group.id == student.user.group.id %>
+          <td><%= link_to _('edit'), :action => 'edit', :id => student.id %></td>
+          <td><%= link_to( _('destroy'), {:action => 'destroy', :id => student}, :confirm => _('Delete ?')) %></td>
+        <% end %>
+      <% else %>
+        <% if session[:user].id == student.user.id %>
+          <td><%= link_to _('edit'), :action => 'edit_by_student', :id => student.id %></td>
+          <td><%= link_to( _('destroy'), {:action => 'destroy', :id => student}, :confirm => _('Delete ?')) %></td>
+        <% end %>
+      <% end %>
+    <% end %>
+  </tr>
+  <% end %>
+<% end %>
+</table>

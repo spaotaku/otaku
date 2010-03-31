@@ -1,0 +1,8 @@
+<h1><%= h _('new category input') %></h1>
+<hr />
+<% form_tag(:action => 'create_category') do %>
+  <%= render(:partial => 'form_category') %>
+  <%= submit_tag( _('regist'))%>
+<% end %>
+
+<%= link_to( _('back'), :action => 'list_category') %>

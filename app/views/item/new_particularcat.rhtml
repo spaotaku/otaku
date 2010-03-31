@@ -1,0 +1,8 @@
+<h1><%= h _('new particularcat input') %></h1>
+<hr />
+<% form_tag(:action => 'create_particularcat') do %>
+  <%= render(:partial => 'form_particularcat') %>
+  <%= submit_tag( _('regist'))%>
+<% end %>
+
+<%= link_to( _('back'), :action => 'list_particularcat') %>

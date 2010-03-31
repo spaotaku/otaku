@@ -1,0 +1,27 @@
+<div class="title">
+  <tr>
+    <td><font size=1><%= h listshop.cat_00 %></font></td>
+    <td><font size=1><%= h listshop.cat_01 %></font></td>
+    <td><font size=1><%= h listshop.cat_02 %></font></td>
+    <td><font size=1><%= h listshop.what %></font></td>
+
+    <% if listshop.where != nil %>
+      <% if listshop.where.length > 60 %>
+          <td><font size=1><%= h listshop.where[0,69] + '...' %></font></td>
+      <% else %>
+          <td><font size=1><%= h listshop.where %></font></td>
+      <% end %>
+    <% else %>
+          <td></td>
+    <% end %>
+
+      <% if listshop.name.length > 60 %>
+          <td><a href="<%=h listshop.homepage %>"><%= h listshop.name[0,69] + '...'  %></a></td>
+      <% else %>
+          <td><a href="<%=h listshop.homepage %>"><%= h listshop.name %></a></td>
+      <% end %>
+
+
+    <td><font size=1>(<%= link_to _('shop_detail'), :action => 'show_shop', :id => listshop.id %>)</font></td>
+  </tr>
+</div>

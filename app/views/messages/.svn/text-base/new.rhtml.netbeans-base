@@ -1,0 +1,12 @@
+<div class="spotitem">
+<h3><%=h _('New message') %></h3>
+</div>
+<div class="sumlist">
+
+<% form_tag :action => 'create' do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag _("Create") %>
+<% end %>
+
+<%= link_to _('Back'), :action => 'list' %>
+</div>

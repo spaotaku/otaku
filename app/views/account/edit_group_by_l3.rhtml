@@ -1,0 +1,8 @@
+<h1><%= h _('change group name') %></h1>
+<hr />
+<% form_tag(:action => 'update_group_by_l3', :id => @group) do %>
+  <%= render :partial => 'form_group' %>
+  <%= submit_tag _('update') %>
+<% end %>
+
+<%= link_to( _('back'), :action => 'list_group_by_l3') %>

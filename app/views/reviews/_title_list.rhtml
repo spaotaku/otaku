@@ -1,0 +1,37 @@
+<table align ="center">
+  <tr>
+    <th><%=h _('book title') %></th>
+    <th><%=h _('nr_of_comments') %></th>
+    <th><%=h _('reviewer') %></th>
+  </tr>
+
+<% @reviews.each do |review| %>
+  <tr>
+    <td><%= link_to review.shopitem.name, :action => 'show', :controller => 'shopitem', :id => review.shopitem.id %></td>
+    <td>(<%= review.review_comment.count %>)</td>
+    <td><%= link_to review.student.alias + ' ' + review.student.l_name_initial + '. (' + review.student.age.to_s + ')', :action => 'show', :id => review %></td>
+    <td>
+      <% if session[:user] %>
+        <% if session[:user].level == 0 %>
+          (<%= link_to _('shop_detail'), :action => 'show_shop', :controller => 'shopitem', :id => review.shopitem.shop.id %>)
+        <% end %>
+      <% end %>
+    </td>
+  <% if session[:user] %>
+    <% if session[:user].level <= 3 %>
+      <% if session[:user].group.id == review.student.user.group.id %>
+        <td><%= link_to _('Edit'), :action => 'edit', :id => review %></td>
+        <td><%= link_to( _('destroy'), {:action => 'destroy', :id => review}, :confirm => _('Delete ?')) %></td>
+      <% end %>
+    <% else %>
+      <% if session[:user].id == review.student.user_id %>
+      <td><%= link_to _('Edit'), :action => 'edit_by_student', :id => review %></td>
+      <td><%= link_to( _('destroy'), {:action => 'destroy', :id => review}, :confirm => _('Delete ?')) %></td>
+      <% end %>
+    <% end %>
+  <% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />

@@ -1,0 +1,151 @@
+<script src="http://maps.google.com/maps?file=api&v=2&key=<%= h GOOGLE_MAPS_API_KEY%>"
+    type="text/javascript"></script>
+
+<span class="spotitem">
+<%=content_tag :div, '', :id => "mapa" %>
+</span>
+
+<script type="text/javascript">
+  var icon0 = new GIcon();
+  icon0.image = "http://bukken.spa.ath.cx/images/hide0.png";
+  icon0.shadow = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.shadow.png";
+  icon0.iconSize = new GSize(20, 20);
+  icon0.shadowSize = new GSize(40, 20);
+  icon0.printImage = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.png";
+  icon0.mozPrintImage = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.png";
+  icon0.printShadow = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.shadow.png";
+  icon0.iconAnchor = new GPoint(10,10);
+  icon0.infoWindowAnchor = new GPoint(10,10);
+  var icon1 = new GIcon();
+  icon1.image = "http://bukken.spa.ath.cx/images/mantion_new.png";
+  icon1.shadow = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.shadow.png";
+  icon1.iconSize = new GSize(30, 30);
+  icon1.shadowSize = new GSize(60, 30);
+  icon1.printImage = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.png";
+  icon1.mozPrintImage = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.png";
+  icon1.printShadow = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.shadow.png";
+  icon1.iconAnchor = new GPoint(10,10);
+  icon1.infoWindowAnchor = new GPoint(10,10);
+  var icon3 = new GIcon();
+  icon3.image = "http://bukken.spa.ath.cx/images/house_old.png";
+  icon3.shadow = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.shadow.png";
+  icon3.iconSize = new GSize(30, 30);
+  icon3.shadowSize = new GSize(60, 30);
+  icon3.printImage = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.png";
+  icon3.mozPrintImage = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.png";
+  icon3.printShadow = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.shadow.png";
+  icon3.iconAnchor = new GPoint(10,10);
+  icon3.infoWindowAnchor = new GPoint(10,10);
+  var icon16 = new GIcon();
+  icon16.image = "http://bukken.spa.ath.cx/images/house_new.png";
+  icon16.shadow = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.shadow.png";
+  icon16.iconSize = new GSize(30, 30);
+  icon16.shadowSize = new GSize(60, 30);
+  icon16.printImage = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.png";
+  icon16.mozPrintImage = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.png";
+  icon16.printShadow = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.shadow.png";
+  icon16.iconAnchor = new GPoint(10,10);
+  icon16.infoWindowAnchor = new GPoint(10,10);
+  var icon17 = new GIcon();
+  icon17.image = "http://bukken.spa.ath.cx/images/ground_sale.png";
+  icon17.shadow = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.shadow.png";
+  icon17.iconSize = new GSize(30, 30);
+  icon17.shadowSize = new GSize(60, 30);
+  icon17.printImage = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.png";
+  icon17.mozPrintImage = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.png";
+  icon17.printShadow = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.shadow.png";
+  icon17.iconAnchor = new GPoint(10,10);
+  icon17.infoWindowAnchor = new GPoint(10,10);
+
+function createMarker0(p, title, url, memo) {
+  var marker = new GMarker(p, {title: title, icon: icon0});
+  GEvent.addListener(marker, "click", function() {
+    marker.openInfoWindowHtml('<a href="' + url + '">' + title + '</a>' + memo);
+  });
+  return marker;
+}
+function createMarker1(p, title, url, memo) {
+  var marker = new GMarker(p, {title: title, icon: icon1});
+  GEvent.addListener(marker, "click", function() {
+    marker.openInfoWindowHtml('<a href="' + url + '">' + title + '</a>' + memo);
+  });
+  return marker;
+}
+function createMarker3(p, title, url, memo) {
+  var marker = new GMarker(p, {title: title, icon: icon3});
+  GEvent.addListener(marker, "click", function() {
+    marker.openInfoWindowHtml('<a href="' + url + '">' + title + '</a>' + memo);
+  });
+  return marker;
+}
+function createMarker16(p, title, url, memo) {
+  var marker = new GMarker(p, {title: title, icon: icon16});
+  GEvent.addListener(marker, "click", function() {
+    marker.openInfoWindowHtml('<a href="' + url + '">' + title + '</a>' + memo);
+  });
+  return marker;
+}
+function createMarker17(p, title, url, memo) {
+  var marker = new GMarker(p, {title: title, icon: icon17});
+  GEvent.addListener(marker, "click", function() {
+    marker.openInfoWindowHtml('<a href="' + url + '">' + title + '</a>' + memo);
+  });
+  return marker;
+}
+
+var map = new GMap2($('mapa'));
+<% start = false
+   @items.each do |r|
+     unless start
+%>
+       map.setCenter(new GLatLng(<%= h r.spot.latitude%>, <%= h r.spot.longitude%>), 12);
+       map.addControl(new GLargeMapControl());
+       map.addControl(new GScaleControl());
+       map.addControl(new GMapTypeControl());
+<%
+       start = true
+     end
+       if r.category_id == 1
+%>          
+       map.addOverlay(createMarker1(new GLatLng(<%= h r.spot.latitude%>, <%= h r.spot.longitude%>),
+                                 '<%= h r.name %>',
+                                 '<%= url_for(:action => 'show_spot', :id => r.spot.id) %>',
+                                 '<%= escape_javascript(simple_format(sanitize(r.memo))) %>'));
+<%
+       elsif r.category_id == 3
+%>       
+       map.addOverlay(createMarker3(new GLatLng(<%= h r.spot.latitude%>, <%= h r.spot.longitude%>),
+                                 '<%= h r.name %>',
+                                 '<%= url_for(:action => 'show_spot', :id => r.spot.id) %>',
+                                 '<%= escape_javascript(simple_format(sanitize(r.spot.memo))) %>'));
+<%
+       elsif r.category_id == 16
+%>       
+       map.addOverlay(createMarker16(new GLatLng(<%= h r.spot.latitude%>, <%= h r.spot.longitude%>),
+                                 '<%= h r.name %>',
+                                 '<%= url_for(:action => 'show_spot', :id => r.spot.id) %>',
+                                 '<%= escape_javascript(simple_format(sanitize(r.spot.memo))) %>'));
+<%
+       elsif r.category_id == 17
+%>       
+       map.addOverlay(createMarker17(new GLatLng(<%= h r.spot.latitude%>, <%= h r.spot.longitude%>),
+                                 '<%= h r.name %>',
+                                 '<%= url_for(:action => 'show_spot', :id => r.spot.id) %>',
+                                 '<%= escape_javascript(simple_format(sanitize(r.spot.memo))) %>'));
+<%
+       else
+%>       
+       map.addOverlay(createMarker0(new GLatLng(<%= h r.spot.latitude%>, <%= h r.spot.longitude%>),
+                                 '<%= h r.name %>',
+                                 '<%= url_for(:action => 'show_spot', :id => r.spot.id) %>',
+                                 '<%= escape_javascript(simple_format(sanitize(r.spot.memo))) %>'));
+<%     
+       end
+   end 
+%>
+
+
+</script>
+<div class="pagination_link">
+  <%= will_paginate @items, :prev_label => "prev", :next_label => "next"  %>
+</div>

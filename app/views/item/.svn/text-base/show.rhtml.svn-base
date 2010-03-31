@@ -1,0 +1,3 @@
+<div class='spotlist'>
+  <%= render :partial => 'listitem', :locals => {:listitem => @item, :size => ''} %>
+</div>

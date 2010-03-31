@@ -1,0 +1,2 @@
+page << "  $('shop_address').value = '%s';" % escape_javascript(@prefecture)
+

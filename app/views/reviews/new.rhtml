@@ -1,0 +1,23 @@
+<h1><%=h _('New review') %></h1>
+
+<% form_tag({:action => 'create', :id => @review.id}, :multipart => true) do %>
+
+  <%= render :partial => 'form' %>
+
+
+<label for="status"><%= h _('status') %>*</label>
+<%=
+  options = [[ _('select status'), ""]] + [
+    [ _('working'),       0 ],
+    [ _('submited'),      1 ]
+  ]
+  select(:review, :status, options)
+%>
+
+
+<p>
+  <%= submit_tag _('create') %>
+</p>
+<% end %>
+
+<%= link_to _('Back'), :action => 'index' %>

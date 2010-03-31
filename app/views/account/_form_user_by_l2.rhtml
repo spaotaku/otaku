@@ -1,0 +1,22 @@
+<%= error_messages_for('user') %>
+
+<label for="user_group_id"><%= h _('group name :') %></label><%= @user.group.name %><br /><br />
+
+<%= render :partial => 'form_name_login_pass' %>
+
+<table align="center">
+  <tr>
+    <td><label for="user_level"><%= h _('user level') %></label></td>
+
+    <td><%=
+      options = [[ _('please select'), ""]] + [
+     [ _('student_level'), 5 ],
+     [ _('teachar_level'), 3 ],
+     [ _('rw_member_level'), 2 ]
+   ]
+      select('user', 'level', options)
+    %></td>
+  </tr>
+</table>
+
+<%= render :partial => 'form_email' %>

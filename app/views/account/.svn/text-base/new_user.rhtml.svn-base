@@ -1,0 +1,8 @@
+<h1><%= h _('new user input') %></h1>
+<hr />
+<% form_tag(:action => 'create_user') do %>
+  <%= render(:partial => 'form_user') %>
+  <%= submit_tag(_('regist'))%>
+<% end %>
+
+<%= link_to(_('back'), :action => 'list_group') %>

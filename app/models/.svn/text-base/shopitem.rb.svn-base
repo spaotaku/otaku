@@ -1,0 +1,13 @@
+class Shopitem < ActiveRecord::Base
+  belongs_to :user
+  belongs_to :shop
+  has_many :pictures, :dependent => :destroy
+
+  PUBLISH_LEVELS = [
+    [ _('close'),      0 ],
+    [ _('open_group'), 5 ],
+    [ _('open_all'),   9 ]
+  ].freeze    # freezeによって、この配列の値の変更を禁止する
+
+
+end

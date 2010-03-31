@@ -1,0 +1,435 @@
+require 'csis_geocoding'
+
+class ShopitemController < ApplicationController
+
+  def xml_export_shopitem
+    @shopitems = Shopitem.find(:all, :order => 'created_at DESC',
+                             :include => [:user, :shop])
+    response.headers['Content-Type'] = 'application/vnd.ms-excel'
+    response.headers['Content-Disposition'] = 'attachment; filename="shopitems.xml"'
+  end
+
+  def xml_export_shop
+    @shops = Shop.find(:all)
+    response.headers['Content-Type'] = 'application/vnd.ms-excel'
+    response.headers['Content-Disposition'] = 'attachment; filename="shops.xml"'
+  end
+
+
+  def list
+    conditions = nil
+    if keyword = params[:keyword]
+      keyword = "%" + keyword + "%"
+#      conditions = ["(name like ?)"]
+#      conditions = ["shops.name like ?"]
+      conditions = ["(shopitems.name like ? or shops.name like ?) and
+                     (shopitems.user_id = ? or shopitems.publish_level = ? or ( shopitems.publish_level = ? and users.group_id = ? ))"]
+      conditions << keyword
+      conditions << keyword
+      conditions << session[:user].id
+      conditions << 9
+      conditions << 5
+      conditions << session[:user].group_id
+    else
+      conditions = "shopitems.user_id = ? or
+                    shopitems.publish_level = ? or
+                    ( shopitems.publish_level = ? and users.group_id = ? ) ",
+                    session[:user].id,
+                    9,
+                    5,
+                    session[:user].group_id
+    end  
+  
+    @page, @shopitems = paginate :shopitems, :order => 'created_at DESC', :per_page => 5,
+                             :conditions => conditions, :include => [:shop, :user]
+    
+  end
+
+
+
+
+  def new
+  end
+
+  def new_shop
+    render :partial => 'shop_form'
+  end
+
+  def create
+    begin 
+      create_shop
+      create_shopitem
+    rescue
+      log_error($!)
+      render :action => :new
+      return
+    end
+    flash[:message] = _('new item successfully created')
+    redirect_to :action => :list
+  end
+
+  def zip
+#    @prefecture, @address1, @address2 = Shop.zip2address(params[:zip])
+#    @prefecture, @address1 = Shop.zip2address(params[:zip])
+    @prefecture = Shop.zip2address(params[:zip])
+  end
+
+
+  def geocoding
+    @candidates = CSIS::Geocoding.new(params[:shop][:address], params[:series]).candidates
+    render :partial => 'address_option'
+  end
+
+  def by_map
+
+#    conditions = nil
+#    conditions = "shops.user_id = ? or
+#                  users.group_id = ? ",
+#                  session[:user].id,
+#                  session[:user].group_id
+#    @page, @shops = paginate :shops, :per_page => 100,
+#                             :conditions => conditions, :include => :user
+
+#if session[:user]
+#    conditions = nil
+#    conditions = "shops.user_id = ? or
+#                ( shops.group_id = ? and shops.publish_level = ? ) or
+#                  shops.publish_level = ? ",
+#                  session[:user].id,
+#                  session[:user].group_id,
+#                  5,
+#                  9
+#                  
+#    @page, @shops = paginate :shops, :per_page => 100,
+#                             :conditions => conditions, :include => :user
+#else
+#    conditions = nil
+#    conditions = "shops.publish_level = ? ",
+#                  9
+#    @page, @shops = paginate :shops, :per_page => 100,
+#                             :conditions => conditions
+
+    
+    @page, @shops = paginate :shops, :per_page => 100
+#end
+  end
+
+  def create_shop
+    if params[:shop]
+
+      set_lat_lon_tokyo_datum_dec
+      set_lat_lon_tokyo_datum_ddmmsss
+
+      @shop = Shop.new(params[:shop])
+      @shop.user_id = session[:user].id
+      @shop.group_id = session[:user].group_id
+      @shop.save!
+      params[:shopitem][:shop_id] = @shop.id
+      @shop = nil
+    end
+  end
+
+
+  def update_shopitem
+    params[:shopitem][:created_at] = param_time()
+    Shopitem.transaction do
+      unless @shopitem.update_attributes(params[:shopitem])
+        raise 'failed to update'
+      end
+      save_pics
+    end
+  end
+
+
+  def save_pics
+    [:picture0, :picture1].each do |pic|
+      next if params[pic].nil? || params[pic][:file].length == 0
+      @picture = @item.pictures.build
+      @picture.file = params[pic][:file]
+      @picture.save!
+    end
+  end
+
+  def delete_pics
+    return unless params[:pic]
+    params[:pic].each do |k,v|
+      Picture.delete(k) if v == '1'
+    end
+  end
+
+  def param_time()
+    Time.local(params[:date][:year], 
+	       params[:date][:month], 
+	       params[:date][:day],
+	       params[:date][:hour],
+	       params[:date][:minute])
+  end
+
+  def create_shopitem
+    Shopitem.transaction do
+      @shopitem = Shopitem.new(params[:shopitem])
+      @shopitem.created_at = param_time()
+      @shopitem.user_id = session[:user].id
+      @shopitem.group_id = session[:user].group_id
+      @shopitem.save!
+      save_pics
+    end
+  end
+  
+  def save_pics
+    [:picture0, :picture1, :picture2, :picture3, :picture4].each do |pic|  
+      next if params[pic].nil? || params[pic][:file].length == 0
+      @picture = @shopitem.pictures.build
+      @picture.file = params[pic][:file]
+      @picture.title = params[pic][:title]
+      @picture.save!
+    end
+  end
+  
+  def param_time()
+    Time.local(params[:date][:year],
+               params[:date][:month],
+               params[:date][:day],
+               params[:date][:hour],
+               params[:date][:minute])
+  end
+    
+  def show
+    @shopitem = Shopitem.find(params[:id])
+  end
+
+  def edit
+    @shopitem = Shopitem.find(params[:id])
+    unless @shopitem.user_id == session[:user].id
+      flash[:message] = _('error user unmuch')
+      redirect_to :action => :show, :id => @shopitem
+    end
+  end
+
+  def update
+    @shopitem = Shopitem.find(params[:id])
+    begin
+      create_shop
+      update_shopitem
+      delete_pics
+    rescue
+      log_error($!)
+      render :action => :edit
+      return
+    end
+    flash[:message] = _('shopitem successfully updated')
+    redirect_to :action => :show, :id => @shopitem
+  end
+
+  def delete
+    @shopitem = Shopitem.find(params[:id])
+  end
+
+  def remove
+    @shopitem = Shopitem.find(params[:id])
+    @shopitem.destroy
+    flash[:message] = _('shopitem successfully deleted')
+    redirect_to :action => 'list'
+  end
+  
+  def image
+    pic = Picture::find(params[:id])
+    unless pic
+      redirect_to '/404.html' 
+      return
+    end
+    response.headers["Content-Type"] = pic.content_type
+    response.headers["Content-Disposition"] = "inline"
+    render :text => pic.image
+  end
+
+  def list_shop
+    @page, @shops = paginate :shops, :per_page => 5
+
+  end
+
+
+  def show_shop
+    @shop = Shop.find(params[:id])
+
+#      conditions = "items.user_id = ? or
+#                    items.publish_level = ? or
+#                    ( items.publish_level = ? and users.group_id = ? ) ",
+#                    session[:user].id,
+#                    9,
+#                    5,
+#                    session[:user].group_id
+
+
+    @page, @shopitems = paginate :shopitems,
+#      :conditions => ['shop_id = ? and (
+#                                          items.user_id = ? or
+#                                          items.publish_level = ? or
+#                                         (items.publish_level = ? and users.group_id = ? )
+#                                         ) ',
+#                          @shop.id, session[:user].id, 9, 5, session[:user].group_id],
+      :conditions => [ 'shop_id = ? and (
+                                          shopitems.publish_level = ? or
+                                          shopitems.publish_level = ? 
+                                         ) ',
+                          @shop.id, 9, 5 ],
+
+      :per_page => 5, :order => 'created_at DESC', :include => [:user]
+#  p @page
+#  p @shopitems
+  end
+
+  def show_shop_map
+    @shop = Shop.find(params[:id])
+  end
+
+  def send_shop_map_by_mail
+    $user_email_cell = session[:user].email_cell
+    @shop = Shop.find(params[:id])
+    Mailer.deliver_send_shop_map_by_mail(@shop)
+    flash[:message] =  _('mail was sent')
+    redirect_to :action => :show_shop, :id => @shop
+  end
+
+
+  def edit_shop
+    @shop = Shop.find(params[:id])
+    unless @shop.user_id == session[:user].id
+      flash[:message] = _('error user unmuch')
+      redirect_to :action => :show_shop, :id => @shop
+    end
+  end
+
+  
+  def update_shop
+    @shop = Shop.find(params[:id])
+ 
+    set_lat_lon_tokyo_datum_dec
+    set_lat_lon_tokyo_datum_ddmmsss
+
+#    @shop.user_id = session[:user].id
+
+    unless @shop.update_attributes(params[:shop])
+      render :action => :edit_shop
+    else
+      flash[:message] = _('shop successfully updated')
+      redirect_to url_for(:action => :show_shop, :id => @shop)
+    end
+  end
+
+  def delete_shop
+
+    @shop = Shop.find(params[:id])
+
+#      conditions = "items.user_id = ? or
+#                    items.publish_level = ? or
+#                    ( items.publish_level = ? and users.group_id = ? ) ",
+#                    session[:user].id,
+#                    9,
+#                    5,
+#                    session[:user].group_id
+
+
+    @page, @shopitems = paginate :shopitems,
+#      :conditions => ['spot_id = ? and (
+#                                          items.user_id = ? or
+#                                          items.publish_level = ? or
+#                                         (items.publish_level = ? and users.group_id = ? )
+#                                         ) ',
+#                          @spot.id, session[:user].id, 9, 5, session[:user].group_id],
+      :conditions => [ 'shop_id = ? and (
+                                          shopitems.publish_level = ? or
+                                          shopitems.publish_level = ? 
+                                         ) ',
+                          @shop.id, 9, 5 ],
+
+      :per_page => 5, :order => 'created_at DESC', :include => [:user]
+
+  end
+
+  def remove_shop
+    @shop = Shop.find(params[:id])
+    @shop.destroy
+    flash[:message] = _('shop successfully deleted')
+    redirect_to :action => 'list_shop'
+  end
+
+
+
+  def list_category
+    @category_pages, @categories = paginate(:categories, :per_page => 10)
+  end
+
+  def new_category
+    @category = Category.new
+  end
+
+  def create_category
+    @category = Category.new(params[:category])
+    if @category.save
+      flash['notice']  = _("Category was successfully created")
+      redirect_to(:action => "list_category")
+    else
+      render(:action => 'new_category')
+    end
+  end
+
+
+  def show_category
+    @category = Category.find(params[:id])
+  end
+
+  def edit_category
+    @category = Category.find(params[:id])
+  end
+
+  
+  def update_category
+    @category = Category.find(params[:id])
+    if @category.update_attributes(params[:category])
+      flash[:notice] = _('Category was successfully updated.')
+      redirect_to(:action => 'list_category')
+    else
+      render(:action => 'edit_category')
+    end
+  end
+
+
+
+
+
+  def destroy_category
+    Category.find(params[:id]).destroy
+    redirect_to(:action => 'list_category')
+  end
+
+
+
+  private
+  
+  def set_lat_lon_tokyo_datum_dec
+    # 世界測地系(wgs84) -> 日本測地系(Tokyo Datum) 変換 
+    params[:shop][:longitude_tokyo_datum_dec] = params[:shop][:longitude].to_f + params[:shop][:latitude].to_f * 0.000046047 + params[:shop][:longitude].to_f * 0.000083049 - 0.010041
+    params[:shop][:latitude_tokyo_datum_dec]  = params[:shop][:latitude].to_f + params[:shop][:latitude].to_f * 0.00010696 - params[:shop][:longitude].to_f * 0.000017467 - 0.0046020
+  end
+
+  def set_lat_lon_tokyo_datum_ddmmsss
+    @lat_lon_tokyo_datum_dec = params[:shop][:longitude_tokyo_datum_dec].to_f
+    conv_lat_lon_tokyo_datum_dec_to_ddmmsss
+    params[:shop][:longitude_tokyo_datum_ddmmsss] = @lat_lon_tokyo_datum_ddmmsss
+    @lat_lon_tokyo_datum_dec = params[:shop][:latitude_tokyo_datum_dec].to_f
+    conv_lat_lon_tokyo_datum_dec_to_ddmmsss
+    params[:shop][:latitude_tokyo_datum_ddmmsss] =  @lat_lon_tokyo_datum_ddmmsss
+  end
+
+  def conv_lat_lon_tokyo_datum_dec_to_ddmmsss
+    lat_lon_tokyo_datum_dd = @lat_lon_tokyo_datum_dec.to_i 
+    lat_lon_tokyo_datum_mm = ((@lat_lon_tokyo_datum_dec - lat_lon_tokyo_datum_dd) * 60 ).to_i
+    lat_lon_tokyo_datum_ss = ( @lat_lon_tokyo_datum_dec - lat_lon_tokyo_datum_dd - lat_lon_tokyo_datum_mm / 60.0 ) * 3600 
+    lat_lon_tokyo_datum_sss = sprintf("%6.3f", lat_lon_tokyo_datum_ss).to_f
+    @lat_lon_tokyo_datum_ddmmsss = lat_lon_tokyo_datum_dd.to_s + "." +
+                                        lat_lon_tokyo_datum_mm.to_s + "." +
+                                        lat_lon_tokyo_datum_sss.to_s
+  end
+
+end

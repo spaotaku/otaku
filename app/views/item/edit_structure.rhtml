@@ -1,0 +1,9 @@
+<h1><%= h _('edit structure') %></h1>
+<hr />
+
+<% form_tag(:action => 'update_structure', :id => @structure) do %>
+  <%= render :partial => 'form_structure' %>
+  <%= submit_tag _('update') %>
+<% end %>
+
+<%= link_to( _('back'), :action => 'list_structure', :id => @structure) %>

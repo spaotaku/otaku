@@ -1,0 +1,72 @@
+xml.instruct!
+xml.Workbook 'xmlns'=>'urn:schemas-microsoft-com:office:spreadsheet',
+  'xmlns:ss'=>'urn:schemas-microsoft-com:office:spreadsheet' do
+  xml.Styles do
+    xml.Style 'ss:ID' => 1 do
+      xml.Font 'ss:Bold' => 1
+    end
+  end
+  xml.Worksheet 'ss:Name' => 'Sheet1' do
+    xml.Table do
+      5.times do
+        xml.Column 'ss:Width' => 80
+      end
+      xml.Row 'ss:StyleID' => 1 do
+          xml.Cell { xml.Data 'Name', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'Created_at', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'Num_val_1', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'Memo', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'Shop_id', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'Title', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'content', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'user_id', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'publish_level', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'tag', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'group_id', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'author', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'illustrator', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'translator', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'amazon_url', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'genre', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'nr_pages', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'hero', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'publish_date', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'genre_wk', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'name_kana', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'author_kana', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'illustrator_kana', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'translator_kana', 'ss:Type' => 'String' }
+          xml.Cell { xml.Data 'di_flg', 'ss:Type' => 'String' }
+      end
+      @shopitems.each do |shopitem|
+        xml.Row do
+          xml.Cell { xml.Data shopitem.name, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.created_at.strftime('%Y/%m/%d'), 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.num_val_1, 'ss:Type' => 'Number' }
+          xml.Cell { xml.Data shopitem.memo, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.shop_id, 'ss:Type' => 'Number' }
+          xml.Cell { xml.Data shopitem.title, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.content, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.user_id, 'ss:Type' => 'Number' }
+          xml.Cell { xml.Data shopitem.publish_level, 'ss:Type' => 'Number' }
+          xml.Cell { xml.Data shopitem.tag, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.group_id, 'ss:Type' => 'Number' }
+          xml.Cell { xml.Data shopitem.author, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.illustrator, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.translator, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.amazon_url, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.genre, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.nr_pages, 'ss:Type' => 'Number' }
+          xml.Cell { xml.Data shopitem.hero, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.publish_date.strftime('%Y/%m/%d'), 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.genre_wk, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.name_kana, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.author_kana, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.illustrator_kana, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.translator_kana, 'ss:Type' => 'String' }
+          xml.Cell { xml.Data shopitem.di_flg, 'ss:Type' => 'Number' }
+        end
+      end
+    end
+  end
+end

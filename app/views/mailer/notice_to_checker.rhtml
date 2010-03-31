@@ -1,0 +1,22 @@
+OTAKU生涯学習情報サイト　紹介文投稿通知サービス
+
+担当教師さま
+
+あなたのクラス・グループの生徒から、以下の紹介文が投稿(更新)されました。
+速やかに、確認した上で公開処理をお願いします。
+
+グループ名:<%= @review.item.name %>
+生徒名: <%= @review.student.l_name %><%= @review.student.f_name %>
+紹介文id： <%= @review.id %>
+本のタイトル:<%= @review.shopitem.name %>
+紹介文:<%= @review.body %>
+投稿日時:<%= @review.updated_at %>
+
+紹介文は次のアドレス（URL）からご覧いただけます。(ログインが必要です)
+http://bookclub.spa.ath.cx/reviews/edit/<%= @review.id %>
+
+このメールは、レインボー・ブック・クラブのサイトから送信されたものです。
+心当たりのない方は、下記へご連絡く下さい。
+レインボー・ブック・クラブ
+mailto:info@spa.fsr.jp
+http://bookclub.spa.ath.cx

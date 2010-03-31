@@ -1,0 +1,8 @@
+<h1><%= h _('edit user') %></h1>
+<hr />
+<% form_tag(:action => 'update_user_by_l2', :id => @user) do %>
+  <%= render :partial => 'form_user_by_l2' %>
+  <%= submit_tag _('update') %>
+<% end %>
+
+<%= link_to( _('back'), :action => 'list_user_by_l2', :id => @user.group) %>

@@ -1,0 +1,29 @@
+<div><label for="shopitem_spot_id"><%= h _('shopitem_spot') %>*</label>
+  <span id="select_spot" style="display: <%= h @spot ? 'none' : 'inline' %>">
+    <% if session[:user] %>
+      <%= collection_select(:shopitem, :spot_id, Spot.find(:all, :conditions=> ["group_id = ?", session[:user].group_id], :order => 'name'), :id, :name, :include_blank => true)%>
+    <% else %>
+      <%= collection_select(:shopitem, :spot_id, Spot.find(:all, :order => 'name'), :id, :name, :include_blank => true)%>
+    <% end %>
+    <span class="option-button">
+      <%= link_to_remote _('New'), {:update => :spot_form,
+        :success => "$('new_spot').style.display = 'inline'; 
+        $('select_spot').style.display = 'none'",
+        :url => {:action => "new_spot"}} %>
+    </span>
+  </span>
+  <span id="new_spot" style="display:<%= h @spot ? 'inline' : 'none' %>">
+    <span class="option-button">
+      <%= link_to_function _('select'),
+      "$('spot_form').innerHTML = '';
+       $('select_spot').style.display = 'inline';
+       $('new_spot').style.display = 'none'" %>
+    </span>
+  </span>
+</div>
+<span id="spot_form">
+  <% if @spot %>
+    <%= render :partial => 'spot_form' %>
+  <% end %>
+</span>
+<br/>

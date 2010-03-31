@@ -1,0 +1,29 @@
+  <div class="HeaderNav">
+
+    <p class="PrimaryLinks">
+    <a href="/student"><%=h _('reviewers') %></a>
+    |
+    <a href="/shopitem/list"><%=h _('titles') %></a>
+    |
+    <a href="/shopitem/list_by_author"><%=h _('authors') %></a>
+    </p>
+
+
+    <p class="SecondaryLinks">
+    <a href="/about.html"><%=h _('about us') %></a>
+    |
+    <a href="/item/list"><%=h _('schools') %></a>
+    | 
+    <a href="/messages/list"><%=h _('clubhouse') %></a>
+    <% if session[:user] %>
+    |
+    <a href="/reviews"><%=h _('reviews') %></a>
+    
+    |
+    <a href="/review_comments"><%=h _('review_comments') %></a>
+    <% end %>
+    |
+    <a href="/index.html"><%=h _('home') %></a>
+    </p>
+
+  </div>

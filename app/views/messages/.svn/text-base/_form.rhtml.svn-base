@@ -1,0 +1,36 @@
+<%= error_messages_for 'message' %>
+
+<!--[form:message]-->
+<label for="message_priority"><%=h _('Priority') %></label><br/>
+<%= text_field 'message', 'priority'  %><br/>
+
+<label for="message_title"><%=h _('Title') %></label><br/>
+<%= text_field 'message', 'title'  %><br/>
+
+<label for="message_body"><%=h _('Body') %></label><br/>
+<%= text_area 'message', 'body', :cols => 50, :rows =>7  %><br/>
+
+<label for="message_memo"><%=h _('Memo') %></label><br/>
+<%= text_area 'message', 'memo', :cols => 50, :rows =>3  %><br/>
+
+<label for="message_source_url"><%=h _('Source url :') %></label>
+<%= text_field 'message', 'source_url'  %><br/>
+
+<label for="message_org_name"><%=h _('Org name :') %></label>
+<%= text_field 'message', 'org_name'  %>
+
+<label for="note_org_e_mail"><%=h _('Org e mail :') %></label>
+<%= text_field 'message', 'org_e_mail'  %>
+
+<label for="message_org_url"><%=h _('Org url :') %></label>
+<%= text_field 'message', 'org_url'  %><br/>
+<label for="message_link_prev"><%=h _('Link prev :') %></label>
+<%= text_field 'message', 'link_prev'  %>
+
+<label for="message_link_next"><%=h _('Link next :') %></label>
+<%= text_field 'message', 'link_next'  %><br/>
+
+<label for="message_updated_on"><%=h _('Updated on :') %></label>
+<%= datetime_select 'message', 'updated_on', :use_month_numbers => true  %><br/>
+<!--[eoform:message]-->
+

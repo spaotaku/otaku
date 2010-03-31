@@ -1,0 +1,68 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title><%= h '大田区羽田地域情報サイト' %></title>
+  <%= stylesheet_link_tag  'sky', 'item' %>
+  <%= javascript_include_tag "prototype", "effects" %>
+</head>
+<body>
+  <div id="header">
+    <div class="title"><h1><%= h _('Site Name: SN => Name of Site') %></h1></div>
+    <div class="menu">
+    <%= link_to _('Map'), :action => 'by_map', :controller => 'item' %>
+<!-- <% if session[:user] %>
+    | <%= link_to _('List'), :action => 'list', :controller => 'item' %>
+     <% end %>  -->
+    | <%= link_to _('List'), :action => 'list', :controller => 'item' %>
+    | <%= link_to _('Search_1'), :action => 'list_item', :controller => 'item' %>
+    | <%= link_to _('Search_2'), :action => 'index', :controller => 'item' %>
+<!--
+      <%= link_to _('Sum_List'), :action => 'sum_list', :controller => 'item' %> |
+      <%= link_to _('Article'), '/articles/index'%> |
+      <%= link_to _('Link'), :action => 'list', :controller => 'links'%> |
+      <%= link_to _('Note'), :action => 'list', :controller => 'notes'%>
+--> 
+      <% if @item %>
+      | <%= link_to _('Show'), :action => 'show', :id => @item.id %>
+      <% end %>
+
+      | <%= link_to _('Message'), :action => 'list', :controller => 'messages'%>
+
+ <% if session[:user] %>
+  <br/><%= h _('Group') %> :
+    <%= session[:user].group.name %> |
+    <%= h _('User') %> :
+    <%= session[:user].login %> |
+    <%= h _('Lvl') %> :
+    <%= session[:user].level %> |
+    <%= link_to _('Logout'), '/account/logout'%> |
+    <%= link_to _('Change_profile'), '/account/edit_user_by_user'%>
+
+ <% else %>
+    | <%= link_to _('Login'), '/account/login'%> |
+      <%= link_to _('New_User_Signup'), '/account/signup_user' %>
+    
+<!-- <%= link_to 'ユーザ登録', '/account/signup'%> -->
+  <% end %>
+
+    </div>
+  </div>
+  <div id="content">
+    <div id="main">
+<!-- <p style="color: green"--><%#= flash[:notice] %><!--/p> -->
+
+      <%= render :partial => 'flash' %>
+
+      <%= yield  %>
+    </div>
+    <div id="sidebar">
+      <%= render :partial => 'layouts/maint_sidebar' %>
+    </div>
+  </div>
+<div id="footer">
+<%= h _('powered by CSIS Simple Geocoding Experiment(') %><a href="http://nlftp.mlit.go.jp/isj/"><%= h _('isj') %></a><%= h ')' %>
+ | <%= h _('powered by CSIS Simple Geocoding Experiment(') %><a href="http://nlftp.mlit.go.jp/ksj/"><%= h _('ksj') %></a><%= h ')' %>
+ | powered by <a href="http://www.rubyonrails.org">Ruby on Rails</a>
+</div>
+</body>
+</html>

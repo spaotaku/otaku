@@ -1,0 +1,25 @@
+<% form_tag(:action => 'index', :controller => 'reviews' ) do %>
+
+  <%=h _('keyword for search')%>
+
+
+  <%=h _('book_title_n_review_genre_n_review_hiro')%>:
+  <input name="keyword_booktitle"           value="<%=h params[:keyword_booktitle] %>"/>
+
+  <%=h _('class name')%>:
+  <input name="keyword_class"           value="<%=h params[:keyword_class] %>"/>
+
+  <% if session[:user] %>
+  <%=h _('l_name')%>:
+    <input size="10" name="keyword_l_name"           value="<%=h params[:keyword_l_name] %>"/>
+
+  <%=h _('f_name')%>:
+    <input size="10" name="keyword_f_name"           value="<%=h params[:keyword_f_name] %>"/>
+  <% end %>
+　<%= submit_tag _('search') -%>
+<% end %>
+
+<% if session[:user] %>
+<%= link_to _('my_class_review'), :action => 'index_my_class_review' %> |
+<%= link_to _('my_review'), :action => 'index_my_review' %>
+<% end %>

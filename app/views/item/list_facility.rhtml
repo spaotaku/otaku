@@ -1,0 +1,30 @@
+<h1><%= h _('facility list ') %></h1>
+<hr />
+<table>
+  <tr>
+    <th><%= h _('facility seq') %></th>
+    <th><%= h _('facility cat') %></th>
+    <th><%= h _('facility name') %></th>
+  </tr>
+  
+<% for facility in @facilities %>
+  <tr>
+  <td><%= h(facility.seq) %></td>
+  <td><%= h(facility.facilitycat.name) %></td>
+  <td><%= h(facility.name) %></td>
+  <td><%= link_to( _('edit'), :action => 'edit_facility', :id => facility) %></td>
+  <td><%= link_to( _('destroy'), {:action => 'destroy_facility', :id => facility}, :confirm => _('Delete ?')) %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to( _('add new facility'), :action => 'new_facility') %> |
+<%= link_to( _('back'), :action => 'list_facility') %>
+
+<div class="pagination_link">
+  <%= will_paginate @facilities, :prev_label => _('prev'), :next_label => _('next') %>
+</div>
+
+
+<br />
+ 

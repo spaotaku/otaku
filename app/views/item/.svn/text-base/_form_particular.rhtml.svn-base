@@ -1,0 +1,12 @@
+<%= error_messages_for('particular') %>
+
+<p><label for="particular_seq"><%= h _('particular seq') %></label><br />
+<%= text_field('particular', 'seq') %></p>
+
+<p><label for="particular_cat"><%= h _('category') %>:</label>
+<%= collection_select(:particular, :particularcat_id, Particularcat.find(:all, :order => 'name'), :id, :name)%></p><br />
+
+<p><label for="particular_name"><%= h _('particular name') %></label><br />
+<%= text_field('particular', 'name') %></p>
+<p><label for="particular_memo"><%= h _('memo') %></label><br />
+<%= text_field('particular', 'memo') %></p>

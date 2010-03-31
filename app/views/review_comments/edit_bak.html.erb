@@ -1,0 +1,47 @@
+<h1>Editing review_comment</h1>
+
+<% form_tag({:action => 'update', :id => @review_comment.id}) do %>
+
+
+
+  <p>
+    <label for="name"><%= h _('name') %></label>
+    <%= text_field @review_comment, :name %>
+  </p>
+
+  <p><%=h @review_comment.name %></p>
+  
+  <p>
+    <label for="content"><%= h _('content') %></label>
+    <%= text_field @review_comment, :content, :size => '70' %>
+  </p>
+  <p>
+    <label for="student_id"><%= h _('student_id') %></label>
+    <%= text_field @review_comment, :student_id, :size => '70' %>
+  </p>
+  <p>
+    <label for="review_id"><%= h _('review_id') %></label>
+    <%= text_field @review_comment, :review_id, :size => '70' %>
+  </p>
+
+  <p><label for="status"><%= h _('status') %></label>
+<%=
+  options = [[ _('select status'), ""]] + [
+    [ _('working'),       0 ],
+    [ _('submited'),      1 ],
+    [ _('reviewing'),     2 ],
+    [ _('published'),     3 ],
+    [ _('holding'),       4 ]
+  ]
+  select(@review_comment, :status, options)
+%>
+</p>
+
+
+  <p>
+    <p><%= submit_tag _('update') %></p>
+  </p>
+<% end %>
+
+<%= link_to 'Show', :action => 'show', :id => @review_comment %> |
+<%= link_to 'Back', :action => 'index' %>

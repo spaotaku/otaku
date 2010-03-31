@@ -1,0 +1,48 @@
+<%= error_messages_for('review') %>
+
+  <p><%=h _('input or set where * items.')%></p>
+
+  <p><label for="shopitem_name"><%= h _('shopitem_name') %>*:</label>
+    <%= collection_select(:review, :shopitem_id, Shopitem.find(:all, :order => 'name_kana'), :id, :name, :include_blank => true)%>
+  </p>
+
+  <p><%= h _('if not, please regist new book, then back to here.') %> <%= link_to _('Regist book'), '/shopitem/new' %>
+  <p><label for="item_id"><%= h _('item_id') %>:　</label>
+    <%= hidden_field(:review, :item_id)%><%= @review.student.item.name %>
+  </p>
+
+  <p><label for="student_alias"><%= h _('student_alias') %>:　</label>
+    <%= hidden_field(:review, :student_id) %><%= @review.student.alias + ' ' + @review.student.l_name_initial + '.' %>
+  </p>
+  <p><%= h _('review_genre') %>
+  <%= text_field :review, :genre, :size => '70' %>
+  </p>
+  <p><%= h _('review_hiro') %>
+  <%= text_field :review, :hiro, :size => '30' %>
+  </p>
+  <p><%= h _('review_body') %>*</p>
+  <p>
+    <%= text_area :review, :body, :cols => '80', :rows => '20' %>
+  </p>
+  <p><label for="picture0_file"><%= h _('file') %></label>
+    <%= file_field :picture0, :file %>
+  <label for="picture0_title"><%= h _('picture_title') %></label>
+    <%= text_field :picture0, :title %></p>
+<!--
+  <p><label for="picture1_file"><%= h _('file') %></label>
+    <%= file_field :picture1, :file %>
+  <label for="picture1_title"><%= h _('picture_title') %></label>
+    <%= text_field :picture1, :title %></p>
+  <p><label for="picture2_file"><%= h _('file') %></label>
+    <%= file_field :picture2, :file %>
+  <label for="picture2_title"><%= h _('picture_title') %></label>
+    <%= text_field :picture2, :title %></p>
+  <p><label for="picture3_file"><%= h _('file') %></label>
+    <%= file_field :picture3, :file %>
+  <label for="picture3_title"><%= h _('picture_title') %></label>
+    <%= text_field :picture3, :title %></p>
+  <p><label for="picture4_file"><%= h _('file') %></label>
+    <%= file_field :picture4, :file %>
+  <label for="picture4_title"><%= h _('picture_title') %></label>
+    <%= text_field :picture4, :title %></p>
+-->

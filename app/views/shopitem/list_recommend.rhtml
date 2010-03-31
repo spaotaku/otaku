@@ -1,0 +1,47 @@
+<%= render :partial => 'list_recommend_menu' %>
+
+
+<h1><%=h _('List_Recommend') %></h1>
+<div class="shopitemlistpage">
+  <br/>
+<!-- <p align="right">備考:　( )内はレビュー件数　</p>-->
+<table align ="center">
+  <tr>
+    <th></th>
+<!--    <th></th> -->
+    <th></th>
+    <th></th>
+    <th></th>
+<!--    <th></th> -->
+    <th colspan="4"><%=h _('recommend for') %></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th><%=h _('book title') %></th>
+<!--    <th><%=h _('shop_item_author') %></th> -->
+    <th><%=h _('publisher_name') %></th>
+    <th><%=h _('genre') %></th>
+    <th><%=h _('theme') %></th>
+<!--    <th><%=h _('tag') %></th> -->
+    <th><%=h _('recommend_grade_flg_01') %></th>
+    <th><%=h _('recommend_grade_flg_02') %></th>
+    <th><%=h _('recommend_grade_flg_03') %></th>
+    <th><%=h _('recommend_grade_flg_04') %></th>
+    <th><%=h _('recommend_grade_flg_05') %></th>
+    <th><%=h _('recommend_grade_flg_06') %></th>
+    <th><%=h _('recommend_grade_flg_07') %></th>
+    <th><%=h _('recommend_grade_flg_08') %></th>
+    <th><%=h _('recommend_grade_flg_09') %></th>
+
+  </tr>
+  <%= render :partial => 'listitem_recommend', :collection => @shopitems,
+             :locals => {:size => ''} %>
+  </table>
+<div class="pagination_link">
+  <%=h _('display_record_1') %>:　<%= @shopitems.offset + 1 %>　<%=h _('display_record_2') %>　<%= @shopitems.size %>　<%=h _('display_record_3') %>
+  <%= will_paginate @shopitems, :previous_label => _("prev"), :next_label => _("next") %>
+  <br/><br/>
+</div>
+</div>

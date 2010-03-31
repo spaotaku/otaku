@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  item_id: 1
+  f_name: MyString
+  m_name: MyString
+  l_name: MyString
+  age: 1
+  memo: MyText
+
+two:
+  item_id: 1
+  f_name: MyString
+  m_name: MyString
+  l_name: MyString
+  age: 1
+  memo: MyText

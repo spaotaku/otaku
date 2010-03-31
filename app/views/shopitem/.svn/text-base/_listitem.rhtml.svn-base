@@ -1,0 +1,27 @@
+<div class='spotitem'>
+  <div class='date'
+    <p><%=h _('updated_at') %>:<%= listitem.created_at.strftime('%Y/%m/%d %H:%M') %></p>
+  </div>
+  <div class='shopitem'>
+    <h3>
+      <%= link_to _('view'), :action => 'show', :id => listitem.id %>
+      <%= h listitem.name %><span class='spacing'></span>
+      (<%= link_to _('shop_detail'), :action => 'show_shop',
+        :id => listitem.shop.id %>)
+
+    </h3>
+    <span class='content'>
+      <% listitem.pictures.each do |pic| %>
+ 	  <%= pic.title %>
+      <%= link_to(image_tag(url_for(:action => 'image', :id => pic.id), :size => size,
+        :class => 'immage'),
+        url_for(:action => 'image', :id => pic.id), :target => '_blank') %>
+      <% end %>
+      <div class='memo'>
+        <%= simple_format(sanitize(listitem.memo)) %>
+      </div>
+	  
+    </span>
+    <div class='num_val_1'><%= h _('num_val_1_name') %><%= h listitem.num_val_1 %><%= h _('num_val_1_unit') %></div>
+  </div>              
+</div>    

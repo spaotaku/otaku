@@ -1,0 +1,41 @@
+<p>
+  <b>Shopitem:</b>
+  <%=h @review.shopitem_id %>
+</p>
+<p>
+  <b>Shopitem:</b>
+  <%=h @review.shopitem.name %>
+  作者:<%=h @review.shopitem.author %>
+</p>
+
+<p>
+  <b>Item:</b>
+  <%=h @review.item_id %>
+  <%=h @review.item.name %>
+</p>
+
+<p>
+  <b>読者:</b>
+  <%=h @review.student_id %>
+  <%=h @review.student.l_name %>
+  <%=h @review.student.f_name %>
+  (<%=h @review.student.age %>才)
+</p>
+
+<% @review.pictures.each do |pic| %>
+  <%= pic.title %>
+    <%= link_to(image_tag(url_for(:action => 'image', :id => pic.id), :width => '300',
+      :class => 'image'),
+      url_for(:action => 'image', :id => pic.id), :target => '_blank') %>
+   <% end %>
+
+
+
+<p>
+  <b>Body:</b>
+  <%=h @review.body %>
+</p>
+
+
+<%= link_to 'Edit', :action => 'edit', :id => @review %> |
+<%= link_to 'Back', :action => 'index' %>

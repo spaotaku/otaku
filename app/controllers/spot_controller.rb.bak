@@ -1,0 +1,40 @@
+class SpotController < ApplicationController
+
+  def list
+    @spots = Spot.find(:all, :order => 'name')
+  end
+
+  verify :method => :post, :only => [ :create, :update  ],
+         :redirect_to => { :action => :list }
+
+  def new
+  end
+
+  def create
+    @spot = Spot.new(params[:spot])
+    if @spot.save
+      flash[:message] = _('new item successfully created')
+      redirect_to :action => :new
+    else
+      render :action => :new
+    end
+  end 
+
+  def show
+    @spot = Spot.find(params[:id])
+  end
+
+  def edit
+    @spot = Spot.find(params[:id])
+  end
+
+  def update
+    @spot = Spot.find(params[:id])
+    if @spot.update_attributes(params[:spot])
+      redirect_to :action => :show, :id => @spot
+    else
+      render :action => :edit
+    end
+  end
+
+end

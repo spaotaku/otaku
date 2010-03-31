@@ -1,0 +1,55 @@
+8
+
+dir
+78
+svn://192.168.0.7/bukken/public/my_admin
+svn://192.168.0.7
+
+
+
+2008-04-30T14:30:39.915110Z
+78
+murakami
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+956af1cf-7ece-484f-8e0a-ea02e7629058
+
+my_admin.css
+file
+
+
+
+
+2008-04-30T15:20:20.000000Z
+9010d8a359a8b1621fb4095ba43fd2c1
+2008-04-30T14:30:39.915110Z
+78
+murakami
+
+images
+dir
+
+my_admin.js
+file
+
+
+
+
+2008-04-30T15:20:20.000000Z
+92b6d57f16fc7e440a0400a3e84a8f86
+2008-04-30T14:30:39.915110Z
+78
+murakami
+

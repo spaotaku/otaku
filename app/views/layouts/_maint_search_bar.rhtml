@@ -1,0 +1,48 @@
+<% if @items or @item %>
+<% form_tag(:action => 'index', :controller => 'item' ) do %>
+<br/>
+  <%=h _('keyword for search')%>
+
+  <%=h _('bukken_name')%>:
+    <input size="18" name="keyword_name"           value="<%=h params[:keyword_name] %>"/>
+
+  <%=h _('address')%>:
+  <input name="keyword_address"           value="<%=h params[:keyword_address] %>"/>
+
+  　　　
+  <%= h _('syubetu') %>:
+    <% if params[:category] %>
+      <% current_category = params[:category] %>
+    <% else %>
+      <% current_category = 0 %>
+    <% end %>
+
+ <%= select_tag('category',
+     "<option value=0></option>" + options_from_collection_for_select( @categories, 'id', 'name' ,selected_value = params[:category].to_i )) %> 
+
+  
+　<%= submit_tag _('search') -%>
+<% end %>
+
+
+<% if params[:keyword_name] %>
+
+  <% form_tag(:action => 'index_by_map', :controller => 'item' ) do %>
+  <%= hidden_field_tag('keyword_name', params[:keyword_name] ) %> 
+  <%= hidden_field_tag('keyword_address', params[:keyword_address] ) %> 
+  <% if params[:category] %>
+    <% current_category = params[:category] %>
+  <% else %>
+    <% current_category = 0 %>
+  <% end %>
+
+  <%= hidden_field_tag('category', params[:category].to_i ) %> 
+  <%= hidden_field_tag('ensen', params[:ensen] ) %> 
+  <%= hidden_field_tag('keyword_kakaku', params[:keyword_kakaku] ) %> 
+  <%= hidden_field_tag('keyword_tinryou', params[:keyword_tinryou] ) %> 
+
+  <%= submit_tag _('show_map')%>
+  <% end %>
+<% end %>
+<% end %>
+<hr />

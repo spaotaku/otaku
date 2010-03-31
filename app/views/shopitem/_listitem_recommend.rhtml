@@ -1,0 +1,94 @@
+<tr>
+<% if listitem_recommend.name.length > 60 %>
+  <td><%= link_to sanitize(listitem_recommend.name[0,60]) + '. . .', :controller => 'shopitem', :action => 'show', :id => listitem_recommend.id %></td>
+<% else %>
+  <td><%= link_to sanitize(listitem_recommend.name), :controller => 'shopitem', :action => 'show', :id => listitem_recommend.id %></td>
+<% end %>
+<!--    <td>(<%= listitem_recommend.reviews.count %>)</td> -->
+<!--    <td><%= link_to listitem_recommend.author,   :action => 'list_by_author',   :controller => 'shopitem', :keyword => listitem_recommend.author %></td> -->
+      <% if session[:user] %>
+        <% if session[:user].level <= 5 %>
+       <td><%= link_to listitem_recommend.shop.name, :action => 'show_shop', :id => listitem_recommend.shop.id %></td>
+        <% end %>
+      <% end %>
+<!--      <% if listitem_recommend.publish_date %>
+       <td><%=h listitem_recommend.publish_date.strftime('%Y/%m/%d') %></td>
+      <% else %>
+        <td>-</td>
+      <% end %> -->
+      <% if listitem_recommend.genre != "" and listitem_recommend.genre != nil %>
+        <% if listitem_recommend.genre.length > 60 %>
+          <td><%= listitem_recommend.genre[0,60] + '. . .' %></td>
+        <% else %>
+          <td><%= listitem_recommend.genre %></td>
+        <% end %>
+      <% else %>
+        <td>-</td>
+      <% end %>
+      <% if listitem_recommend.theme != "" and listitem_recommend.theme != nil %>
+        <% if listitem_recommend.theme.length > 60 %>
+          <td><%= listitem_recommend.theme[0,60] + '. . .' %></td>
+        <% else %>
+          <td><%= listitem_recommend.theme %></td>
+        <% end %>
+      <% else %>
+        <td>-</td>
+      <% end %>
+<!--
+      <% if listitem_recommend.tag != "" and listitem_recommend.tag != nil %>
+        <% if listitem_recommend.tag.length > 60 %>
+          <td><%= listitem_recommend.tag[0,60] + '. . .' %></td>
+        <% else %>
+          <td><%= listitem_recommend.tag %></td>
+        <% end %>
+      <% else %>
+        <td>-</td>
+      <% end %>
+-->
+      <% if listitem_recommend.recommend_grade_flg_01 %>
+        <td>◎</td>
+      <% else %>
+        <td>-</td>
+      <% end %>
+      <% if listitem_recommend.recommend_grade_flg_02 %>
+        <td>◎</td>
+      <% else %>
+        <td>-</td>
+      <% end %>
+      <% if listitem_recommend.recommend_grade_flg_03 %>
+        <td>◎</td>
+      <% else %>
+        <td>-</td>
+      <% end %>
+      <% if listitem_recommend.recommend_grade_flg_04 %>
+        <td>◎</td>
+      <% else %>
+        <td>-</td>
+      <% end %>
+      <% if listitem_recommend.recommend_grade_flg_05 %>
+        <td>◎</td>
+      <% else %>
+        <td>-</td>
+      <% end %>
+      <% if listitem_recommend.recommend_grade_flg_06 %>
+        <td>◎</td>
+      <% else %>
+        <td>-</td>
+      <% end %>
+      <% if listitem_recommend.recommend_grade_flg_07 %>
+        <td>◎</td>
+      <% else %>
+        <td>-</td>
+      <% end %>
+      <% if listitem_recommend.recommend_grade_flg_08 %>
+        <td>◎</td>
+      <% else %>
+        <td>-</td>
+      <% end %>
+      <% if listitem_recommend.recommend_grade_flg_09 %>
+        <td>◎</td>
+      <% else %>
+        <td>-</td>
+      <% end %>
+</tr>
+   

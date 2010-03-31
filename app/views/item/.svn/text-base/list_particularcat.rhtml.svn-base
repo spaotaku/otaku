@@ -1,0 +1,25 @@
+<h1><%= h _('particularcat list ')%></h1>
+<hr />
+<table>
+  <tr>
+    <th><%= h _('particularcat name') %></th>
+  </tr>
+  
+<% for particularcat in @particularcats %>
+  <tr>
+  <td><%= h(particularcat.name) %></td>
+  <td><%= link_to(_('edit'), :action => 'edit_particularcat', :id => particularcat) %></td>
+  <td><%= link_to(_('destroy'), {:action => 'destroy_particularcat', :id => particularcat}, :confirm => 'Delete ?') %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to(_('previous page'), :page => @particularcat_pages.current.previous) if @particularcat_pages.current.previous %>
+<%= link_to(_('next page'), :page => @particularcat_pages.current.next) if @particularcat_pages.current.next %>
+
+<br />
+
+<%= link_to(_('add new particularcat'), :action => 'new_particularcat') %> |
+<%= link_to(_('back'), :action => 'list_particularcat') %>
+
+ 

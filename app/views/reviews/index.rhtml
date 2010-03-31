@@ -1,0 +1,50 @@
+<div class="reviewslistpage">
+  <br/>
+<%= render :partial => 'search' %>
+
+<h1><%=h _('Listing reviews') %></h1>
+
+<table align ="center">
+  <tr>
+    <th><%=h _('book title') %></th>
+    <th><%=h _('class name') %></th>
+    <th><%=h _('reviewer name') %></th>
+    <th><%=h _('review body') %></th>
+    <th><%=h _('nr_of_comments') %></th>
+    <th><%=h _('review status') %></th>
+  </tr>
+
+<% @reviews.each do |review| %>
+  <tr>
+    <td><%= link_to review.shopitem.name.first(20), :action => 'show', :controller => 'shopitem', :id => review.shopitem.id %></td>
+    <td><%=h review.item.name.first(20) %></td>
+    <td><%= link_to review.student.alias + ' ' + review.student.l_name_initial + '.', :action => 'show', :controller => 'student', :id => review.student.id %></td>
+    <td><%=h review.body.first(30) %></td>
+    <td>(<%= review.review_comment.count %>)</td>
+    <td><% if review.status %><%= @status_list[review.status] %><% end %></td>
+    <td><%= link_to _('Show'), :action => 'show', :id => review %></td>
+  <% if session[:user] %>
+    <% if session[:user].level == 0 %>
+        <td><%= link_to _('Edit'), :action => 'edit', :id => review %></td>
+        <td><%= link_to( _('destroy'), {:action => 'destroy', :id => review}, :confirm => _('Delete ?')) %></td>
+    <% elsif session[:user].level <= 3 %>
+      <% if session[:user].group.id == review.student.user.group.id %>
+        <td><%= link_to _('Edit'), :action => 'edit', :id => review %></td>
+        <td><%= link_to( _('destroy'), {:action => 'destroy', :id => review}, :confirm => _('Delete ?')) %></td>
+      <% end %>
+    <% else %>
+      <% if session[:user].id == review.student.user_id %>
+      <td><%= link_to _('Edit'), :action => 'edit_by_student', :id => review %></td>
+      <td><%= link_to( _('destroy'), {:action => 'destroy', :id => review}, :confirm => _('Delete ?')) %></td>
+      <% end %>
+    <% end %>
+  <% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= will_paginate @reviews, :previous_label => _("prev"), :next_label => _("next") %>
+
+</div>

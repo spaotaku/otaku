@@ -1,0 +1,46 @@
+  <p><label for="item_id"><%= h _('item_id') %></label>
+    <%= text_field :student, :item_id %>
+  </p>
+  <p><label for="f_name"><%= h _('f_name') %></label>
+    <%= text_field :student, :f_name %>
+  </p>
+  <p><label for="m_name"><%= h _('m_name') %></label>
+    <%= text_field :student, :m_name %>
+  </p>
+  <p><label for="l_name"><%= h _('l_name') %></label>
+    <%= text_field :student, :l_name %>
+  </p>
+
+  <label for="grade"><%= h 'grade' %>:</label>
+    <%=
+      options = [[ _('select grade'), ""]] + Student::GRADE
+      select(:student, :grade, options)
+    %>
+
+  <p><label for="age"><%= h _('age') %></label>
+    <%= text_field :student, :age %>
+  </p>
+  <p><label for="memo"><%= h _('memo') %></label>
+    <%= text_field :student, :memo %>
+  </p>
+  <p><label for="picture0_file"><%= h _('file') %></label>
+    <%= file_field :picture0, :file %>
+  <label for="picture0_title"><%= h _('picture_title') %></label>
+    <%= text_field :picture0, :title %></p>
+  <p><label for="picture1_file"><%= h _('file') %></label>
+    <%= file_field :picture1, :file %>
+  <label for="picture1_title"><%= h _('picture_title') %></label>
+    <%= text_field :picture1, :title %></p>
+  <p><label for="picture2_file"><%= h _('file') %></label>
+    <%= file_field :picture2, :file %>
+  <label for="picture2_title"><%= h _('picture_title') %></label>
+    <%= text_field :picture2, :title %></p>
+  <p><label for="picture3_file"><%= h _('file') %></label>
+    <%= file_field :picture3, :file %>
+  <label for="picture3_title"><%= h _('picture_title') %></label>
+    <%= text_field :picture3, :title %></p>
+  <p><label for="picture4_file"><%= h _('file') %></label>
+    <%= file_field :picture4, :file %>
+  <label for="picture4_title"><%= h _('picture_title') %></label>
+    <%= text_field :picture4, :title %></p>
+

@@ -1,0 +1,425 @@
+<div class='spotitem'>
+  <div class='date'>
+    <p><%=h _('updated_at') %>:<%= listitem.created_at.strftime('%Y/%m/%d %H:%M') %></p>
+  </div>
+  <div class='item'>
+    <h3>
+      <%= link_to listitem.name, :action => 'show', :id => listitem.id %>
+       < <%= h listitem.str_val_b %>-<%= h listitem.str_val_c %> > <span class='spacing'></span>
+<!--      (<%= link_to sanitize(listitem.spot.name), :action => 'show_spot',
+        :id => listitem.spot.id %>) -->
+      (<%= link_to listitem.spot.name, :action => 'show_spot',
+        :id => listitem.spot.id %>)
+    </h3>
+    <span class='content'>
+
+
+      <% if listitem.str_val_7 != '' %>
+        <p><%= listitem.str_val_7 %></p>
+      <% end %>
+
+      <% if listitem.str_val_6 %>
+
+        <table width="600px" align="center">
+
+        <tr><td><font size=2><%= simple_format(sanitize(listitem.str_val_6)) %></font></td></tr>
+   <!--     <tr><td><b><%=h _('by') %>:　</b> -->
+
+        </table>
+
+      <% end %>
+
+
+    <table align="center">
+      <tr>
+      <% listitem.pictures.each do |pic| %>
+        <td>
+        <%= link_to(image_tag(url_for(:action => 'image', :id => pic.id), :width => size,
+        :class => 'image'),
+        url_for(:action => 'image', :id => pic.id), :target => '_blank') %><br/>
+        <%= pic.title %>
+        </td>
+      <% end %>
+      </tr>
+    </table>
+
+        <hr />
+
+      <table align="center">
+        <tr>
+          <th><%=h _('titles') %></th>
+          <th><%= h _('shopitem_date_val_2') %></th>
+          <th></th>
+          <th><%= h _('shopitem_date_val_3') %></th>
+          <th>
+            <% if session[:user] and session[:user].level == 0 %>
+              <%= link_to _('create_shopitem_from_item'), :action => 'create_shopitem_from_item',  :controller => 'shopitem', :id => listitem.id %>
+            <% else %>
+              <%= link_to _('create_shopitem_from_item'), :action => 'create_shopitem_from_item',  :controller => 'shopitem', :id => listitem.id %>
+            <% end %>
+          </th>
+        </tr>
+      <% listitem.shopitems.each do |shopitem| %>
+        <tr>
+          <td>
+	<%= link_to(shopitem.name,
+        url_for(:action => 'show', :controller => 'shopitem', :id => shopitem.id)) %>
+        <%= shopitem.title %>
+          </td>
+          <td>
+      <% if shopitem.date_val_2 %>
+        <%= shopitem.date_val_2.strftime('%Y/%m/%d %a %H:%M') %>
+      <% end %>
+          </td>
+          <td>-</td>
+          <td>
+      <% if shopitem.date_val_3 %>
+        <%= shopitem.date_val_3.strftime('%H:%M') %>
+      <% end %>
+          </td>
+          <td>
+      <% if session[:user] and session[:user].level == 0 %>
+        <%= link_to _('replicate'), :action => 'replicate_shopitem', :controller => 'shopitem', :id => shopitem.id %>
+      <% end %>
+          </td>
+
+        </tr>
+      <% end %>
+
+      </table>
+        <hr />
+
+      
+
+
+
+
+      <b><%=h _('student') %>:</b><br/>
+
+
+    <table align="center">
+      <tr>
+      <% student_count = 0 %>
+      <% listitem.students.each do |student| %>
+        <% student_count += 1 %>
+        <td><span style="font-size:xx-small;"><%= link_to(student.alias + " " + student.l_name_initial + ".", url_for(:action => 'show', :controller => 'student', :id => student.id)) %></span></td>
+        <% pic_show = 0 %>
+      <% student.pictures.each do |pic| %>
+        <% pic_show = 1 %>
+        <td><%= link_to(image_tag(url_for(:action => 'image', :id => pic.id), :width => size,
+        :class => 'image'),
+        url_for(:action => 'show', :controller => 'student', :id => student.id)) %><br/>
+          <span style="font-size:xx-small;"><%= pic.title %></span></td>
+      <% end %>
+        <% if pic_show == 0 %>
+          <td></td>
+        <% end %>
+        <% if student_count == 4 or student_count == 8 %>
+          </tr><tr>
+        <% else %>
+         　
+        <% end %>
+      <% end %>
+      </tr>
+    </table>
+
+
+      <br/>
+      <hr />
+      <div id="item_list_reviews">
+      <b><%= h _('our_reviews') %>:</b>
+      <br/>
+      <table align ="center">
+      <tr>
+        <th><%=h _('yyyy/mm/dd') %></th>
+        <th><%=h _('book title') %></th>
+        <th><%=h _('reviewer name') %></th>
+      </tr>
+
+      <% listitem.reviews.each do |review| %>
+        <tr>
+        <% if review.status == 3 %>
+          <td><%=h review.shopitem.date_val_2.strftime('%Y/%m/%d') %></td>
+          <td><%= link_to review.shopitem.name, :controller => 'shopitem', :action => 'show', :id => review.shopitem.id %></td>
+          <td><%= link_to review.student.alias + ' ' + review.student.l_name_initial + '.', :controller => 'student', :action => 'show', :id => review.student.id %></td>
+          <td><%= link_to '<' + _('show_this_review') + '>', :controller => 'reviews', :action => 'show', :id => review.id %></td>
+          
+        <% end %>
+        </tr>
+      <% end %>
+      </table>
+      </div>
+      <hr />　
+      <div class='detail' >
+      <b><%=h _('category') %>:　</b><%= listitem.category.name %>
+
+      <% if listitem.num_val_h or
+            listitem.num_val_i or
+            listitem.num_val_q or
+            listitem.num_val_r or
+            listitem.str_val_7 != '' or
+            listitem.str_val_8 != '' or
+            listitem.str_val_9 != '' or
+            listitem.str_val_d != '' or
+            listitem.str_val_e != '' %><br/><% end %>
+      <% if listitem.num_val_h %>
+        <b><%= h _('item_num_val_h') %>:　</b><%= listitem.num_val_h %>
+      <% end %>
+      <% if listitem.num_val_i %>
+        <b><%= h _('item_num_val_i') %>:　</b><%= listitem.num_val_i %>
+      <% end %>
+      <% if listitem.num_val_q %>
+        <b><%= h _('item_num_val_q') %>:　</b><%= listitem.num_val_q %>
+      <% end %>
+      <% if listitem.num_val_r %>
+        <b><%= h _('item_num_val_r') %>:　</b><%= listitem.num_val_r %>
+      <% end %>
+      <% if listitem.str_val_d != '' and listitem.str_val_d != nil %>
+        <b><%= h _('item_str_val_d') %>:　</b><%= listitem.str_val_d %>
+      <% end %>
+      <% if listitem.str_val_8 != '' and listitem.str_val_8 != nil %>
+        <b><%= h _('item_str_val_8') %>:　</b><%= listitem.str_val_8 %>
+      <% end %>
+      <% if listitem.str_val_9 != '' and listitem.str_val_9 != nil %>
+        <b><%= h _('item_str_val_9') %>:　</b><%= listitem.str_val_9 %>
+      <% end %>
+      <% if listitem.str_val_e != '' and listitem.str_val_e != nil %>
+        <b><%= h _('item_str_val_e') %>:　</b><%= listitem.str_val_e %>
+      <% end %>
+
+      <% if listitem.num_val_j or listitem.num_val_k %><br/><% end %>
+      <% if listitem.num_val_j %>
+        <b><%= h _('item_num_val_j') %>:　</b><%= listitem.num_val_j %>
+      <% end %>
+      <% if listitem.num_val_k %>
+        <b><%= h _('item_num_val_k') %>:　</b><%= listitem.num_val_k %>
+      <% end %>
+
+      <% if listitem.num_val_l or listitem.num_val_m %><br/><% end %>
+      <% if listitem.num_val_l %>
+        <b><%= h _('item_num_val_l') %>:　</b><%= listitem.num_val_l %>
+      <% end %>
+      <% if listitem.num_val_m %>
+        <b><%= h _('item_num_val_m') %>:　</b><%= listitem.num_val_m %>
+      <% end %>
+
+      <% if listitem.str_val_1 != '' %><br/>
+        <b>　<%= h _('item_str_val_1') %>:　</b><%= listitem.str_val_1 %>
+      <% end %>
+
+      <% if listitem.num_val_p %><br/>
+        <b><%= h _('item_num_val_p') %>:　</b><%= listitem.num_val_p %>
+      <% end %>
+
+      <% if listitem.str_val_2 != '' and listitem.str_val_2 != nil %>
+        <b>　<%= h _('item_str_val_2') %>:　</b><%= listitem.str_val_2 %>
+      <% end %>
+
+
+      <% if listitem.num_val_1 or listitem.check_box_02 or listitem.num_val_2 or listitem.num_val_3 or listitem.num_val_4 or
+              listitem.num_val_5 or listitem.check_box_01 or listitem.num_val_6 or listitem.num_val_n or
+              listitem.num_val_c or listitem.num_val_d %><br/><% end %>
+      <% if listitem.num_val_1 %>
+        <b><%= h _('item_num_val_1') %>:　</b><%= @grade_list[listitem.num_val_1] %>
+      <% end %>
+
+      <% if listitem.check_box_02 %>
+        <%= h _('item_check_box_02') %>
+      <% end %>
+      <% if listitem.num_val_2 %>
+        | <%= h _('item_num_val_2') %>:<%= listitem.num_val_2 %>
+      <% end %>
+      <% if listitem.num_val_3 %>
+        | <%= h _('item_num_val_3') %>:<%= listitem.num_val_3 %>
+      <% end %>
+      <% if listitem.num_val_4 %>
+        | <%= h _('item_num_val_4') %>:<%= listitem.num_val_4 %>
+      <% end %>
+      <% if listitem.num_val_5 %>
+        | <%= h _('item_num_val_5') %>:<%= listitem.num_val_5 %>
+      <% end %>
+      <% if listitem.check_box_01 %>
+        |<%= h _('item_check_box_01') %>
+      <% end %>
+      <% if listitem.num_val_6 %>
+        | <%= h _('item_num_val_6') %>:<%= listitem.num_val_6 %>
+      <% end %>
+      <% if listitem.num_val_n %>
+        | <%= h _('item_num_val_n') %>:<%= listitem.num_val_n %>
+      <% end %>
+      <% if listitem.num_val_c %>
+        | <%= h _('item_num_val_c') %>:<%= listitem.num_val_c %>
+      <% end %>
+      <% if listitem.num_val_d %>
+        | <%= h _('item_num_val_d') %>:<%= listitem.num_val_d %>
+      <% end %>
+	  
+      <% if listitem.str_val_4 != '' or listitem.str_val_5 != '' or listitem.num_val_7 or listitem.num_val_8 or listitem.num_val_9 %><br/><% end %>
+      <% if listitem.str_val_4 != '' and listitem.str_val_4 != nil %>
+         <b><%= h _('item_str_val_4') %>:　</b><%= listitem.str_val_4 %>
+      <% end %>
+      <% if listitem.str_val_5 != '' and listitem.str_val_5 != nil %>
+        | <b><%= h _('item_str_val_5') %>:　</b><%= listitem.str_val_5 %>
+      <% end %>
+      <% if listitem.num_val_7 %>
+        | <b><%= h _('item_num_val_7') %>:　</b><%= listitem.num_val_7 %>
+      <% end %>
+      <% if listitem.num_val_8 %>
+        | <b><%= h _('item_num_val_8') %>:　</b><%= listitem.num_val_8 %>
+      <% end %>
+      <% if listitem.num_val_9 %>
+        | <b><%= h _('item_num_val_9') %>:　</b><%= listitem.num_val_9 %>
+      <% end %>
+   	  
+      <% if listitem.num_val_a or listitem.num_val_b %><br/><% end %>
+      <% if listitem.num_val_a %>
+         <b><%= h _('item_num_val_a') %>:　</b><%= listitem.num_val_a %>
+      <% end %>
+      <% if listitem.num_val_b %>
+        | <b><%= h _('item_num_val_b') %>:　</b><%= listitem.num_val_b %>
+      <% end %>
+	  
+      <% if listitem.structure_id or listitem.num_val_e or listitem.num_val_f or listitem.num_val_g or listitem.date_val_1 %><br/><% end %>
+      <% if listitem.structure_id %>
+      <%=h _('structure') %>:<%= listitem.structure.name %>
+      <% end %>
+      <% if listitem.num_val_e %>
+        | <b><%= h _('item_num_val_e') %>:　</b><%= listitem.num_val_e %>
+      <% end %>
+      <% if listitem.num_val_f %>
+        | <b><%= h _('item_num_val_f') %>:　</b><%= listitem.num_val_f %>
+      <% end %>
+      <% if listitem.num_val_g %>
+        | <b><%= h _('item_num_val_g') %>:　</b><%= listitem.num_val_g %>
+      <% end %>
+      
+
+      <% if listitem.date_val_1 %>
+        <br/> <b><%= h _('item_date_val_1') %>:　</b><%= listitem.date_val_1.strftime('%Y/%m/%d %a %H:%M') %>
+      <% end %>
+      <% if listitem.date_val_2 %>
+        <br/> <b><%= h _('item_date_val_2') %>:　</b><%= listitem.date_val_2.strftime('%Y/%m/%d %a %H:%M') %>
+      <% end %>
+      <% if listitem.date_val_3 %>
+        <br/> <b><%= h _('item_date_val_3') %>:　</b><%= listitem.date_val_3.strftime('%Y/%m/%d %a %H:%M') %>
+      <% end %>
+
+      <br/>
+
+      <% if listitem.check_box_00 %>
+         :<%= h _('item_check_box_00') %>
+      <% end %>
+      <% if listitem.str_val_a != '' and listitem.str_val_a != nil %>
+         :<%= h _('item_str_val_a') %>:<%= listitem.str_val_a %>
+      <% end %>
+
+      <% if listitem.str_val_3 != '' and listitem.str_val_3 != nil %><br/>
+        <b><%= h _('item_str_val_3') %>:　</b><%= listitem.str_val_3 %>
+      <% end %>
+
+
+      <% if listitem.str_val_f != ''  %><br/>
+        <b><%= h _('item_str_val_f') %>:　</b><a href="<%=h listitem.str_val_f %>" target="_blank"><%=h listitem.str_val_f %></a>
+      <% end %>
+
+      <% if listitem.str_val_g != ''  %><br/>
+        <b><%= h _('item_str_val_g') %>:　</b><a href="mailto:<%=h listitem.str_val_g %>"><%=h listitem.str_val_g %></a>
+      <% end %>
+
+      <% if listitem.str_val_h != ''  %><br/>
+        <b><%= h _('item_str_val_h') %>:　</b><%= listitem.str_val_h %>
+      <% end %>
+      <% if listitem.str_val_i != ''  %><br/>
+        <b><%= h _('item_str_val_i') %>:　</b><%= listitem.str_val_i %>
+      <% end %>
+      <% if listitem.str_val_j != ''  %><br/>
+        <b><%= h _('item_str_val_j') %>:　</b><%= listitem.str_val_j %>
+      <% end %>
+
+
+
+<% facilityname= Array.new %>
+<% facilitycatname = nil %>
+<% outflg = 0 %>
+<% titleoutflg = 0 %>
+<% for facility in @facilities %>
+
+  <% if facility.seq[1,1] == "0" %>
+    <% if outflg == 1 %>
+      <% if titleoutflg == 0 %><br/><%= h _('facility') %>:<% titleoutflg = 1 %><% end %>
+	  <br/><%= facilitycatname %>
+	  <%= facilityname.join(" ,") %>
+	  <% outflg = 0 %>
+	<% end %>   
+    <% facilitycatname = "【" + facility.facilitycat.name + "】:" %>
+	<% facilityname = [] %>
+  <% end %>
+  <% if listitem['facility_' + facility.seq[0,2]] %>
+    <% facilityname << facility.name %>
+    <% outflg = 1 %>
+  <% end %> 
+<% end %>
+    <% if outflg == 1 %>
+      <% if titleoutflg == 0 %><br/><%= h _('facility') %>:<% titleoutflg = 1 %><% end %>
+	  <br/><%= facilitycatname %>
+	  <%= facilityname.join(" ,") %>
+	  <% outflg = 0 %>
+	<% end %>   
+
+<% particularname= Array.new %>
+<% particularcatname = nil %>
+<% outflg = 0 %>
+<% titleoutflg = 0 %>
+<% for particular in @particulars %>
+
+  <% if particular.seq[1,1] == "0" %>
+    <% if outflg == 1 %>
+      <% if titleoutflg == 0 %><br/><%= h _('particular_note') %>:<% titleoutflg = 1 %><% end %>
+	  <br/><%= particularcatname %>
+	  <%= particularname.join(" ,") %>
+	  <% outflg = 0 %>
+	<% end %>   
+    <% particularcatname = "【" + particular.particularcat.name + "】:" %>
+	<% particularname = [] %>
+  <% end %>
+  <% if listitem['particular_note_' + particular.seq[0,2]] %>
+    <% particularname << particular.name %>
+    <% outflg = 1 %>
+  <% end %> 
+<% end %>
+    <% if outflg == 1 %>
+      <% if titleoutflg == 0 %><br/><%= h _('particular_note') %>:<% titleoutflg = 1 %><% end %>
+	  <br/><%= particularcatname %>
+	  <%= particularname.join(" ,") %>
+	  <% outflg = 0 %>
+	<% end %>   
+
+
+<table width="600px" align="center">
+
+        <tr><td><font size=1><%= simple_format(sanitize(listitem.memo)) %></font></td></tr>
+   <!--     <tr><td><b><%=h _('by') %>:　</b> -->
+
+</table>
+
+
+
+    <div class='link_map'>
+    <%= link_to _('Show_spot_map'), :action => 'show_spot_map', :id => listitem.spot_id %> |
+    <%= link_to _('Send_map_by_mail'), :action => 'send_spot_map_by_mail', :id => listitem.spot_id %>
+    </div>
+
+
+<br/>
+      <div class='link_shop'>
+	  <%=h _('shop:') %><%= link_to sanitize(listitem.shop.name), :controller => 'shopitem', :action => 'show_shop', :id => listitem.shop_id %>
+	  <% if listitem.num_val_o %><%=h _('item_num_val_o') %>:<%= @torihiki_taiyou[listitem.num_val_o] %><% end %>
+
+      </div>
+	  
+    </div>
+
+    </span>
+    <div class='num_val_1'><%= h _('num_val_1_name') %><%= h listitem.num_val_1 %><%= h _('num_val_1_unit') %></div>
+  </div>              
+</div>    

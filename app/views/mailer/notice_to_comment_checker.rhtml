@@ -1,0 +1,27 @@
+OTAKU生涯学習情報サイト　コメント文投稿通知サービス
+
+担当教師さま
+
+あなたのクラス・グループの生徒から、以下のコメント文が投稿(更新)されました。
+速やかに、確認したうえで公開処理をお願いします。
+
+＜紹介文情報＞
+グループ名:<%= @review_comment.review.item.name %>
+投稿者生徒名:<%= @review_comment.review.student.alias %><%= @review_comment.review.student.l_name_initial %>.
+本のタイトル:<%= @review_comment.review.shopitem.name %>
+
+＜コメント情報＞
+グループ名:<%= @review_comment.student.item.name %>
+投稿者生徒名: <%= @review_comment.student.l_name %><%= @review_comment.student.f_name %>
+コメント文id： <%= @review_comment.id %>
+コメント文:<%= @review_comment.content %>
+投稿日時:<%= @review_comment.updated_at %>
+
+コメント文は次のアドレス（URL）からご覧いただけます。(ログインが必要です)
+http://bookclub.spa.ath.cx/review_comments/edit_by_teachar/<%= @review_comment.id %>
+
+このメールは、レインボー・ブック・クラブのサイトから送信されたものです。
+心当たりのない方は、下記へご連絡く下さい。
+レインボー・ブック・クラブ
+mailto:info@spa.fsr.jp
+http://bookclub.spa.ath.cx

@@ -1,0 +1,10 @@
+<script src="http://maps.google.com/maps?file=api&v=2&key=<%= h GOOGLE_MAPS_API_KEY%>"
+    type="text/javascript"></script>
+
+<%= render :partial => 'flash' %>
+
+<% form_tag :action => 'create_shop_ind', :id => @shop.id do %>
+  <%= render :partial => 'shop_form' %>
+  <%= submit_tag _('Save') %>
+<% end %>
+

@@ -1,0 +1,36 @@
+xml.instruct!
+xml.Workbook 'xmlns'=>'urn:schemas-microsoft-com:office:spreadsheet',
+  'xmlns:ss'=>'urn:schemas-microsoft-com:office:spreadsheet' do
+  xml.Styles do
+    xml.Style 'ss:ID' => 1 do
+      xml.Font 'ss:Bold' => 1
+    end
+  end
+  xml.Worksheet 'ss:Name' => 'Sheet1' do
+    xml.Table do
+      4.times do
+        xml.Column 'ss:Width' => 100
+      end
+      xml.Row 'ss:StyleID' => 1 do
+          xml.Cell { xml.Data 'priority', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'seq', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'name', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'memo', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'facilitycat_id', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'facilitycat.name', 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data 'updated_on', 'ss:Type' => 'String'  }
+      end
+      @facilities.each do |facility|
+        xml.Row do
+          xml.Cell { xml.Data facility.priority, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data facility.seq, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data facility.name, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data facility.memo, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data facility.facilitycat_id, 'ss:Type' => 'Number'  }
+          xml.Cell { xml.Data facility.facilitycat.name, 'ss:Type' => 'String'  }
+          xml.Cell { xml.Data facility.updated_on.strftime('%Y/%m/%d'), 'ss:Type' => 'String' }
+        end
+      end
+    end
+  end
+end

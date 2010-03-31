@@ -1,0 +1,25 @@
+<h1><%= h _('group list') %></h1>
+<hr />
+<table>
+  <tr>
+    <th><%= h _('group name') %></th>
+    <th><%= h _('description') %></th>
+  </tr>
+  
+<% for group in @groups %>
+  <tr>
+  <td><%= h(group.name) %></td>
+  <td><%= h(group.description) %></td>
+  <td><%= link_to(_('group user'), :action => 'list_user', :id => group) %></td>
+  <td><%= link_to(_('edit'), :action => 'edit_group', :id => group) %></td>
+  <td><%= link_to(_('destroy'), {:action => 'destroy_group', :id => group}, :confirm => 'Delete ?') %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to(_('previous page'), :page => @group_pages.current.previous) if @group_pages.current.previous %>
+<%= link_to(_('next page'), :page => @group_pages.current.next) if @group_pages.current.next %>
+
+<br />
+
+<%= link_to(_('add new group'), :action => 'new_group') %>

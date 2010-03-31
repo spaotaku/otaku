@@ -1,0 +1,25 @@
+<h1><%= h _('category list ')%></h1>
+<hr />
+<table>
+  <tr>
+    <th><%= h _('category name') %></th>
+  </tr>
+  
+<% for category in @categories %>
+  <tr>
+  <td><%= h(category.name) %></td>
+  <td><%= link_to(_('edit'), :action => 'edit_category', :id => category) %></td>
+  <td><%= link_to(_('destroy'), {:action => 'destroy_category', :id => category}, :confirm => 'Delete ?') %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to(_('previous page'), :page => @category_pages.current.previous) if @category_pages.current.previous %>
+<%= link_to(_('next page'), :page => @category_pages.current.next) if @category_pages.current.next %>
+
+<br />
+
+<%= link_to(_('add new category'), :action => 'new_category') %> |
+<%= link_to(_('back'), :action => 'list_category') %>
+
+ 

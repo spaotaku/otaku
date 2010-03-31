@@ -1,0 +1,35 @@
+<div class="spotitem">
+<h1><%=h _('Inquiry') %></h1>
+</div>
+<div class="sumlist">
+
+<% form_tag :action => 'send_mail_form1' do %>
+
+<%= error_messages_for :message %>
+<p><%=h _('input or set where * items.')%></p>
+<!--[form:message]-->
+
+<label for="message_title"><%=h _('Title :') %>*</label>
+<%= text_field 'mail_form1', 'subject'  %><br/><br/>
+
+<label for="message_body"><%=h _('Inquiry :') %>*</label><br/>
+<%= text_area 'mail_form1', 'inquiry', :cols => 76, :rows =>15  %><br/><br/>
+
+<table align="center">
+  <tr>
+    <td><label for="message_org_name"><%=h _('Org name :') %>*</label></td>
+    <td><%= text_field 'mail_form1', 'org_name'  %></td>
+  </tr>
+  <tr>
+    <td><label for="note_org_e_mail"><%=h _('Org e mail :') %>*</label></td>
+    <td><%= text_field 'mail_form1', 'org_e_mail'  %></td>
+  </tr>
+</table>
+<br/>
+<!--[eoform:message]-->
+
+  <%= submit_tag _('Send') %>
+<% end %>
+
+<%= link_to _('Back'), :action => 'list' %>
+</div>

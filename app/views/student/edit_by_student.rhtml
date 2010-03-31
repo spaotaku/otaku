@@ -1,0 +1,19 @@
+<h1><%= h _('Editing student') %></h1>
+
+<% form_tag({:action => 'update_by_student', :id => @student.id}, :multipart => true) do %>
+
+  <%= render :partial => 'form_by_student' %>
+
+  <p><%= h _('Delete') %></p>
+  <% @student.pictures.each do |pic| %>
+    <%= check_box :pic, pic.id, :onclick => "new Effect.Pulsate($(pic#{pic.id}));" %>
+    <%= image_tag(url_for(:action => :image, :id => pic.id), :width => '150',
+                  :id => "pic#{pic.id}") %>
+  <% end %>
+  </p>
+
+  <%= submit_tag _('update') %>
+<% end %>
+
+<%= link_to _('Show'), :action => 'show', :id => @student %> |
+<%= link_to _('Back'), :action => 'index' %>

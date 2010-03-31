@@ -1,0 +1,24 @@
+<h1><%= h _('structure list ') %></h1>
+<hr />
+<table>
+  <tr>
+    <th><%= h _('structure name') %></th>
+  </tr>
+  
+<% for structure in @structures %>
+  <tr>
+  <td><%= h(structure.name) %></td>
+  <td><%= link_to( _('edit'), :action => 'edit_structure', :id => structure) %></td>
+  <td><%= link_to( _('destroy'), {:action => 'destroy_structure', :id => structure}, :confirm => _('Delete ?')) %></td>
+  </tr>
+<% end %>
+</table>
+
+<div class="pagination_link">
+  <%= will_paginate @structures, :prev_label => _('prev'), :next_label => _('next') %>
+</div>
+
+<br />
+
+<%= link_to( _('add new structure'), :action => 'new_structure') %> |
+<%= link_to( _('back'), :action => 'list_structure') %>

@@ -1,0 +1,99 @@
+
+ <% if session[:user] %>
+   <%  if session[:user].level == 3 or session[:user].level == 0 %>
+     
+       <%  if session[:user].level == 0 %>
+         <br/><%= _('Maint_item') %>:
+         <%= link_to _('New'), :action => 'new', :controller => 'item' %>
+       <% end %>
+      <% if session[:user] && @item %>
+       | <%= link_to _('Edit'), :action => 'edit', :controller => 'item', :id => @item.id %>
+       | <%= link_to _('Delete'), :action => 'remove', :controller => 'item', :id => @item.id %>
+     <% end %>
+   <% end %>
+ <% end %>
+
+ <% if session[:user] && @spot %>
+   <br/><%= _('Maint_spot') %>:
+     <%= link_to _('List'), :action => 'list_spot', :controller => 'item', :id => @spot.id %>
+    | <%= link_to _('Show'), :action => 'show_spot', :controller => 'item', :id => @spot.id %>
+   <% if session[:user].level <= 3 %>
+    | <%= link_to _('Edit'), :action => 'edit_spot', :controller => 'item', :id => @spot.id %>
+   <% end %>
+   <% if session[:user].level == 0 %>
+    | <%= link_to _('Delete'), :action => 'delete_spot', :controller => 'item', :id => @spot.id %>
+   <% end %>
+ <% end %>
+ 
+  <% if session[:user] %>
+    <% if session[:user].level == 0 %>
+
+        <br/><%=h _('Maint_user') %>
+        : <%= link_to _('User Admin'), '/account/list_group'%>
+        <br/><%= link_to _('Category Maint'), '/item/list_category'%>
+         |<%= link_to _('Structure Maint'), '/item/list_structure'%>
+        <br/><%=h _('Maint_shop') %>
+          : <%= link_to _('List'), :action => 'list_shop', :controller => 'shopitem' %>
+          | <%= link_to _('New'), :action => 'new_shop_ind', :controller => 'shopitem' %>
+        <% if session[:user] && @shop %>
+          | <%= link_to _('Show'), :action => 'show_shop', :controller => 'shopitem', :id => @shop.id %>
+          | <%= link_to _('Edit'), :action => 'edit_shop', :controller => 'shopitem', :id => @shop.id %>
+          | <%= link_to _('Delete'), :action => 'delete_shop', :controller => 'shopitem', :id => @shop.id %>
+        <% end %>
+
+    <% end %>
+
+    <% if session[:user].level == 2 %>
+
+        <br/><%=h _('Maint_user') %>
+          : <%= link_to _('User Admin'), '/account/list_group_by_l2'%>
+        <br/><%=h _('Maint_shop') %>
+          : <%= link_to _('List'), :action => 'list_shop', :controller => 'shopitem' %>
+        <% if session[:user] && @shop %>
+          | <%= link_to _('Show'), :action => 'show_shop', :controller => 'shopitem', :id => @shop.id %>
+          | <%= link_to _('Edit'), :action => 'edit_shop', :controller => 'shopitem', :id => @shop.id %>
+          | <%= link_to _('Delete'), :action => 'delete_shop', :controller => 'shopitem', :id => @shop.id %>
+        <% end %>
+    <% end %>
+
+    <% if session[:user].level == 3 %>
+         
+        <br/><%=h _('Maint_user') %>
+          : <%= link_to _('User Admin'), '/account/list_group_by_l3'%>
+        <br/><%=h _('Maint_shop') %>
+          : <%= link_to _('List'), :action => 'list_shop', :controller => 'shopitem' %>
+        <% if session[:user] && @shop %>
+          | <%= link_to _('Show'), :action => 'show_shop', :controller => 'shopitem', :id => @shop.id %>
+          | <%= link_to _('Edit'), :action => 'edit_shop', :controller => 'shopitem', :id => @shop.id %>
+          | <%= link_to _('Delete'), :action => 'delete_shop', :controller => 'shopitem', :id => @shop.id %>
+        <% end %>
+
+    <% end %>
+
+    <% if session[:user].level == 5 %>
+
+    <% end %>
+
+    <%= render :partial => '/layouts/maint_shopitem' %>
+    <%= render :partial => '/layouts/maint_review' %>
+
+    <% if session[:user].level == 0 %>
+
+        <br/><%= link_to _('items.xml'), '/item/xml_export_item'%>
+		|<%= link_to _('spots.xml'), '/item/xml_export_spot'%>
+		|<%= link_to _('categories.xml'), '/item/xml_export_category'%>
+                |<%= link_to _('shopitems.xml'), '/shopitem/xml_export_shopitem'%>
+		|<%= link_to _('shops.xml'), '/shopitem/xml_export_shop'%>
+
+    <% end %>
+
+
+<!--    | <%= link_to _('Login'), '/account/login'%>
+    | <%= link_to _('New_User_Signup'), '/account/signup_user' %> -->
+    
+  <% else %>
+    <%= render :partial => '/layouts/maint_shop' %>
+    <%= render :partial => '/layouts/maint_item' %>
+    <%= render :partial => '/layouts/maint_shopitem' %>
+  <% end %>
+    <br/><hr/>

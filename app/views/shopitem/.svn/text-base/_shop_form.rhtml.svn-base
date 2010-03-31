@@ -1,0 +1,134 @@
+<div class="spot_form">
+  <%= error_messages_for :shop %>
+  <%= hidden_field :shop, :id %>
+
+  <%= hidden_field :shop, :longitude %>
+  <%= hidden_field :shop, :latitude %>
+
+  <label for="shop_name"><%= h _('shop_name') %>:</label><br/>
+  <%= text_field :shop, :name, :size => 70 %><br/>
+
+<!--
+  <label for="spot_longitude"><%= h _('spot_longitude:') %></label>
+  <%= text_field :spot, :longitude %>
+  <label for="spot_latitude"><%= h _('spot_latitude:') %></label>
+  <%= text_field :spot, :latitude %><br/>
+-->  
+
+ <label for="shop_zip"><%= h _('zip_code') %>:<%= h _('zip_code_input_note_1') %></label><br/>
+ <%= text_field :shop, :zip, :size => 9 %><br/>
+ <%= observe_field 'shop_zip', :frequency => 0.25, :url => { :action => 'zip' }, :with => "'zip='+escape(value)"  %>
+
+<!--<p><label for="spot_prefecture"><%= h _('prefecture:') %></label><br/>
+<%= text_field :spot, :prefecture, :size => 9 %></p>
+
+<p><label for="spot_address1"><%= h _('address1:') %></label><br/>
+<%= text_field :spot, :address1 %></p>
+
+<p><label for="spot_address2"><%= h _('address2:') %></label><br/>
+<%= text_field :spot, :address2 %></p>
+-->
+
+  <label for="shop_address"><%= h _('address') %>:<%= h _('address_input_note_1') %></label><br/>
+    <span id='geocoding_form'>
+
+      <%= text_field :shop, :address, :size => 70 %><br/>
+
+  <label for="shop_building"><%= h _('building') %>:</label><br/>
+      <%= text_field :shop, :building, :size => 70 %><br/>
+
+      <%= h _('select_address_or_station') %>:<%= h _('select_address_or_station_note_1') %><br/>
+      <%= select_tag 'series',
+        _('<option SELECTED></option><option value="ADDRESS">address</option><option value="STATION">station</optione>') %>
+
+      <span id='geo_query' style='display: none'>
+        <%= observe_field 'series', {:update => 'query_result', :on => 'changed',
+          :url => {:action => 'geocoding'}, :submit => 'geocoding_form',
+          :condition => "$F('shop_address').length > 0 && $F('series').length > 0",
+          :before => "$('geocoding_form').show_query()",
+          :complete => '$("geocoding_form").display_map()'} %>
+
+        <span id="query_result"></span>
+
+        <%= h _('map_address') %>:<%= text_field :shop, :address_wk1 %>
+
+        <div id="mapa" style="margin: 1em 5% 1em 5%; width: 90%; height: 400px"></div>
+
+      </span>
+
+      <script type="text/javascript"  id="aaa">
+        $('geocoding_form').show_query = function() {
+          $('geo_query').style.display = 'inline';
+        }
+
+        $('geocoding_form').display_map = function() {
+          a = $F('candidates').split('?');
+          longitude = a[0];
+          latitude = a[1];
+          $('shop_address_wk1').value = a[2];
+          level = 0;
+          if (a[3].indexOf(':') < 0) {
+            level = 17 - (7 - parseInt(a[3]));
+          }
+          var point = new GLatLng(latitude, longitude);
+          $('geocoding_form').set_geometry(longitude, latitude);
+
+          var map = new GMap2($('mapa'));
+          map.setCenter(point, level);
+          map.addControl(new GLargeMapControl());
+          map.addControl(new GScaleControl());
+          map.addControl(new GMapTypeControl());
+          var marker = new GMarker(point);
+          map.addOverlay(marker);
+          GEvent.addListener(map, 'click', function(overlay, point) {
+            if (overlay == null) {
+              map.removeOverlay(marker);
+              marker = new GMarker(point);
+              map.addOverlay(marker);
+              map.panTo(point);
+              $('geocoding_form').set_geometry(point.x, point.y);
+            }
+          });
+        }
+
+        $('geocoding_form').set_geometry = function(longitude, latitude) {
+          $('shop_longitude').value = longitude;
+          $('shop_latitude').value = latitude;
+        }
+      </script>
+    </span>
+  <br/>
+
+
+
+  <label for="shop_homepage"><%= h _('homepage') %>:</label><br/>
+  <%= text_field :shop, :homepage %><br/>
+
+  <label for="shop_image_url"><%= h _('image_url') %>:</label><br/>
+  <%= text_field :shop, :image_url %><br/>
+
+  <label for="shop_phone"><%= h _('phone') %>:</label><br/>
+  <%= text_field :shop, :phone %><br/>
+
+  <label for="shop_fax"><%= h _('fax') %>:</label><br/>
+  <%= text_field :shop, :fax %><br/>
+
+  <label for="shop_email_1"><%= h _('email_1') %>:</label><br/>
+  <%= text_field :shop, :email_1 %><br/>
+
+  <label for="shop_text1"><%= h _('licence') %>:</label><br/>
+  <%= text_field :shop, :text1 %><br/>
+
+  <label for="shop_email_1"><%= h _('business_hours') %>:</label><br/>
+  <%= text_field :shop, :text2 %><br/>
+
+  <label for="shop_memo"><%= h _('memo') %>:</label><br/>
+  <%= text_area :shop, :memo, :cols => 50, :rows =>3 %><br/>
+
+  <label for="shop_publish_level"><%= h _('publish_level') %>:</label>
+<%=
+  options = [[ _("select publish_level"), ""]] + Shop::PUBLISH_LEVELS
+  select(:shop, :publish_level, options)
+%>
+  
+</div>

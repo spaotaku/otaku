@@ -1,0 +1,22 @@
+<div class="memo">
+  <br/>
+    <h3><%=h _('Welcome') %></h3>
+
+    <p><%=h _('You are now logged into the system...') %></p>
+    <% if @user.student %>
+      <p><%=h _('welcom') %>:<%= @user.student.l_name %><%= @user.student.f_name %><%= _('san') %></p>
+    <% else %>
+      <p><%=h _('welcom') %>:<%= @user.name %> </p>
+      <p><%=h _('no student info, please input student info.') %>
+      <%= link_to _('Regist_student'), '/student/edit_by_student'%></p>
+    <% end %>
+<!--    <p>
+    Since you are here it's safe to assume the application never called store_location, otherwise
+    you would have been redirected somewhere else after a successful login.
+    </p>
+-->
+<!-- <p><%= link_to "&#171; list", :controller => "item", :action => 'list' %></p> -->
+    <p><%= link_to "&#171; logout", :action=>"logout"%></p>
+    
+      
+</div>

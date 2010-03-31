@@ -1,0 +1,25 @@
+<div title="<%= title_helper %>" class="form">
+  <h3><%= h _('Please Login') %></h3>
+
+  <% for name in [:notice, :warning, :message] %>
+    <% if flash[name] %>
+      <div id="<%= h "#{name}" %>" class="flash"><%= h "#{flash[name]}" %></div>
+    <% end %>
+  <% end %>
+
+  <div class="form-padding">
+    <%= start_form_tag :action => 'login'  %>
+      <table>
+        <%= form_input :text_field, _("Login ID"), "login", :size => 30 %><br/>
+        <%= form_input :password_field, _("Password"), "password", :size => 30 %><br/>
+      </table>
+
+      <div class="button-bar">
+        <%= submit_tag _('Login') %>
+        <% if request.remote_ip == '127.0.0.1' %>
+          | <%= link_to _('Register for an account'), :action => 'signup' %>
+        <% end %>
+      </div>
+    <%= end_form_tag %>
+  </div>
+</div>

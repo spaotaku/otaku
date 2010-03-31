@@ -1,0 +1,269 @@
+<div class='spotitem'>
+  <div class='date'>
+    <p><%=h _('updated_at') %>:<%= listitem.created_at.strftime('%Y/%m/%d %H:%M') %></p>
+  </div>
+  <div class='item'>
+    <h3>
+      <%= link_to _('view'), :action => 'show', :id => listitem.id %>
+      <%= h listitem.name %> < <%= h listitem.str_val_b %>-<%= h listitem.str_val_c %> > <span class='spacing'></span>
+<!--      (<%= link_to sanitize(listitem.spot.name), :action => 'show_spot',
+        :id => listitem.spot.id %>) -->
+      (<%= link_to _('spot_detail'), :action => 'show_spot',
+        :id => listitem.spot.id %>)
+    </h3>
+    <span class='content'>
+
+      <% if listitem.str_val_6 %>
+        <%= h _('item_str_val_6') %>:<%= listitem.str_val_6 %><br/>
+      <% end %>
+
+      <% listitem.pictures.each do |pic| %>
+	  <%= pic.title %>
+      <%= link_to(image_tag(url_for(:action => 'image', :id => pic.id), :size => size,
+        :class => 'image'),
+        url_for(:action => 'image', :id => pic.id), :target => '_blank') %>
+
+      <% end %>
+
+      <div class='detail' >
+      <%=h _('category') %>:<%= listitem.category.name %>
+
+      <% if listitem.num_val_h or
+            listitem.num_val_i or
+            listitem.num_val_q or
+            listitem.num_val_r or
+            listitem.str_val_7 != '' or
+            listitem.str_val_8 != '' or
+            listitem.str_val_9 != '' or
+            listitem.str_val_d != '' or
+            listitem.str_val_e != '' %><br/><% end %>
+      <% if listitem.num_val_h %>
+        <%= h _('item_num_val_h') %>:<%= listitem.num_val_h %>
+      <% end %>
+      <% if listitem.num_val_i %>
+        <%= h _('item_num_val_i') %>:<%= listitem.num_val_i %>
+      <% end %>
+      <% if listitem.num_val_q %>
+        <%= h _('item_num_val_q') %>:<%= listitem.num_val_q %>
+      <% end %>
+      <% if listitem.num_val_r %>
+        <%= h _('item_num_val_r') %>:<%= listitem.num_val_r %>
+      <% end %>
+      <% if listitem.str_val_d != '' %>
+        <%= h _('item_str_val_d') %>:<%= listitem.str_val_d %>
+      <% end %>
+      <% if listitem.str_val_8 != '' %>
+        <%= h _('item_str_val_8') %>:<%= listitem.str_val_8 %>
+      <% end %>
+      <% if listitem.str_val_9 != '' %>
+        <%= h _('item_str_val_9') %>:<%= listitem.str_val_9 %>
+      <% end %>
+      <% if listitem.str_val_e != '' %>
+        <%= h _('item_str_val_e') %>:<%= listitem.str_val_e %>
+      <% end %>
+      <% if listitem.str_val_7 != '' %>
+        <%= h _('item_str_val_7') %>:<%= listitem.str_val_7 %>
+      <% end %>
+
+      <% if listitem.num_val_j or listitem.num_val_k %><br/><% end %>
+      <% if listitem.num_val_j %>
+        <%= h _('item_num_val_j') %>:<%= listitem.num_val_j %>
+      <% end %>
+      <% if listitem.num_val_k %>
+        <%= h _('item_num_val_k') %>:<%= listitem.num_val_k %>
+      <% end %>
+
+      <% if listitem.num_val_l or listitem.num_val_m %><br/><% end %>
+      <% if listitem.num_val_l %>
+        <%= h _('item_num_val_l') %>:<%= listitem.num_val_l %>
+      <% end %>
+      <% if listitem.num_val_m %>
+        <%= h _('item_num_val_m') %>:<%= listitem.num_val_m %>
+      <% end %>
+
+      <% if listitem.str_val_1 != '' %><br/>
+        <%= h _('item_str_val_1') %>:<%= listitem.str_val_1 %>
+      <% end %>
+
+      <% if listitem.num_val_p %><br/>
+        <%= h _('item_num_val_p') %>:<%= listitem.num_val_p %>
+      <% end %>
+
+      <% if listitem.num_val_1 or listitem.check_box_02 or listitem.num_val_2 or listitem.num_val_3 or listitem.num_val_4 or
+              listitem.num_val_5 or listitem.check_box_01 or listitem.num_val_6 or listitem.num_val_n or
+              listitem.num_val_c or listitem.num_val_d %><br/><% end %>
+      <% if listitem.num_val_1 %>
+        <%= h _('item_num_val_1') %>:<%= listitem.num_val_1 %>
+      <% end %>
+      <% if listitem.check_box_02 %>
+        <%= h _('item_check_box_02') %>
+      <% end %>
+      <% if listitem.num_val_2 %>
+        | <%= h _('item_num_val_2') %>:<%= listitem.num_val_2 %>
+      <% end %>
+      <% if listitem.num_val_3 %>
+        | <%= h _('item_num_val_3') %>:<%= listitem.num_val_3 %>
+      <% end %>
+      <% if listitem.num_val_4 %>
+        | <%= h _('item_num_val_4') %>:<%= listitem.num_val_4 %>
+      <% end %>
+      <% if listitem.num_val_5 %>
+        | <%= h _('item_num_val_5') %>:<%= listitem.num_val_5 %>
+      <% end %>
+      <% if listitem.check_box_01 %>
+        |<%= h _('item_check_box_01') %>
+      <% end %>
+      <% if listitem.num_val_6 %>
+        | <%= h _('item_num_val_6') %>:<%= listitem.num_val_6 %>
+      <% end %>
+      <% if listitem.num_val_n %>
+        | <%= h _('item_num_val_n') %>:<%= listitem.num_val_n %>
+      <% end %>
+      <% if listitem.num_val_c %>
+        | <%= h _('item_num_val_c') %>:<%= listitem.num_val_c %>
+      <% end %>
+      <% if listitem.num_val_d %>
+        | <%= h _('item_num_val_d') %>:<%= listitem.num_val_d %>
+      <% end %>
+	  
+      <% if listitem.str_val_4 != '' or listitem.str_val_5 != '' or listitem.num_val_7 or listitem.num_val_8 or listitem.num_val_9 %><br/><% end %>
+      <% if listitem.str_val_4 != '' %>
+         <%= h _('item_str_val_4') %>:<%= listitem.str_val_4 %>
+      <% end %>
+      <% if listitem.str_val_5 != '' %>
+        | <%= h _('item_str_val_5') %>:<%= listitem.str_val_5 %>
+      <% end %>
+      <% if listitem.num_val_7 %>
+        | <%= h _('item_num_val_7') %>:<%= listitem.num_val_7 %>
+      <% end %>
+      <% if listitem.num_val_8 %>
+        | <%= h _('item_num_val_8') %>:<%= listitem.num_val_8 %>
+      <% end %>
+      <% if listitem.num_val_9 %>
+        | <%= h _('item_num_val_9') %>:<%= listitem.num_val_9 %>
+      <% end %>
+   	  
+      <% if listitem.num_val_a or listitem.num_val_b %><br/><% end %>
+      <% if listitem.num_val_a %>
+         <%= h _('item_num_val_a') %>:<%= listitem.num_val_a %>
+      <% end %>
+      <% if listitem.num_val_b %>
+        | <%= h _('item_num_val_b') %>:<%= listitem.num_val_b %>
+      <% end %>
+	  
+      <% if listitem.structure_id or listitem.num_val_e or listitem.num_val_f or listitem.num_val_g or listitem.date_val_1 %><br/><% end %>
+      <% if listitem.structure_id %>
+      <%=h _('structure') %>:<%= listitem.structure.name %>
+      <% end %>
+      <% if listitem.num_val_e %>
+        | <%= h _('item_num_val_e') %>:<%= listitem.num_val_e %>
+      <% end %>
+      <% if listitem.num_val_f %>
+        | <%= h _('item_num_val_f') %>:<%= listitem.num_val_f %>
+      <% end %>
+      <% if listitem.num_val_g %>
+        | <%= h _('item_num_val_g') %>:<%= listitem.num_val_g %>
+      <% end %>
+      <% if listitem.date_val_1 %>
+        | <%= h _('item_date_val_1') %>:<%= listitem.date_val_1.strftime('%Y/%m/%d') %>
+      <% end %>
+
+      <% if listitem.date_val_2 or 
+            listitem.check_box_00 or
+           ( listitem.str_val_a != '' and
+             listitem.str_val_a != nil )%><br/><%=h _('nyukyo_jiki') %><% end %>
+      <% if listitem.date_val_2 %>
+         :<%= h _('item_date_val_2') %>:<%= listitem.date_val_2.strftime('%Y/%m/%d') %>
+      <% end %>
+      <% if listitem.check_box_00 %>
+         :<%= h _('item_check_box_00') %>
+      <% end %>
+      <% if listitem.str_val_a != '' and listitem.str_val_a != nil %>
+         :<%= h _('item_str_val_a') %>:<%= listitem.str_val_a %>
+      <% end %>
+
+      <% if listitem.str_val_3 != ''  %><br/>
+        <%= h _('item_str_val_3') %>:<%= listitem.str_val_3 %>
+      <% end %>
+
+<% facilityname= Array.new %>
+<% facilitycatname = nil %>
+<% outflg = 0 %>
+<% titleoutflg = 0 %>
+<% for facility in @facilities %>
+
+  <% if facility.seq[1,1] == "0" %>
+    <% if outflg == 1 %>
+      <% if titleoutflg == 0 %><br/><%= h _('facility')%>:<% titleoutflg = 1 %><% end %>   	
+	  <br/><%= facilitycatname %>
+	  <%= facilityname.join(" ,") %>
+	  <% outflg = 0 %>
+	<% end %>   
+    <% facilitycatname = "【" + facility.facilitycat.name + "】:" %>
+	<% facilityname = [] %>
+  <% end %>
+  <% if listitem['facility_' + facility.seq[0,2]] %>
+    <% facilityname << facility.name %>
+    <% outflg = 1 %>
+  <% end %> 
+<% end %>
+    <% if outflg == 1 %>
+      <% if titleoutflg == 0 %><br/><%= h _('facility')%>:<% titleoutflg = 1 %><% end %>   	
+	  <br/><%= facilitycatname %>
+	  <%= facilityname.join(" ,") %>
+	  <% outflg = 0 %>
+	<% end %>   
+
+<% particularname= Array.new %>
+<% particularcatname = nil %>
+<% outflg = 0 %>
+<% titleoutflg = 0 %>
+<% for particular in @particulars %>
+
+  <% if particular.seq[1,1] == "0" %>
+    <% if outflg == 1 %>
+      <% if titleoutflg == 0 %><br/><%= h _('particular_note')%>:<% titleoutflg = 1 %><% end %>   	
+	  <br/><%= particularcatname %>
+	  <%= particularname.join(" ,") %>
+	  <% outflg = 0 %>
+	<% end %>   
+    <% particularcatname = "【" + particular.particularcat.name + "】:" %>
+	<% particularname = [] %>
+  <% end %>
+  <% if listitem['particular_note_' + particular.seq[0,2]] %>
+    <% particularname << particular.name %>
+    <% outflg = 1 %>
+  <% end %> 
+<% end %>
+    <% if outflg == 1 %>
+      <% if titleoutflg == 0 %><br/><%= h _('particular_note')%>:<% titleoutflg = 1 %><% end %>   	
+	  <br/><%= particularcatname %>
+	  <%= particularname.join(" ,") %>
+	  <% outflg = 0 %>
+	<% end %>   
+
+<br/>
+      <div class='memo'>
+        <%= simple_format(sanitize(listitem.memo)) %>
+      </div>
+  
+    <div class='link_map'>
+    <%= link_to _('Show_spot_map'), :action => 'show_spot_map', :id => listitem.spot_id %> |
+    <%= link_to _('Send_map_by_mail'), :action => 'send_spot_map_by_mail', :id => listitem.spot_id %>
+    </div>
+
+
+<br/>
+      <div class='link_shop'>
+	  <%=h _('shop:') %><%= link_to sanitize(listitem.shop.name), :controller => 'shopitem', :action => 'show_shop',
+        :id => listitem.shop_id %>	
+	  <% if listitem.num_val_o %><%=h _('item_num_val_o') %>:<%= @torihiki_taiyou[listitem.num_val_o] %><% end %>
+
+      </div>
+	  
+    </div>
+
+    </span>
+    <div class='num_val_1'><%= h _('num_val_1_name') %><%= h listitem.num_val_1 %><%= h _('num_val_1_unit') %></div>
+  </div>              
+</div>    

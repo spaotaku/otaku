@@ -1,0 +1,18 @@
+<div class="menu">
+ <%= link_to _('New'), :action => 'new' %>
+</div>
+
+<%= render :partial => 'flash' %>
+
+<table>
+  <tr><th class="name"><%= h 'name' %></th>
+      <th class="address"><%= h 'address' %></th>
+      <th class="phone"><%= h 'phone' %></th>
+      <th class="show"></th>
+      <% if user? %>
+        <th class='edit'></th>
+      <% end %>
+  </tr>
+  <%= render :partial => 'listitem', :collection => @spots %>
+</table>
+

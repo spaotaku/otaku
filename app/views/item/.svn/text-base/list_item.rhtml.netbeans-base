@@ -1,0 +1,56 @@
+<% form_tag :action => 'list_item', :method => 'get' do %>
+  <%=h _('keyword for search item_name or spot_name:')%><%= text_field_tag 'keyword', params[:keyword] -%>
+  <%= submit_tag _('Search') -%>
+<% end %>
+<%= link_to(_('back'), :action => 'list_item') %>
+
+<div class="spotlist">
+<div class='spotitem'>
+  <div class='date'>
+    <p><%=h _('updated_at') %>:<%= Time.now.strftime('%Y/%m/%d %H:%M') %></p>
+  </div>
+
+	  <div class='item'>
+
+      <div class='detail'>
+
+<table>
+  <tr>
+  	<th><%=h _('category') %></th>
+    <th><%= h _('item_nm') %></th>
+    <th><%= h _('item_str_val_1') %></th>
+    <th><%= h _('item_num_val_p') %></th>
+    <th><%= h _('item_num_val_1') %></th>
+    <th><%= h _('item_str_val_4') %></th>
+    <th><%= h _('item_str_val_5') %></th>
+	<th><%= link_to(_('back'), :action => 'list_item') %></th>
+
+  </tr>
+  
+<% for item in @items %>
+  <tr>
+  <td><%= h(item.category.name) %></td>
+  <td><%= h(item.name) %></td>
+  <td><%= h(item.str_val_1) %></td>
+  <td><%= h(item.num_val_p) %></td>
+  <td><%= h(item.num_val_1) %></td>
+  <td><%= h(item.str_val_4) %></td>
+  <td><%= h(item.str_val_5) %></td>
+  <td><%= link_to(_('view'), :action => 'show', :id => item) %></td>
+<!--  <td><%= link_to(_('edit'), :action => 'edit_item', :id => item) %></td>
+  <td><%= link_to(_('destroy'), {:action => 'destroy_item', :id => item}, :confirm => 'Delete ?') %></td> -->
+  </tr>
+<% end %>
+</table>
+
+<br/>
+<%= link_to(_('previous page'), :page => @item_pages.current.previous) if @item_pages.current.previous %>
+<%= link_to(_('next page'), :page => @item_pages.current.next) if @item_pages.current.next %>
+
+<%= link_to(_('back'), :action => 'list_item') %><br/><br/>
+</div>
+</div>
+</div>
+</div>
+
+ 

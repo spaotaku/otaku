@@ -1,0 +1,44 @@
+<p><b><%=h _('book_title') %>:</b><%=h @review_comment.review.shopitem.name %></p>
+
+<div id="review_body">
+<table width="300px" align="center">
+  <tr>
+  <th><%=h _('Body') %>:</th>
+  </tr>
+  <tr>
+  <td><%= simple_format(sanitize(@review_comment.review.body)) %></td>
+  </tr>
+</table>
+</div>
+
+<table width="300px" align="center">
+  <tr><th><%=h _('comment') %>:</th></tr>
+<!--  <tr><td><%=h _('title') %>:　<%= @review_comment.name %></td></tr> -->
+  <tr><td><font size=1><%= @review_comment.content %></font></td></tr>
+  <tr><td><%=h _('commenter') %>:　<%=h @review_comment.student.alias + ' ' + @review_comment.student.l_name_initial + '.' %></td></tr>
+</table>
+
+  <% if session[:user] %>
+    <% if session[:user].level == 0 %>
+        <td><%=h _('status')%>:<%= @status_list[@review_comment.status] %></td>
+        <td><%= link_to _('Edit'), :action => 'edit_by_teachar', :id => @review_comment %></td>
+        <td><%= link_to( _('destroy'), {:action => 'destroy_from_index', :id => @review_comment}, :confirm => _('Delete ?')) %></td>
+        <td><%= link_to _('Back'), :action => 'index' %></td>
+    <% elsif session[:user].level <= 3 %>
+      <% if session[:user].group.id == @review_comment.student.user.group.id %>
+        <td><%=h _('status')%>:<%= @status_list[@review_comment.status] %></td>
+        <td><%= link_to _('Edit'), :action => 'edit_by_teachar', :id => @review_comment %></td>
+        <td><%= link_to( _('destroy'), {:action => 'destroy_from_index', :id => @review_comment}, :confirm => _('Delete ?')) %></td>
+        <td><%= link_to _('Back'), :action => 'index' %></td>
+      <% end %>
+    <% else %>
+      <% if session[:user].id == @review_comment.student.user_id %>
+        <td><%=h _('status')%>:<%= @status_list[@review_comment.status] %></td>
+        <td><%= link_to _('Edit'), :action => 'edit_by_student', :id => @review_comment %></td>
+        <td><%= link_to( _('destroy'), {:action => 'destroy_from_index', :id => @review_comment}, :confirm => _('Delete ?')) %></td>
+        <td><%= link_to _('Back'), :action => 'index' %></td>
+      <% end %>
+    <% end %>
+  <% end %>
+
+<br/>

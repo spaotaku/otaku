@@ -1,0 +1,12 @@
+<%= error_messages_for('facility') %>
+
+<p><label for="facility_seq"><%= h _('facility seq') %></label><br />
+<%= text_field('facility', 'seq') %></p>
+
+<p><label for="facility_cat"><%= h _('category') %>:</label>
+<%= collection_select(:facility, :facilitycat_id, Facilitycat.find(:all, :order => 'name'), :id, :name)%><br />
+
+<p><label for="facility_name"><%= h _('facility name') %></label><br />
+<%= text_field('facility', 'name') %></p>
+<p><label for="facility_memo"><%= h _('memo') %></label><br />
+<%= text_field('facility', 'memo') %></p>

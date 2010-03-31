@@ -1,0 +1,39 @@
+<p>
+  <b><%=h _('shopitem_name') %>:</b>
+  <%=h @review.shopitem.name %>
+  <b><%=h _('author') %>:</b><%=h @review.shopitem.author %>
+</p>
+
+<p>
+  <b><%=h _('item') %>:</b>
+  <%=h @review.item.name %>
+</p>
+
+<p>
+  <b><%=h _('reviewer') %>:</b>
+  <%=h @review.student.l_name %>
+  <%=h @review.student.f_name %>
+  (<%=h @review.student.age %>才)
+</p>
+
+<% @review.pictures.each do |pic| %>
+  <%= link_to(image_tag(url_for(:action => 'image', :id => pic.id), :width => '200',
+    :class => 'image'),
+    url_for(:action => 'image', :id => pic.id), :target => '_blank') %>
+  <br/><%= pic.title %>　<%=h _('(image_click_2_big)') %><br/>
+<% end %>
+
+<div id="review_body">
+<table width="300px" align="center">
+  <tr>
+  <th><%=h _('Body') %>:</th>
+  </tr>
+  <tr>
+  <td><%= simple_format(sanitize(@review.body)) %></td>
+  </tr>
+</table>
+</div>
+
+
+<%= link_to _('Edit'), :action => 'edit_by_student', :id => @review %> |
+<%= link_to _('Back'), :action => 'index_my_review' %>

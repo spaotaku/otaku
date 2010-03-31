@@ -1,0 +1,13 @@
+<%= error_messages_for('user') %>
+
+<label for="user_group_id"><%= h _('group name :') %></label><%= @user.group.name %><br />
+
+<%= render :partial => 'form_name_login_pass' %>
+
+<!--
+<label for="user_level"><%= h _('user level') %></label><br />
+<%= text_field('user', 'level') %><br />
+-->
+
+<%= render :partial => 'form_email' %>
+

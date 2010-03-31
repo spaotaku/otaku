@@ -1,0 +1,6 @@
+<%= error_messages_for('group') %>
+
+<p><label for="group_name"><%= h _('group name') %></label><br />
+<%= text_field('group', 'name') %></p>
+<p><label for="group_description"><%= h _('description') %></label><br />
+<%= text_field('group', 'description') %></p>

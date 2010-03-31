@@ -1,0 +1,25 @@
+<% form_tag(:action => 'index', :controller => 'student' ) do %>
+
+  <%=h _('keyword for search')%>
+
+  <%=h _('class name')%>:
+  <input name="keyword_class"           value="<%=h params[:keyword_class] %>"/>
+
+  <%=h _('l_name')%>:
+    <input size="18" name="keyword_l_name"           value="<%=h params[:keyword_l_name] %>"/>
+
+  <%=h _('f_name')%>:
+    <input size="18" name="keyword_f_name"           value="<%=h params[:keyword_f_name] %>"/>
+
+  <%= h _('syubetu') %>:
+    <% if params[:category] %>
+      <% current_category = params[:category] %>
+    <% else %>
+      <% current_category = 0 %>
+    <% end %>
+
+  <%= select_tag('category',
+     "<option value=0></option>" + options_from_collection_for_select( @categories, 'id', 'name' ,selected_value = params[:category].to_i )) %>
+
+　<%= submit_tag _('search') -%>
+<% end %>

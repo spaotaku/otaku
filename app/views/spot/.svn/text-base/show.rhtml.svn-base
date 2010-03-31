@@ -1,0 +1,14 @@
+<%= render :partial => 'flash' %>
+
+<div class="show_name">
+  <%= h "#{@spot.name}" %>
+</div>
+<div class="show_address">
+  <%= h "#{@spot.address}" %>
+  <br>
+  <%= h "#{@spot.phone}" %>
+<div>
+<div class="show_memo">
+  <%= h "#{@spot.memo}" %>
+</div>
+

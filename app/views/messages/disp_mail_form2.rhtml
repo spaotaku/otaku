@@ -1,0 +1,55 @@
+<div class="spotitem">
+<h1><%=h _('Application form') %></h1>
+</div>
+<div class="sumlist">
+
+<% form_tag :action => 'send_mail_form2' do %>
+
+<%= error_messages_for :message %>
+<p><%=h _('input or set where * items.')%></p>
+<!--[form:message]-->
+<table align ="center">
+  <tr>
+    <td><label for="message_title"><%=h _('Title :') %></label></td>
+    <td><%= text_field 'mail_form2', 'subject'  %></td>
+  </tr>
+  <tr>
+    <td><label for="message_org_name"><%=h _('Group name :') %>*</label></td>
+    <td><%= text_field 'mail_form2', 'group_name'  %></td>
+  </tr>
+  <tr>
+    <td><label for="message_org_name"><%=h _('Org name :') %>*</label></td>
+    <td><%= text_field 'mail_form2', 'org_name'  %></td>
+  </tr>
+  <tr>
+    <td><label for="message_org_name"><%=h _('Group zip :') %>*</label></td>
+    <td><%= text_field 'mail_form2', 'org_zip'  %></td>
+  </tr>
+  <tr>
+    <td><label for="message_org_name"><%=h _('Org address1 :') %>*</label></td>
+    <td><%= text_field 'mail_form2', 'org_address1'  %></td>
+  </tr>
+  <tr>
+    <td><label for="message_org_name"><%=h _('Org address2 :') %></label></td>
+    <td><%= text_field 'mail_form2', 'org_address2'  %></td>
+  </tr>
+  <tr>
+    <td><label for="message_org_name"><%=h _('Org phone :') %></label></td>
+    <td><%= text_field 'mail_form2', 'org_phone'  %></td>
+  </tr>
+  <tr>
+    <td><label for="note_org_e_mail"><%=h _('Org e mail :') %>*</label></td>
+    <td><%= text_field 'mail_form2', 'org_e_mail'  %></td>
+  </tr>
+</table>
+
+<label for="message_body"><%=h _('Message :') %></label><br/>
+<%= text_area 'mail_form2', 'remarks', :cols => 40, :rows => 5  %><br/><br/>
+
+<!--[eoform:message]-->
+
+  <%= submit_tag _('Send') %>
+<% end %>
+
+<%= link_to _('Back'), :action => 'list' %>
+</div>

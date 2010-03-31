@@ -1,0 +1,40 @@
+8
+
+dir
+78
+svn://192.168.0.7/bukken/app/views/mailer
+svn://192.168.0.7
+
+
+
+2008-04-30T14:30:39.915110Z
+78
+murakami
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+956af1cf-7ece-484f-8e0a-ea02e7629058
+
+send_spot_map_by_mail.rhtml
+file
+
+
+
+
+2008-04-30T15:20:18.000000Z
+23d7b3bf0cc8073b87c26f6746322f9d
+2008-04-30T14:30:39.915110Z
+78
+murakami
+

@@ -1,0 +1,103 @@
+<%= error_messages_for :student %>
+<p><%=h _('input or set where * items.')%></p>
+  <p><label for="item_name"><%= h _('item_name') %></label>
+    
+    
+    <% if @item %>
+    :<%= @item.name %>
+    <% end %>
+
+
+  </p>
+
+  <label for="l_name"><%= h _('l_name') %>*</label><%= text_field :student, :l_name %>
+
+     <label for="l_name_kana"><%= h _('l_name_kana') %>*</label>
+    <%= text_field :student, :l_name_kana %>
+
+     <label for="l_name_initial"><%= h _('l_name_initial') %>*</label>
+    <%= text_field :student, :l_name_initial ,:size => '3' %><br>
+
+  <label for="m_name"><%= h _('m_name') %></label>
+    <%= text_field :student, :m_name %><br>
+  
+  <label for="f_name"><%= h _('f_name') %>*</label>
+    <%= text_field :student, :f_name %>
+
+     <label for="f_name_kana"><%= h _('f_name_kana') %>*</label>
+    <%= text_field :student, :f_name_kana %>
+  
+  <p><label for="alias"><%= h _('alias') %>*</label>
+    <%= text_field :student, :alias %>
+
+     <label for="alias_kana"><%= h _('alias_kana') %>*</label>
+    <%= text_field :student, :alias_kana %>
+  </p>
+
+
+  <label for="grade"><%= h _('grade') %>*</label>
+    <%=
+      options = [[ _('select grade'), ""]] + [
+    [ _('grade_k'), 0 ],
+    [ _('grade_1'), 1 ],
+    [ _('grade_2'), 2 ],
+    [ _('grade_3'), 3 ],
+    [ _('grade_4'), 4 ],
+    [ _('grade_5'), 5 ],
+    [ _('grade_6'), 6 ],
+    [ _('grade_7'), 7 ],
+    [ _('grade_8'), 8 ],
+    [ _('grade_9'), 9 ],
+    [ _('grade_10'), 10 ],
+    [ _('grade_11'), 11 ],
+    [ _('grade_12'), 12 ],
+    [ _('grade_13'), 13 ],
+    [ _('grade_14'), 14 ],
+    [ _('grade_15'), 15 ],
+    [ _('grade_16'), 16 ],
+    [ _('grade_t'), 90 ],
+    [ _('grade_17'), 17 ]
+  ]
+      select(:student, :grade, options)
+    %>
+
+  <label for="birthday"><%= h _('birthday') %></label>
+    <%= date_select :student, :birthday, :use_month_numbers => true, :start_year => 1950, :include_blank => true %>
+
+  <label for="age"><%= h _('age') %>*</label>
+    <%= text_field :student, :age, :size => '3' %>
+
+  <label for="sex"><%= h _('sex') %>*</label>
+    <%=
+      options = [[ _('select sex'), ""]] + [
+     [ _('female'), 0 ],
+     [ _('male'),   1 ],
+     [ _('NA')  ,   2 ]
+   ]
+      select(:student, :sex, options)
+    %>
+  </p>
+  <p><label for="memo"><%= h _('memo') %></label>
+    <%= text_area :student, :memo, :cols => '50', :rows => '5' %>
+  </p>
+  <p><label for="picture0_file"><%= h _('file') %></label>
+    <%= file_field :picture0, :file %>
+  <label for="picture0_title"><%= h _('picture_title') %></label>
+    <%= text_field :picture0, :title %></p>
+  <p><label for="picture1_file"><%= h _('file') %></label>
+    <%= file_field :picture1, :file %>
+  <label for="picture1_title"><%= h _('picture_title') %></label>
+    <%= text_field :picture1, :title %></p>
+  <p><label for="picture2_file"><%= h _('file') %></label>
+    <%= file_field :picture2, :file %>
+  <label for="picture2_title"><%= h _('picture_title') %></label>
+    <%= text_field :picture2, :title %></p>
+  <p><label for="picture3_file"><%= h _('file') %></label>
+    <%= file_field :picture3, :file %>
+  <label for="picture3_title"><%= h _('picture_title') %></label>
+    <%= text_field :picture3, :title %></p>
+  <p><label for="picture4_file"><%= h _('file') %></label>
+    <%= file_field :picture4, :file %>
+  <label for="picture4_title"><%= h _('picture_title') %></label>
+    <%= text_field :picture4, :title %></p>
+

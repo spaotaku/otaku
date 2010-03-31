@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Spot</title>
+   <%= stylesheet_link_tag('item') %>
+   <%= javascript_include_tag "prototype", "effects" %>
+</head>
+<body>
+
+<%= @content_for_layout %>
+
+<div class="footer">
+  <hr/>
+<%= h _('powered by CSIS Simple Geocoding Experiment(') %><a href="http://nlftp.mlit.go.jp/isj/"><%= h _('isj') %></a><%= h _(')') %><br>
+<%= h _('powered by CSIS Simple Geocoding Experiment(') %><a href="http://nlftp.mlit.go.jp/ksj/"><%= h _('ksj') %></a><%= h _(')') %><br>
+powered by <a href="http://www.rubyonrails.org">Ruby on Rails</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<select id='candidates' onchange='$("geocoding_form").display_map();'>
+  <% @candidates.each do |x|
+      address = x.address.gsub('/', '') %>
+  <option value='<%= h "#{x.longitude}?#{x.latitude}?#{address}?#{x.i_lvl}"%>'>
+           <%= h address %></option>
+  <% end %>
+</select>

@@ -1,0 +1,12 @@
+require 'gettext/utils'
+
+task :update_po do
+#  system 'cmd /c rmdir /s /q po'
+  GetText.update_pofiles('bukken',
+      Dir.glob('{app,components}/**/*.{rb,rhtml}'), 'bukken 1.0.0')
+end
+
+task :make_mo do
+  GetText.create_mofiles(true, 'po', 'locale')
+end
+  

@@ -1,0 +1,146 @@
+<script src="http://maps.google.com/maps?file=api&v=2&key=<%= h GOOGLE_MAPS_API_KEY%>"
+    type="text/javascript"></script>
+<div class="title"><h1><a href="<%=h @shop.homepage %>" target="_blank"><%= h @shop.name %></a></h1></div>
+<div class='spotitem'>
+  <div class='spot_detail'>
+
+
+ <% if @shop.image_url != "" and @shop.image_url != nil  %>
+    <a href="<%=h @shop.homepage %>" target="_blank">
+    <img src="<%=h @shop.image_url %>" alt="no-image" align="left" width="200" /></a>
+ <% end %>
+
+ <% if @shop.homepage != "" and @shop.homepage != nil  %>
+
+
+    <a href="<%=h @shop.homepage %>" target="_blank">
+     <img src="http://img.simpleapi.net/small/<%=h @shop.homepage %>" alt="" width="128" height="128" hspace="4" vspace="4" align="left" border="0"/></a>
+
+    <a href="<%=h @shop.homepage %>" target="_blank">
+    <img title="<%=h @shop.homepage %>" src="http://capture.heartrails.com/medium?<%=h @shop.homepage %>" alt="<%=h @shop.homepage %>" width="200" height="150"  hspace="4" vspace="4" align="left" border="0"/></a>
+
+<% end %>
+
+
+  <% if @shop.cat_01 != "" %><%=h _('cat_01') %>:<%= h @shop.cat_01 %> <% end %>
+  <% if @shop.cat_02 != "" %><%=h _('cat_02') %>:<%= h @shop.cat_02 %><br/><% end %>
+  <% if @shop.when != "" %><%=h _('when') %>:<%= h @shop.when %><br/><% end %>
+  <% if @shop.where != "" %><%=h _('where') %>:<%= h @shop.where %><br/><% end %>
+  <% if @shop.entrance_fee != "" %><%=h _('entrance_fee') %>:<%= h @shop.entrance_fee %> <% end %>
+  <% if @shop.membership_fee_mon != "" %><%=h _('membership_fee_mon') %>:<%= h @shop.membership_fee_mon %> <% end %>
+  <% if @shop.membership_fee_year != "" %><%=h _('membership_fee_year') %>:<%= h @shop.membership_fee_year %> <% end %>
+  <% if @shop.membership_fee_remarks != "" %><%=h _('membership_fee_remarks') %>:<%= h @shop.membership_fee_remarks %><br/><% end %>
+  <% if @shop.member_nr_all != "" %><%=h _('member_nr_all') %>:<%= h @shop.member_nr_all %> <% end %>
+  <% if @shop.member_nr_m != "" %><%=h _('member_nr_m') %>:<%= h @shop.member_nr_m %> <% end %>
+  <% if @shop.member_nr_f != "" %><%=h _('member_nr_f') %>:<%= h @shop.member_nr_f %> <% end %>
+  <% if @shop.member_remarks != "" %><%=h _('member_remarks') %>:<%= h @shop.member_remarks %><br/><% end %>
+
+  <% if @shop.zip != "" %>
+    <%=h _('zip') %>:<%= h @shop.zip %><br/>
+  <% end %>
+  <% if @shop.address != "" %>
+    <%=h _('address') %>:<%= h @shop.address %><br/>
+  <% end %>
+  <% if @shop.building != "" %>
+    <%=h _('building') %>:<%= h "#{@shop.building}" %><br/>
+  <% end %>
+  <% if @shop.phone != "" %>
+    <%=h _('phone') %>:<%= h "#{@shop.phone}" %><br/>
+  <% end %>
+  <% if @shop.fax != "" %>
+    <%=h _('fax') %>:<%= h "#{@shop.fax}" %><br/>
+  <% end %>
+  <% if @shop.text1 != "" %>
+    <%=h _('licence') %>:<%= h @shop.text1 %><br/>
+  <% end %>
+  <% if @shop.text2 != "" %>
+    <%=h _('business_hours') %>:<%= h @shop.text2 %><br/>
+  <% end %>
+	
+  <% if @shop.homepage != "" %><%=h _('homepage') %>:<a href="<%=h @shop.homepage %>" target="_blank"><%=h @shop.homepage %></a><br/><% end %>
+  <% if @shop.email_1 != "" %><%=h _('email_1') %>:<a href="mailto:<%=h @shop.email_1 %>"><%=h @shop.email_1 %></a><br/><% end %>
+
+    <!-- <%= hidden_field :spot, :longitude %> -->
+    <!-- <%= hidden_field :spot, :latitude %> -->
+  </div>
+  <div class='spot_detail_sml'>
+<!--    <%=h _('wgs84_dec') %>
+    <%=h _('longitude') %><%= @shop.longitude %>
+    , <%=h _('latitude') %><%= @shop.latitude %><br/> -->
+
+<!--    <%=h 'tokyo_datum_dec' %>
+    <%=h 'longitude' %><%= @shop.longitude_tokyo_datum_dec %>
+    , <%=h 'latitude' %><%= @shop.latitude_tokyo_datum_dec %><br/>
+
+    <%=h 'tokyo_datum_ddmmss' %>
+    <%=h 'longitude' %><%= @shop.longitude_tokyo_datum_ddmmsss %>
+    , <%=h 'latitude' %><%= @shop.latitude_tokyo_datum_ddmmsss %><br/> -->
+  </div>
+  <div class='spot_detail'>
+    <%= link_to _('Show_shop_map'), :action => 'show_shop_map', :id => @shop.id %> |
+    <%= link_to _('Send_map_by_mail'), :action => 'send_shop_map_by_mail', :id => @shop.id %>
+
+
+  </div>
+  <% if @shop.memo != "" and @shop.memo != nil  %>
+  <span class='content'>
+    <div class='memo'>
+      <%= simple_format(sanitize(@shop.memo)) %>
+    </div>
+  </span>
+  <% end %>
+  <% if @shop.memo_02 != "" and @shop.memo_02 != nil  %>
+  <span class='content'>
+    <div class='memo'>
+      <%= simple_format(sanitize(@shop.memo_02)) %>
+    </div>
+  </span>
+  <% end %>
+  <span id="map_area" style="display: none">
+    <div id="mapa" style="margin: 1em 5% 1em 5%; width: 90%; height: 400px"></div>
+  </span>
+</div>
+    
+<div class='spotlist'>
+  <table>
+    <tr>
+      <th><font size=1><%=h _('yyyy/mm/dd') %></font></th>
+      <th><font size=1><%=h _('day') %></font></th>
+      <th><font size=1><%=h _('hh:mm') %></font></th>
+      <th></th>
+      <th><font size=1><%=h _('hh:mm') %></font></th>
+      <th><font size=1><%=h _('title') %></font></th>
+      <th><font size=1><%=h _('place') %></font></th>
+    </tr>
+  <%= render :partial => 'listitem', :collection => @shopitems,
+    :locals => {:size => ''} %>
+  </table>
+</div>
+<div class='pagination_link'>
+  <%= will_paginate @shopitems, :prev_label => _("prev"), :next_label => _("next") %>
+
+</div>
+<script type="text/javascript">
+function toggle_map() {
+  if ($F('shop_latitude') == '' || $F('shop_longitude') == '') {
+    alert("<%= h 'no longitude/latitude, please edit this record' %>");
+    return;
+  }
+  if ($('map_area').style.display == 'inline') {
+    $('map_area').style.display = 'none';
+  } else {
+    $('map_area').style.display = 'inline';
+    $('mapa').display_map();
+  }
+}
+$('mapa').display_map = function() {
+  var point = new GLatLng($F('shop_latitude'), $F('shop_longitude'));
+  var map = new GMap2($('mapa'));
+  map.setCenter(point, 15);
+  map.addControl(new GLargeMapControl());
+  map.addControl(new GScaleControl());
+  map.addControl(new GMapTypeControl());
+  map.addOverlay(new GMarker(point));
+  $('mapa').display_map = function() { false; }
+}
+</script>

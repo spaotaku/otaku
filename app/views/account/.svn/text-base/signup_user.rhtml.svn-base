@@ -1,0 +1,8 @@
+<h3><%= h _('new user signup') %></h3>
+<hr />
+<% form_tag(:action => 'signup_user') do %>
+  <%= render(:partial => 'form_user_signup') %>
+  <%= submit_tag(_('signup'))%>
+<% end %>
+
+<%= link_to(_('back'), :action => 'list') %>

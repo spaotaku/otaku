@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  shopitem_id: 1
+  item_id: 1
+  student_id: 1
+  body: MyText
+
+two:
+  shopitem_id: 1
+  item_id: 1
+  student_id: 1
+  body: MyText

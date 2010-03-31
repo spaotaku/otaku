@@ -1,0 +1,22 @@
+<div><label for="shopitem_shop_id"><%= h _("shop") %></label>
+  <span id="select_shop" style="display: <%= h @shop ? 'none' : 'inline' %>">
+    <%= collection_select(:shopitem, :shop_id, Shop.find(:all, :conditions=> ["group_id = ?", session[:user].group_id], :order => 'name'), :id, :name, :include_blank => true)%>
+    <span class="option-button">
+      <%= link_to_remote _('New'), {:update => :shop_form,
+        :success => "$('new_shop').style.display = 'inline'; 
+        $('select_shop').style.display = 'none'",
+        :url => {:action => "new_shop"}} %>
+    </span>
+  </span>
+  <span id="new_shop" style="display:<%= h @shop ? 'inline' : 'none' %>">
+    <span class="option-button">
+      <%= link_to_function _('select'),"$('shop_form').innerHTML = '';$('select_shop').style.display = 'inline';$('new_shop').style.display = 'none'" %>
+    </span>
+  </span>
+</div>
+<span id="shop_form">
+  <% if @shop %>
+    <%= render :partial => 'shop_form' %>
+  <% end %>
+</span>
+<br/>

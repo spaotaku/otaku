@@ -1,0 +1,4669 @@
+# bukken.
+# Copyright (C) 2007 bukken
+# This file is distributed under the same license as the bukken package.
+# K.M. <info@spa.fsr.jp>, 2007.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: bukken 1.0.0\n"
+"POT-Creation-Date: 2008-02-26 20:47+0900\n"
+"PO-Revision-Date: 2007-06-22 21:25+0900\n"
+"Last-Translator: <EMAIL@ADDRESS>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: app/controllers/application.rb:67 app/controllers/messages_controller.rb:9
+#: app/controllers/account_controller.rb:147
+#: app/controllers/user_controller.rb:28
+msgid "Login unsuccessful"
+msgstr "ログインできません。"
+
+#: app/controllers/messages_controller.rb:84
+msgid "user level too low !!"
+msgstr "ユーザーレベルエラー"
+
+#: app/controllers/item_controller.rb:615
+#: app/controllers/shopitem_controller.rb:67
+msgid "new item successfully created"
+msgstr "新しい項目が正常に作成されました。"
+
+#: app/controllers/item_controller.rb:794
+#: app/controllers/item_controller.rb:956
+#: app/controllers/shopitem_controller.rb:204
+#: app/controllers/shopitem_controller.rb:298
+msgid "error user unmuch"
+msgstr "ユーザーが違います。"
+
+#: app/controllers/item_controller.rb:832
+msgid "item successfully updated"
+msgstr "正常に更新されました。"
+
+#: app/controllers/item_controller.rb:863
+msgid "item successfully deleted"
+msgstr "正常に作成されました。"
+
+#: app/controllers/item_controller.rb:948
+#: app/controllers/shopitem_controller.rb:290
+msgid "mail was sent"
+msgstr "メールが送信されました。"
+
+#: app/controllers/item_controller.rb:973
+msgid "spot successfully updated"
+msgstr "正常に更新されました。"
+
+#: app/controllers/item_controller.rb:1032
+msgid "spot successfully deleted"
+msgstr "正常に削除されました。"
+
+#: app/controllers/item_controller.rb:1055
+#: app/controllers/shopitem_controller.rb:370
+msgid "Category was successfully created"
+msgstr "新しい項目が正常に作成されました。"
+
+#: app/controllers/item_controller.rb:1075
+#: app/controllers/shopitem_controller.rb:390
+msgid "Category was successfully updated."
+msgstr "正常に更新されました。"
+
+#: app/controllers/item_controller.rb:1105
+msgid "Structure was successfully created"
+msgstr "正常に作成されました。"
+
+#: app/controllers/item_controller.rb:1123
+msgid "Structure was successfully updated."
+msgstr "正常に更新されました。"
+
+#: app/controllers/item_controller.rb:1152
+msgid "Facility was successfully created"
+msgstr "新しい項目が正常に作成されました。"
+
+#: app/controllers/item_controller.rb:1170
+msgid "Facility was successfully updated."
+msgstr "正常に更新されました。"
+
+#: app/controllers/item_controller.rb:1194
+msgid "Facilitycat was successfully created"
+msgstr "新しい項目が正常に作成されました。"
+
+#: app/controllers/item_controller.rb:1212
+msgid "Facilitycat was successfully updated."
+msgstr "正常に更新されました。"
+
+#: app/controllers/item_controller.rb:1242
+msgid "Particular was successfully created"
+msgstr "正常に作成されました。"
+
+#: app/controllers/item_controller.rb:1260
+msgid "Particular was successfully updated."
+msgstr "正常に更新されました。"
+
+#: app/controllers/item_controller.rb:1284
+msgid "Particularcat was successfully created"
+msgstr "正常に作成されました。"
+
+#: app/controllers/item_controller.rb:1302
+msgid "Particularcat was successfully updated."
+msgstr "正常に更新されました。"
+
+#: app/controllers/shopitem_controller.rb:220
+msgid "shopitem successfully updated"
+msgstr "正常に更新されました。"
+
+#: app/controllers/shopitem_controller.rb:231
+msgid "shopitem successfully deleted"
+msgstr "正常に削除されました。"
+
+#: app/controllers/shopitem_controller.rb:315
+msgid "shop successfully updated"
+msgstr "正常に更新されました。"
+
+#: app/controllers/shopitem_controller.rb:353
+msgid "shop successfully deleted"
+msgstr "正常に削除されました。"
+
+#: app/controllers/account_controller.rb:33
+msgid "Group was successfully created"
+msgstr "正常に作成されました。"
+
+#: app/controllers/account_controller.rb:43
+msgid "User was successfully created"
+msgstr "新しい項目が正常に作成されました。"
+
+#: app/controllers/account_controller.rb:59
+msgid "Signup successful, please login by new userid and password"
+msgstr ""
+"サインアップが完了しました。ログインID と パスワード を 再入力してログインし"
+"てください。"
+
+#: app/controllers/account_controller.rb:97
+msgid "Group was successfully updated."
+msgstr "正常に更新されました。"
+
+#: app/controllers/account_controller.rb:107
+#: app/controllers/account_controller.rb:118
+msgid "User was successfully updated."
+msgstr "正常に更新されました。 更新情報は、ユーザ再ログイン時に反映されます。"
+
+#: app/controllers/account_controller.rb:143
+msgid "Login complete"
+msgstr "ログイン完了。"
+
+#: app/controllers/account_controller.rb:190
+msgid "Signup successful"
+msgstr "サインアップしました。"
+
+#: app/controllers/account_controller.rb:206
+msgid "Logged out of the system"
+msgstr "ログアウトしました。"
+
+#: app/controllers/user_controller.rb:24
+msgid "Login successful"
+msgstr "ログインしました。"
+
+#: app/controllers/user_controller.rb:48
+msgid "Signup successful!"
+msgstr "サインアップしました。"
+
+#: app/controllers/user_controller.rb:51
+msgid ""
+" Please check your registered email account to verify your account "
+"registration and continue with the login."
+msgstr ""
+
+#: app/controllers/user_controller.rb:53
+msgid " Please log in."
+msgstr "ログインしてください。"
+
+#: app/controllers/user_controller.rb:60
+msgid "Error creating account: confirmation email not sent"
+msgstr ""
+
+#: app/controllers/user_controller.rb:88
+msgid "Updated password emailed to %{email}"
+msgstr ""
+
+#: app/controllers/user_controller.rb:91
+msgid "Password updated."
+msgstr ""
+
+#: app/controllers/user_controller.rb:95
+msgid "There was a problem saving the password. Please retry."
+msgstr ""
+
+#: app/controllers/user_controller.rb:100
+msgid "Password could not be changed at this time. Please retry."
+msgstr ""
+
+#: app/controllers/user_controller.rb:110
+msgid "You are currently logged in. You may change your password now."
+msgstr ""
+
+#: app/controllers/user_controller.rb:117
+msgid "Please contact the system admin at %{email} to reset your password."
+msgstr ""
+
+#: app/controllers/user_controller.rb:127
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: app/controllers/user_controller.rb:129
+msgid "We could not find a user with the email address %{email}"
+msgstr ""
+
+#: app/controllers/user_controller.rb:137
+msgid "Instructions on resetting your password have been emailed to %{email}"
+msgstr ""
+
+#: app/controllers/user_controller.rb:162
+msgid "User details updated"
+msgstr ""
+
+#: app/controllers/user_controller.rb:164
+msgid "Details could not be updated! Please retry."
+msgstr ""
+
+#: app/controllers/user_controller.rb:168
+msgid "Error updating user details. Please try again later."
+msgstr ""
+
+#: app/controllers/user_controller.rb:200
+msgid "The delete instructions were not sent. Please try again later."
+msgstr ""
+
+#: app/controllers/user_controller.rb:202
+msgid ""
+"The account has been scheduled for deletion. It will be removed in %"
+"{delay_delete_days} days."
+msgstr ""
+
+#: app/controllers/user_controller.rb:214
+msgid "The account for %{login} was not restored. Please try the link again."
+msgstr ""
+
+#: app/controllers/user_controller.rb:225
+msgid "The account for %{login} was successfully deleted."
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "user"
+msgstr "ユーザー"
+
+#: app/models/user.rb:-
+msgid "User|Login"
+msgstr "ログイン"
+
+#: app/models/user.rb:-
+msgid "User|Password"
+msgstr "パスワード"
+
+#: app/models/user.rb:-
+msgid "User|Name"
+msgstr "ユーザー名"
+
+#: app/models/user.rb:-
+msgid "User|Email pc"
+msgstr "メールアドレス(PC)"
+
+#: app/models/user.rb:-
+msgid "User|Email cell"
+msgstr "メールアドレス(携帯)"
+
+# app/models/user.rb:-
+#: app/models/user.rb:-
+msgid "User|Group"
+msgstr "グループ"
+
+#: app/models/user.rb:-
+msgid "User|Level"
+msgstr "ユーザーレベル"
+
+#: app/models/particularcat.rb:-
+msgid "particularcat"
+msgstr "特記事項"
+
+#: app/models/particularcat.rb:-
+msgid "Particularcat|Priority"
+msgstr "表示順位"
+
+#: app/models/particularcat.rb:-
+msgid "Particularcat|Name"
+msgstr "特記事項"
+
+#: app/models/particularcat.rb:-
+msgid "Particularcat|Memo"
+msgstr "特記事項"
+
+#: app/models/particularcat.rb:-
+msgid "Particularcat|Updated on"
+msgstr "更新日時： "
+
+#: app/models/category.rb:- app/views/item/_listitem.rhtml:29
+#: app/views/item/_form_particular.rhtml:6 app/views/item/list_item.rhtml:19
+#: app/views/item/_form.rhtml:28 app/views/item/_listindex.rhtml:18
+#: app/views/item/_form_facility.rhtml:6 app/views/item/_item_content.rhtml:32
+msgid "category"
+msgstr "物件種別"
+
+#: app/models/category.rb:-
+msgid "Category|Priority"
+msgstr "表示順位"
+
+#: app/models/category.rb:-
+msgid "Category|Name"
+msgstr "種別"
+
+#: app/models/category.rb:-
+msgid "Category|Memo"
+msgstr "種別"
+
+#: app/models/category.rb:-
+msgid "Category|Updated on"
+msgstr "更新日時： "
+
+#: app/models/facilitycat.rb:-
+msgid "facilitycat"
+msgstr "付帯設備等"
+
+#: app/models/facilitycat.rb:-
+msgid "Facilitycat|Priority"
+msgstr "表示順位"
+
+#: app/models/facilitycat.rb:-
+#, fuzzy
+msgid "Facilitycat|Seq"
+msgstr "付帯設備等"
+
+#: app/models/facilitycat.rb:-
+msgid "Facilitycat|Name"
+msgstr ""
+
+#: app/models/facilitycat.rb:-
+msgid "Facilitycat|Memo"
+msgstr ""
+
+#: app/models/facilitycat.rb:-
+msgid "Facilitycat|Updated on"
+msgstr "更新日時： "
+
+#: app/models/facility.rb:- app/views/item/_listitem.rhtml:197
+#: app/views/item/_listitem.rhtml:211 app/views/item/_form.rhtml:149
+#: app/views/item/_item_content.rhtml:180
+#: app/views/item/_item_content.rhtml:194
+msgid "facility"
+msgstr "付帯設備等"
+
+#: app/models/facility.rb:-
+msgid "Facility|Priority"
+msgstr "表示順位"
+
+#: app/models/facility.rb:-
+msgid "Facility|Seq"
+msgstr "付帯設備等"
+
+#: app/models/facility.rb:-
+msgid "Facility|Name"
+msgstr "付帯設備等"
+
+#: app/models/facility.rb:-
+msgid "Facility|Memo"
+msgstr "付帯設備等"
+
+#: app/models/facility.rb:-
+msgid "Facility|Facilitycat"
+msgstr ""
+
+#: app/models/facility.rb:-
+msgid "Facility|Updated on"
+msgstr "更新日時： "
+
+#: app/models/shop.rb:- app/views/shopitem/_shop.rhtml:1
+#: app/views/item/_form.rhtml:15
+msgid "shop"
+msgstr "取扱業者"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Name"
+msgstr "Spot名"
+
+#: app/models/shop.rb:-
+msgid "Shop|Address"
+msgstr "住所"
+
+#: app/models/shop.rb:-
+msgid "Shop|Phone"
+msgstr "電話"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Fax"
+msgstr "FAX"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Memo"
+msgstr "メモ"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Longitude"
+msgstr "経度"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Latitude"
+msgstr "緯度"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Homepage"
+msgstr "ホームページ"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Email 1"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Image url"
+msgstr "イメージ画像_url"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Longitude tokyo datum dec"
+msgstr "経度"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Latitude tokyo datum dec"
+msgstr "緯度"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Longitude tokyo datum ddmmsss"
+msgstr "経度"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Latitude tokyo datum ddmmsss"
+msgstr "緯度"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|User"
+msgstr "ユーザー"
+
+# app/models/spot.rb:- app/views/item/_spot.rhtml:1
+#: app/models/shop.rb:-
+msgid "Shop|Group"
+msgstr "グループ"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Publish level"
+msgstr "公開レベル"
+
+#: app/models/shop.rb:-
+msgid "Shop|Address wk1"
+msgstr "住所wk"
+
+# app/models/spot.rb:- app/views/item/_spot.rhtml:1
+#: app/models/shop.rb:-
+msgid "Shop|Zip"
+msgstr "郵便番号"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Prefecture"
+msgstr "都道府県"
+
+#: app/models/shop.rb:-
+msgid "Shop|Address1"
+msgstr "住所1"
+
+#: app/models/shop.rb:-
+msgid "Shop|Address2"
+msgstr "住所2"
+
+#: app/models/shop.rb:-
+msgid "Shop|Building"
+msgstr "ビル&階数"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Text1"
+msgstr "予備1"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Text2"
+msgstr "予備2"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Text3"
+msgstr "予備3"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Text4"
+msgstr "予備4"
+
+# app/models/spot.rb:-
+#: app/models/shop.rb:-
+msgid "Shop|Text5"
+msgstr "予備5"
+
+#: app/models/shop.rb:24 app/models/shopitem.rb:7 app/models/item.rb:13
+#: app/models/spot.rb:23
+msgid "close"
+msgstr "非公開"
+
+#: app/models/shop.rb:25 app/models/shopitem.rb:8 app/models/item.rb:14
+#: app/models/spot.rb:24
+msgid "open_group"
+msgstr "グループ内のみ公開"
+
+#: app/models/shop.rb:26 app/models/shopitem.rb:9 app/models/item.rb:15
+#: app/models/spot.rb:25
+msgid "open_all"
+msgstr "全てに公開"
+
+#: app/models/message.rb:-
+msgid "message"
+msgstr "ホームページ： "
+
+# app/models/message.rb:-
+#: app/models/message.rb:-
+msgid "Message|Priority"
+msgstr ""
+
+# app/models/message.rb:-
+#: app/models/message.rb:-
+msgid "Message|Title"
+msgstr ""
+
+# app/models/message.rb:-
+#: app/models/message.rb:-
+msgid "Message|Body"
+msgstr ""
+
+# app/models/message.rb:-
+#: app/models/message.rb:-
+msgid "Message|Memo"
+msgstr ""
+
+# app/models/message.rb:-
+#: app/models/message.rb:-
+msgid "Message|Org e mail"
+msgstr ""
+
+# app/models/message.rb:-
+#: app/models/message.rb:-
+msgid "Message|Org url"
+msgstr ""
+
+# app/models/message.rb:-
+#: app/models/message.rb:-
+msgid "Message|Org name"
+msgstr ""
+
+# app/models/message.rb:-
+#: app/models/message.rb:-
+msgid "Message|Source url"
+msgstr ""
+
+# app/models/message.rb:-
+#: app/models/message.rb:-
+msgid "Message|Link next"
+msgstr ""
+
+# app/models/message.rb:-
+#: app/models/message.rb:-
+msgid "Message|Link prev"
+msgstr ""
+
+# app/models/message.rb:-
+#: app/models/message.rb:-
+msgid "Message|Updated on"
+msgstr ""
+
+# app/models/item.rb:-
+#: app/models/shopitem.rb:-
+msgid "shopitem"
+msgstr ""
+
+# app/models/spot.rb:-
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Name"
+msgstr "Spot名"
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Created at"
+msgstr ""
+
+# app/models/spot.rb:-
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Num val 1"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Memo"
+msgstr "メモ"
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Shop"
+msgstr ""
+
+# app/models/item.rb:-
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Title"
+msgstr "タイトル"
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Content"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|User"
+msgstr "ユーザー"
+
+# app/models/spot.rb:-
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Publish level"
+msgstr "公開レベル"
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Tag"
+msgstr ""
+
+# app/models/user.rb:-
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Group"
+msgstr "グループ"
+
+# app/models/group.rb:-
+#: app/models/group.rb:-
+msgid "group"
+msgstr "グループ"
+
+# app/models/spot.rb:-
+#: app/models/group.rb:-
+msgid "Group|Name"
+msgstr "Spot名"
+
+# app/models/group.rb:-
+#: app/models/group.rb:-
+msgid "Group|Description"
+msgstr ""
+
+# app/models/item.rb:-
+#: app/models/item.rb:-
+msgid "item"
+msgstr "Item"
+
+# app/models/item.rb:-
+#: app/models/item.rb:-
+msgid "Item|Name"
+msgstr ""
+
+# app/models/item.rb:-
+#: app/models/item.rb:-
+msgid "Item|Created at"
+msgstr ""
+
+# app/models/item.rb:-
+#: app/models/item.rb:-
+msgid "Item|Memo"
+msgstr ""
+
+# app/models/item.rb:-
+#: app/models/item.rb:-
+msgid "Item|Spot"
+msgstr ""
+
+# app/models/item.rb:-
+#: app/models/item.rb:-
+msgid "Item|Title"
+msgstr "タイトル"
+
+# app/models/item.rb:-
+#: app/models/item.rb:-
+msgid "Item|Content"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|User"
+msgstr "ユーザー"
+
+# app/models/item.rb:-
+#: app/models/item.rb:-
+msgid "Item|Publish level"
+msgstr ""
+
+# app/models/item.rb:-
+#: app/models/item.rb:-
+msgid "Item|Tag"
+msgstr ""
+
+# app/models/user.rb:-
+#: app/models/item.rb:-
+msgid "Item|Group"
+msgstr "グループ"
+
+#: app/models/item.rb:-
+msgid "Item|Category"
+msgstr "物件種別"
+
+#: app/models/item.rb:-
+msgid "Item|Structure"
+msgstr ""
+
+# app/models/user.rb:-
+#: app/models/item.rb:-
+msgid "Item|Shop"
+msgstr "グループ"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+msgid "Item|Num val 1"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+msgid "Item|Num val 2"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+msgid "Item|Num val 3"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+msgid "Item|Num val 4"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+msgid "Item|Num val 5"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+msgid "Item|Num val 6"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+msgid "Item|Num val 7"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+msgid "Item|Num val 8"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+msgid "Item|Num val 9"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+msgid "Item|Num val a"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+msgid "Item|Num val b"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+msgid "Item|Num val c"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+msgid "Item|Num val d"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+msgid "Item|Num val e"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+msgid "Item|Num val f"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+msgid "Item|Num val g"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Num val h"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Num val i"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Num val j"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Num val k"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Num val l"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Num val m"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Num val n"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Num val o"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Num val p"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Num val q"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Num val r"
+msgstr "メール"
+
+#: app/models/item.rb:-
+msgid "Item|Str val 1"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+msgid "Item|Str val 2"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val 3"
+msgstr "備考"
+
+#: app/models/item.rb:-
+msgid "Item|Str val 4"
+msgstr "最寄沿線"
+
+#: app/models/item.rb:-
+msgid "Item|Str val 5"
+msgstr "最寄駅名"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val 6"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val 7"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val 8"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val 9"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val a"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val b"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val c"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val d"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val e"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val f"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val g"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val h"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val i"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val j"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val k"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val l"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val m"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val n"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val o"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val p"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val q"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Str val r"
+msgstr "間取り"
+
+#: app/models/item.rb:-
+msgid "Item|Date val 1"
+msgstr "築年月"
+
+#: app/models/item.rb:-
+msgid "Item|Date val 2"
+msgstr "入居可能年月日"
+
+#: app/models/item.rb:-
+msgid "Item|Date val 3"
+msgstr "築年月"
+
+#: app/models/item.rb:-
+msgid "Item|Date val 4"
+msgstr "築年月"
+
+#: app/models/item.rb:-
+msgid "Item|Date val 5"
+msgstr "築年月"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Check box 00"
+msgstr "即入居可"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Check box 01"
+msgstr "要保険"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Check box 02"
+msgstr "要保険"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Check box 03"
+msgstr "要保険"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Check box 04"
+msgstr "要保険"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Check box 05"
+msgstr "要保険"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Check box 06"
+msgstr "要保険"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Check box 07"
+msgstr "要保険"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Check box 08"
+msgstr "要保険"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Check box 09"
+msgstr "要保険"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Check box 0a"
+msgstr "要保険"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 00"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 01"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 02"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 03"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 04"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 05"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 06"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 07"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 08"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 09"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 0a"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 0b"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 0c"
+msgstr "付帯設備種別"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 0d"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 0e"
+msgstr "付帯設備等"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 0f"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 0g"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 0h"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 0i"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 0j"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 10"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 11"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 12"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 13"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 14"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 15"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 16"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 17"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 18"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 19"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 1a"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 1b"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 1c"
+msgstr "付帯設備種別"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 1d"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 1e"
+msgstr "付帯設備等"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 1f"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 1g"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 1h"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 1i"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 1j"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 20"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 21"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 22"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 23"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 24"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 25"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 26"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 27"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 28"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 29"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 2a"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 2b"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 2c"
+msgstr "付帯設備種別"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 2d"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 2e"
+msgstr "付帯設備等"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 2f"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 2g"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 2h"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 2i"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 2j"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 30"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 31"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 32"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 33"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 34"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 35"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 36"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 37"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 38"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 39"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 3a"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 3b"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 3c"
+msgstr "付帯設備種別"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 3d"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 3e"
+msgstr "付帯設備等"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 3f"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 3g"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 3h"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 3i"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 3j"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 40"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 41"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 42"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 43"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 44"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 45"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 46"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 47"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 48"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 49"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 4a"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 4b"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 4c"
+msgstr "付帯設備種別"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 4d"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 4e"
+msgstr "付帯設備等"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 4f"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 4g"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 4h"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 4i"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 4j"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 50"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 51"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 52"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 53"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 54"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 55"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 56"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 57"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 58"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 59"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 5a"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 5b"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 5c"
+msgstr "付帯設備種別"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 5d"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 5e"
+msgstr "付帯設備等"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 5f"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 5g"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 5h"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 5i"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 5j"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 60"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 61"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 62"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 63"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 64"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 65"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 66"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 67"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 68"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 69"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 6a"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 6b"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 6c"
+msgstr "付帯設備種別"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 6d"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 6e"
+msgstr "付帯設備等"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 6f"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 6g"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 6h"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 6i"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 6j"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 70"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 71"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 72"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 73"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 74"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 75"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 76"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 77"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 78"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 79"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 7a"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 7b"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 7c"
+msgstr "付帯設備種別"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 7d"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 7e"
+msgstr "付帯設備等"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 7f"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 7g"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 7h"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 7i"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 7j"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 80"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 81"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 82"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 83"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 84"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 85"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 86"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 87"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 88"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 89"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 8a"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 8b"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 8c"
+msgstr "付帯設備種別"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 8d"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 8e"
+msgstr "付帯設備等"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 8f"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 8g"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 8h"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 8i"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 8j"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 90"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 91"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 92"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 93"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 94"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 95"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 96"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 97"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 98"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 99"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 9a"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 9b"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 9c"
+msgstr "付帯設備種別"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 9d"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 9e"
+msgstr "付帯設備等"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 9f"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 9g"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 9h"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 9i"
+msgstr "設備テーブル保守"
+
+# app/models/spot.rb:-
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility 9j"
+msgstr "メール"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility a0"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility a1"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility a2"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility a3"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility a4"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility a5"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility a6"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility a7"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility a8"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility a9"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility aa"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility ab"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility ac"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility ad"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility ae"
+msgstr "付帯設備等"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility af"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility ag"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility ah"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility ai"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Facility aj"
+msgstr "設備テーブル保守"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 00"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 01"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 02"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 03"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 04"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 05"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 06"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 07"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 08"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 09"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 0a"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 0b"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 0c"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 0d"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 0e"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 0f"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 0g"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 0h"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 0i"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 0j"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 10"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 11"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 12"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 13"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 14"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 15"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 16"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 17"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 18"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 19"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 1a"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 1b"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 1c"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 1d"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 1e"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 1f"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 1g"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 1h"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 1i"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 1j"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 20"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 21"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 22"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 23"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 24"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 25"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 26"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 27"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 28"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 29"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 2a"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 2b"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 2c"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 2d"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 2e"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 2f"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 2g"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 2h"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 2i"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 2j"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 30"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 31"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 32"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 33"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 34"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 35"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 36"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 37"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 38"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 39"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 3a"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 3b"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 3c"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 3d"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 3e"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 3f"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 3g"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 3h"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 3i"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 3j"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 40"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 41"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 42"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 43"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 44"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 45"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 46"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 47"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 48"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 49"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 4a"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 4b"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 4c"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 4d"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 4e"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 4f"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 4g"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 4h"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 4i"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 4j"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 50"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 51"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 52"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 53"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 54"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 55"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 56"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 57"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 58"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 59"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 5a"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 5b"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 5c"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 5d"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 5e"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 5f"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 5g"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 5h"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 5i"
+msgstr "特記事項"
+
+#: app/models/item.rb:-
+#, fuzzy
+msgid "Item|Particular note 5j"
+msgstr "特記事項"
+
+#: app/models/item.rb:19
+msgid "baikai"
+msgstr "媒介"
+
+#: app/models/item.rb:20
+msgid "kasinusi"
+msgstr "貸主"
+
+#: app/models/item.rb:21
+msgid "urinusi"
+msgstr "売主"
+
+#: app/models/item.rb:22
+msgid "dairi"
+msgstr "代理"
+
+#: app/models/item.rb:23
+msgid "other"
+msgstr "その他"
+
+# app/models/item.rb:-
+#: app/models/structure.rb:- app/views/item/_listitem.rhtml:156
+#: app/views/item/_form.rhtml:70 app/views/item/_listindex.rhtml:107
+#: app/views/item/_item_content.rhtml:139
+msgid "structure"
+msgstr "構造"
+
+#: app/models/structure.rb:-
+msgid "Structure|Priority"
+msgstr "表示順位"
+
+# app/models/spot.rb:-
+#: app/models/structure.rb:-
+msgid "Structure|Name"
+msgstr "Spot名"
+
+# app/models/spot.rb:-
+#: app/models/structure.rb:-
+msgid "Structure|Memo"
+msgstr "メモ"
+
+#: app/models/structure.rb:-
+msgid "Structure|Updated on"
+msgstr "更新日時： "
+
+# app/models/spot.rb:- app/views/item/_spot.rhtml:1
+#: app/models/spot.rb:- app/views/item/_spot.rhtml:1
+msgid "spot"
+msgstr "物件所在地"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Name"
+msgstr "Spot名"
+
+#: app/models/spot.rb:-
+msgid "Spot|Address"
+msgstr "住所"
+
+#: app/models/spot.rb:-
+msgid "Spot|Phone"
+msgstr "電話"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Fax"
+msgstr "FAX"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Memo"
+msgstr "メモ"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Longitude"
+msgstr "経度"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Latitude"
+msgstr "緯度"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Homepage"
+msgstr "ホームページ"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Email 1"
+msgstr "メール"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Image url"
+msgstr "イメージ画像_url"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Longitude tokyo datum dec"
+msgstr "経度"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Latitude tokyo datum dec"
+msgstr "緯度"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Longitude tokyo datum ddmmsss"
+msgstr ""
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Latitude tokyo datum ddmmsss"
+msgstr ""
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|User"
+msgstr "ユーザー"
+
+# app/models/spot.rb:- app/views/item/_spot.rhtml:1
+#: app/models/spot.rb:-
+msgid "Spot|Group"
+msgstr "グループ"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Publish level"
+msgstr "公開レベル"
+
+#: app/models/spot.rb:-
+msgid "Spot|Address wk1"
+msgstr "住所wk"
+
+# app/models/spot.rb:- app/views/item/_spot.rhtml:1
+#: app/models/spot.rb:-
+msgid "Spot|Zip"
+msgstr "郵便番号"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Prefecture"
+msgstr "都道府県"
+
+#: app/models/spot.rb:-
+msgid "Spot|Address1"
+msgstr "住所1"
+
+#: app/models/spot.rb:-
+msgid "Spot|Address2"
+msgstr "住所2"
+
+#: app/models/spot.rb:-
+msgid "Spot|Building"
+msgstr "ビル&階数"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Text1"
+msgstr "予備1"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Text2"
+msgstr "予備2"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Text3"
+msgstr "予備3"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Text4"
+msgstr "予備4"
+
+# app/models/spot.rb:-
+#: app/models/spot.rb:-
+msgid "Spot|Text5"
+msgstr "予備5"
+
+# app/models/picture.rb:-
+#: app/models/picture.rb:-
+msgid "picture"
+msgstr ""
+
+# app/models/item.rb:-
+#: app/models/picture.rb:-
+msgid "Picture|Title"
+msgstr "タイトル"
+
+# app/models/picture.rb:-
+#: app/models/picture.rb:-
+msgid "Picture|Name"
+msgstr ""
+
+# app/models/picture.rb:-
+#: app/models/picture.rb:-
+msgid "Picture|Size"
+msgstr ""
+
+# app/models/picture.rb:-
+#: app/models/picture.rb:-
+msgid "Picture|Content type"
+msgstr ""
+
+# app/models/picture.rb:-
+#: app/models/picture.rb:-
+msgid "Picture|Image"
+msgstr ""
+
+# app/models/picture.rb:-
+#: app/models/picture.rb:-
+msgid "Picture|Item"
+msgstr ""
+
+#: app/models/picture.rb:-
+msgid "Picture|Shopitem"
+msgstr ""
+
+#: app/models/particular.rb:-
+msgid "particular"
+msgstr "特記事項"
+
+#: app/models/particular.rb:-
+msgid "Particular|Priority"
+msgstr "表示順位"
+
+#: app/models/particular.rb:-
+msgid "Particular|Seq"
+msgstr "特記事項"
+
+#: app/models/particular.rb:-
+msgid "Particular|Name"
+msgstr "特記事項"
+
+#: app/models/particular.rb:-
+msgid "Particular|Memo"
+msgstr "特記事項"
+
+#: app/models/particular.rb:-
+msgid "Particular|Particularcat"
+msgstr ""
+
+#: app/models/particular.rb:-
+msgid "Particular|Updated on"
+msgstr "更新日時： "
+
+#: app/views/shopitem/show_shop.rhtml:26
+#: app/views/shopitem/delete_shop.rhtml:25
+#: app/views/shopitem/_listshop.rhtml:29 app/views/item/_listspot.rhtml:29
+#: app/views/item/show_spot.rhtml:25 app/views/item/delete_spot.rhtml:25
+msgid "zip"
+msgstr "〒"
+
+#: app/views/shopitem/show_shop.rhtml:29
+#: app/views/shopitem/delete_shop.rhtml:26
+#: app/views/shopitem/_shop_form.rhtml:32
+#: app/views/shopitem/_listshop.rhtml:30
+#: app/views/layouts/_maint_sidebar.rhtml:9 app/views/item/_listspot.rhtml:30
+#: app/views/item/_spot_form.rhtml:32 app/views/item/show_spot.rhtml:26
+#: app/views/item/delete_spot.rhtml:26 app/views/spot/_form.rhtml:6
+msgid "address"
+msgstr "住所"
+
+# app/models/spot.rb:-
+#: app/views/shopitem/show_shop.rhtml:32
+#: app/views/shopitem/delete_shop.rhtml:27
+#: app/views/shopitem/_shop_form.rhtml:37
+#: app/views/shopitem/_listshop.rhtml:31 app/views/item/_listspot.rhtml:31
+#: app/views/item/_spot_form.rhtml:37 app/views/item/show_spot.rhtml:27
+#: app/views/item/delete_spot.rhtml:27
+msgid "building"
+msgstr "ビル名 階数"
+
+#: app/views/shopitem/show_shop.rhtml:35
+#: app/views/shopitem/delete_shop.rhtml:28
+#: app/views/shopitem/_shop_form.rhtml:110
+#: app/views/shopitem/_listshop.rhtml:32 app/views/item/_listspot.rhtml:32
+#: app/views/item/_spot_form.rhtml:110 app/views/item/show_spot.rhtml:28
+#: app/views/item/delete_spot.rhtml:28 app/views/spot/_form.rhtml:9
+msgid "phone"
+msgstr "電話"
+
+#: app/views/shopitem/show_shop.rhtml:38
+#: app/views/shopitem/delete_shop.rhtml:29
+#: app/views/shopitem/_shop_form.rhtml:113
+#: app/views/shopitem/_listshop.rhtml:33 app/views/item/_listspot.rhtml:33
+#: app/views/item/_spot_form.rhtml:113 app/views/item/show_spot.rhtml:29
+#: app/views/item/delete_spot.rhtml:29
+msgid "fax"
+msgstr "FAX"
+
+#: app/views/shopitem/show_shop.rhtml:41
+#: app/views/shopitem/_shop_form.rhtml:119
+msgid "licence"
+msgstr "免許"
+
+#: app/views/shopitem/show_shop.rhtml:44
+#: app/views/shopitem/_shop_form.rhtml:122
+msgid "business_hours"
+msgstr "営業時間"
+
+#: app/views/shopitem/show_shop.rhtml:47
+#: app/views/shopitem/delete_shop.rhtml:30
+#: app/views/shopitem/_shop_form.rhtml:104
+#: app/views/shopitem/_listshop.rhtml:34 app/views/item/_listspot.rhtml:34
+#: app/views/item/_spot_form.rhtml:104 app/views/item/show_spot.rhtml:30
+#: app/views/item/delete_spot.rhtml:30
+msgid "homepage"
+msgstr "ホームページ"
+
+#: app/views/shopitem/show_shop.rhtml:48
+#: app/views/shopitem/delete_shop.rhtml:31
+#: app/views/shopitem/_shop_form.rhtml:116
+#: app/views/shopitem/_listshop.rhtml:35 app/views/item/_listspot.rhtml:35
+#: app/views/item/_spot_form.rhtml:116 app/views/item/show_spot.rhtml:31
+#: app/views/item/delete_spot.rhtml:31
+msgid "email_1"
+msgstr "メール"
+
+#: app/views/shopitem/show_shop.rhtml:54
+#: app/views/shopitem/delete_shop.rhtml:38
+#: app/views/shopitem/delete_shop.rhtml:51
+#: app/views/shopitem/_listshop.rhtml:42 app/views/shopitem/_listshop.rhtml:55
+#: app/views/item/_listspot.rhtml:42 app/views/item/_listspot.rhtml:55
+#: app/views/item/show_spot.rhtml:38 app/views/item/show_spot.rhtml:51
+#: app/views/item/delete_spot.rhtml:38 app/views/item/delete_spot.rhtml:51
+msgid "wgs84_dec"
+msgstr "世界測地系_10"
+
+# app/models/spot.rb:-
+#: app/views/shopitem/show_shop.rhtml:55 app/views/shopitem/show_shop.rhtml:59
+#: app/views/shopitem/show_shop.rhtml:63
+#: app/views/shopitem/delete_shop.rhtml:39
+#: app/views/shopitem/delete_shop.rhtml:43
+#: app/views/shopitem/delete_shop.rhtml:47
+#: app/views/shopitem/delete_shop.rhtml:52
+#: app/views/shopitem/_listshop.rhtml:43 app/views/shopitem/_listshop.rhtml:47
+#: app/views/shopitem/_listshop.rhtml:51 app/views/shopitem/_listshop.rhtml:56
+#: app/views/item/_listspot.rhtml:43 app/views/item/_listspot.rhtml:47
+#: app/views/item/_listspot.rhtml:51 app/views/item/_listspot.rhtml:56
+#: app/views/item/show_spot.rhtml:39 app/views/item/show_spot.rhtml:43
+#: app/views/item/show_spot.rhtml:47 app/views/item/show_spot.rhtml:52
+#: app/views/item/delete_spot.rhtml:39 app/views/item/delete_spot.rhtml:43
+#: app/views/item/delete_spot.rhtml:47 app/views/item/delete_spot.rhtml:52
+msgid "longitude"
+msgstr "経度"
+
+# app/models/spot.rb:-
+#: app/views/shopitem/show_shop.rhtml:56 app/views/shopitem/show_shop.rhtml:60
+#: app/views/shopitem/show_shop.rhtml:64
+#: app/views/shopitem/delete_shop.rhtml:40
+#: app/views/shopitem/delete_shop.rhtml:44
+#: app/views/shopitem/delete_shop.rhtml:48
+#: app/views/shopitem/delete_shop.rhtml:53
+#: app/views/shopitem/_listshop.rhtml:44 app/views/shopitem/_listshop.rhtml:48
+#: app/views/shopitem/_listshop.rhtml:52 app/views/shopitem/_listshop.rhtml:57
+#: app/views/item/_listspot.rhtml:44 app/views/item/_listspot.rhtml:48
+#: app/views/item/_listspot.rhtml:52 app/views/item/_listspot.rhtml:57
+#: app/views/item/show_spot.rhtml:40 app/views/item/show_spot.rhtml:44
+#: app/views/item/show_spot.rhtml:48 app/views/item/show_spot.rhtml:53
+#: app/views/item/delete_spot.rhtml:40 app/views/item/delete_spot.rhtml:44
+#: app/views/item/delete_spot.rhtml:48 app/views/item/delete_spot.rhtml:53
+msgid "latitude"
+msgstr "緯度"
+
+# app/models/spot.rb:-
+#: app/views/shopitem/show_shop.rhtml:58
+#: app/views/shopitem/delete_shop.rhtml:42
+#: app/views/shopitem/_listshop.rhtml:46 app/views/item/_listspot.rhtml:46
+#: app/views/item/show_spot.rhtml:42 app/views/item/delete_spot.rhtml:42
+msgid "tokyo_datum_dec"
+msgstr "日本測地系_10"
+
+#: app/views/shopitem/show_shop.rhtml:62
+#: app/views/shopitem/delete_shop.rhtml:46
+#: app/views/shopitem/_listshop.rhtml:50 app/views/item/_listspot.rhtml:50
+#: app/views/item/show_spot.rhtml:46 app/views/item/delete_spot.rhtml:46
+msgid "tokyo_datum_ddmmss"
+msgstr "日本測地系_60"
+
+#: app/views/shopitem/show_shop.rhtml:67
+msgid "Show_shop_map"
+msgstr "地図表示"
+
+#: app/views/shopitem/show_shop.rhtml:68
+#: app/views/shopitem/delete_shop.rhtml:57
+#: app/views/shopitem/_listshop.rhtml:61 app/views/item/_listspot.rhtml:61
+#: app/views/item/_listitem.rhtml:252 app/views/item/_item_content.rhtml:235
+#: app/views/item/show_spot.rhtml:57 app/views/item/delete_spot.rhtml:57
+msgid "Send_map_by_mail"
+msgstr "携帯に地図を送信"
+
+#: app/views/shopitem/show_shop.rhtml:94
+#: app/views/shopitem/delete_shop.rhtml:89
+#: app/views/shopitem/_listshop.rhtml:82 app/views/item/_listspot.rhtml:78
+#: app/views/item/show_spot.rhtml:81 app/views/item/delete_spot.rhtml:89
+msgid "no longitude/latitude, please edit this record"
+msgstr "経緯度が設定できません。レコードを編集してください。"
+
+#: app/views/shopitem/delete_shop.rhtml:56
+#: app/views/shopitem/_listshop.rhtml:60 app/views/item/_listspot.rhtml:60
+#: app/views/item/_listitem.rhtml:251 app/views/item/_listindex.rhtml:148
+#: app/views/item/_item_content.rhtml:234 app/views/item/show_spot.rhtml:56
+#: app/views/item/delete_spot.rhtml:56
+msgid "Show_spot_map"
+msgstr "地図表示"
+
+#: app/views/shopitem/delete_shop.rhtml:81 app/views/shopitem/delete.rhtml:7
+#: app/views/shopitem/edit.rhtml:13 app/views/layouts/_maint_sidebar.rhtml:91
+#: app/views/layouts/_maint_sidebar.rhtml:100
+#: app/views/layouts/_maint_sidebar.rhtml:122
+#: app/views/layouts/_maint_sidebar.rhtml:129 app/views/item/delete.rhtml:7
+#: app/views/item/edit.rhtml:13 app/views/item/delete_spot.rhtml:81
+msgid "Delete"
+msgstr "削除"
+
+#: app/views/shopitem/_listitem.rhtml:3 app/views/item/_listitem.rhtml:3
+#: app/views/item/list_item.rhtml:10 app/views/item/_item_content.rhtml:6
+msgid "updated_at"
+msgstr "更新日時"
+
+#: app/views/shopitem/_listitem.rhtml:7 app/views/item/_listitem.rhtml:7
+#: app/views/item/list_item.rhtml:39 app/views/item/_listindex.rhtml:4
+#: app/views/item/_item_content.rhtml:10
+msgid "view"
+msgstr "詳細表示"
+
+#: app/views/shopitem/_listitem.rhtml:9 app/views/shopitem/_listshop.rhtml:3
+msgid "shop_detail"
+msgstr "会社詳細表示"
+
+#: app/views/shopitem/_listitem.rhtml:25 app/views/item/_listitem.rhtml:267
+msgid "num_val_1_name"
+msgstr "タグ： "
+
+#: app/views/shopitem/_listitem.rhtml:25 app/views/item/_listitem.rhtml:267
+msgid "num_val_1_unit"
+msgstr " "
+
+#: app/views/shopitem/_shop.rhtml:5 app/views/layouts/_maint_sidebar.rhtml:88
+#: app/views/layouts/_maint_sidebar.rhtml:126 app/views/item/_spot.rhtml:5
+#: app/views/spot/list.rhtml:2
+msgid "New"
+msgstr "新規"
+
+#: app/views/shopitem/_shop.rhtml:13 app/views/item/_spot.rhtml:13
+msgid "select"
+msgstr "選択"
+
+#: app/views/shopitem/edit_category.rhtml:1
+#: app/views/item/edit_category.rhtml:1
+msgid "edit category"
+msgstr "物件種別テーブル保守"
+
+#: app/views/shopitem/edit_category.rhtml:5
+#: app/views/account/edit_group.rhtml:5 app/views/account/edit_user.rhtml:5
+#: app/views/account/edit_user_by_user.rhtml:4
+#: app/views/item/edit_particular.rhtml:5
+#: app/views/item/edit_structure.rhtml:6 app/views/item/edit_category.rhtml:5
+#: app/views/item/edit_facility.rhtml:5
+#: app/views/item/edit_particularcat.rhtml:5
+#: app/views/item/edit_facilitycat.rhtml:5
+msgid "update"
+msgstr "更新"
+
+#: app/views/shopitem/edit_category.rhtml:8
+#: app/views/shopitem/list_category.rhtml:23
+#: app/views/shopitem/new_category.rhtml:8
+#: app/views/account/edit_group.rhtml:8 app/views/account/new_user.rhtml:8
+#: app/views/account/new_group.rhtml:8 app/views/account/edit_user.rhtml:8
+#: app/views/account/list_user.rhtml:23 app/views/account/signup_user.rhtml:8
+#: app/views/account/edit_user_by_user.rhtml:7
+#: app/views/item/new_facility.rhtml:8 app/views/item/edit_particular.rhtml:8
+#: app/views/item/new_facilitycat.rhtml:8
+#: app/views/item/edit_structure.rhtml:9 app/views/item/edit_category.rhtml:8
+#: app/views/item/list_item.rhtml:5 app/views/item/list_item.rhtml:26
+#: app/views/item/list_item.rhtml:50 app/views/item/list_structure.rhtml:23
+#: app/views/item/new_particular.rhtml:8 app/views/item/list_category.rhtml:23
+#: app/views/item/list_particularcat.rhtml:23
+#: app/views/item/edit_facility.rhtml:8
+#: app/views/item/list_particular.rhtml:27
+#: app/views/item/edit_particularcat.rhtml:8
+#: app/views/item/new_structure.rhtml:8
+#: app/views/item/edit_facilitycat.rhtml:8
+#: app/views/item/new_particularcat.rhtml:8
+#: app/views/item/new_category.rhtml:8
+#: app/views/item/list_facilitycat.rhtml:23
+#: app/views/item/list_facility.rhtml:22
+msgid "back"
+msgstr "戻る"
+
+#: app/views/shopitem/_form_category.rhtml:3
+#: app/views/shopitem/list_category.rhtml:5
+#: app/views/item/_form_category.rhtml:3 app/views/item/list_category.rhtml:5
+msgid "category name"
+msgstr "物件種別"
+
+#: app/views/shopitem/_form_category.rhtml:5 app/views/shopitem/_form.rhtml:45
+#: app/views/shopitem/_shop_form.rhtml:125 app/views/messages/show.rhtml:9
+#: app/views/item/_form_particularcat.rhtml:5
+#: app/views/item/_form_structure.rhtml:6
+#: app/views/item/_form_particular.rhtml:11
+#: app/views/item/_form_category.rhtml:5
+#: app/views/item/_form_facilitycat.rhtml:5 app/views/item/_form.rhtml:199
+#: app/views/item/_form_facility.rhtml:11 app/views/item/_spot_form.rhtml:119
+#: app/views/spot/_form.rhtml:12
+msgid "memo"
+msgstr "メモ"
+
+#: app/views/shopitem/_form.rhtml:1
+msgid "shop_item_nm"
+msgstr " 業者項目名 "
+
+#: app/views/shopitem/_form.rhtml:4
+msgid "tag"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:8 app/views/shopitem/_form.rhtml:12
+#: app/views/shopitem/_shop_form.rhtml:128 app/views/item/_form.rhtml:81
+#: app/views/item/_spot_form.rhtml:122
+msgid "publish_level"
+msgstr "公開レベル"
+
+#: app/views/shopitem/_form.rhtml:14 app/views/shopitem/_shop_form.rhtml:130
+#: app/views/item/_form.rhtml:83 app/views/item/_spot_form.rhtml:124
+msgid "select publish_level"
+msgstr "選択してください"
+
+#: app/views/shopitem/_form.rhtml:20 app/views/shopitem/_form.rhtml:25
+#: app/views/shopitem/_form.rhtml:30 app/views/shopitem/_form.rhtml:35
+#: app/views/shopitem/_form.rhtml:40 app/views/item/_form.rhtml:173
+#: app/views/item/_form.rhtml:178 app/views/item/_form.rhtml:183
+#: app/views/item/_form.rhtml:188 app/views/item/_form.rhtml:193
+msgid "file"
+msgstr "画像ファイル"
+
+#: app/views/shopitem/_form.rhtml:22 app/views/shopitem/_form.rhtml:27
+#: app/views/shopitem/_form.rhtml:32 app/views/shopitem/_form.rhtml:37
+#: app/views/shopitem/_form.rhtml:42 app/views/item/_form.rhtml:175
+#: app/views/item/_form.rhtml:180 app/views/item/_form.rhtml:185
+#: app/views/item/_form.rhtml:190 app/views/item/_form.rhtml:195
+msgid "picture_title"
+msgstr "画像タイトル"
+
+#: app/views/shopitem/list_category.rhtml:1
+#: app/views/item/list_category.rhtml:1
+msgid "category list "
+msgstr "物件種別一覧"
+
+#: app/views/shopitem/list_category.rhtml:11
+#: app/views/account/list_group.rhtml:14 app/views/account/list_user.rhtml:11
+#: app/views/item/list_item.rhtml:40 app/views/item/list_structure.rhtml:11
+#: app/views/item/list_category.rhtml:11
+#: app/views/item/list_particularcat.rhtml:11
+#: app/views/item/list_particular.rhtml:15
+#: app/views/item/list_facilitycat.rhtml:11
+#: app/views/item/list_facility.rhtml:15
+msgid "edit"
+msgstr "編集"
+
+#: app/views/shopitem/list_category.rhtml:12
+#: app/views/account/list_group.rhtml:15 app/views/account/list_user.rhtml:12
+#: app/views/item/list_item.rhtml:41 app/views/item/list_structure.rhtml:12
+#: app/views/item/list_category.rhtml:12
+#: app/views/item/list_particularcat.rhtml:12
+#: app/views/item/list_particular.rhtml:16
+#: app/views/item/list_facilitycat.rhtml:12
+#: app/views/item/list_facility.rhtml:16
+msgid "destroy"
+msgstr "削除"
+
+#: app/views/shopitem/list_category.rhtml:17
+#: app/views/account/list_group.rhtml:20 app/views/account/list_user.rhtml:17
+#: app/views/item/list_item.rhtml:47 app/views/item/list_structure.rhtml:17
+#: app/views/item/list_category.rhtml:17
+#: app/views/item/list_particularcat.rhtml:17
+#: app/views/item/list_particular.rhtml:21
+#: app/views/item/list_facilitycat.rhtml:17
+#: app/views/item/list_facility.rhtml:24
+msgid "previous page"
+msgstr "前ページ"
+
+#: app/views/shopitem/list_category.rhtml:18
+#: app/views/account/list_group.rhtml:21 app/views/account/list_user.rhtml:18
+#: app/views/item/list_item.rhtml:48 app/views/item/list_structure.rhtml:18
+#: app/views/item/list_category.rhtml:18
+#: app/views/item/list_particularcat.rhtml:18
+#: app/views/item/list_particular.rhtml:22
+#: app/views/item/list_facilitycat.rhtml:18
+#: app/views/item/list_facility.rhtml:25
+msgid "next page"
+msgstr "次ページ"
+
+#: app/views/shopitem/list_category.rhtml:22
+#: app/views/item/list_category.rhtml:22
+msgid "add new category"
+msgstr "物件種別登録"
+
+#: app/views/shopitem/_shop_form.rhtml:8
+msgid "shop_name"
+msgstr "取扱業者"
+
+# app/models/spot.rb:-
+#: app/views/shopitem/_shop_form.rhtml:12 app/views/item/_spot_form.rhtml:12
+msgid "spot_longitude:"
+msgstr "経度： "
+
+# app/models/spot.rb:-
+#: app/views/shopitem/_shop_form.rhtml:14 app/views/item/_spot_form.rhtml:14
+msgid "spot_latitude:"
+msgstr "緯度： "
+
+#: app/views/shopitem/_shop_form.rhtml:18 app/views/item/_spot_form.rhtml:18
+msgid "zip_code"
+msgstr "〒"
+
+#: app/views/shopitem/_shop_form.rhtml:18 app/views/item/_spot_form.rhtml:18
+msgid "zip_code_input_note_1"
+msgstr ""
+"(半角数字のみ、ハイフンは不要。住所が空白なら検索結果が自動的に埋まります。)"
+
+#: app/views/shopitem/_shop_form.rhtml:22
+msgid "prefecture:"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:25
+msgid "address1:"
+msgstr "住所1"
+
+#: app/views/shopitem/_shop_form.rhtml:28
+msgid "address2:"
+msgstr "住所2"
+
+#: app/views/shopitem/_shop_form.rhtml:32 app/views/item/_spot_form.rhtml:32
+msgid "address_input_note_1"
+msgstr "(完全な住所を入力してください)"
+
+#: app/views/shopitem/_shop_form.rhtml:40 app/views/item/_spot_form.rhtml:40
+msgid "select_address_or_station"
+msgstr "地図選択"
+
+#: app/views/shopitem/_shop_form.rhtml:40 app/views/item/_spot_form.rhtml:40
+msgid "select_address_or_station_note_1"
+msgstr ""
+"(「住所」選択で地図表示。結果が複数の場合は更に選択。マーカーを正確な位置に"
+"セットしてください。)"
+
+#: app/views/shopitem/_shop_form.rhtml:42 app/views/item/_spot_form.rhtml:42
+msgid ""
+"<option SELECTED></option><option value=\"ADDRESS\">address</option><option "
+"value=\"STATION\">station</optione>"
+msgstr ""
+"<option SELECTED></option><option value=\"ADDRESS\">住所</option><option "
+"value=\"STATION\">駅名</optione>"
+
+#: app/views/shopitem/_shop_form.rhtml:53 app/views/item/_spot_form.rhtml:53
+msgid "map_address"
+msgstr "地図住所"
+
+#: app/views/shopitem/_shop_form.rhtml:107 app/views/item/_spot_form.rhtml:107
+msgid "image_url"
+msgstr "画像URL"
+
+#: app/views/shopitem/edit.rhtml:9 app/views/shopitem/new.rhtml:11
+#: app/views/item/edit.rhtml:9 app/views/item/new.rhtml:11
+msgid "created_at"
+msgstr "作成日時"
+
+#: app/views/shopitem/edit.rhtml:20 app/views/shopitem/edit_shop.rhtml:8
+#: app/views/shopitem/new.rhtml:15 app/views/item/edit_spot.rhtml:8
+#: app/views/item/edit.rhtml:20 app/views/item/new.rhtml:15
+msgid "Save changes"
+msgstr "登録"
+
+#: app/views/shopitem/list.rhtml:2
+msgid "keyword for search shopitem_name or shop_name:"
+msgstr "検索キーワード (業者名 or 業者項目) ："
+
+#: app/views/shopitem/list.rhtml:3 app/views/shopitem/list_shop.rhtml:3
+#: app/views/item/list_spot.rhtml:3 app/views/item/list_item.rhtml:3
+#: app/views/item/list.rhtml:3
+msgid "Search"
+msgstr "検索"
+
+#: app/views/shopitem/list.rhtml:15 app/views/shopitem/list_shop.rhtml:13
+#: app/views/item/list_spot.rhtml:13 app/views/item/list.rhtml:13
+msgid "All"
+msgstr " 全 "
+
+#: app/views/shopitem/list.rhtml:15
+msgid "shop_item_count"
+msgstr " 件 "
+
+#: app/views/shopitem/list_shop.rhtml:2 app/views/item/list_spot.rhtml:2
+#: app/views/item/list_item.rhtml:2 app/views/item/list.rhtml:2
+msgid "keyword for search item_name or spot_name:"
+msgstr "検索キーワード (物件名 or 所在地名) ："
+
+#: app/views/shopitem/list_shop.rhtml:13
+msgid "shop_count"
+msgstr " 件 "
+
+#: app/views/shopitem/new_category.rhtml:1 app/views/item/new_category.rhtml:1
+msgid "new category input"
+msgstr "新規物件種別登録"
+
+#: app/views/shopitem/new_category.rhtml:5 app/views/account/new_user.rhtml:5
+#: app/views/item/new_facility.rhtml:5 app/views/item/new_facilitycat.rhtml:5
+#: app/views/item/new_particular.rhtml:5 app/views/item/new_structure.rhtml:5
+#: app/views/item/new_particularcat.rhtml:5
+#: app/views/item/new_category.rhtml:5
+msgid "regist"
+msgstr "登録"
+
+#: app/views/layouts/application.rhtml:4
+msgid "Bukken"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:10
+msgid "Site Name: SN => Name of Site"
+msgstr "不動産 〜〜〜 物件紹介 〜〜〜"
+
+#: app/views/layouts/application.rhtml:12
+#: app/views/layouts/_maint_sidebar.rhtml:67
+msgid "Map"
+msgstr "マップ"
+
+#: app/views/layouts/application.rhtml:14
+#: app/views/layouts/application.rhtml:16
+#: app/views/layouts/_maint_sidebar.rhtml:69
+#: app/views/layouts/_maint_sidebar.rhtml:71
+#: app/views/layouts/_maint_sidebar.rhtml:97
+#: app/views/layouts/_maint_sidebar.rhtml:118
+#: app/views/layouts/_maint_sidebar.rhtml:125
+msgid "List"
+msgstr "一覧"
+
+#: app/views/layouts/application.rhtml:17
+#: app/views/layouts/_maint_sidebar.rhtml:72
+msgid "Search_1"
+msgstr "検索-1"
+
+#: app/views/layouts/application.rhtml:18
+#: app/views/layouts/_maint_sidebar.rhtml:73
+msgid "Search_2"
+msgstr "検索-2"
+
+#: app/views/layouts/application.rhtml:20
+#: app/views/layouts/_maint_sidebar.rhtml:75
+msgid "Sum_List"
+msgstr "一覧"
+
+#: app/views/layouts/application.rhtml:21
+#: app/views/layouts/_maint_sidebar.rhtml:76
+msgid "Article"
+msgstr "掲示板"
+
+#: app/views/layouts/application.rhtml:22
+#: app/views/layouts/_maint_sidebar.rhtml:77
+msgid "Link"
+msgstr "ログイン"
+
+#: app/views/layouts/application.rhtml:23
+#: app/views/layouts/_maint_sidebar.rhtml:78
+msgid "Note"
+msgstr "ノート"
+
+#: app/views/layouts/application.rhtml:26
+#: app/views/layouts/_maint_sidebar.rhtml:81
+#: app/views/layouts/_maint_sidebar.rhtml:98
+#: app/views/layouts/_maint_sidebar.rhtml:120 app/views/messages/edit.rhtml:8
+#: app/views/messages/list.rhtml:23 app/views/spot/_listitem.rhtml:5
+msgid "Show"
+msgstr "表示"
+
+#: app/views/layouts/application.rhtml:29
+#: app/views/layouts/_maint_sidebar.rhtml:84
+msgid "Message"
+msgstr "ご案内"
+
+# app/models/spot.rb:-
+#: app/views/layouts/application.rhtml:32
+msgid "Group"
+msgstr "グループ"
+
+#: app/views/layouts/application.rhtml:34
+msgid "User"
+msgstr "ユーザー"
+
+#: app/views/layouts/application.rhtml:36
+msgid "Lvl"
+msgstr "レベル"
+
+#: app/views/layouts/application.rhtml:38
+#: app/views/layouts/_maint_sidebar.rhtml:104
+msgid "Logout"
+msgstr "ログアウト"
+
+#: app/views/layouts/application.rhtml:39
+#: app/views/layouts/_maint_sidebar.rhtml:105
+msgid "Change_profile"
+msgstr "設定"
+
+#: app/views/layouts/application.rhtml:42
+#: app/views/layouts/_maint_sidebar.rhtml:143 app/views/user/login.rhtml:18
+msgid "Login"
+msgstr "ログイン"
+
+#: app/views/layouts/application.rhtml:43
+#: app/views/layouts/_maint_sidebar.rhtml:144
+msgid "New_User_Signup"
+msgstr "新規ユーザー・サインアップ"
+
+#: app/views/layouts/application.rhtml:63
+#: app/views/layouts/application.rhtml:64
+#: app/views/layouts/bak_item_bak.rhtml:13
+#: app/views/layouts/bak_item_bak.rhtml:14
+msgid "powered by CSIS Simple Geocoding Experiment("
+msgstr "CSISシンプルジオコーディング実験"
+
+#: app/views/layouts/application.rhtml:63
+#: app/views/layouts/bak_item_bak.rhtml:13
+msgid "isj"
+msgstr "街区レベル位置参照情報"
+
+#: app/views/layouts/application.rhtml:63
+#: app/views/layouts/application.rhtml:64
+#: app/views/layouts/bak_item_bak.rhtml:13
+#: app/views/layouts/bak_item_bak.rhtml:14
+msgid ")"
+msgstr ")による"
+
+#: app/views/layouts/application.rhtml:64
+#: app/views/layouts/bak_item_bak.rhtml:14
+msgid "ksj"
+msgstr "国土数値情報"
+
+#: app/views/layouts/_maint_sidebar.rhtml:2
+msgid "keyword for search"
+msgstr "検索キーワード"
+
+#: app/views/layouts/_maint_sidebar.rhtml:5
+msgid "bukken_name"
+msgstr "物件名"
+
+#: app/views/layouts/_maint_sidebar.rhtml:13
+msgid "syubetu"
+msgstr "種別"
+
+#: app/views/layouts/_maint_sidebar.rhtml:24
+msgid "ensen_name"
+msgstr "沿線エリア"
+
+#: app/views/layouts/_maint_sidebar.rhtml:29
+msgid "hanbai_kakaku"
+msgstr "販売価格(万円)"
+
+#: app/views/layouts/_maint_sidebar.rhtml:30
+#: app/views/layouts/_maint_sidebar.rhtml:34
+msgid "up_to"
+msgstr "まで"
+
+#: app/views/layouts/_maint_sidebar.rhtml:33
+msgid "tintai_kakaku"
+msgstr "賃貸料金(円)"
+
+#: app/views/layouts/_maint_sidebar.rhtml:41
+msgid "search"
+msgstr "検索"
+
+#: app/views/layouts/_maint_sidebar.rhtml:61
+msgid "show_map"
+msgstr "結果を地図で見る"
+
+# app/models/item.rb:-
+#: app/views/layouts/_maint_sidebar.rhtml:87
+msgid "Maint_item"
+msgstr "物件保守"
+
+#: app/views/layouts/_maint_sidebar.rhtml:90
+#: app/views/layouts/_maint_sidebar.rhtml:99
+#: app/views/layouts/_maint_sidebar.rhtml:121
+#: app/views/layouts/_maint_sidebar.rhtml:128 app/views/messages/edit.rhtml:5
+#: app/views/messages/list.rhtml:25 app/views/messages/show.rhtml:18
+#: app/views/spot/_listitem.rhtml:7
+msgid "Edit"
+msgstr "編集"
+
+# app/models/spot.rb:- app/views/item/_spot.rhtml:1
+#: app/views/layouts/_maint_sidebar.rhtml:96
+msgid "Maint_spot"
+msgstr "所在地保守"
+
+#: app/views/layouts/_maint_sidebar.rhtml:110
+msgid "User Admin"
+msgstr "ユーザ登録"
+
+#: app/views/layouts/_maint_sidebar.rhtml:111
+msgid "Facility Maint"
+msgstr "設備テーブル保守"
+
+#: app/views/layouts/_maint_sidebar.rhtml:112
+msgid "Facilitycat Maint"
+msgstr "設備区分テーブル保守"
+
+#: app/views/layouts/_maint_sidebar.rhtml:113
+msgid "Particular Maint"
+msgstr "特記事項テーブル保守"
+
+#: app/views/layouts/_maint_sidebar.rhtml:114
+msgid "Particularcat Maint"
+msgstr "特記事項種別テーブル保守"
+
+#: app/views/layouts/_maint_sidebar.rhtml:115
+msgid "Category Maint"
+msgstr "物件種別テーブル保守"
+
+#: app/views/layouts/_maint_sidebar.rhtml:116
+msgid "Structure Maint"
+msgstr "構造テーブル保守"
+
+# app/models/spot.rb:- app/views/item/_spot.rhtml:1
+#: app/views/layouts/_maint_sidebar.rhtml:117
+msgid "Maint_shop"
+msgstr "業者保守"
+
+# app/models/item.rb:-
+#: app/views/layouts/_maint_sidebar.rhtml:124
+msgid "Maint_shopitem"
+msgstr "業者項目保守"
+
+#: app/views/layouts/_maint_sidebar.rhtml:132
+msgid "items.xml"
+msgstr "物件xml出力"
+
+# app/models/spot.rb:- app/views/item/_spot.rhtml:1
+#: app/views/layouts/_maint_sidebar.rhtml:133
+msgid "spots.xml"
+msgstr "物件所在地xml出力"
+
+#: app/views/layouts/_maint_sidebar.rhtml:134
+msgid "categories.xml"
+msgstr "物件種別xml出力"
+
+# app/models/item.rb:-
+#: app/views/layouts/_maint_sidebar.rhtml:135
+msgid "structures.xml"
+msgstr "構造xml出力"
+
+#: app/views/layouts/_maint_sidebar.rhtml:136
+msgid "facilities.xml"
+msgstr "設備一覧付帯設備等xml出力"
+
+#: app/views/layouts/_maint_sidebar.rhtml:137
+msgid "particulars.xml"
+msgstr "特記事項xml出力"
+
+#: app/views/layouts/_maint_sidebar.rhtml:138
+msgid "shopitems.xml"
+msgstr "業者項目xml出力"
+
+# app/models/spot.rb:- app/views/item/_spot.rhtml:1
+#: app/views/layouts/_maint_sidebar.rhtml:139
+msgid "shops.xml"
+msgstr "業者xml出力"
+
+#: app/views/user/signup.rhtml:2 app/views/user/signup.rhtml:12
+#: app/views/user/_edit.rhtml:8
+msgid "Signup"
+msgstr ""
+
+#: app/views/user/signup.rhtml:13 app/views/user/change_password.rhtml:18
+msgid "Cancel"
+msgstr ""
+
+#: app/views/user/_password.rhtml:3 app/views/user/login.rhtml:14
+msgid "Password"
+msgstr ""
+
+#: app/views/user/_password.rhtml:4
+msgid "Password Confirmation"
+msgstr ""
+
+#: app/views/user/_password.rhtml:6 app/views/user/change_password.rhtml:17
+msgid "Change password"
+msgstr ""
+
+#: app/views/user/change_password.rhtml:2
+msgid "Change Password"
+msgstr "パスワード変更"
+
+#: app/views/user/change_password.rhtml:12
+msgid ""
+"Enter your new password in the fields below and click 'Change Password' to "
+"have a new password sent to your email inbox."
+msgstr ""
+
+#: app/views/user/login.rhtml:2
+msgid "Please Login"
+msgstr "ログインしてください。"
+
+#: app/views/user/login.rhtml:13 app/views/user/_edit.rhtml:5
+msgid "Login ID"
+msgstr ""
+
+#: app/views/user/login.rhtml:20
+msgid "Register for an account"
+msgstr ""
+
+#: app/views/user/_edit.rhtml:3
+msgid "Last Name"
+msgstr ""
+
+#: app/views/user/_edit.rhtml:4
+msgid "First Name"
+msgstr ""
+
+#: app/views/user/_edit.rhtml:6
+msgid "Email"
+msgstr ""
+
+#: app/views/user/_edit.rhtml:8
+msgid "Change Settings"
+msgstr ""
+
+#: app/views/account/_form_user_signup.rhtml:3
+#: app/views/account/_form_user_by_user.rhtml:4
+#: app/views/account/_form_user.rhtml:5 app/views/account/list_user.rhtml:5
+msgid "user name"
+msgstr "ユーザー名"
+
+#: app/views/account/_form_user_signup.rhtml:5
+#: app/views/account/_form_user_by_user.rhtml:6
+#: app/views/account/_form_user.rhtml:7
+msgid "login id(3ch upto 40)"
+msgstr "ログインID(3~40文字)"
+
+#: app/views/account/_form_user_signup.rhtml:7
+#: app/views/account/_form_user_by_user.rhtml:8
+#: app/views/account/_form_user.rhtml:9
+msgid "password(5ch upto 40ch)"
+msgstr "パスワード(5~40文字)"
+
+#: app/views/account/_form_user_signup.rhtml:9
+#: app/views/account/_form_user_by_user.rhtml:10
+#: app/views/account/_form_user.rhtml:11
+msgid "password confirmation"
+msgstr "パスワード(確認用)"
+
+#: app/views/account/_form_user_signup.rhtml:11
+#: app/views/account/_form_user_by_user.rhtml:16
+#: app/views/account/_form_user.rhtml:15
+msgid "user email_pc"
+msgstr "メールアドレス(PC)"
+
+#: app/views/account/_form_user_signup.rhtml:13
+#: app/views/account/_form_user_by_user.rhtml:18
+#: app/views/account/_form_user.rhtml:17
+msgid "user email_cell"
+msgstr "メールアドレス(携帯)"
+
+#: app/views/account/_form_user_by_user.rhtml:3
+msgid "group name :"
+msgstr "グループ名： "
+
+#: app/views/account/_form_user_by_user.rhtml:13
+#: app/views/account/_form_user.rhtml:13
+msgid "user level"
+msgstr "ユーザーレベル"
+
+#: app/views/account/_form_user_by_user.rhtml:20
+msgid "warning: please input both password field anytime"
+msgstr ""
+"注意：2か所のパスワード入力フィールドは、常に入力してから「更新」をクリックし"
+"てください。"
+
+#: app/views/account/edit_group.rhtml:1
+msgid "change group name"
+msgstr "グループ名変更"
+
+#: app/views/account/list_group.rhtml:1
+msgid "group list"
+msgstr "グループ一覧"
+
+#: app/views/account/list_group.rhtml:5 app/views/account/_form_group.rhtml:3
+msgid "group name"
+msgstr "グループ名"
+
+#: app/views/account/list_group.rhtml:6 app/views/account/_form_group.rhtml:5
+msgid "description"
+msgstr "説明"
+
+#: app/views/account/list_group.rhtml:13
+msgid "group user"
+msgstr "グループユーザー"
+
+#: app/views/account/list_group.rhtml:25
+msgid "add new group"
+msgstr "新規グループ追加"
+
+#: app/views/account/_form_user.rhtml:3
+msgid "select group name"
+msgstr "グループ名選択"
+
+#: app/views/account/new_user.rhtml:1
+msgid "new user input"
+msgstr "新規ユーザー入力"
+
+#: app/views/account/new_group.rhtml:1
+msgid "create new group"
+msgstr "新規グループ作成"
+
+#: app/views/account/new_group.rhtml:5
+msgid "create"
+msgstr "作成"
+
+#: app/views/account/edit_user.rhtml:1
+#: app/views/account/edit_user_by_user.rhtml:1
+msgid "edit user"
+msgstr "ユーザー情報変更"
+
+#: app/views/account/list_user.rhtml:1
+msgid "user list group :"
+msgstr "ユーザー一覧  -- グループ:"
+
+#: app/views/account/list_user.rhtml:22
+msgid "add new user"
+msgstr "新規ユーザー登録"
+
+#: app/views/account/signup_user.rhtml:1
+msgid "new user signup"
+msgstr "新規ユーザー入力"
+
+#: app/views/account/signup_user.rhtml:5
+msgid "signup"
+msgstr "登録"
+
+#: app/views/account/login.rhtml:4
+msgid "please login"
+msgstr "ログインしてください。"
+
+#: app/views/account/login.rhtml:12
+msgid "login"
+msgstr "ログイン"
+
+#: app/views/account/login.rhtml:20
+msgid "password"
+msgstr "パスワード"
+
+#: app/views/messages/_form.rhtml:4
+msgid "Priority"
+msgstr "表示順位"
+
+# app/models/item.rb:-
+#: app/views/messages/_form.rhtml:7
+msgid "Title"
+msgstr "タイトル"
+
+#: app/views/messages/_form.rhtml:10
+msgid "Body"
+msgstr "内容"
+
+#: app/views/messages/_form.rhtml:13
+msgid "Memo"
+msgstr "メモ"
+
+#: app/views/messages/_form.rhtml:16
+msgid "Source url :"
+msgstr "ソースURL： "
+
+#: app/views/messages/_form.rhtml:19
+msgid "Org name :"
+msgstr "発信者： "
+
+#: app/views/messages/_form.rhtml:22
+msgid "Org e mail :"
+msgstr "発信者メール： "
+
+#: app/views/messages/_form.rhtml:25
+msgid "Org url :"
+msgstr "発信者URL： "
+
+#: app/views/messages/_form.rhtml:27
+msgid "Link prev :"
+msgstr "前リンク"
+
+#: app/views/messages/_form.rhtml:30
+msgid "Link next :"
+msgstr "次リンク"
+
+#: app/views/messages/_form.rhtml:33
+msgid "Updated on :"
+msgstr "更新日時： "
+
+#: app/views/messages/edit.rhtml:1
+msgid "Editing message"
+msgstr "案内情報編集"
+
+#: app/views/messages/edit.rhtml:9 app/views/messages/new.rhtml:11
+#: app/views/messages/show.rhtml:20
+msgid "Back"
+msgstr "戻る"
+
+#: app/views/messages/list.rhtml:2
+msgid "Listing messages"
+msgstr "案内情報一覧"
+
+#: app/views/messages/list.rhtml:8
+msgid "priority"
+msgstr "No."
+
+# app/models/item.rb:-
+#: app/views/messages/list.rhtml:9 app/views/messages/show.rhtml:6
+msgid "title"
+msgstr "タイトル"
+
+#: app/views/messages/list.rhtml:10 app/views/messages/list.rhtml:12
+#: app/views/messages/list.rhtml:15
+msgid " "
+msgstr ""
+
+#: app/views/messages/list.rhtml:17 app/views/messages/show.rhtml:14
+msgid "updated_on"
+msgstr "更新日時： "
+
+#: app/views/messages/list.rhtml:28
+msgid "Destroy"
+msgstr "削除"
+
+#: app/views/messages/list.rhtml:35
+msgid "Previous page"
+msgstr "前ページ"
+
+#: app/views/messages/list.rhtml:36
+msgid "Next page"
+msgstr "次ページ"
+
+#: app/views/messages/list.rhtml:40 app/views/messages/new.rhtml:2
+msgid "New message"
+msgstr "新規作成"
+
+#: app/views/messages/new.rhtml:8
+msgid "Create"
+msgstr "登録"
+
+#: app/views/messages/show.rhtml:2
+msgid "Showing message"
+msgstr "案内情報表示"
+
+#: app/views/messages/show.rhtml:12
+msgid "source_url"
+msgstr "ソースURL"
+
+#: app/views/messages/show.rhtml:16
+msgid "ref_link_prev"
+msgstr "前関連リンク"
+
+#: app/views/messages/show.rhtml:16
+msgid "ref_link_next"
+msgstr "次関連リンク"
+
+#: app/views/item/new_facility.rhtml:1
+msgid "new facility input"
+msgstr "新規設備登録"
+
+#: app/views/item/_listspot.rhtml:3 app/views/item/_listitem.rhtml:11
+#: app/views/item/_listindex.rhtml:8 app/views/item/_item_content.rhtml:14
+msgid "spot_detail"
+msgstr "所在地詳細表示"
+
+#: app/views/item/edit_particular.rhtml:1
+msgid "edit particular"
+msgstr "特記事項編集"
+
+#: app/views/item/new_facilitycat.rhtml:1
+msgid "new facilitycat input"
+msgstr "新規設備種別登録"
+
+#: app/views/item/_form_particularcat.rhtml:3
+#: app/views/item/list_particularcat.rhtml:5
+msgid "particularcat name"
+msgstr "特記事項名"
+
+#: app/views/item/_listitem.rhtml:17 app/views/item/_form.rhtml:10
+#: app/views/item/_listindex.rhtml:14 app/views/item/_item_content.rhtml:20
+msgid "item_str_val_6"
+msgstr "キャッチコピー"
+
+#: app/views/item/_listitem.rhtml:41 app/views/item/_form.rhtml:32
+#: app/views/item/_listindex.rhtml:22 app/views/item/_item_content.rhtml:36
+msgid "item_num_val_h"
+msgstr "土地面積(平方メートル)"
+
+#: app/views/item/_listitem.rhtml:44 app/views/item/_form.rhtml:34
+#: app/views/item/_item_content.rhtml:39
+msgid "item_num_val_i"
+msgstr "土地面積(坪)"
+
+#: app/views/item/_listitem.rhtml:47 app/views/item/_form.rhtml:36
+msgid "item_num_val_q"
+msgstr "建坪率(%)"
+
+#: app/views/item/_listitem.rhtml:50 app/views/item/_form.rhtml:38
+msgid "item_num_val_r"
+msgstr "容積率(%)"
+
+#: app/views/item/_listitem.rhtml:53 app/views/item/_form.rhtml:40
+msgid "item_str_val_d"
+msgstr "用途地域"
+
+#: app/views/item/_listitem.rhtml:56 app/views/item/_form.rhtml:42
+#: app/views/item/_item_content.rhtml:45
+msgid "item_str_val_8"
+msgstr "用途"
+
+#: app/views/item/_listitem.rhtml:59 app/views/item/_form.rhtml:44
+#: app/views/item/_item_content.rhtml:48
+msgid "item_str_val_9"
+msgstr "現況"
+
+#: app/views/item/_listitem.rhtml:62 app/views/item/_form.rhtml:46
+msgid "item_str_val_e"
+msgstr "土地権利"
+
+#: app/views/item/_listitem.rhtml:65 app/views/item/_form.rhtml:48
+#: app/views/item/_item_content.rhtml:42
+msgid "item_str_val_7"
+msgstr "土地(備考)"
+
+#: app/views/item/_listitem.rhtml:70 app/views/item/_form.rhtml:56
+#: app/views/item/_listindex.rhtml:27 app/views/item/_item_content.rhtml:53
+msgid "item_num_val_j"
+msgstr "建物面積(平方メートル)"
+
+#: app/views/item/_listitem.rhtml:73 app/views/item/_form.rhtml:58
+#: app/views/item/_item_content.rhtml:56
+msgid "item_num_val_k"
+msgstr "建物面積(坪)"
+
+#: app/views/item/_listitem.rhtml:78 app/views/item/_form.rhtml:61
+#: app/views/item/_listindex.rhtml:32 app/views/item/_item_content.rhtml:61
+msgid "item_num_val_l"
+msgstr "専有面積(平方メートル)"
+
+#: app/views/item/_listitem.rhtml:81 app/views/item/_form.rhtml:63
+#: app/views/item/_item_content.rhtml:64
+msgid "item_num_val_m"
+msgstr "専有面積(坪)"
+
+#: app/views/item/_listitem.rhtml:85 app/views/item/list_item.rhtml:21
+#: app/views/item/_form.rhtml:52 app/views/item/_listindex.rhtml:36
+#: app/views/item/_item_content.rhtml:68
+msgid "item_str_val_1"
+msgstr "間取タイプ"
+
+#: app/views/item/_listitem.rhtml:89 app/views/item/list_item.rhtml:22
+#: app/views/item/_form.rhtml:88 app/views/item/_listindex.rhtml:40
+#: app/views/item/_item_content.rhtml:72
+msgid "item_num_val_p"
+msgstr "販売価格(万円)"
+
+#: app/views/item/_listitem.rhtml:96 app/views/item/list_item.rhtml:23
+#: app/views/item/_form.rhtml:91 app/views/item/_listindex.rhtml:47
+#: app/views/item/_item_content.rhtml:79 app/views/item/_items.rhtml:41
+msgid "item_num_val_1"
+msgstr "賃料・家賃(月額)"
+
+#: app/views/item/_listitem.rhtml:99 app/views/item/_form.rhtml:93
+#: app/views/item/_listindex.rhtml:50 app/views/item/_item_content.rhtml:82
+#: app/views/item/_items.rhtml:44
+msgid "item_check_box_02"
+msgstr "管理費込"
+
+#: app/views/item/_listitem.rhtml:102 app/views/item/_form.rhtml:94
+#: app/views/item/_listindex.rhtml:53 app/views/item/_item_content.rhtml:85
+#: app/views/item/_items.rhtml:47
+msgid "item_num_val_2"
+msgstr "管理費・共益費・雑費(月額)"
+
+#: app/views/item/_listitem.rhtml:105 app/views/item/_form.rhtml:96
+#: app/views/item/_listindex.rhtml:56 app/views/item/_item_content.rhtml:88
+#: app/views/item/_items.rhtml:50
+msgid "item_num_val_3"
+msgstr "礼金"
+
+#: app/views/item/_listitem.rhtml:108 app/views/item/_form.rhtml:98
+#: app/views/item/_listindex.rhtml:59 app/views/item/_item_content.rhtml:91
+#: app/views/item/_items.rhtml:53
+msgid "item_num_val_4"
+msgstr "敷金"
+
+#: app/views/item/_listitem.rhtml:111 app/views/item/_form.rhtml:100
+#: app/views/item/_listindex.rhtml:62 app/views/item/_item_content.rhtml:94
+#: app/views/item/_items.rhtml:56
+msgid "item_num_val_5"
+msgstr "保証金(保証金償却)"
+
+#: app/views/item/_listitem.rhtml:114 app/views/item/_form.rhtml:102
+#: app/views/item/_listindex.rhtml:65 app/views/item/_item_content.rhtml:97
+#: app/views/item/_items.rhtml:59
+msgid "item_check_box_01"
+msgstr "要保険"
+
+#: app/views/item/_listitem.rhtml:117 app/views/item/_form.rhtml:103
+#: app/views/item/_listindex.rhtml:68 app/views/item/_item_content.rhtml:100
+#: app/views/item/_items.rhtml:62
+msgid "item_num_val_6"
+msgstr "保険料(額)"
+
+#: app/views/item/_listitem.rhtml:120 app/views/item/_form.rhtml:105
+#: app/views/item/_listindex.rhtml:71 app/views/item/_item_content.rhtml:103
+#: app/views/item/_items.rhtml:65
+msgid "item_num_val_n"
+msgstr "保険期間(年)"
+
+#: app/views/item/_listitem.rhtml:123 app/views/item/_form.rhtml:109
+#: app/views/item/_listindex.rhtml:74 app/views/item/_item_content.rhtml:106
+#: app/views/item/_items.rhtml:68
+msgid "item_num_val_c"
+msgstr "鍵交換費用"
+
+#: app/views/item/_listitem.rhtml:126 app/views/item/_form.rhtml:111
+#: app/views/item/_listindex.rhtml:77 app/views/item/_item_content.rhtml:109
+#: app/views/item/_items.rhtml:71
+msgid "item_num_val_d"
+msgstr "他一時金"
+
+#: app/views/item/_listitem.rhtml:131 app/views/item/list_item.rhtml:24
+#: app/views/item/_form.rhtml:118 app/views/item/_listindex.rhtml:82
+#: app/views/item/_item_content.rhtml:114
+msgid "item_str_val_4"
+msgstr "沿線エリア"
+
+#: app/views/item/_listitem.rhtml:134 app/views/item/list_item.rhtml:25
+#: app/views/item/_form.rhtml:120 app/views/item/_listindex.rhtml:85
+#: app/views/item/_item_content.rhtml:117
+msgid "item_str_val_5"
+msgstr "最寄駅名"
+
+#: app/views/item/_listitem.rhtml:137 app/views/item/_form.rhtml:122
+#: app/views/item/_item_content.rhtml:120
+msgid "item_num_val_7"
+msgstr "最寄駅からの徒歩所用時間(分)"
+
+#: app/views/item/_listitem.rhtml:140 app/views/item/_form.rhtml:127
+#: app/views/item/_listindex.rhtml:91 app/views/item/_item_content.rhtml:123
+#: app/views/item/_items.rhtml:84
+msgid "item_num_val_8"
+msgstr "最寄駅から最寄バス停までのバス所用時間(分)"
+
+#: app/views/item/_listitem.rhtml:143 app/views/item/_form.rhtml:129
+#: app/views/item/_listindex.rhtml:94 app/views/item/_item_content.rhtml:126
+#: app/views/item/_items.rhtml:87
+msgid "item_num_val_9"
+msgstr "最寄バス停からの徒歩所用時間(分)"
+
+#: app/views/item/_listitem.rhtml:148 app/views/item/_form.rhtml:134
+#: app/views/item/_listindex.rhtml:99 app/views/item/_item_content.rhtml:131
+#: app/views/item/_items.rhtml:91
+msgid "item_num_val_a"
+msgstr "専用駐車場使用料(月額)"
+
+#: app/views/item/_listitem.rhtml:151 app/views/item/_form.rhtml:136
+#: app/views/item/_listindex.rhtml:102 app/views/item/_item_content.rhtml:134
+#: app/views/item/_items.rhtml:94
+msgid "item_num_val_b"
+msgstr "最寄空き駐車場までの距離(メートル)"
+
+#: app/views/item/_listitem.rhtml:159 app/views/item/_form.rhtml:75
+#: app/views/item/_listindex.rhtml:110 app/views/item/_item_content.rhtml:142
+#: app/views/item/_items.rhtml:104
+msgid "item_num_val_e"
+msgstr "階数"
+
+#: app/views/item/_listitem.rhtml:162 app/views/item/_form.rhtml:73
+#: app/views/item/_listindex.rhtml:113 app/views/item/_item_content.rhtml:145
+#: app/views/item/_items.rhtml:101
+msgid "item_num_val_f"
+msgstr "階建"
+
+#: app/views/item/_listitem.rhtml:165 app/views/item/_form.rhtml:113
+#: app/views/item/_listindex.rhtml:116 app/views/item/_item_content.rhtml:148
+#: app/views/item/_items.rhtml:107
+msgid "item_num_val_g"
+msgstr "予備"
+
+#: app/views/item/_listitem.rhtml:168 app/views/item/_form.rhtml:76
+#: app/views/item/_listindex.rhtml:119 app/views/item/_item_content.rhtml:151
+#: app/views/item/_items.rhtml:110
+msgid "item_date_val_1"
+msgstr "築年月"
+
+#: app/views/item/_listitem.rhtml:174 app/views/item/_listindex.rhtml:125
+#: app/views/item/_item_content.rhtml:157
+msgid "nyukyo_jiki"
+msgstr "入居時期"
+
+#: app/views/item/_listitem.rhtml:176 app/views/item/_form.rhtml:143
+#: app/views/item/_listindex.rhtml:127 app/views/item/_item_content.rhtml:159
+#: app/views/item/_items.rhtml:114
+msgid "item_date_val_2"
+msgstr "入居可能年月日"
+
+#: app/views/item/_listitem.rhtml:179 app/views/item/_form.rhtml:145
+#: app/views/item/_listindex.rhtml:130 app/views/item/_item_content.rhtml:162
+#: app/views/item/_items.rhtml:117
+msgid "item_check_box_00"
+msgstr "即入居可"
+
+#: app/views/item/_listitem.rhtml:182 app/views/item/_form.rhtml:146
+#: app/views/item/_listindex.rhtml:133 app/views/item/_item_content.rhtml:165
+#: app/views/item/_items.rhtml:120
+msgid "item_str_val_a"
+msgstr "入居可能時期等"
+
+#: app/views/item/_listitem.rhtml:186 app/views/item/_form.rhtml:66
+#: app/views/item/_listindex.rhtml:137 app/views/item/_item_content.rhtml:169
+msgid "item_str_val_3"
+msgstr "備考"
+
+#: app/views/item/_listitem.rhtml:225 app/views/item/_listitem.rhtml:239
+#: app/views/item/_form.rhtml:161 app/views/item/_item_content.rhtml:208
+#: app/views/item/_item_content.rhtml:222
+msgid "particular_note"
+msgstr "特記事項"
+
+#: app/views/item/_listitem.rhtml:258 app/views/item/_listindex.rhtml:152
+#: app/views/item/_item_content.rhtml:241
+msgid "shop:"
+msgstr "不動産会社:"
+
+#: app/views/item/_listitem.rhtml:260 app/views/item/_form.rhtml:18
+#: app/views/item/_item_content.rhtml:243
+msgid "item_num_val_o"
+msgstr "取引態様"
+
+#: app/views/item/_form_structure.rhtml:3
+#: app/views/item/list_structure.rhtml:5
+msgid "structure name"
+msgstr "構造"
+
+#: app/views/item/edit_structure.rhtml:1
+msgid "edit structure"
+msgstr "構造テーブル変更"
+
+#: app/views/item/list_spot.rhtml:13
+msgid "spot_count"
+msgstr " 件 "
+
+#: app/views/item/_form_particular.rhtml:3
+#: app/views/item/list_particular.rhtml:5
+msgid "particular seq"
+msgstr "特記事項シーケンス番号"
+
+#: app/views/item/_form_particular.rhtml:9
+#: app/views/item/list_particular.rhtml:7
+msgid "particular name"
+msgstr "特記事項名"
+
+#: app/views/item/list_item.rhtml:20 app/views/item/_form.rhtml:6
+msgid "item_nm"
+msgstr "物件名称"
+
+#: app/views/item/list_structure.rhtml:1
+msgid "structure list "
+msgstr "構造一覧"
+
+#: app/views/item/list_structure.rhtml:22
+msgid "add new structure"
+msgstr "新規構造登録"
+
+#: app/views/item/new_particular.rhtml:1
+msgid "new particular input"
+msgstr "新規特記事項入力"
+
+#: app/views/item/_form_facilitycat.rhtml:3
+#: app/views/item/list_facilitycat.rhtml:5
+msgid "facilitycat name"
+msgstr "設備種別"
+
+#: app/views/item/_form.rhtml:1
+msgid "item_str_val_b"
+msgstr "物件コード"
+
+#: app/views/item/_form.rhtml:3
+msgid "item_str_val_c"
+msgstr "物件コード(枝番)"
+
+#: app/views/item/_form.rhtml:20
+msgid "select_torihiki_taiyou"
+msgstr "選択してください。"
+
+#: app/views/item/_listindex.rhtml:88 app/views/item/_items.rhtml:81
+msgid "kara_toho"
+msgstr "から徒歩"
+
+#: app/views/item/_listindex.rhtml:88 app/views/item/_items.rhtml:81
+msgid "min"
+msgstr "分"
+
+#: app/views/item/list_particularcat.rhtml:1
+msgid "particularcat list "
+msgstr "特記事項一覧"
+
+#: app/views/item/list_particularcat.rhtml:22
+msgid "add new particularcat"
+msgstr "新規特記事項種別登録"
+
+#: app/views/item/edit_facility.rhtml:1
+msgid "edit facility"
+msgstr "設備編集"
+
+#: app/views/item/_form_facility.rhtml:3 app/views/item/list_facility.rhtml:5
+msgid "facility seq"
+msgstr "設備シーケンス番号"
+
+#: app/views/item/_form_facility.rhtml:9 app/views/item/list_facility.rhtml:7
+msgid "facility name"
+msgstr "設備名"
+
+#: app/views/item/list.rhtml:13
+msgid "item_count"
+msgstr " 件 "
+
+#: app/views/item/_spot_form.rhtml:8 app/views/spot/_form.rhtml:3
+msgid "spot_name"
+msgstr "所在地"
+
+#: app/views/item/_spot_form.rhtml:8
+msgid "spot_name_input_note_1"
+msgstr "(集合住宅等の場合、マンション名、アパート名等)"
+
+# app/models/spot.rb:-
+#: app/views/item/_spot_form.rhtml:22
+msgid "prefecture"
+msgstr "都道府県"
+
+#: app/views/item/_spot_form.rhtml:25
+msgid "address1"
+msgstr "住所1"
+
+#: app/views/item/_spot_form.rhtml:28
+msgid "address2"
+msgstr "住所2"
+
+#: app/views/item/list_particular.rhtml:1
+msgid "particular list "
+msgstr "特記事項一覧"
+
+#: app/views/item/list_particular.rhtml:6
+msgid "particular cat"
+msgstr "特記事項種別"
+
+#: app/views/item/list_particular.rhtml:26
+msgid "add new particular"
+msgstr "特記事項新規登録"
+
+#: app/views/item/edit_particularcat.rhtml:1
+msgid "edit particularcat"
+msgstr "特記事項種別編集"
+
+#: app/views/item/_items.rhtml:21
+msgid "tochi"
+msgstr "土地"
+
+#: app/views/item/_items.rhtml:21 app/views/item/_items.rhtml:25
+#: app/views/item/_items.rhtml:29
+msgid "heihou_meter"
+msgstr "平米"
+
+#: app/views/item/_items.rhtml:25
+msgid "tatemono"
+msgstr "建物"
+
+#: app/views/item/_items.rhtml:29
+msgid "senyu"
+msgstr "専有"
+
+#: app/views/item/_items.rhtml:37
+msgid "kakaku"
+msgstr "価格"
+
+#: app/views/item/_items.rhtml:37
+msgid "manen"
+msgstr "万"
+
+#: app/views/item/new_structure.rhtml:1
+msgid "new structure input"
+msgstr "新規構造入力"
+
+#: app/views/item/edit_facilitycat.rhtml:1
+msgid "edit facilitycat"
+msgstr "設備種別編集"
+
+#: app/views/item/new_particularcat.rhtml:1
+msgid "new particularcat input"
+msgstr "新規特記事項種別入力"
+
+#: app/views/item/maint_table.rhtml:1
+msgid "maint table"
+msgstr ""
+
+#: app/views/item/list_facilitycat.rhtml:1
+msgid "facilitycat list "
+msgstr "付帯設備種別一覧"
+
+#: app/views/item/list_facilitycat.rhtml:22
+msgid "add new facilitycat"
+msgstr "設備種別登録"
+
+#: app/views/item/list_facility.rhtml:1
+msgid "facility list "
+msgstr "設備一覧付帯設備等"
+
+#: app/views/item/list_facility.rhtml:6
+msgid "facility cat"
+msgstr "付帯設備種別"
+
+#: app/views/item/list_facility.rhtml:21
+msgid "add new facility"
+msgstr "付帯設備新規登録"
+
+#: app/views/spot/new.rhtml:6
+msgid "Finish"
+msgstr "終了"

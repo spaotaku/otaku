@@ -1,0 +1,32 @@
+<script src="http://maps.google.com/maps?file=api&v=2&key=<%= h GOOGLE_MAPS_API_KEY%>"
+    type="text/javascript"></script>
+
+<div class="title"><h1><a href="<%=h @shop.homepage %>"><%= h @shop.name %></a>       (<%= link_to _('shop_detail'), :action => 'show_shop',
+        :id => @shop.id %>)</h1>
+</div>
+
+<span class="spotitem">
+<%=content_tag :div, '', :id => "mapa" %>
+</span>
+<script type="text/javascript">
+function createMarker(p, title, url, memo) {
+  var opt = new Object();
+  opt.title = title;
+  var marker = new GMarker(p, opt);
+  GEvent.addListener(marker, "click", function() {
+    marker.openInfoWindowHtml('<a href="' + url + '">' + title + '</a>' + memo);
+  });
+  return marker;
+}
+
+var map = new GMap2($('mapa'));
+
+map.setCenter(new GLatLng(<%=h @shop.latitude%>, <%=h @shop.longitude%>), 16);
+map.addControl(new GLargeMapControl());
+map.addControl(new GScaleControl());
+map.addControl(new GMapTypeControl());
+map.addOverlay(createMarker(new GLatLng(<%= h @shop.latitude%>, <%= h @shop.longitude%>),
+               '<%= h @shop.name %>', '<%= url_for(:action => 'show_shop', :id => @shop.id) %>',
+               '<%= escape_javascript(simple_format(sanitize(@shop.memo))) %>'));
+
+</script>

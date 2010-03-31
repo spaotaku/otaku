@@ -1,0 +1,35 @@
+<script src="http://maps.google.com/maps?file=api&v=2&key=<%= h GOOGLE_MAPS_API_KEY%>"
+    type="text/javascript"></script>
+<div class="title"><h1><%= link_to @spot.name , :action => 'show_spot', :id => @spot.id %></h1></div>
+<span class="spotitem">
+<%=content_tag :div, '', :id => "mapa" %>
+</span>
+<script type="text/javascript">
+  var icon = new GIcon();
+  icon.image = "http://bukken.svc.ath.cx/images/house.png";
+  icon.shadow = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.shadow.png";
+  icon.iconSize = new GSize(20, 20);
+  icon.shadowSize = new GSize(40, 20);
+  icon.printImage = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.png";
+  icon.mozPrintImage = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.png";
+  icon.printShadow = "http://maps.google.com/mapfiles/ms/micons/homegardenbusiness.shadow.png";
+  icon.iconAnchor = new GPoint(10,10);
+  icon.infoWindowAnchor = new GPoint(10,10);
+
+function createMarker(p, title, url, memo) {
+  var marker = new GMarker(p, {title: title, icon: icon});
+  GEvent.addListener(marker, "click", function() {
+    marker.openInfoWindowHtml('<a href="' + url + '">' + title + '</a>' + memo);
+  });
+  return marker;
+}
+var map = new GMap2($('mapa'));
+map.setCenter(new GLatLng(<%= h @spot.latitude %>, <%= h @spot.longitude %>), 16);
+map.addControl(new GLargeMapControl());
+map.addControl(new GScaleControl());
+map.addControl(new GMapTypeControl());
+map.addOverlay(createMarker(new GLatLng(<%= h @spot.latitude%>, <%= h @spot.longitude%>),
+               '<%= h @spot.name %>', '<%= url_for(:action => 'show_spot', :id => @spot.id) %>',
+               '<%= escape_javascript(simple_format(sanitize(@spot.memo))) %>'));
+
+</script>

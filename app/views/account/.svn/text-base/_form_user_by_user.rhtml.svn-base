@@ -1,0 +1,21 @@
+<%= error_messages_for('user') %>
+
+<label for="user_group_id"><%= h _('group name :') %></label><%= @user.group.name %><br />
+<label for="user_name"><%= h _('user name') %></label><br />
+<%= text_field( 'user', 'name', :size => 40 ) %><br />
+<label for="user_login"><%= h _('login id(3ch upto 40)') %></label><br />
+<%= text_field('user', 'login', :size => 40 ) %><br />
+<label for="user_password"><%= h _('password(5ch upto 40ch)') %></label><br />
+<%= password_field('user', 'password', :size => 40 ) %><br />
+<label for="user_password_confirmation"><%= h _('password confirmation') %></label><br />
+<%= password_field('user', 'password_confirmation', :size => 40 ) %><br />
+<!--
+<label for="user_level"><%= h _('user level') %></label><br />
+<%= text_field('user', 'level') %><br />
+-->
+<label for="user_email_pc"><%= h _('user email_pc') %></label><br />
+<%= text_field('user', 'email_pc', :size => 40 ) %><br />
+<label for="user_email_cell"><%= h _('user email_cell') %></label><br />
+<%= text_field('user', 'email_cell', :size => 40 ) %><br />
+<%=h _('warning: please input both password field anytime') %><br/>
+

@@ -1,0 +1,8 @@
+<h1><%= h _('edit particular') %></h1>
+<hr />
+<% form_tag(:action => 'update_particular', :id => @particular) do %>
+  <%= render :partial => 'form_particular' %>
+  <%= submit_tag _('update') %>
+<% end %>
+
+<%= link_to( _('back'), :action => 'list_particular', :id => @particular) %>

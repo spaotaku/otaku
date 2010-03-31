@@ -1,0 +1,12 @@
+
+<div class="memo">
+    <h3>Logoff</h3>
+
+    <p>You are now logged out of the system...</p>
+      
+    <p><%= link_to _("&#171; login"), :action=>"login"%></p>
+    <p><%= link_to _("&#171; map"), :controller => "item", :action => 'by_map' %></p>
+   
+      
+</div>
+

@@ -1,0 +1,6853 @@
+# otaku.
+# Copyright (C) 2010 otaku
+# This file is distributed under the same license as the otaku package.
+# K.M. <info@spa.fsr.jp>, 2007.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: otaku 1.0.0\n"
+"POT-Creation-Date: 2010-03-23 03:50+0900\n"
+"PO-Revision-Date: 2007-06-22 21:22+0900\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: app/models/group.rb:-
+msgid "group"
+msgstr ""
+
+#: app/models/group.rb:-
+msgid "Group|Name"
+msgstr ""
+
+#: app/models/group.rb:-
+msgid "Group|Description"
+msgstr ""
+
+#: app/models/group.rb:-
+msgid "Group|Item"
+msgstr ""
+
+#: app/models/picture.rb:-
+msgid "picture"
+msgstr ""
+
+#: app/models/picture.rb:-
+msgid "Picture|Title"
+msgstr ""
+
+#: app/models/picture.rb:-
+msgid "Picture|Name"
+msgstr ""
+
+#: app/models/picture.rb:-
+msgid "Picture|Size"
+msgstr ""
+
+#: app/models/picture.rb:-
+msgid "Picture|Content type"
+msgstr ""
+
+#: app/models/picture.rb:-
+msgid "Picture|Image"
+msgstr ""
+
+#: app/models/picture.rb:-
+msgid "Picture|Item"
+msgstr ""
+
+#: app/models/picture.rb:-
+msgid "Picture|Shopitem"
+msgstr ""
+
+#: app/models/picture.rb:-
+msgid "Picture|Student"
+msgstr ""
+
+#: app/models/picture.rb:-
+msgid "Picture|Review"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "user"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "User|Login"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "User|Password"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "User|Name"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "User|Email pc"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "User|Email cell"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "User|Group"
+msgstr ""
+
+#: app/models/user.rb:-
+msgid "User|Level"
+msgstr ""
+
+#: app/models/message.rb:-
+msgid "message"
+msgstr ""
+
+#: app/models/message.rb:-
+msgid "Message|Priority"
+msgstr ""
+
+#: app/models/message.rb:-
+msgid "Message|Title"
+msgstr ""
+
+#: app/models/message.rb:-
+msgid "Message|Body"
+msgstr ""
+
+#: app/models/message.rb:-
+msgid "Message|Memo"
+msgstr ""
+
+#: app/models/message.rb:-
+msgid "Message|Org e mail"
+msgstr ""
+
+#: app/models/message.rb:-
+msgid "Message|Org url"
+msgstr ""
+
+#: app/models/message.rb:-
+msgid "Message|Org name"
+msgstr ""
+
+#: app/models/message.rb:-
+msgid "Message|Source url"
+msgstr ""
+
+#: app/models/message.rb:-
+msgid "Message|Link next"
+msgstr ""
+
+#: app/models/message.rb:-
+msgid "Message|Link prev"
+msgstr ""
+
+#: app/models/message.rb:-
+msgid "Message|Updated on"
+msgstr ""
+
+#: app/models/message.rb:-
+msgid "Message|Level"
+msgstr ""
+
+#: app/models/category.rb:- app/views/item/_item_content.rhtml:40
+#: app/views/item/_form.rhtml:42 app/views/item/_form_particular.rhtml:6
+#: app/views/item/list_item.rhtml:19 app/views/item/_listindex.rhtml:18
+#: app/views/item/_form_facility.rhtml:6 app/views/item/_listitem.rhtml:154
+msgid "category"
+msgstr ""
+
+#: app/models/category.rb:-
+msgid "Category|Priority"
+msgstr ""
+
+#: app/models/category.rb:-
+msgid "Category|Name"
+msgstr ""
+
+#: app/models/category.rb:-
+msgid "Category|Memo"
+msgstr ""
+
+#: app/models/category.rb:-
+msgid "Category|Updated on"
+msgstr ""
+
+#: app/models/mailer.rb:13
+msgid "rainbow book club notice to checker1"
+msgstr ""
+
+#: app/models/mailer.rb:22
+msgid "rainbow book club notice to comment checker1"
+msgstr ""
+
+#: app/models/mailer.rb:31
+msgid "rainbow book club notice to shopitem checker"
+msgstr ""
+
+#: app/models/mailer.rb:40
+msgid "rainbow book club notice to shop checker1"
+msgstr ""
+
+#: app/models/mailer.rb:50
+msgid "rainbow book club inquiry mail to admin1"
+msgstr ""
+
+#: app/models/mailer.rb:59
+msgid "rainbow book club application mail to admin1"
+msgstr ""
+
+#: app/models/particular.rb:-
+msgid "particular"
+msgstr ""
+
+#: app/models/particular.rb:-
+msgid "Particular|Priority"
+msgstr ""
+
+#: app/models/particular.rb:-
+msgid "Particular|Seq"
+msgstr ""
+
+#: app/models/particular.rb:-
+msgid "Particular|Name"
+msgstr ""
+
+#: app/models/particular.rb:-
+msgid "Particular|Memo"
+msgstr ""
+
+#: app/models/particular.rb:-
+msgid "Particular|Particularcat"
+msgstr ""
+
+#: app/models/particular.rb:-
+msgid "Particular|Updated on"
+msgstr ""
+
+#: app/models/item.rb:- app/views/shopitem/_form_by_l2.rhtml:105
+#: app/views/shopitem/_form_edit_by_l2.rhtml:80
+#: app/views/reviews/edit_comment_by_teachar.rhtml:19
+#: app/views/reviews/edit_comment_by_student.rhtml:19
+#: app/views/reviews/show.rhtml:19
+#: app/views/reviews/show_my_class_review.rhtml:8
+#: app/views/reviews/show_my_review.rhtml:8
+msgid "item"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Name"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Created at"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Memo"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Spot"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Title"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Content"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|User"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Publish level"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Tag"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Group"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Category"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Structure"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Shop"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val 1"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val 2"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val 3"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val 4"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val 5"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val 6"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val 7"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val 8"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val 9"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val k"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val l"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val m"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val n"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val o"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val p"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val q"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Num val r"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val 1"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val 2"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val 3"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val 4"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val 5"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val 6"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val 7"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val 8"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val 9"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val k"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val l"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val m"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val n"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val o"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val p"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val q"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Str val r"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Date val 1"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Date val 2"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Date val 3"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Date val 4"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Date val 5"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Check box 00"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Check box 01"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Check box 02"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Check box 03"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Check box 04"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Check box 05"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Check box 06"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Check box 07"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Check box 08"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Check box 09"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Check box 0a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 00"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 01"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 02"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 03"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 04"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 05"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 06"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 07"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 08"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 09"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 0a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 0b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 0c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 0d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 0e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 0f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 0g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 0h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 0i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 0j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 10"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 11"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 12"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 13"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 14"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 15"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 16"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 17"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 18"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 19"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 1a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 1b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 1c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 1d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 1e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 1f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 1g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 1h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 1i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 1j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 20"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 21"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 22"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 23"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 24"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 25"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 26"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 27"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 28"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 29"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 2a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 2b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 2c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 2d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 2e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 2f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 2g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 2h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 2i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 2j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 30"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 31"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 32"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 33"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 34"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 35"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 36"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 37"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 38"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 39"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 3a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 3b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 3c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 3d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 3e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 3f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 3g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 3h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 3i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 3j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 40"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 41"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 42"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 43"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 44"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 45"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 46"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 47"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 48"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 49"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 4a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 4b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 4c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 4d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 4e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 4f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 4g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 4h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 4i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 4j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 50"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 51"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 52"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 53"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 54"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 55"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 56"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 57"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 58"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 59"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 5a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 5b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 5c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 5d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 5e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 5f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 5g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 5h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 5i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 5j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 60"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 61"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 62"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 63"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 64"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 65"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 66"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 67"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 68"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 69"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 6a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 6b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 6c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 6d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 6e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 6f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 6g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 6h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 6i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 6j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 70"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 71"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 72"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 73"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 74"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 75"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 76"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 77"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 78"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 79"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 7a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 7b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 7c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 7d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 7e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 7f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 7g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 7h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 7i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 7j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 80"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 81"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 82"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 83"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 84"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 85"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 86"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 87"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 88"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 89"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 8a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 8b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 8c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 8d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 8e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 8f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 8g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 8h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 8i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 8j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 90"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 91"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 92"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 93"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 94"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 95"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 96"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 97"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 98"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 99"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 9a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 9b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 9c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 9d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 9e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 9f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 9g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 9h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 9i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility 9j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility a0"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility a1"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility a2"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility a3"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility a4"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility a5"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility a6"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility a7"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility a8"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility a9"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility aa"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility ab"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility ac"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility ad"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility ae"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility af"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility ag"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility ah"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility ai"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Facility aj"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 00"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 01"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 02"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 03"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 04"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 05"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 06"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 07"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 08"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 09"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 0a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 0b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 0c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 0d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 0e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 0f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 0g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 0h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 0i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 0j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 10"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 11"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 12"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 13"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 14"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 15"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 16"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 17"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 18"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 19"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 1a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 1b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 1c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 1d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 1e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 1f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 1g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 1h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 1i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 1j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 20"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 21"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 22"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 23"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 24"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 25"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 26"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 27"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 28"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 29"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 2a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 2b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 2c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 2d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 2e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 2f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 2g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 2h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 2i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 2j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 30"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 31"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 32"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 33"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 34"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 35"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 36"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 37"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 38"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 39"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 3a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 3b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 3c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 3d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 3e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 3f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 3g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 3h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 3i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 3j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 40"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 41"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 42"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 43"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 44"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 45"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 46"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 47"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 48"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 49"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 4a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 4b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 4c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 4d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 4e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 4f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 4g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 4h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 4i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 4j"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 50"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 51"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 52"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 53"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 54"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 55"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 56"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 57"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 58"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 59"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 5a"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 5b"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 5c"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 5d"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 5e"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 5f"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 5g"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 5h"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 5i"
+msgstr ""
+
+#: app/models/item.rb:-
+msgid "Item|Particular note 5j"
+msgstr ""
+
+#: app/models/item.rb:17 app/models/shopitem.rb:11 app/models/spot.rb:25
+#: app/models/shop.rb:27 app/views/shopitem/_shop_form.rhtml:168
+#: app/views/shopitem/_spot_form.rhtml:125 app/views/shopitem/_form.rhtml:82
+#: app/views/shopitem/_form_edit.rhtml:67
+#: app/views/shopitem/_form_by_l2.rhtml:127
+#: app/views/shopitem/_form_edit_by_l2.rhtml:97
+#: app/views/shopitem/_shop_new_form.rhtml:132
+#: app/views/item/_spot_form.rhtml:125 app/views/item/_form.rhtml:107
+msgid "close"
+msgstr ""
+
+#: app/models/item.rb:18 app/models/shopitem.rb:12 app/models/spot.rb:26
+#: app/models/shop.rb:28 app/views/shopitem/_shop_form.rhtml:169
+#: app/views/shopitem/_spot_form.rhtml:126 app/views/shopitem/_form.rhtml:83
+#: app/views/shopitem/_form_edit.rhtml:68
+#: app/views/shopitem/_form_by_l2.rhtml:128
+#: app/views/shopitem/_form_edit_by_l2.rhtml:98
+#: app/views/shopitem/_shop_new_form.rhtml:133
+#: app/views/item/_spot_form.rhtml:126 app/views/item/_form.rhtml:108
+msgid "open_group"
+msgstr ""
+
+#: app/models/item.rb:19 app/models/shopitem.rb:13 app/models/spot.rb:27
+#: app/models/shop.rb:29 app/views/shopitem/_shop_form.rhtml:170
+#: app/views/shopitem/_spot_form.rhtml:127 app/views/shopitem/_form.rhtml:84
+#: app/views/shopitem/_form_edit.rhtml:69
+#: app/views/shopitem/_form_by_l2.rhtml:129
+#: app/views/shopitem/_form_edit_by_l2.rhtml:99
+#: app/views/shopitem/_shop_new_form.rhtml:134
+#: app/views/item/_spot_form.rhtml:127 app/views/item/_form.rhtml:109
+msgid "open_all"
+msgstr ""
+
+#: app/models/item.rb:23 app/controllers/item_controller.rb:1305
+#: app/views/item/_form.rhtml:29
+msgid "baikai"
+msgstr ""
+
+#: app/models/item.rb:24 app/controllers/item_controller.rb:1306
+#: app/views/item/_form.rhtml:30
+msgid "kasinusi"
+msgstr ""
+
+#: app/models/item.rb:25 app/controllers/item_controller.rb:1307
+#: app/views/item/_form.rhtml:31
+msgid "urinusi"
+msgstr ""
+
+#: app/models/item.rb:26 app/controllers/item_controller.rb:1308
+#: app/views/item/_form.rhtml:32
+msgid "dairi"
+msgstr ""
+
+#: app/models/item.rb:27 app/controllers/item_controller.rb:1309
+#: app/views/item/_form.rhtml:33
+msgid "other"
+msgstr ""
+
+#: app/models/structure.rb:- app/views/item/_item_content.rhtml:147
+#: app/views/item/_form.rhtml:84 app/views/item/_listindex.rhtml:105
+#: app/views/item/_listitem.rhtml:284
+msgid "structure"
+msgstr ""
+
+#: app/models/structure.rb:-
+msgid "Structure|Priority"
+msgstr ""
+
+#: app/models/structure.rb:-
+msgid "Structure|Name"
+msgstr ""
+
+#: app/models/structure.rb:-
+msgid "Structure|Memo"
+msgstr ""
+
+#: app/models/structure.rb:-
+msgid "Structure|Updated on"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "shopitem"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Name"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Created at"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Num val 1"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Memo"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Shop"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Title"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Content"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|User"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Publish level"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Tag"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Group"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Author"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Illustrator"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Translator"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Amazon url"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Genre"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Nr pages"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Hero"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Publish date"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Genre wk"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Name kana"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Author kana"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Illustrator kana"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Translator kana"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Di flg"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Recommend grade flg 00"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Recommend grade flg 01"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Recommend grade flg 02"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Recommend grade flg 03"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Recommend grade flg 04"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Recommend grade flg 05"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Recommend grade flg 06"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Recommend grade flg 07"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Recommend grade flg 08"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Recommend grade flg 09"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Recommend grade flg 10"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Theme"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Theme wk"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Item"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Date val 1"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Date val 2"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Date val 3"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Date val 4"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Date val 5"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Str val 1"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Str val 2"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Str val 3"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Str val 4"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Str val 5"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Str val 6"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Str val 7"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Str val 8"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Str val 9"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Str val a"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Num val 2"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Num val 3"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Num val 4"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Num val 5"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Num val 6"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Num val 7"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Num val 8"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Num val 9"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Num val a"
+msgstr ""
+
+#: app/models/shopitem.rb:-
+msgid "Shopitem|Spot"
+msgstr ""
+
+#: app/models/particularcat.rb:-
+msgid "particularcat"
+msgstr ""
+
+#: app/models/particularcat.rb:-
+msgid "Particularcat|Priority"
+msgstr ""
+
+#: app/models/particularcat.rb:-
+msgid "Particularcat|Name"
+msgstr ""
+
+#: app/models/particularcat.rb:-
+msgid "Particularcat|Memo"
+msgstr ""
+
+#: app/models/particularcat.rb:-
+msgid "Particularcat|Updated on"
+msgstr ""
+
+#: app/models/student.rb:- app/controllers/messages_controller.rb:165
+#: app/views/messages/_form.rhtml:9 app/views/item/_listitem.rhtml:97
+msgid "student"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|Item"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|F name"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|M name"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|L name"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|Age"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|Memo"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|Created at"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|Updated at"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|Grade"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|Sex"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|Birthday"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|L name initial"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|Alias"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|User"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|F name kana"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|L name kana"
+msgstr ""
+
+#: app/models/student.rb:-
+msgid "Student|Alias kana"
+msgstr ""
+
+#: app/models/student.rb:10 app/controllers/item_controller.rb:1312
+#: app/controllers/student_controller.rb:897
+#: app/views/account/_student.rhtml:24 app/views/item/_form.rhtml:126
+#: app/views/student/_form.rhtml:35
+#: app/views/student/_form_by_student.rhtml:41
+msgid "grade_k"
+msgstr ""
+
+#: app/models/student.rb:11 app/controllers/item_controller.rb:1313
+#: app/controllers/student_controller.rb:898
+#: app/views/account/_student.rhtml:25 app/views/item/_form.rhtml:127
+#: app/views/student/_form.rhtml:36
+#: app/views/student/_form_by_student.rhtml:42
+msgid "grade_1"
+msgstr ""
+
+#: app/models/student.rb:12 app/controllers/item_controller.rb:1314
+#: app/controllers/student_controller.rb:899
+#: app/views/account/_student.rhtml:26 app/views/item/_form.rhtml:128
+#: app/views/student/_form.rhtml:37
+#: app/views/student/_form_by_student.rhtml:43
+msgid "grade_2"
+msgstr ""
+
+#: app/models/student.rb:13 app/controllers/item_controller.rb:1315
+#: app/controllers/student_controller.rb:900
+#: app/views/account/_student.rhtml:27 app/views/item/_form.rhtml:129
+#: app/views/student/_form.rhtml:38
+#: app/views/student/_form_by_student.rhtml:44
+msgid "grade_3"
+msgstr ""
+
+#: app/models/student.rb:14 app/controllers/item_controller.rb:1316
+#: app/controllers/student_controller.rb:901
+#: app/views/account/_student.rhtml:28 app/views/item/_form.rhtml:130
+#: app/views/student/_form.rhtml:39
+#: app/views/student/_form_by_student.rhtml:45
+msgid "grade_4"
+msgstr ""
+
+#: app/models/student.rb:15 app/controllers/item_controller.rb:1317
+#: app/controllers/student_controller.rb:902
+#: app/views/account/_student.rhtml:29 app/views/item/_form.rhtml:131
+#: app/views/student/_form.rhtml:40
+#: app/views/student/_form_by_student.rhtml:46
+msgid "grade_5"
+msgstr ""
+
+#: app/models/student.rb:16 app/controllers/item_controller.rb:1318
+#: app/controllers/student_controller.rb:903
+#: app/views/account/_student.rhtml:30 app/views/item/_form.rhtml:132
+#: app/views/student/_form.rhtml:41
+#: app/views/student/_form_by_student.rhtml:47
+msgid "grade_6"
+msgstr ""
+
+#: app/models/student.rb:17 app/controllers/item_controller.rb:1319
+#: app/controllers/student_controller.rb:904
+#: app/views/account/_student.rhtml:31 app/views/item/_form.rhtml:133
+#: app/views/student/_form.rhtml:42
+#: app/views/student/_form_by_student.rhtml:48
+msgid "grade_7"
+msgstr ""
+
+#: app/models/student.rb:18 app/controllers/item_controller.rb:1320
+#: app/controllers/student_controller.rb:905
+#: app/views/account/_student.rhtml:32 app/views/item/_form.rhtml:134
+#: app/views/student/_form.rhtml:43
+#: app/views/student/_form_by_student.rhtml:49
+msgid "grade_8"
+msgstr ""
+
+#: app/models/student.rb:19 app/controllers/item_controller.rb:1321
+#: app/controllers/student_controller.rb:906
+#: app/views/account/_student.rhtml:33 app/views/item/_form.rhtml:135
+#: app/views/student/_form.rhtml:44
+#: app/views/student/_form_by_student.rhtml:50
+msgid "grade_9"
+msgstr ""
+
+#: app/models/student.rb:20 app/controllers/item_controller.rb:1322
+#: app/controllers/student_controller.rb:907
+#: app/views/account/_student.rhtml:34 app/views/item/_form.rhtml:136
+#: app/views/student/_form.rhtml:45
+#: app/views/student/_form_by_student.rhtml:51
+msgid "grade_10"
+msgstr ""
+
+#: app/models/student.rb:21 app/controllers/item_controller.rb:1323
+#: app/controllers/student_controller.rb:908
+#: app/views/account/_student.rhtml:35 app/views/item/_form.rhtml:137
+#: app/views/student/_form.rhtml:46
+#: app/views/student/_form_by_student.rhtml:52
+msgid "grade_11"
+msgstr ""
+
+#: app/models/student.rb:22 app/controllers/item_controller.rb:1324
+#: app/controllers/student_controller.rb:909
+#: app/views/account/_student.rhtml:36 app/views/item/_form.rhtml:138
+#: app/views/student/_form.rhtml:47
+#: app/views/student/_form_by_student.rhtml:53
+msgid "grade_12"
+msgstr ""
+
+#: app/models/student.rb:23 app/controllers/item_controller.rb:1325
+#: app/controllers/student_controller.rb:910
+#: app/views/account/_student.rhtml:37 app/views/item/_form.rhtml:139
+#: app/views/student/_form.rhtml:48
+#: app/views/student/_form_by_student.rhtml:54
+msgid "grade_13"
+msgstr ""
+
+#: app/models/student.rb:24 app/controllers/item_controller.rb:1326
+#: app/controllers/student_controller.rb:911
+#: app/views/account/_student.rhtml:38 app/views/item/_form.rhtml:140
+#: app/views/student/_form.rhtml:49
+#: app/views/student/_form_by_student.rhtml:55
+msgid "grade_14"
+msgstr ""
+
+#: app/models/student.rb:25 app/controllers/item_controller.rb:1327
+#: app/controllers/student_controller.rb:912
+#: app/views/account/_student.rhtml:39 app/views/item/_form.rhtml:141
+#: app/views/student/_form.rhtml:50
+#: app/views/student/_form_by_student.rhtml:56
+msgid "grade_15"
+msgstr ""
+
+#: app/models/student.rb:26 app/controllers/item_controller.rb:1328
+#: app/controllers/student_controller.rb:913
+#: app/views/account/_student.rhtml:40 app/views/item/_form.rhtml:142
+#: app/views/student/_form.rhtml:51
+#: app/views/student/_form_by_student.rhtml:57
+msgid "grade_16"
+msgstr ""
+
+#: app/models/student.rb:27 app/controllers/item_controller.rb:1329
+#: app/controllers/student_controller.rb:915
+#: app/views/account/_student.rhtml:41 app/views/item/_form.rhtml:143
+#: app/views/reviews/list_grade_t.rhtml:13
+#: app/views/reviews/list_author_grade_t.rhtml:12
+#: app/views/student/_form.rhtml:52
+#: app/views/student/_form_by_student.rhtml:58
+msgid "grade_t"
+msgstr ""
+
+#: app/models/student.rb:28 app/controllers/item_controller.rb:1330
+#: app/controllers/student_controller.rb:914 app/views/item/_form.rhtml:144
+#: app/views/reviews/list_author_grade_17.rhtml:12
+#: app/views/reviews/list_grade_17.rhtml:13 app/views/student/_form.rhtml:53
+#: app/views/student/_form_by_student.rhtml:59
+msgid "grade_17"
+msgstr ""
+
+#: app/models/spot.rb:- app/views/item/_spot.rhtml:1
+msgid "spot"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Name"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Address"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Phone"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Fax"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Memo"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Longitude"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Latitude"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Homepage"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Email 1"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Image url"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Longitude tokyo datum dec"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Latitude tokyo datum dec"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Longitude tokyo datum ddmmsss"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Latitude tokyo datum ddmmsss"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|User"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Group"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Publish level"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Address wk1"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Zip"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Prefecture"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Address1"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Address2"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Building"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Text1"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Text2"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Text3"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Text4"
+msgstr ""
+
+#: app/models/spot.rb:-
+msgid "Spot|Text5"
+msgstr ""
+
+#: app/models/shop.rb:- app/views/shopitem/_shop.rhtml:1
+msgid "shop"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Name"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Address"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Phone"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Fax"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Memo"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Longitude"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Latitude"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Homepage"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Email 1"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Image url"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Longitude tokyo datum dec"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Latitude tokyo datum dec"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Longitude tokyo datum ddmmsss"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Latitude tokyo datum ddmmsss"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|User"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Group"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Publish level"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Address wk1"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Zip"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Prefecture"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Address1"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Address2"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Building"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Text1"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Text2"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Text3"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Text4"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Text5"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Cat 01"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Cat 02"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|What"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|When"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Where"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Entrance fee"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Membership fee mon"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Membership fee year"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Membership fee remarks"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Member nr m"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Member nr f"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Member nr all"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Member remarks"
+msgstr ""
+
+#: app/models/shop.rb:-
+msgid "Shop|Memo 02"
+msgstr ""
+
+#: app/models/facility.rb:- app/views/item/_item_content.rhtml:188
+#: app/views/item/_item_content.rhtml:202 app/views/item/_form.rhtml:230
+#: app/views/item/_listitem.rhtml:349 app/views/item/_listitem.rhtml:363
+msgid "facility"
+msgstr ""
+
+#: app/models/facility.rb:-
+msgid "Facility|Priority"
+msgstr ""
+
+#: app/models/facility.rb:-
+msgid "Facility|Seq"
+msgstr ""
+
+#: app/models/facility.rb:-
+msgid "Facility|Name"
+msgstr ""
+
+#: app/models/facility.rb:-
+msgid "Facility|Memo"
+msgstr ""
+
+#: app/models/facility.rb:-
+msgid "Facility|Facilitycat"
+msgstr ""
+
+#: app/models/facility.rb:-
+msgid "Facility|Updated on"
+msgstr ""
+
+#: app/models/review_comment.rb:-
+msgid "review comment"
+msgstr ""
+
+#: app/models/review_comment.rb:-
+msgid "ReviewComment|Name"
+msgstr ""
+
+#: app/models/review_comment.rb:-
+msgid "ReviewComment|Content"
+msgstr ""
+
+#: app/models/review_comment.rb:-
+msgid "ReviewComment|Student"
+msgstr ""
+
+#: app/models/review_comment.rb:-
+msgid "ReviewComment|Review"
+msgstr ""
+
+#: app/models/review_comment.rb:-
+msgid "ReviewComment|Created at"
+msgstr ""
+
+#: app/models/review_comment.rb:-
+msgid "ReviewComment|Updated at"
+msgstr ""
+
+#: app/models/review_comment.rb:-
+msgid "ReviewComment|Status"
+msgstr ""
+
+#: app/models/review.rb:-
+msgid "review"
+msgstr ""
+
+#: app/models/review.rb:-
+msgid "Review|Shopitem"
+msgstr ""
+
+#: app/models/review.rb:-
+msgid "Review|Item"
+msgstr ""
+
+#: app/models/review.rb:-
+msgid "Review|Student"
+msgstr ""
+
+#: app/models/review.rb:-
+msgid "Review|Body"
+msgstr ""
+
+#: app/models/review.rb:-
+msgid "Review|Created at"
+msgstr ""
+
+#: app/models/review.rb:-
+msgid "Review|Updated at"
+msgstr ""
+
+#: app/models/review.rb:-
+msgid "Review|Status"
+msgstr ""
+
+#: app/models/review.rb:-
+msgid "Review|Genre"
+msgstr ""
+
+#: app/models/review.rb:-
+msgid "Review|Genre wk"
+msgstr ""
+
+#: app/models/review.rb:-
+msgid "Review|Hiro"
+msgstr ""
+
+#: app/models/review.rb:11 app/controllers/review_comments_controller.rb:199
+#: app/controllers/reviews_controller.rb:898
+#: app/views/review_comments/edit_bak.html.erb:31
+#: app/views/review_comments/edit_by_teachar.rhtml:35
+#: app/views/review_comments/edit.rhtml:25
+#: app/views/review_comments/edit_by_student.rhtml:35
+#: app/views/reviews/edit_by_teachar.rhtml:21
+#: app/views/reviews/edit_comment_by_teachar.rhtml:172
+#: app/views/reviews/edit_comment_by_student.rhtml:150
+#: app/views/reviews/show.rhtml:186 app/views/reviews/edit.rhtml:21
+#: app/views/reviews/new.rhtml:12
+#: app/views/reviews/show_my_class_review.rhtml:177
+#: app/views/reviews/edit_by_student.rhtml:21
+msgid "submited"
+msgstr ""
+
+#: app/models/review.rb:12 app/controllers/review_comments_controller.rb:200
+#: app/controllers/reviews_controller.rb:899
+#: app/views/review_comments/edit_bak.html.erb:32
+#: app/views/review_comments/edit_by_teachar.rhtml:36
+#: app/views/review_comments/edit.rhtml:26
+#: app/views/reviews/edit_by_teachar.rhtml:22
+#: app/views/reviews/edit_comment_by_teachar.rhtml:173
+#: app/views/reviews/edit.rhtml:22
+msgid "reviewing"
+msgstr ""
+
+#: app/models/review.rb:13 app/controllers/review_comments_controller.rb:201
+#: app/controllers/reviews_controller.rb:900
+#: app/views/review_comments/edit_bak.html.erb:33
+#: app/views/review_comments/edit_by_teachar.rhtml:37
+#: app/views/review_comments/edit.rhtml:27
+#: app/views/reviews/edit_by_teachar.rhtml:23
+#: app/views/reviews/edit_comment_by_teachar.rhtml:174
+#: app/views/reviews/edit.rhtml:23
+msgid "published"
+msgstr ""
+
+#: app/models/review.rb:14 app/controllers/review_comments_controller.rb:202
+#: app/controllers/reviews_controller.rb:901
+#: app/views/review_comments/edit_bak.html.erb:34
+#: app/views/review_comments/edit_by_teachar.rhtml:38
+#: app/views/review_comments/edit.rhtml:28
+#: app/views/reviews/edit_by_teachar.rhtml:24
+#: app/views/reviews/edit_comment_by_teachar.rhtml:175
+#: app/views/reviews/edit.rhtml:24
+msgid "holding"
+msgstr ""
+
+#: app/models/facilitycat.rb:-
+msgid "facilitycat"
+msgstr ""
+
+#: app/models/facilitycat.rb:-
+msgid "Facilitycat|Priority"
+msgstr ""
+
+#: app/models/facilitycat.rb:-
+msgid "Facilitycat|Seq"
+msgstr ""
+
+#: app/models/facilitycat.rb:-
+msgid "Facilitycat|Name"
+msgstr ""
+
+#: app/models/facilitycat.rb:-
+msgid "Facilitycat|Memo"
+msgstr ""
+
+#: app/models/facilitycat.rb:-
+msgid "Facilitycat|Updated on"
+msgstr ""
+
+#: app/controllers/item_controller.rb:493
+#: app/controllers/shopitem_controller.rb:352
+#: app/controllers/shopitem_controller.rb:365
+msgid "new item successfully created"
+msgstr ""
+
+#: app/controllers/item_controller.rb:752
+msgid "item successfully updated"
+msgstr ""
+
+#: app/controllers/item_controller.rb:785
+msgid "item successfully deleted"
+msgstr ""
+
+#: app/controllers/item_controller.rb:899
+msgid "spot successfully updated"
+msgstr ""
+
+#: app/controllers/item_controller.rb:960
+msgid "spot successfully deleted"
+msgstr ""
+
+#: app/controllers/item_controller.rb:983
+#: app/controllers/shopitem_controller.rb:1020
+msgid "Category was successfully created"
+msgstr ""
+
+#: app/controllers/item_controller.rb:1003
+#: app/controllers/shopitem_controller.rb:1040
+msgid "Category was successfully updated."
+msgstr ""
+
+#: app/controllers/item_controller.rb:1033
+msgid "Structure was successfully created"
+msgstr ""
+
+#: app/controllers/item_controller.rb:1051
+msgid "Structure was successfully updated."
+msgstr ""
+
+#: app/controllers/item_controller.rb:1081
+msgid "Facility was successfully created"
+msgstr ""
+
+#: app/controllers/item_controller.rb:1099
+msgid "Facility was successfully updated."
+msgstr ""
+
+#: app/controllers/item_controller.rb:1123
+msgid "Facilitycat was successfully created"
+msgstr ""
+
+#: app/controllers/item_controller.rb:1141
+msgid "Facilitycat was successfully updated."
+msgstr ""
+
+#: app/controllers/item_controller.rb:1172
+msgid "Particular was successfully created"
+msgstr ""
+
+#: app/controllers/item_controller.rb:1190
+msgid "Particular was successfully updated."
+msgstr ""
+
+#: app/controllers/item_controller.rb:1233
+msgid "Particularcat was successfully updated."
+msgstr ""
+
+#: app/controllers/shopitem_controller.rb:439
+msgid "shop_name already exist"
+msgstr ""
+
+#: app/controllers/shopitem_controller.rb:456
+msgid "shop successfully created"
+msgstr ""
+
+#: app/controllers/shopitem_controller.rb:773
+#: app/controllers/shopitem_controller.rb:786
+#: app/controllers/shopitem_controller.rb:928
+msgid "error user unmuch"
+msgstr ""
+
+#: app/controllers/shopitem_controller.rb:806
+msgid "shopitem successfully updated"
+msgstr ""
+
+#: app/controllers/shopitem_controller.rb:817
+msgid "shopitem successfully deleted"
+msgstr ""
+
+#: app/controllers/shopitem_controller.rb:920
+msgid "mail was sent"
+msgstr ""
+
+#: app/controllers/shopitem_controller.rb:945
+msgid "shop successfully updated"
+msgstr ""
+
+#: app/controllers/shopitem_controller.rb:1003
+msgid "shop successfully deleted"
+msgstr ""
+
+#: app/controllers/user_controller.rb:24
+msgid "Login successful"
+msgstr ""
+
+#: app/controllers/user_controller.rb:28
+#: app/controllers/messages_controller.rb:13
+#: app/controllers/application_controller.rb:133
+msgid "Login unsuccessful"
+msgstr ""
+
+#: app/controllers/user_controller.rb:48
+msgid "Signup successful!"
+msgstr ""
+
+#: app/controllers/user_controller.rb:51
+msgid ""
+" Please check your registered email account to verify your account "
+"registration and continue with the login."
+msgstr ""
+
+#: app/controllers/user_controller.rb:53
+msgid " Please log in."
+msgstr ""
+
+#: app/controllers/user_controller.rb:60
+msgid "Error creating account: confirmation email not sent"
+msgstr ""
+
+#: app/controllers/user_controller.rb:88
+msgid "Updated password emailed to %{email}"
+msgstr ""
+
+#: app/controllers/user_controller.rb:91
+msgid "Password updated."
+msgstr ""
+
+#: app/controllers/user_controller.rb:95
+msgid "There was a problem saving the password. Please retry."
+msgstr ""
+
+#: app/controllers/user_controller.rb:100
+msgid "Password could not be changed at this time. Please retry."
+msgstr ""
+
+#: app/controllers/user_controller.rb:110
+msgid "You are currently logged in. You may change your password now."
+msgstr ""
+
+#: app/controllers/user_controller.rb:117
+msgid "Please contact the system admin at %{email} to reset your password."
+msgstr ""
+
+#: app/controllers/user_controller.rb:127
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: app/controllers/user_controller.rb:129
+msgid "We could not find a user with the email address %{email}"
+msgstr ""
+
+#: app/controllers/user_controller.rb:137
+msgid "Instructions on resetting your password have been emailed to %{email}"
+msgstr ""
+
+#: app/controllers/user_controller.rb:162
+msgid "User details updated"
+msgstr ""
+
+#: app/controllers/user_controller.rb:164
+msgid "Details could not be updated! Please retry."
+msgstr ""
+
+#: app/controllers/user_controller.rb:168
+msgid "Error updating user details. Please try again later."
+msgstr ""
+
+#: app/controllers/user_controller.rb:200
+msgid "The delete instructions were not sent. Please try again later."
+msgstr ""
+
+#: app/controllers/user_controller.rb:202
+msgid ""
+"The account has been scheduled for deletion. It will be removed in %"
+"{delay_delete_days} days."
+msgstr ""
+
+#: app/controllers/user_controller.rb:214
+msgid "The account for %{login} was not restored. Please try the link again."
+msgstr ""
+
+#: app/controllers/user_controller.rb:225
+msgid "The account for %{login} was successfully deleted."
+msgstr ""
+
+#: app/controllers/account_controller.rb:46
+msgid "Group was successfully created"
+msgstr ""
+
+#: app/controllers/account_controller.rb:56
+#: app/controllers/account_controller.rb:67
+#: app/controllers/account_controller.rb:78
+msgid "User was successfully created"
+msgstr ""
+
+#: app/controllers/account_controller.rb:94
+msgid "Signup successful, please login by new userid and password"
+msgstr ""
+
+#: app/controllers/account_controller.rb:166
+#: app/controllers/account_controller.rb:176
+#: app/controllers/account_controller.rb:186
+msgid "Group was successfully updated."
+msgstr ""
+
+#: app/controllers/account_controller.rb:197
+#: app/controllers/account_controller.rb:209
+#: app/controllers/account_controller.rb:221
+#: app/controllers/account_controller.rb:233
+msgid "User was successfully updated."
+msgstr ""
+
+#: app/controllers/account_controller.rb:267
+msgid "Login complete"
+msgstr ""
+
+#: app/controllers/account_controller.rb:271
+msgid "login unsuccessful"
+msgstr ""
+
+#: app/controllers/account_controller.rb:314
+msgid "Signup successful"
+msgstr ""
+
+#: app/controllers/account_controller.rb:330
+msgid "Logged out of the system"
+msgstr ""
+
+#: app/controllers/account_controller.rb:355
+#: app/controllers/account_controller.rb:362
+#: app/controllers/account_controller.rb:369
+#: app/controllers/messages_controller.rb:156
+msgid "user level too low !!"
+msgstr ""
+
+#: app/controllers/account_controller.rb:375
+#: app/views/account/_form_user.rhtml:20
+msgid "admin_level"
+msgstr ""
+
+#: app/controllers/account_controller.rb:376
+msgid "level_1"
+msgstr ""
+
+#: app/controllers/account_controller.rb:377
+#: app/views/account/_form_user_by_l2.rhtml:15
+#: app/views/account/_form_user.rhtml:19
+msgid "rw_member_level"
+msgstr ""
+
+#: app/controllers/account_controller.rb:378
+#: app/views/account/_form_user_by_l2.rhtml:14
+#: app/views/account/_form_user.rhtml:18
+#: app/views/account/_form_user_by_l3.rhtml:14
+msgid "teachar_level"
+msgstr ""
+
+#: app/controllers/account_controller.rb:379
+msgid "level_4"
+msgstr ""
+
+#: app/controllers/account_controller.rb:380
+#: app/views/account/_form_user_by_l2.rhtml:13
+#: app/views/account/_form_user.rhtml:17
+#: app/views/account/_form_user_by_l3.rhtml:13
+msgid "student_level"
+msgstr ""
+
+#: app/controllers/review_comments_controller.rb:59
+msgid "ReviewComment was successfully created."
+msgstr ""
+
+#: app/controllers/review_comments_controller.rb:65
+msgid "no comment, please re input"
+msgstr ""
+
+#: app/controllers/review_comments_controller.rb:83
+#: app/controllers/review_comments_controller.rb:103
+#: app/controllers/review_comments_controller.rb:121
+#: app/controllers/review_comments_controller.rb:143
+msgid "ReviewComment was successfully updated."
+msgstr ""
+
+#: app/controllers/review_comments_controller.rb:159
+#: app/controllers/review_comments_controller.rb:169
+msgid "ReviewComment was successfully deleted."
+msgstr ""
+
+#: app/controllers/review_comments_controller.rb:198
+#: app/controllers/reviews_controller.rb:897
+#: app/views/review_comments/edit_bak.html.erb:30
+#: app/views/review_comments/edit_by_teachar.rhtml:34
+#: app/views/review_comments/edit.rhtml:24
+#: app/views/review_comments/edit_by_student.rhtml:34
+#: app/views/reviews/edit_by_teachar.rhtml:20
+#: app/views/reviews/edit_comment_by_teachar.rhtml:171
+#: app/views/reviews/edit_comment_by_student.rhtml:149
+#: app/views/reviews/show.rhtml:185 app/views/reviews/edit.rhtml:20
+#: app/views/reviews/new.rhtml:11
+#: app/views/reviews/show_my_class_review.rhtml:176
+#: app/views/reviews/edit_by_student.rhtml:20
+msgid "working"
+msgstr ""
+
+#: app/controllers/student_controller.rb:742
+msgid "Student was successfully created."
+msgstr ""
+
+#: app/controllers/student_controller.rb:772
+#: app/controllers/student_controller.rb:791
+#: app/controllers/student_controller.rb:813
+#: app/controllers/student_controller.rb:833
+msgid "Student was successfully updated."
+msgstr ""
+
+#: app/controllers/student_controller.rb:850
+msgid "Student was successfully deleted."
+msgstr ""
+
+#: app/controllers/student_controller.rb:919 app/views/student/_form.rhtml:67
+#: app/views/student/_form_by_student.rhtml:73
+msgid "female"
+msgstr ""
+
+#: app/controllers/student_controller.rb:920 app/views/student/_form.rhtml:68
+#: app/views/student/_form_by_student.rhtml:74
+msgid "male"
+msgstr ""
+
+#: app/controllers/student_controller.rb:921 app/views/student/_form.rhtml:69
+#: app/views/student/_form_by_student.rhtml:75
+msgid "NA"
+msgstr ""
+
+#: app/controllers/reviews_controller.rb:764
+msgid "Review was successfully created."
+msgstr ""
+
+#: app/controllers/reviews_controller.rb:812
+msgid "Review was successfully updated."
+msgstr ""
+
+#: app/controllers/messages_controller.rb:67
+msgid "Message was successfully created."
+msgstr ""
+
+#: app/controllers/messages_controller.rb:82
+msgid "Message was successfully updated."
+msgstr ""
+
+#: app/controllers/messages_controller.rb:93
+msgid "Message was successfully deleted."
+msgstr ""
+
+#: app/controllers/messages_controller.rb:107
+#: app/controllers/messages_controller.rb:114
+msgid "Mail was sent."
+msgstr ""
+
+#: app/controllers/messages_controller.rb:163 app/views/messages/_form.rhtml:7
+msgid "admin"
+msgstr ""
+
+#: app/controllers/messages_controller.rb:164 app/views/messages/_form.rhtml:8
+msgid "teachar"
+msgstr ""
+
+#: app/controllers/messages_controller.rb:166
+#: app/views/messages/_form.rhtml:10
+msgid "guest"
+msgstr ""
+
+#: app/views/shopitem/_form_file_upload.html.erb:1
+#: app/views/shopitem/_form_file_upload.html.erb:6
+#: app/views/shopitem/_form_file_upload.html.erb:11
+#: app/views/shopitem/_form_file_upload.html.erb:16
+#: app/views/shopitem/_form_file_upload.html.erb:21
+#: app/views/student/_form_bak.erb:26 app/views/student/_form_bak.erb:30
+#: app/views/student/_form_bak.erb:34 app/views/student/_form_bak.erb:38
+#: app/views/student/_form_bak.erb:42 app/views/shopitem/_form.rhtml:91
+#: app/views/shopitem/_form.rhtml:96 app/views/shopitem/_form.rhtml:101
+#: app/views/shopitem/_form.rhtml:106 app/views/shopitem/_form.rhtml:111
+#: app/views/shopitem/_form_edit.rhtml:76
+#: app/views/shopitem/_form_edit.rhtml:81
+#: app/views/shopitem/_form_edit.rhtml:86
+#: app/views/shopitem/_form_edit.rhtml:91
+#: app/views/shopitem/_form_edit.rhtml:96 app/views/account/_student.rhtml:58
+#: app/views/account/_student.rhtml:62 app/views/account/_student.rhtml:66
+#: app/views/account/_student.rhtml:70 app/views/account/_student.rhtml:74
+#: app/views/item/_form.rhtml:255 app/views/item/_form.rhtml:260
+#: app/views/item/_form.rhtml:265 app/views/item/_form.rhtml:270
+#: app/views/item/_form.rhtml:275 app/views/reviews/_form.rhtml:27
+#: app/views/reviews/_form.rhtml:32 app/views/reviews/_form.rhtml:36
+#: app/views/reviews/_form.rhtml:40 app/views/reviews/_form.rhtml:44
+#: app/views/reviews/_form_bak.rhtml:22 app/views/reviews/_form_bak.rhtml:26
+#: app/views/reviews/_form_bak.rhtml:30 app/views/reviews/_form_bak.rhtml:34
+#: app/views/reviews/_form_bak.rhtml:38 app/views/student/_form.rhtml:77
+#: app/views/student/_form.rhtml:81 app/views/student/_form.rhtml:85
+#: app/views/student/_form.rhtml:89 app/views/student/_form.rhtml:93
+#: app/views/student/_form_by_student.rhtml:83
+#: app/views/student/_form_by_student.rhtml:87
+#: app/views/student/_form_by_student.rhtml:91
+#: app/views/student/_form_by_student.rhtml:95
+#: app/views/student/_form_by_student.rhtml:99
+msgid "file"
+msgstr ""
+
+#: app/views/shopitem/_form_file_upload.html.erb:3
+#: app/views/shopitem/_form_file_upload.html.erb:8
+#: app/views/shopitem/_form_file_upload.html.erb:13
+#: app/views/shopitem/_form_file_upload.html.erb:18
+#: app/views/shopitem/_form_file_upload.html.erb:23
+#: app/views/student/_form_bak.erb:28 app/views/student/_form_bak.erb:32
+#: app/views/student/_form_bak.erb:36 app/views/student/_form_bak.erb:40
+#: app/views/student/_form_bak.erb:44 app/views/shopitem/_form.rhtml:93
+#: app/views/shopitem/_form.rhtml:98 app/views/shopitem/_form.rhtml:103
+#: app/views/shopitem/_form.rhtml:108 app/views/shopitem/_form.rhtml:113
+#: app/views/shopitem/_form_edit.rhtml:78
+#: app/views/shopitem/_form_edit.rhtml:83
+#: app/views/shopitem/_form_edit.rhtml:88
+#: app/views/shopitem/_form_edit.rhtml:93
+#: app/views/shopitem/_form_edit.rhtml:98 app/views/account/_student.rhtml:60
+#: app/views/account/_student.rhtml:64 app/views/account/_student.rhtml:68
+#: app/views/account/_student.rhtml:72 app/views/account/_student.rhtml:76
+#: app/views/item/_form.rhtml:257 app/views/item/_form.rhtml:262
+#: app/views/item/_form.rhtml:267 app/views/item/_form.rhtml:272
+#: app/views/item/_form.rhtml:277 app/views/reviews/_form.rhtml:29
+#: app/views/reviews/_form.rhtml:34 app/views/reviews/_form.rhtml:38
+#: app/views/reviews/_form.rhtml:42 app/views/reviews/_form.rhtml:46
+#: app/views/reviews/_form_bak.rhtml:24 app/views/reviews/_form_bak.rhtml:28
+#: app/views/reviews/_form_bak.rhtml:32 app/views/reviews/_form_bak.rhtml:36
+#: app/views/reviews/_form_bak.rhtml:40 app/views/student/_form.rhtml:79
+#: app/views/student/_form.rhtml:83 app/views/student/_form.rhtml:87
+#: app/views/student/_form.rhtml:91 app/views/student/_form.rhtml:95
+#: app/views/student/_form_by_student.rhtml:85
+#: app/views/student/_form_by_student.rhtml:89
+#: app/views/student/_form_by_student.rhtml:93
+#: app/views/student/_form_by_student.rhtml:97
+#: app/views/student/_form_by_student.rhtml:101
+msgid "picture_title"
+msgstr ""
+
+#: app/views/shopitem/_form_recommend_grade.html.erb:1
+msgid "recommend_grade_flg_00"
+msgstr ""
+
+#: app/views/shopitem/_form_recommend_grade.html.erb:3
+#: app/views/shopitem/list_recommend.rhtml:16
+msgid "recommend for"
+msgstr ""
+
+#: app/views/shopitem/_form_recommend_grade.html.erb:4
+#: app/views/shopitem/list_recommend.rhtml:28
+msgid "recommend_grade_flg_01"
+msgstr ""
+
+#: app/views/shopitem/_form_recommend_grade.html.erb:5
+#: app/views/shopitem/list_recommend.rhtml:29
+msgid "recommend_grade_flg_02"
+msgstr ""
+
+#: app/views/shopitem/_form_recommend_grade.html.erb:6
+#: app/views/shopitem/list_recommend.rhtml:30
+msgid "recommend_grade_flg_03"
+msgstr ""
+
+#: app/views/shopitem/_form_recommend_grade.html.erb:7
+#: app/views/shopitem/list_recommend.rhtml:31
+msgid "recommend_grade_flg_04"
+msgstr ""
+
+#: app/views/shopitem/_form_recommend_grade.html.erb:8
+#: app/views/shopitem/list_recommend.rhtml:32
+msgid "recommend_grade_flg_05"
+msgstr ""
+
+#: app/views/shopitem/_form_recommend_grade.html.erb:9
+#: app/views/shopitem/list_recommend.rhtml:33
+msgid "recommend_grade_flg_06"
+msgstr ""
+
+#: app/views/shopitem/_form_recommend_grade.html.erb:10
+#: app/views/shopitem/list_recommend.rhtml:34
+msgid "recommend_grade_flg_07"
+msgstr ""
+
+#: app/views/shopitem/_form_recommend_grade.html.erb:11
+#: app/views/shopitem/list_recommend.rhtml:35
+msgid "recommend_grade_flg_08"
+msgstr ""
+
+#: app/views/shopitem/_form_recommend_grade.html.erb:12
+#: app/views/shopitem/list_recommend.rhtml:36
+msgid "recommend_grade_flg_09"
+msgstr ""
+
+#: app/views/shopitem/_form_fee.html.erb:2 app/views/shopitem/_form.rhtml:53
+#: app/views/shopitem/_showshopitem.rhtml:66
+msgid "shop_item_fee"
+msgstr ""
+
+#: app/views/shopitem/_form_fee.html.erb:4
+#: app/views/shopitem/_showshopitem.rhtml:67
+msgid "shop_item_fee_remark"
+msgstr ""
+
+#: app/views/shopitem/_form_capacity.html.erb:2
+#: app/views/shopitem/_form.rhtml:56 app/views/shopitem/_form_by_l2.rhtml:80
+#: app/views/shopitem/_showshopitem.rhtml:70
+msgid "shop_item_capacity"
+msgstr ""
+
+#: app/views/shopitem/_form_capacity.html.erb:4
+#: app/views/shopitem/_showshopitem.rhtml:71
+msgid "shop_item_capacity_remark"
+msgstr ""
+
+#: app/views/shopitem/_form_date_val_123.html.erb:2
+#: app/views/shopitem/_showshopitem.rhtml:52
+msgid "shopitem_date_val_1"
+msgstr ""
+
+#: app/views/shopitem/_form_date_val_123.html.erb:5
+#: app/views/shopitem/_showshopitem.rhtml:55 app/views/item/_listitem.rhtml:51
+msgid "shopitem_date_val_2"
+msgstr ""
+
+#: app/views/shopitem/_form_date_val_123.html.erb:8
+#: app/views/shopitem/_showshopitem.rhtml:58 app/views/item/_listitem.rhtml:53
+msgid "shopitem_date_val_3"
+msgstr ""
+
+#: app/views/review_comments/edit_bak.html.erb:8
+msgid "name"
+msgstr ""
+
+#: app/views/review_comments/edit_bak.html.erb:15
+msgid "content"
+msgstr ""
+
+#: app/views/review_comments/edit_bak.html.erb:19
+#: app/views/reviews/index_bak.html.erb:9
+#: app/views/student/_list_students.rhtml:4
+msgid "student_id"
+msgstr ""
+
+#: app/views/review_comments/edit_bak.html.erb:23
+msgid "review_id"
+msgstr ""
+
+#: app/views/review_comments/edit_bak.html.erb:27
+#: app/views/review_comments/index_bak.html.erb:9
+#: app/views/review_comments/edit_by_teachar.rhtml:31
+#: app/views/review_comments/show.rhtml:23
+#: app/views/review_comments/show.rhtml:29
+#: app/views/review_comments/show.rhtml:36
+#: app/views/review_comments/edit.rhtml:21
+#: app/views/review_comments/edit_by_student.rhtml:31
+#: app/views/review_comments/index.rhtml:10
+#: app/views/reviews/edit_by_teachar.rhtml:17
+#: app/views/reviews/edit_comment_by_teachar.rhtml:168
+#: app/views/reviews/edit_comment_by_student.rhtml:146
+#: app/views/reviews/show.rhtml:105 app/views/reviews/show.rhtml:182
+#: app/views/reviews/edit.rhtml:17 app/views/reviews/new.rhtml:8
+#: app/views/reviews/show_my_class_review.rhtml:96
+#: app/views/reviews/show_my_class_review.rhtml:173
+#: app/views/reviews/edit_by_student.rhtml:17
+msgid "status"
+msgstr ""
+
+#: app/views/review_comments/edit_bak.html.erb:29
+#: app/views/reviews/edit_bak.html.erb:10
+#: app/views/review_comments/edit_by_teachar.rhtml:33
+#: app/views/review_comments/edit.rhtml:23
+#: app/views/review_comments/edit_by_student.rhtml:33
+#: app/views/reviews/edit_by_teachar.rhtml:19
+#: app/views/reviews/edit_comment_by_teachar.rhtml:170
+#: app/views/reviews/edit_comment_by_student.rhtml:148
+#: app/views/reviews/show.rhtml:184 app/views/reviews/edit.rhtml:19
+#: app/views/reviews/new.rhtml:10
+#: app/views/reviews/show_my_class_review.rhtml:175
+#: app/views/reviews/edit_by_student.rhtml:19
+msgid "select status"
+msgstr ""
+
+#: app/views/review_comments/edit_bak.html.erb:42
+#: app/views/student/edit_bak.html.erb:3
+#: app/views/shopitem/edit_category.rhtml:5
+#: app/views/account/edit_group.rhtml:5 app/views/account/edit_user.rhtml:5
+#: app/views/account/edit_user_by_l2.rhtml:5
+#: app/views/account/edit_user_by_l3.rhtml:5
+#: app/views/account/edit_group_by_l3.rhtml:5
+#: app/views/account/edit_group_by_l2.rhtml:5
+#: app/views/account/edit_user_by_user.rhtml:4
+#: app/views/item/edit_structure.rhtml:6 app/views/item/edit_category.rhtml:5
+#: app/views/item/edit_particularcat.rhtml:5
+#: app/views/item/edit_facilitycat.rhtml:5
+#: app/views/item/edit_particular.rhtml:5 app/views/item/edit_facility.rhtml:5
+#: app/views/review_comments/edit_by_teachar.rhtml:46
+#: app/views/review_comments/edit.rhtml:36
+#: app/views/review_comments/edit_by_student.rhtml:43
+#: app/views/reviews/edit_by_teachar.rhtml:30 app/views/reviews/edit.rhtml:30
+#: app/views/reviews/edit_by_student.rhtml:27 app/views/student/edit.rhtml:15
+#: app/views/student/edit_by_student.rhtml:15
+msgid "update"
+msgstr ""
+
+#: app/views/review_comments/index_bak.html.erb:1
+#: app/views/review_comments/index.rhtml:1
+msgid "Listing_review_comments"
+msgstr ""
+
+#: app/views/review_comments/index_bak.html.erb:5
+#: app/views/messages/show.rhtml:6 app/views/messages/list.rhtml:10
+#: app/views/shopitem/show_shop.rhtml:113
+#: app/views/shopitem/list_by_author.rhtml:54 app/views/shopitem/list.rhtml:55
+#: app/views/review_comments/show.rhtml:16
+#: app/views/review_comments/index.rhtml:5
+#: app/views/reviews/edit_comment_by_teachar.rhtml:76
+#: app/views/reviews/edit_comment_by_teachar.rhtml:90
+#: app/views/reviews/edit_comment_by_teachar.rhtml:103
+#: app/views/reviews/edit_comment_by_teachar.rhtml:112
+#: app/views/reviews/edit_comment_by_teachar.rhtml:125
+#: app/views/reviews/edit_comment_by_teachar.rhtml:136
+#: app/views/reviews/show.rhtml:84 app/views/reviews/show.rhtml:99
+#: app/views/reviews/show.rhtml:114 app/views/reviews/show.rhtml:125
+#: app/views/reviews/show.rhtml:141 app/views/reviews/show.rhtml:152
+#: app/views/reviews/show_my_class_review.rhtml:75
+#: app/views/reviews/show_my_class_review.rhtml:90
+#: app/views/reviews/show_my_class_review.rhtml:105
+#: app/views/reviews/show_my_class_review.rhtml:116
+#: app/views/reviews/show_my_class_review.rhtml:132
+#: app/views/reviews/show_my_class_review.rhtml:143
+msgid "title"
+msgstr ""
+
+#: app/views/review_comments/index_bak.html.erb:6
+#: app/views/review_comments/show_bak.html.erb:7
+#: app/views/review_comments/index.rhtml:7
+msgid "comment_title"
+msgstr ""
+
+#: app/views/review_comments/index_bak.html.erb:7
+#: app/views/review_comments/show_bak.html.erb:12
+#: app/views/review_comments/index.rhtml:8
+msgid "comment_content"
+msgstr ""
+
+#: app/views/review_comments/index_bak.html.erb:8
+#: app/views/review_comments/show_bak.html.erb:17
+#: app/views/review_comments/show.rhtml:18
+#: app/views/review_comments/index.rhtml:9
+msgid "commenter"
+msgstr ""
+
+#: app/views/review_comments/index_bak.html.erb:19
+#: app/views/student/edit_bak.html.erb:10 app/views/messages/edit.rhtml:10
+#: app/views/layouts/application.rhtml:40
+#: app/views/layouts/application_api.rhtml:26
+#: app/views/layouts/_maint_sidebar.rhtml:81
+#: app/views/layouts/_maint_sidebar.rhtml:98
+#: app/views/layouts/_maint_sidebar.rhtml:120
+#: app/views/layouts/_maint_nav.rhtml:19 app/views/layouts/_maint_nav.rhtml:39
+#: app/views/layouts/_maint_nav.rhtml:53 app/views/layouts/_maint_nav.rhtml:66
+#: app/views/layouts/application_org.rhtml:26
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:81
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:98
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:120
+#: app/views/spot/_listitem.rhtml:5
+#: app/views/review_comments/edit_by_teachar.rhtml:50
+#: app/views/review_comments/edit.rhtml:40
+#: app/views/review_comments/edit_by_student.rhtml:47
+#: app/views/review_comments/index.rhtml:22
+#: app/views/review_comments/index.rhtml:33
+#: app/views/review_comments/index.rhtml:45
+#: app/views/reviews/edit_by_teachar.rhtml:34
+#: app/views/reviews/index_my_review.rhtml:21
+#: app/views/reviews/index_comment.rhtml:24 app/views/reviews/edit.rhtml:34
+#: app/views/reviews/index_my_class_review.rhtml:21
+#: app/views/reviews/edit_by_student.rhtml:31 app/views/reviews/index.rhtml:25
+#: app/views/student/edit.rhtml:18 app/views/student/edit_by_student.rhtml:18
+msgid "Show"
+msgstr ""
+
+#: app/views/review_comments/index_bak.html.erb:20
+msgid "Edit3"
+msgstr ""
+
+#: app/views/review_comments/index_bak.html.erb:21
+msgid "Edit5"
+msgstr ""
+
+#: app/views/review_comments/index_bak.html.erb:22
+#: app/views/messages/list.rhtml:30
+msgid "Destroy"
+msgstr ""
+
+#: app/views/review_comments/show_bak.html.erb:2
+#: app/views/review_comments/edit_by_teachar.rhtml:6
+#: app/views/review_comments/show.rhtml:1
+#: app/views/review_comments/edit_by_student.rhtml:6
+msgid "book_title"
+msgstr ""
+
+#: app/views/review_comments/show_bak.html.erb:3
+msgid "book_review"
+msgstr ""
+
+#: app/views/review_comments/show_bak.html.erb:22
+#: app/views/messages/show.rhtml:32 app/views/messages/edit.rhtml:7
+#: app/views/messages/list.rhtml:27 app/views/layouts/_maint_sidebar.rhtml:90
+#: app/views/layouts/_maint_sidebar.rhtml:99
+#: app/views/layouts/_maint_sidebar.rhtml:121
+#: app/views/layouts/_maint_sidebar.rhtml:128
+#: app/views/layouts/_maint_item.rhtml:11
+#: app/views/layouts/_maint_item.rhtml:13
+#: app/views/layouts/_maint_nav.rhtml:10 app/views/layouts/_maint_nav.rhtml:21
+#: app/views/layouts/_maint_nav.rhtml:40 app/views/layouts/_maint_nav.rhtml:54
+#: app/views/layouts/_maint_nav.rhtml:67
+#: app/views/layouts/_maint_shop.rhtml:12
+#: app/views/layouts/_maint_shop.rhtml:14
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:90
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:99
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:121
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:128
+#: app/views/layouts/_maint_shopitem.rhtml:13
+#: app/views/layouts/_maint_shopitem.rhtml:15 app/views/spot/_listitem.rhtml:7
+#: app/views/review_comments/show.rhtml:24
+#: app/views/review_comments/show.rhtml:30
+#: app/views/review_comments/show.rhtml:37
+#: app/views/review_comments/index.rhtml:23
+#: app/views/review_comments/index.rhtml:34
+#: app/views/review_comments/index.rhtml:46
+#: app/views/reviews/edit_comment_by_teachar.rhtml:58
+#: app/views/reviews/edit_comment_by_teachar.rhtml:62
+#: app/views/reviews/edit_comment_by_teachar.rhtml:83
+#: app/views/reviews/edit_comment_by_teachar.rhtml:96
+#: app/views/reviews/edit_comment_by_teachar.rhtml:118
+#: app/views/reviews/edit_comment_by_student.rhtml:60
+#: app/views/reviews/edit_comment_by_student.rhtml:64
+#: app/views/reviews/edit_comment_by_student.rhtml:83
+#: app/views/reviews/edit_comment_by_student.rhtml:100
+#: app/views/reviews/show.rhtml:66 app/views/reviews/show.rhtml:70
+#: app/views/reviews/show.rhtml:91 app/views/reviews/show.rhtml:106
+#: app/views/reviews/show.rhtml:132 app/views/reviews/index_my_review.rhtml:22
+#: app/views/reviews/index_comment.rhtml:28
+#: app/views/reviews/index_comment.rhtml:33
+#: app/views/reviews/show_my_class_review.rhtml:45
+#: app/views/reviews/show_my_class_review.rhtml:49
+#: app/views/reviews/show_my_class_review.rhtml:57
+#: app/views/reviews/show_my_class_review.rhtml:61
+#: app/views/reviews/show_my_class_review.rhtml:82
+#: app/views/reviews/show_my_class_review.rhtml:97
+#: app/views/reviews/show_my_class_review.rhtml:123
+#: app/views/reviews/_author_list.rhtml:25
+#: app/views/reviews/_author_list.rhtml:30
+#: app/views/reviews/_title_list.rhtml:23
+#: app/views/reviews/_title_list.rhtml:28
+#: app/views/reviews/show_my_review.rhtml:38
+#: app/views/reviews/index_my_class_review.rhtml:26
+#: app/views/reviews/index_my_class_review.rhtml:31
+#: app/views/reviews/index.rhtml:28 app/views/reviews/index.rhtml:32
+#: app/views/reviews/index.rhtml:37 app/views/student/show_by_student.rhtml:91
+#: app/views/student/show.rhtml:98
+msgid "Edit"
+msgstr ""
+
+#: app/views/review_comments/show_bak.html.erb:23
+#: app/views/student/edit_bak.html.erb:11 app/views/messages/show.rhtml:34
+#: app/views/messages/disp_mail_form2.rhtml:54
+#: app/views/messages/edit.rhtml:11 app/views/messages/new.rhtml:11
+#: app/views/messages/disp_mail_form1.rhtml:34
+#: app/views/review_comments/edit_by_teachar.rhtml:51
+#: app/views/review_comments/show.rhtml:26
+#: app/views/review_comments/show.rhtml:32
+#: app/views/review_comments/show.rhtml:39
+#: app/views/review_comments/edit.rhtml:41
+#: app/views/review_comments/edit_by_student.rhtml:48
+#: app/views/reviews/edit_by_teachar.rhtml:35
+#: app/views/reviews/edit_comment_by_teachar.rhtml:187
+#: app/views/reviews/edit_comment_by_student.rhtml:162
+#: app/views/reviews/show.rhtml:198 app/views/reviews/edit.rhtml:35
+#: app/views/reviews/new.rhtml:23
+#: app/views/reviews/show_my_class_review.rhtml:190
+#: app/views/reviews/show_my_review.rhtml:39
+#: app/views/reviews/edit_by_student.rhtml:32
+#: app/views/student/show_by_student.rhtml:92 app/views/student/show.rhtml:103
+#: app/views/student/edit.rhtml:19 app/views/student/edit_by_student.rhtml:19
+msgid "Back"
+msgstr ""
+
+#: app/views/reviews/index_bak.html.erb:1
+#: app/views/reviews/index_comment.rhtml:5 app/views/reviews/index.rhtml:5
+msgid "Listing reviews"
+msgstr ""
+
+#: app/views/reviews/index_bak.html.erb:5
+msgid "book_id"
+msgstr ""
+
+#: app/views/reviews/index_bak.html.erb:6
+#: app/views/shopitem/list_recommend.rhtml:22
+#: app/views/item/_listitem.rhtml:135
+#: app/views/reviews/index_my_review.rhtml:7
+#: app/views/reviews/index_comment.rhtml:9
+#: app/views/reviews/_author_list.rhtml:4
+#: app/views/reviews/_title_list.rhtml:3
+#: app/views/reviews/index_my_class_review.rhtml:7
+#: app/views/reviews/index.rhtml:9
+msgid "book title"
+msgstr ""
+
+#: app/views/reviews/index_bak.html.erb:7 app/views/student/_form_bak.erb:1
+#: app/views/account/_student.rhtml:1 app/views/account/_form_group.rhtml:13
+#: app/views/reviews/_form.rhtml:10 app/views/reviews/_form_bak.rhtml:5
+#: app/views/student/_form.rhtml:3
+msgid "item_id"
+msgstr ""
+
+#: app/views/reviews/index_bak.html.erb:8
+#: app/views/reviews/index_my_review.rhtml:8
+#: app/views/reviews/index_comment.rhtml:10 app/views/reviews/_search.rhtml:9
+#: app/views/reviews/index_my_class_review.rhtml:8
+#: app/views/reviews/index.rhtml:10 app/views/student/_search.rhtml:5
+msgid "class name"
+msgstr ""
+
+#: app/views/reviews/index_bak.html.erb:10 app/views/item/_listitem.rhtml:136
+#: app/views/reviews/index_my_review.rhtml:9
+#: app/views/reviews/index_comment.rhtml:11
+#: app/views/reviews/index_my_class_review.rhtml:9
+#: app/views/reviews/index.rhtml:11
+msgid "reviewer name"
+msgstr ""
+
+#: app/views/reviews/index_bak.html.erb:11
+#: app/views/reviews/index_my_review.rhtml:10
+#: app/views/reviews/index_comment.rhtml:12
+#: app/views/reviews/index_my_class_review.rhtml:10
+#: app/views/reviews/index.rhtml:12
+msgid "review body"
+msgstr ""
+
+#: app/views/reviews/index_bak.html.erb:25
+#: app/views/student/index_bak.html.erb:23
+#: app/views/shopitem/list_category.rhtml:12
+#: app/views/account/list_user.rhtml:13
+#: app/views/account/list_user_by_l3.rhtml:13
+#: app/views/account/list_group.rhtml:15
+#: app/views/account/list_user_by_l2.rhtml:13
+#: app/views/item/list_structure.rhtml:12
+#: app/views/item/list_facilitycat.rhtml:12 app/views/item/list_item.rhtml:41
+#: app/views/item/list_category.rhtml:12
+#: app/views/item/list_particularcat.rhtml:12
+#: app/views/item/list_particular.rhtml:16
+#: app/views/item/list_facility.rhtml:16
+#: app/views/review_comments/show.rhtml:25
+#: app/views/review_comments/show.rhtml:31
+#: app/views/review_comments/show.rhtml:38
+#: app/views/review_comments/index.rhtml:24
+#: app/views/review_comments/index.rhtml:35
+#: app/views/review_comments/index.rhtml:47
+#: app/views/reviews/edit_comment_by_teachar.rhtml:84
+#: app/views/reviews/edit_comment_by_teachar.rhtml:97
+#: app/views/reviews/edit_comment_by_teachar.rhtml:119
+#: app/views/reviews/edit_comment_by_student.rhtml:84
+#: app/views/reviews/edit_comment_by_student.rhtml:101
+#: app/views/reviews/show.rhtml:92 app/views/reviews/show.rhtml:107
+#: app/views/reviews/show.rhtml:133 app/views/reviews/index_my_review.rhtml:23
+#: app/views/reviews/index_comment.rhtml:29
+#: app/views/reviews/index_comment.rhtml:34
+#: app/views/reviews/show_my_class_review.rhtml:83
+#: app/views/reviews/show_my_class_review.rhtml:98
+#: app/views/reviews/show_my_class_review.rhtml:124
+#: app/views/reviews/_author_list.rhtml:26
+#: app/views/reviews/_author_list.rhtml:31
+#: app/views/reviews/_title_list.rhtml:24
+#: app/views/reviews/_title_list.rhtml:29
+#: app/views/reviews/index_my_class_review.rhtml:27
+#: app/views/reviews/index_my_class_review.rhtml:32
+#: app/views/reviews/index.rhtml:29 app/views/reviews/index.rhtml:33
+#: app/views/reviews/index.rhtml:38 app/views/student/_list_students.rhtml:40
+#: app/views/student/_list_students.rhtml:44
+#: app/views/student/_list_students.rhtml:49
+msgid "destroy"
+msgstr ""
+
+#: app/views/reviews/index_bak.html.erb:25
+#: app/views/student/index_bak.html.erb:23
+#: app/views/account/list_user.rhtml:13
+#: app/views/account/list_user_by_l3.rhtml:13
+#: app/views/account/list_group.rhtml:15
+#: app/views/account/list_user_by_l2.rhtml:13
+#: app/views/item/list_structure.rhtml:12
+#: app/views/item/list_facilitycat.rhtml:12 app/views/item/list_item.rhtml:41
+#: app/views/item/list_category.rhtml:12
+#: app/views/item/list_particularcat.rhtml:12
+#: app/views/item/list_particular.rhtml:16
+#: app/views/item/list_facility.rhtml:16
+#: app/views/review_comments/show.rhtml:25
+#: app/views/review_comments/show.rhtml:31
+#: app/views/review_comments/show.rhtml:38
+#: app/views/review_comments/index.rhtml:24
+#: app/views/review_comments/index.rhtml:35
+#: app/views/review_comments/index.rhtml:47
+#: app/views/reviews/edit_comment_by_teachar.rhtml:84
+#: app/views/reviews/edit_comment_by_teachar.rhtml:97
+#: app/views/reviews/edit_comment_by_teachar.rhtml:119
+#: app/views/reviews/edit_comment_by_student.rhtml:84
+#: app/views/reviews/edit_comment_by_student.rhtml:101
+#: app/views/reviews/show.rhtml:92 app/views/reviews/show.rhtml:107
+#: app/views/reviews/show.rhtml:133 app/views/reviews/index_my_review.rhtml:23
+#: app/views/reviews/index_comment.rhtml:29
+#: app/views/reviews/index_comment.rhtml:34
+#: app/views/reviews/show_my_class_review.rhtml:83
+#: app/views/reviews/show_my_class_review.rhtml:98
+#: app/views/reviews/show_my_class_review.rhtml:124
+#: app/views/reviews/_author_list.rhtml:26
+#: app/views/reviews/_author_list.rhtml:31
+#: app/views/reviews/_title_list.rhtml:24
+#: app/views/reviews/_title_list.rhtml:29
+#: app/views/reviews/index_my_class_review.rhtml:27
+#: app/views/reviews/index_my_class_review.rhtml:32
+#: app/views/reviews/index.rhtml:29 app/views/reviews/index.rhtml:33
+#: app/views/reviews/index.rhtml:38 app/views/student/_list_students.rhtml:40
+#: app/views/student/_list_students.rhtml:44
+#: app/views/student/_list_students.rhtml:49
+msgid "Delete ?"
+msgstr ""
+
+#: app/views/reviews/index_bak.html.erb:32
+#: app/views/reviews/index_comment.rhtml:44 app/views/reviews/new.rhtml:1
+msgid "New review"
+msgstr ""
+
+#: app/views/student/index_bak.html.erb:9
+#: app/views/student/show_bak.html.erb:42 app/views/account/_student.rhtml:21
+#: app/views/item/_form.rhtml:123 app/views/student/_form.rhtml:32
+#: app/views/student/show_by_student.rhtml:52 app/views/student/show.rhtml:55
+#: app/views/student/_form_by_student.rhtml:38
+#: app/views/student/_list_students.rhtml:12
+msgid "grade"
+msgstr ""
+
+#: app/views/student/show_bak.html.erb:19
+msgid "visit_school"
+msgstr ""
+
+#: app/views/student/show_bak.html.erb:60
+#: app/views/shopitem/_showshopitem.rhtml:105
+#: app/views/item/_listitem.rhtml:145
+msgid "show_this_review"
+msgstr ""
+
+#: app/views/student/new_bak.html.erb:8 app/views/spot/new.rhtml:6
+#: app/views/student/new.rhtml:11
+msgid "Finish"
+msgstr ""
+
+#: app/views/student/_form_bak.erb:4 app/views/account/_student.rhtml:14
+#: app/views/reviews/_search.rhtml:16 app/views/student/_form.rhtml:19
+#: app/views/student/show_by_student.rhtml:41 app/views/student/show.rhtml:42
+#: app/views/student/_form_by_student.rhtml:24
+#: app/views/student/_search.rhtml:11
+#: app/views/student/_list_students.rhtml:10
+msgid "f_name"
+msgstr ""
+
+#: app/views/student/_form_bak.erb:7 app/views/account/_student.rhtml:11
+#: app/views/student/_form.rhtml:16 app/views/student/show_by_student.rhtml:34
+#: app/views/student/show.rhtml:35 app/views/student/_form_by_student.rhtml:21
+msgid "m_name"
+msgstr ""
+
+#: app/views/student/_form_bak.erb:10 app/views/account/_student.rhtml:5
+#: app/views/reviews/_search.rhtml:13 app/views/student/_form.rhtml:7
+#: app/views/student/show_by_student.rhtml:23 app/views/student/show.rhtml:23
+#: app/views/student/_form_by_student.rhtml:13
+#: app/views/student/_search.rhtml:8 app/views/student/_list_students.rhtml:9
+msgid "l_name"
+msgstr ""
+
+#: app/views/student/_form_bak.erb:16 app/views/account/_student.rhtml:23
+#: app/views/item/_form.rhtml:125 app/views/student/_form.rhtml:34
+#: app/views/student/_form_by_student.rhtml:40
+msgid "select grade"
+msgstr ""
+
+#: app/views/student/_form_bak.erb:20 app/views/account/_student.rhtml:49
+#: app/views/student/_form.rhtml:61 app/views/student/show_by_student.rhtml:62
+#: app/views/student/show.rhtml:65 app/views/student/_form_by_student.rhtml:67
+#: app/views/student/_list_students.rhtml:14
+msgid "age"
+msgstr ""
+
+#: app/views/student/_form_bak.erb:23 app/views/messages/show.rhtml:17
+#: app/views/shopitem/_shop_form.rhtml:162
+#: app/views/shopitem/_spot_form.rhtml:119 app/views/shopitem/_form.rhtml:118
+#: app/views/shopitem/_form_edit.rhtml:101
+#: app/views/shopitem/_form_by_l2.rhtml:138
+#: app/views/shopitem/_form_category.rhtml:5
+#: app/views/shopitem/_form_edit_by_l2.rhtml:107
+#: app/views/shopitem/_shop_new_form.rhtml:125
+#: app/views/account/_student.rhtml:55 app/views/spot/_form.rhtml:12
+#: app/views/item/_spot_form.rhtml:119 app/views/item/_form.rhtml:282
+#: app/views/item/_form_structure.rhtml:6
+#: app/views/item/_form_particular.rhtml:11
+#: app/views/item/_form_facility.rhtml:11
+#: app/views/item/_form_category.rhtml:5
+#: app/views/item/_form_particularcat.rhtml:5
+#: app/views/item/_form_facilitycat.rhtml:5 app/views/student/_form.rhtml:74
+#: app/views/student/show_by_student.rhtml:70 app/views/student/show.rhtml:73
+#: app/views/student/_form_by_student.rhtml:80
+msgid "memo"
+msgstr ""
+
+#: app/views/messages/_form.rhtml:2 app/views/messages/disp_mail_form2.rhtml:9
+#: app/views/messages/disp_mail_form1.rhtml:9 app/views/shopitem/_form.rhtml:3
+#: app/views/shopitem/_form_edit.rhtml:3
+#: app/views/shopitem/_form_by_l2.rhtml:3
+#: app/views/shopitem/_form_edit_by_l2.rhtml:3 app/views/item/_form.rhtml:1
+#: app/views/reviews/_form.rhtml:3 app/views/reviews/show.rhtml:167
+#: app/views/reviews/show_my_class_review.rhtml:158
+#: app/views/student/_form.rhtml:2 app/views/student/_form_by_student.rhtml:2
+msgid "input or set where * items."
+msgstr ""
+
+#: app/views/messages/_form.rhtml:4
+msgid "Level"
+msgstr ""
+
+#: app/views/messages/_form.rhtml:6
+msgid "select level"
+msgstr ""
+
+#: app/views/messages/_form.rhtml:16
+msgid "Priority"
+msgstr ""
+
+#: app/views/messages/_form.rhtml:19
+msgid "Title"
+msgstr ""
+
+#: app/views/messages/_form.rhtml:22
+#: app/views/review_comments/edit_by_teachar.rhtml:11
+#: app/views/review_comments/show.rhtml:6
+#: app/views/review_comments/edit_by_student.rhtml:11
+#: app/views/reviews/edit_comment_by_teachar.rhtml:47
+#: app/views/reviews/edit_comment_by_student.rhtml:47
+#: app/views/reviews/show.rhtml:55
+#: app/views/reviews/show_my_class_review.rhtml:34
+#: app/views/reviews/show_my_review.rhtml:29
+msgid "Body"
+msgstr ""
+
+#: app/views/messages/_form.rhtml:25
+msgid "Memo"
+msgstr ""
+
+#: app/views/messages/_form.rhtml:28
+msgid "Source url :"
+msgstr ""
+
+#: app/views/messages/_form.rhtml:31
+#: app/views/messages/disp_mail_form2.rhtml:21
+#: app/views/messages/disp_mail_form1.rhtml:20
+msgid "Org name :"
+msgstr ""
+
+#: app/views/messages/_form.rhtml:34
+#: app/views/messages/disp_mail_form2.rhtml:41
+#: app/views/messages/disp_mail_form1.rhtml:24
+msgid "Org e mail :"
+msgstr ""
+
+#: app/views/messages/_form.rhtml:37
+msgid "Org url :"
+msgstr ""
+
+#: app/views/messages/_form.rhtml:39
+msgid "Link prev :"
+msgstr ""
+
+#: app/views/messages/_form.rhtml:42
+msgid "Link next :"
+msgstr ""
+
+#: app/views/messages/_form.rhtml:45
+msgid "Updated on :"
+msgstr ""
+
+#: app/views/messages/show.rhtml:2
+msgid "Showing message"
+msgstr ""
+
+#: app/views/messages/show.rhtml:11 app/views/messages/show.rhtml:21
+#: app/views/item/_item_content.rhtml:239 app/views/item/_listitem.rhtml:26
+#: app/views/item/_listitem.rhtml:401
+#: app/views/reviews/edit_comment_by_teachar.rhtml:78
+#: app/views/reviews/edit_comment_by_teachar.rhtml:92
+#: app/views/reviews/edit_comment_by_teachar.rhtml:105
+#: app/views/reviews/edit_comment_by_teachar.rhtml:114
+#: app/views/reviews/edit_comment_by_teachar.rhtml:127
+#: app/views/reviews/edit_comment_by_teachar.rhtml:138
+#: app/views/reviews/show.rhtml:86 app/views/reviews/show.rhtml:101
+#: app/views/reviews/show.rhtml:116 app/views/reviews/show.rhtml:127
+#: app/views/reviews/show.rhtml:143 app/views/reviews/show.rhtml:154
+#: app/views/reviews/show_my_class_review.rhtml:77
+#: app/views/reviews/show_my_class_review.rhtml:92
+#: app/views/reviews/show_my_class_review.rhtml:107
+#: app/views/reviews/show_my_class_review.rhtml:118
+#: app/views/reviews/show_my_class_review.rhtml:134
+#: app/views/reviews/show_my_class_review.rhtml:145
+msgid "by"
+msgstr ""
+
+#: app/views/messages/show.rhtml:26
+msgid "source_url"
+msgstr ""
+
+#: app/views/messages/show.rhtml:28 app/views/messages/list.rhtml:17
+msgid "updated_on"
+msgstr ""
+
+#: app/views/messages/show.rhtml:30
+msgid "ref_link_prev"
+msgstr ""
+
+#: app/views/messages/show.rhtml:30
+msgid "ref_link_next"
+msgstr ""
+
+#: app/views/messages/disp_mail_form2.rhtml:2
+msgid "Application form"
+msgstr ""
+
+#: app/views/messages/disp_mail_form2.rhtml:13
+#: app/views/messages/disp_mail_form1.rhtml:12
+msgid "Title :"
+msgstr ""
+
+#: app/views/messages/disp_mail_form2.rhtml:17
+msgid "Group name :"
+msgstr ""
+
+#: app/views/messages/disp_mail_form2.rhtml:25
+msgid "Group zip :"
+msgstr ""
+
+#: app/views/messages/disp_mail_form2.rhtml:29
+msgid "Org address1 :"
+msgstr ""
+
+#: app/views/messages/disp_mail_form2.rhtml:33
+msgid "Org address2 :"
+msgstr ""
+
+#: app/views/messages/disp_mail_form2.rhtml:37
+msgid "Org phone :"
+msgstr ""
+
+#: app/views/messages/disp_mail_form2.rhtml:46
+msgid "Message :"
+msgstr ""
+
+#: app/views/messages/disp_mail_form2.rhtml:51
+#: app/views/messages/disp_mail_form1.rhtml:31
+msgid "Send"
+msgstr ""
+
+#: app/views/messages/edit.rhtml:2
+msgid "Editing message"
+msgstr ""
+
+#: app/views/messages/new.rhtml:2 app/views/messages/list.rhtml:44
+msgid "New message"
+msgstr ""
+
+#: app/views/messages/new.rhtml:8
+msgid "Create"
+msgstr ""
+
+#: app/views/messages/disp_mail_form1.rhtml:2
+#: app/views/layouts/application.rhtml:44
+msgid "Inquiry"
+msgstr ""
+
+#: app/views/messages/disp_mail_form1.rhtml:15
+msgid "Inquiry :"
+msgstr ""
+
+#: app/views/messages/list.rhtml:2
+msgid "Listing messages"
+msgstr ""
+
+#: app/views/messages/list.rhtml:8
+msgid "level"
+msgstr ""
+
+#: app/views/messages/list.rhtml:9
+msgid "priority"
+msgstr ""
+
+#: app/views/messages/list.rhtml:12 app/views/messages/list.rhtml:15
+msgid " "
+msgstr ""
+
+#: app/views/messages/list.rhtml:30
+msgid "Are you sure?"
+msgstr ""
+
+#: app/views/messages/list.rhtml:38 app/views/shopitem/list_recommend.rhtml:44
+#: app/views/shopitem/list_today.rhtml:46
+#: app/views/shopitem/show_shop.rhtml:121
+#: app/views/shopitem/list_by_author.rhtml:67
+#: app/views/shopitem/list_all.rhtml:46 app/views/shopitem/list_shop.rhtml:15
+#: app/views/shopitem/_listshop_bak.rhtml:85 app/views/shopitem/list.rhtml:66
+#: app/views/account/list_group_by_l2.rhtml:20
+#: app/views/account/list_user.rhtml:19
+#: app/views/account/list_user_by_l3.rhtml:19
+#: app/views/account/list_group.rhtml:21
+#: app/views/account/list_user_by_l2.rhtml:19
+#: app/views/account/list_group_by_l3.rhtml:20
+#: app/views/item/show_spot.rhtml:77 app/views/item/list_structure.rhtml:18
+#: app/views/item/list_spot.rhtml:12 app/views/item/list_facilitycat.rhtml:19
+#: app/views/item/list_item.rhtml:49 app/views/item/list_category.rhtml:18
+#: app/views/item/list_particularcat.rhtml:18
+#: app/views/item/list_particular.rhtml:22 app/views/item/list.rhtml:13
+#: app/views/item/list_facility.rhtml:25 app/views/reviews/index.rhtml:48
+msgid "prev"
+msgstr ""
+
+#: app/views/messages/list.rhtml:38 app/views/shopitem/list_recommend.rhtml:44
+#: app/views/shopitem/list_today.rhtml:46
+#: app/views/shopitem/show_shop.rhtml:121
+#: app/views/shopitem/list_by_author.rhtml:67
+#: app/views/shopitem/list_all.rhtml:46 app/views/shopitem/list_shop.rhtml:15
+#: app/views/shopitem/_listshop_bak.rhtml:85 app/views/shopitem/list.rhtml:66
+#: app/views/account/list_group_by_l2.rhtml:20
+#: app/views/account/list_user.rhtml:19
+#: app/views/account/list_user_by_l3.rhtml:19
+#: app/views/account/list_group.rhtml:21
+#: app/views/account/list_user_by_l2.rhtml:19
+#: app/views/account/list_group_by_l3.rhtml:20
+#: app/views/item/show_spot.rhtml:77 app/views/item/list_structure.rhtml:18
+#: app/views/item/list_spot.rhtml:12 app/views/item/list_facilitycat.rhtml:19
+#: app/views/item/list_item.rhtml:49 app/views/item/list_category.rhtml:18
+#: app/views/item/list_particularcat.rhtml:18
+#: app/views/item/list_particular.rhtml:22 app/views/item/list.rhtml:13
+#: app/views/item/list_facility.rhtml:25 app/views/reviews/index.rhtml:48
+msgid "next"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:8 app/views/shopitem/_form.rhtml:68
+#: app/views/shopitem/_form_edit.rhtml:53
+#: app/views/shopitem/_form_by_l2.rhtml:100
+#: app/views/shopitem/_form_edit_by_l2.rhtml:75
+#: app/views/shopitem/_shop_new_form.rhtml:8
+msgid "shop_name"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:12
+#: app/views/shopitem/_shop_new_form.rhtml:12
+msgid "spot_longitude:"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:14
+#: app/views/shopitem/_shop_new_form.rhtml:14
+msgid "spot_latitude:"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:18
+#: app/views/shopitem/_spot_form.rhtml:17
+#: app/views/shopitem/_shop_new_form.rhtml:18
+#: app/views/item/_spot_form.rhtml:17
+msgid "zip_code"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:18
+#: app/views/shopitem/_spot_form.rhtml:17
+#: app/views/shopitem/_shop_new_form.rhtml:18
+#: app/views/item/_spot_form.rhtml:17
+msgid "zip_code_input_note_1"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:20
+#: app/views/shopitem/_spot_form.rhtml:18 app/views/item/_spot_form.rhtml:18
+msgid "get_address"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:20
+#: app/views/shopitem/_spot_form.rhtml:18 app/views/item/_spot_form.rhtml:18
+msgid "get_address_note_1"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:33
+#: app/views/shopitem/_spot_form.rhtml:30
+#: app/views/shopitem/delete_shop.rhtml:26
+#: app/views/shopitem/show_shop.rhtml:43
+#: app/views/shopitem/_listshop_bak.rhtml:32
+#: app/views/shopitem/_shop_new_form.rhtml:32
+#: app/views/layouts/_maint_sidebar.rhtml:9
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:9
+#: app/views/layouts/_maint_search_bar.rhtml:9 app/views/spot/_form.rhtml:6
+#: app/views/item/show_spot.rhtml:26 app/views/item/_spot_form.rhtml:30
+#: app/views/item/_listspot.rhtml:29 app/views/item/delete_spot.rhtml:23
+msgid "address"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:33
+#: app/views/shopitem/_spot_form.rhtml:30
+#: app/views/shopitem/_shop_new_form.rhtml:32
+#: app/views/item/_spot_form.rhtml:30
+msgid "address_input_note_1"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:38
+#: app/views/shopitem/_spot_form.rhtml:35
+#: app/views/shopitem/delete_shop.rhtml:27
+#: app/views/shopitem/show_shop.rhtml:46
+#: app/views/shopitem/_listshop_bak.rhtml:33
+#: app/views/shopitem/_shop_new_form.rhtml:37
+#: app/views/item/show_spot.rhtml:27 app/views/item/_spot_form.rhtml:35
+#: app/views/item/_listspot.rhtml:30 app/views/item/delete_spot.rhtml:24
+msgid "building"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:41
+#: app/views/shopitem/_spot_form.rhtml:38
+#: app/views/shopitem/_shop_new_form.rhtml:40
+#: app/views/item/_spot_form.rhtml:38
+msgid "select_address_or_station"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:41
+#: app/views/shopitem/_spot_form.rhtml:38
+#: app/views/shopitem/_shop_new_form.rhtml:40
+#: app/views/item/_spot_form.rhtml:38
+msgid "select_address_or_station_note_1"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:43
+#: app/views/shopitem/_spot_form.rhtml:40
+#: app/views/shopitem/_shop_new_form.rhtml:42
+#: app/views/item/_spot_form.rhtml:40
+msgid ""
+"<option SELECTED></option><option value=\"ADDRESS\">address</option><option "
+"value=\"STATION\">station</optione>"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:54
+#: app/views/shopitem/_spot_form.rhtml:51
+#: app/views/shopitem/_shop_new_form.rhtml:53
+#: app/views/item/_spot_form.rhtml:51
+msgid "map_address"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:106
+#: app/views/shopitem/_spot_form.rhtml:101
+#: app/views/shopitem/delete_shop.rhtml:30
+#: app/views/shopitem/show_shop.rhtml:61
+#: app/views/shopitem/_listshop_bak.rhtml:36
+#: app/views/shopitem/_shop_new_form.rhtml:104
+#: app/views/item/show_spot.rhtml:31 app/views/item/_spot_form.rhtml:101
+#: app/views/item/_listspot.rhtml:33 app/views/item/delete_spot.rhtml:27
+msgid "homepage"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:114
+#: app/views/shopitem/_spot_form.rhtml:104
+#: app/views/shopitem/_shop_new_form.rhtml:107
+#: app/views/item/_spot_form.rhtml:104
+msgid "image_url"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:122
+#: app/views/shopitem/_spot_form.rhtml:110
+#: app/views/shopitem/delete_shop.rhtml:28
+#: app/views/shopitem/show_shop.rhtml:49
+#: app/views/shopitem/_listshop_bak.rhtml:34
+#: app/views/shopitem/_shop_new_form.rhtml:110 app/views/spot/_form.rhtml:9
+#: app/views/item/show_spot.rhtml:28 app/views/item/_spot_form.rhtml:110
+#: app/views/item/_listspot.rhtml:31 app/views/item/delete_spot.rhtml:25
+msgid "phone"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:130
+#: app/views/shopitem/_spot_form.rhtml:113
+#: app/views/shopitem/delete_shop.rhtml:29
+#: app/views/shopitem/show_shop.rhtml:52
+#: app/views/shopitem/_listshop_bak.rhtml:35
+#: app/views/shopitem/_shop_new_form.rhtml:113
+#: app/views/item/show_spot.rhtml:29 app/views/item/_spot_form.rhtml:113
+#: app/views/item/_listspot.rhtml:32 app/views/item/delete_spot.rhtml:26
+msgid "fax"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:138
+#: app/views/shopitem/_spot_form.rhtml:116
+#: app/views/shopitem/delete_shop.rhtml:31
+#: app/views/shopitem/show_shop.rhtml:62
+#: app/views/shopitem/_listshop_bak.rhtml:37
+#: app/views/shopitem/_shop_new_form.rhtml:116
+#: app/views/item/show_spot.rhtml:32 app/views/item/_spot_form.rhtml:116
+#: app/views/item/_listspot.rhtml:34 app/views/item/delete_spot.rhtml:28
+msgid "email_1"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:146
+#: app/views/shopitem/show_shop.rhtml:55
+#: app/views/shopitem/_shop_new_form.rhtml:119
+msgid "licence"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:154
+#: app/views/shopitem/show_shop.rhtml:58
+#: app/views/shopitem/_shop_new_form.rhtml:122
+msgid "business_hours"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:165
+#: app/views/shopitem/_spot_form.rhtml:122 app/views/shopitem/_form.rhtml:79
+#: app/views/shopitem/_form_edit.rhtml:64
+#: app/views/shopitem/_form_by_l2.rhtml:124
+#: app/views/shopitem/_form_edit_by_l2.rhtml:94
+#: app/views/shopitem/_shop_new_form.rhtml:129
+#: app/views/item/_spot_form.rhtml:122 app/views/item/_form.rhtml:104
+msgid "publish_level"
+msgstr ""
+
+#: app/views/shopitem/_shop_form.rhtml:167
+#: app/views/shopitem/_spot_form.rhtml:124 app/views/shopitem/_form.rhtml:81
+#: app/views/shopitem/_form_edit.rhtml:66
+#: app/views/shopitem/_form_by_l2.rhtml:126
+#: app/views/shopitem/_form_edit_by_l2.rhtml:96
+#: app/views/shopitem/_shop_new_form.rhtml:131
+#: app/views/item/_spot_form.rhtml:124 app/views/item/_form.rhtml:106
+msgid "select publish_level"
+msgstr ""
+
+#: app/views/shopitem/_spot_form.rhtml:8 app/views/spot/_form.rhtml:3
+#: app/views/item/_spot_form.rhtml:8
+msgid "spot_name"
+msgstr ""
+
+#: app/views/shopitem/_spot_form.rhtml:8 app/views/item/_spot_form.rhtml:8
+msgid "spot_name_input_note_1"
+msgstr ""
+
+#: app/views/shopitem/_spot_form.rhtml:107 app/views/item/show_spot.rhtml:30
+#: app/views/item/_spot_form.rhtml:107
+msgid "text1"
+msgstr ""
+
+#: app/views/shopitem/list_recommend.rhtml:4
+#: app/views/layouts/_maint_shopitem.rhtml:3
+msgid "List_Recommend"
+msgstr ""
+
+#: app/views/shopitem/list_recommend.rhtml:23
+#: app/views/shopitem/_form.rhtml:11 app/views/shopitem/_form_edit.rhtml:11
+#: app/views/shopitem/_form_by_l2.rhtml:13
+#: app/views/shopitem/_showshopitem.rhtml:33
+#: app/views/shopitem/_form_edit_by_l2.rhtml:13
+msgid "shop_item_author"
+msgstr ""
+
+#: app/views/shopitem/list_recommend.rhtml:24
+msgid "publisher_name"
+msgstr ""
+
+#: app/views/shopitem/list_recommend.rhtml:25
+#: app/views/shopitem/_list_recommend_menu.rhtml:3
+msgid "genre"
+msgstr ""
+
+#: app/views/shopitem/list_recommend.rhtml:26
+#: app/views/shopitem/_list_recommend_menu.rhtml:39
+msgid "theme"
+msgstr ""
+
+#: app/views/shopitem/list_recommend.rhtml:27
+#: app/views/shopitem/_form.rhtml:75 app/views/shopitem/_form_edit.rhtml:60
+#: app/views/shopitem/_form_by_l2.rhtml:118
+#: app/views/shopitem/_form_edit_by_l2.rhtml:89
+#: app/views/shopitem/_list_recommend_menu.rhtml:47
+msgid "tag"
+msgstr ""
+
+#: app/views/shopitem/list_recommend.rhtml:43
+#: app/views/shopitem/list_today.rhtml:45
+#: app/views/shopitem/list_by_author.rhtml:66
+#: app/views/shopitem/list_all.rhtml:45 app/views/shopitem/list_shop.rhtml:14
+#: app/views/shopitem/list.rhtml:65 app/views/item/list_spot.rhtml:11
+msgid "display_record_1"
+msgstr ""
+
+#: app/views/shopitem/list_recommend.rhtml:43
+#: app/views/shopitem/list_today.rhtml:45
+#: app/views/shopitem/list_by_author.rhtml:66
+#: app/views/shopitem/list_all.rhtml:45 app/views/shopitem/list_shop.rhtml:14
+#: app/views/shopitem/list.rhtml:65 app/views/item/list_spot.rhtml:11
+msgid "display_record_2"
+msgstr ""
+
+#: app/views/shopitem/list_recommend.rhtml:43
+#: app/views/shopitem/list_today.rhtml:45
+#: app/views/shopitem/list_by_author.rhtml:66
+#: app/views/shopitem/list_all.rhtml:45 app/views/shopitem/list_shop.rhtml:14
+#: app/views/shopitem/list.rhtml:65 app/views/item/list_spot.rhtml:11
+msgid "display_record_3"
+msgstr ""
+
+#: app/views/shopitem/new_shop_ind.rhtml:8
+#: app/views/shopitem/new_by_l2.rhtml:14 app/views/shopitem/new.rhtml:14
+#: app/views/item/new.rhtml:15 app/views/student/new.rhtml:9
+msgid "Save"
+msgstr ""
+
+#: app/views/shopitem/edit_category.rhtml:1
+#: app/views/item/edit_category.rhtml:1
+msgid "edit category"
+msgstr ""
+
+#: app/views/shopitem/edit_category.rhtml:8
+#: app/views/shopitem/list_category.rhtml:23
+#: app/views/shopitem/new_category.rhtml:8
+#: app/views/account/edit_group.rhtml:8 app/views/account/edit_user.rhtml:8
+#: app/views/account/edit_user_by_l2.rhtml:8
+#: app/views/account/new_user.rhtml:8 app/views/account/list_user.rhtml:25
+#: app/views/account/list_user_by_l3.rhtml:25
+#: app/views/account/new_user_by_l3.rhtml:8
+#: app/views/account/edit_user_by_l3.rhtml:8
+#: app/views/account/new_group.rhtml:8
+#: app/views/account/edit_group_by_l3.rhtml:8
+#: app/views/account/new_user_by_l2.rhtml:8
+#: app/views/account/list_user_by_l2.rhtml:25
+#: app/views/account/edit_group_by_l2.rhtml:8
+#: app/views/account/edit_user_by_user.rhtml:7
+#: app/views/item/list_structure.rhtml:24
+#: app/views/item/edit_structure.rhtml:9 app/views/item/edit_category.rhtml:8
+#: app/views/item/list_facilitycat.rhtml:26
+#: app/views/item/edit_particularcat.rhtml:8
+#: app/views/item/new_structure.rhtml:8
+#: app/views/item/new_particularcat.rhtml:8
+#: app/views/item/new_facility.rhtml:8 app/views/item/new_particular.rhtml:8
+#: app/views/item/edit_facilitycat.rhtml:8 app/views/item/list_item.rhtml:5
+#: app/views/item/list_item.rhtml:26 app/views/item/list_item.rhtml:52
+#: app/views/item/edit_particular.rhtml:8
+#: app/views/item/new_facilitycat.rhtml:8
+#: app/views/item/list_category.rhtml:25 app/views/item/new_category.rhtml:8
+#: app/views/item/edit_facility.rhtml:8
+#: app/views/item/list_particularcat.rhtml:23
+#: app/views/item/list_particular.rhtml:29
+#: app/views/item/list_facility.rhtml:22
+msgid "back"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:4 app/views/shopitem/list_all.rhtml:4
+msgid "Period from doday"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:5
+#: app/views/shopitem/list_by_author.rhtml:17
+#: app/views/shopitem/list_all.rhtml:5 app/views/shopitem/list.rhtml:20
+msgid "1y-"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:6
+#: app/views/shopitem/list_by_author.rhtml:18
+#: app/views/shopitem/list_all.rhtml:6 app/views/shopitem/list.rhtml:21
+msgid "6m-"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:7
+#: app/views/shopitem/list_by_author.rhtml:19
+#: app/views/shopitem/list_all.rhtml:7 app/views/shopitem/list.rhtml:22
+msgid "3m-"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:8
+#: app/views/shopitem/list_by_author.rhtml:20
+#: app/views/shopitem/list_all.rhtml:8 app/views/shopitem/list.rhtml:23
+msgid "1m-"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:9
+#: app/views/shopitem/list_by_author.rhtml:21
+#: app/views/shopitem/list_all.rhtml:9 app/views/shopitem/list.rhtml:24
+msgid "1w-"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:10
+#: app/views/shopitem/list_by_author.rhtml:16
+#: app/views/shopitem/list_all.rhtml:10 app/views/shopitem/list.rhtml:19
+msgid "today"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:11
+#: app/views/shopitem/list_by_author.rhtml:22
+#: app/views/shopitem/list_all.rhtml:11 app/views/shopitem/list.rhtml:25
+msgid "-1w"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:12
+#: app/views/shopitem/list_by_author.rhtml:23
+#: app/views/shopitem/list_all.rhtml:12 app/views/shopitem/list.rhtml:26
+msgid "-1m"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:13
+#: app/views/shopitem/list_by_author.rhtml:24
+#: app/views/shopitem/list_all.rhtml:13 app/views/shopitem/list.rhtml:27
+msgid "-3m"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:14
+#: app/views/shopitem/list_by_author.rhtml:25
+#: app/views/shopitem/list_all.rhtml:14 app/views/shopitem/list.rhtml:28
+msgid "-6m"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:15
+#: app/views/shopitem/list_by_author.rhtml:26
+#: app/views/shopitem/list_all.rhtml:15 app/views/shopitem/list.rhtml:29
+msgid "-1y"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:16
+#: app/views/shopitem/list_by_author.rhtml:15
+#: app/views/shopitem/list_all.rhtml:16 app/views/shopitem/list.rhtml:18
+#: app/views/student/_link_list_grade.rhtml:10
+msgid "all"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:21 app/views/shopitem/list_all.rhtml:21
+#: app/views/shopitem/list.rhtml:8
+msgid "keyword for search shopitem_name or shop_name:"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:22 app/views/shopitem/list_all.rhtml:22
+msgid "past_flg"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:23 app/views/shopitem/list_all.rhtml:23
+#: app/views/shopitem/list_shop.rhtml:3 app/views/item/list_spot.rhtml:3
+#: app/views/item/list_item.rhtml:3 app/views/item/list.rhtml:5
+msgid "Search"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:27
+#: app/views/shopitem/list_by_author.rhtml:33
+#: app/views/shopitem/list_all.rhtml:27 app/views/shopitem/list.rhtml:36
+#: app/views/reviews/_link_author_grade.rhtml:1
+#: app/views/reviews/_link_title_grade.rhtml:1
+msgid "Grade of reviewers"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:28
+#: app/views/shopitem/list_by_author.rhtml:34
+#: app/views/shopitem/list_all.rhtml:28 app/views/shopitem/list.rhtml:37
+#: app/views/reviews/_link_author_grade.rhtml:2
+#: app/views/reviews/_link_title_grade.rhtml:2
+#: app/views/student/_link_list_grade.rhtml:2
+msgid "k_1"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:29
+#: app/views/shopitem/list_by_author.rhtml:35
+#: app/views/shopitem/list_all.rhtml:29 app/views/shopitem/list.rhtml:38
+#: app/views/reviews/_link_author_grade.rhtml:3
+#: app/views/reviews/_link_title_grade.rhtml:3
+#: app/views/student/_link_list_grade.rhtml:3
+msgid "2_3"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:30
+#: app/views/shopitem/list_by_author.rhtml:36
+#: app/views/shopitem/list_all.rhtml:30 app/views/shopitem/list.rhtml:39
+#: app/views/reviews/_link_author_grade.rhtml:4
+#: app/views/reviews/_link_title_grade.rhtml:4
+#: app/views/student/_link_list_grade.rhtml:4
+msgid "4_6"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:31
+#: app/views/shopitem/list_by_author.rhtml:37
+#: app/views/shopitem/list_all.rhtml:31 app/views/shopitem/list.rhtml:40
+#: app/views/reviews/_link_author_grade.rhtml:5
+#: app/views/reviews/_link_title_grade.rhtml:5
+#: app/views/student/_link_list_grade.rhtml:5
+msgid "7_9"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:32
+#: app/views/shopitem/list_by_author.rhtml:38
+#: app/views/shopitem/list_all.rhtml:32 app/views/shopitem/list.rhtml:41
+#: app/views/reviews/_link_author_grade.rhtml:6
+#: app/views/reviews/_link_title_grade.rhtml:6
+#: app/views/student/_link_list_grade.rhtml:6
+msgid "10_12"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:33
+#: app/views/shopitem/list_by_author.rhtml:39
+#: app/views/shopitem/list_all.rhtml:33 app/views/shopitem/list.rhtml:42
+#: app/views/reviews/_link_author_grade.rhtml:7
+#: app/views/reviews/_link_title_grade.rhtml:7
+#: app/views/student/_link_list_grade.rhtml:7
+msgid "13_16"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:34
+#: app/views/shopitem/list_by_author.rhtml:40
+#: app/views/shopitem/list_all.rhtml:34 app/views/shopitem/list.rhtml:43
+#: app/views/reviews/_link_author_grade.rhtml:8
+#: app/views/reviews/_link_title_grade.rhtml:8
+#: app/views/student/_link_list_grade.rhtml:8
+msgid "t"
+msgstr ""
+
+#: app/views/shopitem/list_today.rhtml:35
+#: app/views/shopitem/list_by_author.rhtml:41
+#: app/views/shopitem/list_all.rhtml:35 app/views/shopitem/list.rhtml:44
+#: app/views/reviews/_link_author_grade.rhtml:9
+#: app/views/reviews/_link_title_grade.rhtml:9
+#: app/views/student/_link_list_grade.rhtml:9
+msgid "17"
+msgstr ""
+
+#: app/views/shopitem/new_by_l2.rhtml:10 app/views/shopitem/edit.rhtml:9
+#: app/views/shopitem/new.rhtml:10 app/views/shopitem/edit_by_l2.rhtml:9
+#: app/views/item/edit.rhtml:9 app/views/item/new.rhtml:11
+msgid "created_at"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:4 app/views/shopitem/_form_edit.rhtml:4
+#: app/views/shopitem/_form_by_l2.rhtml:4
+#: app/views/shopitem/_form_edit_by_l2.rhtml:4
+msgid "shop_item_nm"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:6 app/views/shopitem/_form_edit.rhtml:6
+#: app/views/shopitem/_form_by_l2.rhtml:6
+#: app/views/shopitem/_form_edit_by_l2.rhtml:6
+msgid "di_flg"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:7 app/views/shopitem/_form_edit.rhtml:7
+#: app/views/shopitem/_form_by_l2.rhtml:7
+#: app/views/shopitem/_form_edit_by_l2.rhtml:7
+msgid "shop_item_nm_kana"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:9 app/views/shopitem/_form_edit.rhtml:9
+#: app/views/shopitem/_form_by_l2.rhtml:11
+#: app/views/shopitem/_form_edit_by_l2.rhtml:11
+msgid "note1 for author, illustrator, translator"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:10 app/views/shopitem/_form_edit.rhtml:10
+#: app/views/shopitem/_form_by_l2.rhtml:12
+#: app/views/shopitem/_form_edit_by_l2.rhtml:12
+msgid "note2 for author, illustrator, translator"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:13 app/views/shopitem/_form_edit.rhtml:13
+#: app/views/shopitem/_form_by_l2.rhtml:15
+#: app/views/shopitem/_form_edit_by_l2.rhtml:15
+msgid "shop_item_author_kana"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:16 app/views/shopitem/_form_edit.rhtml:15
+#: app/views/shopitem/_form_by_l2.rhtml:19
+#: app/views/shopitem/_showshopitem.rhtml:34
+#: app/views/shopitem/_form_edit_by_l2.rhtml:17
+msgid "shop_item_illustrator"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:18 app/views/shopitem/_form_edit.rhtml:17
+#: app/views/shopitem/_form_by_l2.rhtml:21
+#: app/views/shopitem/_form_edit_by_l2.rhtml:19
+msgid "shop_item_illustrator_kana"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:20 app/views/shopitem/_form_edit.rhtml:19
+#: app/views/shopitem/_form_by_l2.rhtml:23
+#: app/views/shopitem/_showshopitem.rhtml:35
+#: app/views/shopitem/_form_edit_by_l2.rhtml:21
+msgid "shop_item_translator"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:22 app/views/shopitem/_form_edit.rhtml:21
+#: app/views/shopitem/_form_by_l2.rhtml:25
+#: app/views/shopitem/_form_edit_by_l2.rhtml:23
+msgid "shop_item_translator_kana"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:25 app/views/shopitem/_form_edit.rhtml:24
+#: app/views/shopitem/_form_by_l2.rhtml:28
+#: app/views/shopitem/_form_edit_by_l2.rhtml:26
+msgid "shop_item_genre_select"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:29 app/views/shopitem/_form_edit.rhtml:28
+#: app/views/shopitem/_form_by_l2.rhtml:32
+#: app/views/shopitem/_form_edit_by_l2.rhtml:30
+msgid "shop_item_genre_wk"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:32 app/views/shopitem/_form_edit.rhtml:31
+#: app/views/shopitem/_form_by_l2.rhtml:35
+#: app/views/shopitem/_form_edit_by_l2.rhtml:33
+msgid "shop_item_theme_select"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:36 app/views/shopitem/_form_edit.rhtml:35
+#: app/views/shopitem/_form_by_l2.rhtml:39
+#: app/views/shopitem/_form_edit_by_l2.rhtml:37
+msgid "shop_item_theme_wk"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:40 app/views/shopitem/_form_edit.rhtml:39
+#: app/views/shopitem/_form_by_l2.rhtml:43
+#: app/views/shopitem/_showshopitem.rhtml:40
+#: app/views/shopitem/_form_edit_by_l2.rhtml:41
+msgid "shop_item_nr_pages"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:43 app/views/shopitem/_form_edit.rhtml:42
+#: app/views/shopitem/_form_by_l2.rhtml:46
+#: app/views/shopitem/_showshopitem.rhtml:42
+msgid "shop_item_hero"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:46 app/views/shopitem/_form_by_l2.rhtml:50
+#: app/views/shopitem/_showshopitem.rhtml:49
+#: app/views/shopitem/_form_edit_by_l2.rhtml:51
+msgid "shop_item_place"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:50 app/views/shopitem/_form_by_l2.rhtml:54
+#: app/views/shopitem/_form_edit_by_l2.rhtml:53
+msgid "shop_item_place_wk"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:60 app/views/shopitem/_form_edit.rhtml:46
+#: app/views/shopitem/_form_by_l2.rhtml:91
+#: app/views/shopitem/_showshopitem.rhtml:76
+#: app/views/shopitem/_form_edit_by_l2.rhtml:66
+msgid "shop_item_publish_date"
+msgstr ""
+
+#: app/views/shopitem/_form.rhtml:64 app/views/shopitem/_form_edit.rhtml:50
+#: app/views/shopitem/_form_by_l2.rhtml:95
+#: app/views/shopitem/_showshopitem.rhtml:78
+#: app/views/shopitem/_form_edit_by_l2.rhtml:70
+msgid "shop_item_amazon_url"
+msgstr ""
+
+#: app/views/shopitem/delete_shop.rhtml:25
+#: app/views/shopitem/show_shop.rhtml:40
+#: app/views/shopitem/_listshop_bak.rhtml:31 app/views/item/show_spot.rhtml:25
+#: app/views/item/_listspot.rhtml:28 app/views/item/delete_spot.rhtml:22
+msgid "zip"
+msgstr ""
+
+#: app/views/shopitem/delete_shop.rhtml:38
+#: app/views/shopitem/delete_shop.rhtml:51
+#: app/views/shopitem/show_shop.rhtml:68
+#: app/views/shopitem/_listshop_bak.rhtml:44
+#: app/views/shopitem/_listshop_bak.rhtml:58 app/views/item/show_spot.rhtml:39
+#: app/views/item/show_spot.rhtml:52 app/views/item/_listspot.rhtml:41
+#: app/views/item/_listspot.rhtml:54 app/views/item/delete_spot.rhtml:35
+#: app/views/item/delete_spot.rhtml:48
+msgid "wgs84_dec"
+msgstr ""
+
+#: app/views/shopitem/delete_shop.rhtml:39
+#: app/views/shopitem/delete_shop.rhtml:43
+#: app/views/shopitem/delete_shop.rhtml:47
+#: app/views/shopitem/delete_shop.rhtml:52
+#: app/views/shopitem/show_shop.rhtml:69
+#: app/views/shopitem/_listshop_bak.rhtml:45
+#: app/views/shopitem/_listshop_bak.rhtml:49
+#: app/views/shopitem/_listshop_bak.rhtml:53
+#: app/views/shopitem/_listshop_bak.rhtml:59 app/views/item/show_spot.rhtml:40
+#: app/views/item/show_spot.rhtml:44 app/views/item/show_spot.rhtml:48
+#: app/views/item/show_spot.rhtml:53 app/views/item/_listspot.rhtml:42
+#: app/views/item/_listspot.rhtml:46 app/views/item/_listspot.rhtml:50
+#: app/views/item/_listspot.rhtml:55 app/views/item/delete_spot.rhtml:36
+#: app/views/item/delete_spot.rhtml:40 app/views/item/delete_spot.rhtml:44
+#: app/views/item/delete_spot.rhtml:49
+msgid "longitude"
+msgstr ""
+
+#: app/views/shopitem/delete_shop.rhtml:40
+#: app/views/shopitem/delete_shop.rhtml:44
+#: app/views/shopitem/delete_shop.rhtml:48
+#: app/views/shopitem/delete_shop.rhtml:53
+#: app/views/shopitem/show_shop.rhtml:70
+#: app/views/shopitem/_listshop_bak.rhtml:46
+#: app/views/shopitem/_listshop_bak.rhtml:50
+#: app/views/shopitem/_listshop_bak.rhtml:54
+#: app/views/shopitem/_listshop_bak.rhtml:60 app/views/item/show_spot.rhtml:41
+#: app/views/item/show_spot.rhtml:45 app/views/item/show_spot.rhtml:49
+#: app/views/item/show_spot.rhtml:54 app/views/item/_listspot.rhtml:43
+#: app/views/item/_listspot.rhtml:47 app/views/item/_listspot.rhtml:51
+#: app/views/item/_listspot.rhtml:56 app/views/item/delete_spot.rhtml:37
+#: app/views/item/delete_spot.rhtml:41 app/views/item/delete_spot.rhtml:45
+#: app/views/item/delete_spot.rhtml:50
+msgid "latitude"
+msgstr ""
+
+#: app/views/shopitem/delete_shop.rhtml:42
+#: app/views/shopitem/_listshop_bak.rhtml:48 app/views/item/show_spot.rhtml:43
+#: app/views/item/_listspot.rhtml:45 app/views/item/delete_spot.rhtml:39
+msgid "tokyo_datum_dec"
+msgstr ""
+
+#: app/views/shopitem/delete_shop.rhtml:46
+#: app/views/shopitem/_listshop_bak.rhtml:52 app/views/item/show_spot.rhtml:47
+#: app/views/item/_listspot.rhtml:49 app/views/item/delete_spot.rhtml:43
+msgid "tokyo_datum_ddmmss"
+msgstr ""
+
+#: app/views/shopitem/delete_shop.rhtml:56
+#: app/views/shopitem/_listshop_bak.rhtml:65 app/views/item/show_spot.rhtml:57
+#: app/views/item/_item_content.rhtml:247 app/views/item/_listindex.rhtml:146
+#: app/views/item/_listitem.rhtml:408 app/views/item/_listspot.rhtml:59
+#: app/views/item/delete_spot.rhtml:53
+msgid "Show_spot_map"
+msgstr ""
+
+#: app/views/shopitem/delete_shop.rhtml:57
+#: app/views/shopitem/show_shop.rhtml:82
+#: app/views/shopitem/_listshop_bak.rhtml:66 app/views/item/show_spot.rhtml:58
+#: app/views/item/_item_content.rhtml:248 app/views/item/_listitem.rhtml:409
+#: app/views/item/_listspot.rhtml:60 app/views/item/delete_spot.rhtml:54
+msgid "Send_map_by_mail"
+msgstr ""
+
+#: app/views/shopitem/delete_shop.rhtml:81 app/views/shopitem/delete.rhtml:7
+#: app/views/shopitem/edit.rhtml:13 app/views/shopitem/edit_by_l2.rhtml:13
+#: app/views/layouts/_maint_sidebar.rhtml:91
+#: app/views/layouts/_maint_sidebar.rhtml:100
+#: app/views/layouts/_maint_sidebar.rhtml:122
+#: app/views/layouts/_maint_sidebar.rhtml:129
+#: app/views/layouts/_maint_item.rhtml:15
+#: app/views/layouts/_maint_nav.rhtml:11 app/views/layouts/_maint_nav.rhtml:24
+#: app/views/layouts/_maint_nav.rhtml:41 app/views/layouts/_maint_nav.rhtml:55
+#: app/views/layouts/_maint_nav.rhtml:68
+#: app/views/layouts/_maint_shop.rhtml:16
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:91
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:100
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:122
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:129
+#: app/views/layouts/_maint_shopitem.rhtml:17 app/views/item/delete.rhtml:7
+#: app/views/item/edit.rhtml:13 app/views/item/delete_spot.rhtml:78
+#: app/views/student/edit_by_student.rhtml:7
+msgid "Delete"
+msgstr ""
+
+#: app/views/shopitem/delete_shop.rhtml:89 app/views/item/show_spot.rhtml:84
+#: app/views/item/_listspot.rhtml:77 app/views/item/delete_spot.rhtml:86
+msgid "no longitude/latitude, please edit this record"
+msgstr ""
+
+#: app/views/shopitem/show.rhtml:5
+msgid "add_review"
+msgstr ""
+
+#: app/views/shopitem/show_shop_map.rhtml:4
+#: app/views/shopitem/_listshop.rhtml:7
+#: app/views/shopitem/_listshop_bak.rhtml:3
+#: app/views/shopitem/_showshopitem.rhtml:10
+#: app/views/shopitem/_listitem.rhtml:21
+#: app/views/shopitem/_listitem_by_author.rhtml:24
+#: app/views/reviews/_author_list.rhtml:18
+#: app/views/reviews/_title_list.rhtml:16
+msgid "shop_detail"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:25
+msgid "cat_01"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:26
+msgid "cat_02"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:27
+msgid "what"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:28
+msgid "when"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:29
+msgid "where"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:30
+msgid "entrance_fee"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:31
+msgid "membership_fee_mon"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:32
+msgid "membership_fee_year"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:33
+msgid "membership_fee_remarks"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:34
+msgid "member_nr_m"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:35
+msgid "member_nr_f"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:36
+msgid "member_nr_all"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:37
+msgid "member_remarks"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:81
+msgid "Show_shop_map"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:108
+#: app/views/shopitem/list_by_author.rhtml:49 app/views/shopitem/list.rhtml:50
+#: app/views/item/_listitem.rhtml:134
+msgid "yyyy/mm/dd"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:109
+#: app/views/shopitem/list_by_author.rhtml:50 app/views/shopitem/list.rhtml:51
+msgid "day"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:110
+#: app/views/shopitem/show_shop.rhtml:112
+#: app/views/shopitem/list_by_author.rhtml:51
+#: app/views/shopitem/list_by_author.rhtml:53 app/views/shopitem/list.rhtml:52
+#: app/views/shopitem/list.rhtml:54
+msgid "hh:mm"
+msgstr ""
+
+#: app/views/shopitem/show_shop.rhtml:114
+#: app/views/shopitem/list_by_author.rhtml:55 app/views/shopitem/list.rhtml:56
+msgid "place"
+msgstr ""
+
+#: app/views/shopitem/list_by_author.rhtml:5
+msgid "keyword for search shopitem_name or shopitem_author or shop_name:"
+msgstr ""
+
+#: app/views/shopitem/list_by_author.rhtml:8 app/views/shopitem/list.rhtml:11
+msgid "period"
+msgstr ""
+
+#: app/views/shopitem/list_by_author.rhtml:30 app/views/shopitem/list.rhtml:33
+#: app/views/layouts/_maint_sidebar.rhtml:41
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:41
+#: app/views/layouts/_maint_search_bar.rhtml:24
+#: app/views/reviews/list_author_grade_7_9.rhtml:7
+#: app/views/reviews/list_grade_2_3.rhtml:7
+#: app/views/reviews/list_author_grade_13_16.rhtml:7
+#: app/views/reviews/list_author_grade_4_6.rhtml:7
+#: app/views/reviews/list_author_grade_2_3.rhtml:7
+#: app/views/reviews/list_grade_7_9.rhtml:7
+#: app/views/reviews/list_author_grade_k_1.rhtml:7
+#: app/views/reviews/_search_grade.rhtml:5
+#: app/views/reviews/list_author_grade_17.rhtml:7
+#: app/views/reviews/list_author_grade_10_12.rhtml:7
+#: app/views/reviews/list_grade_10_12.rhtml:7
+#: app/views/reviews/_search.rhtml:19
+#: app/views/reviews/list_grade_13_16.rhtml:7
+#: app/views/reviews/list_grade_k_1.rhtml:7
+#: app/views/reviews/list_grade_t.rhtml:7
+#: app/views/reviews/list_grade_17.rhtml:7
+#: app/views/reviews/list_author_grade_t.rhtml:7
+#: app/views/reviews/list_grade_4_6.rhtml:7 app/views/student/_search.rhtml:24
+msgid "search"
+msgstr ""
+
+#: app/views/shopitem/list_by_author.rhtml:48
+#: app/views/reviews/edit_comment_by_teachar.rhtml:15
+#: app/views/reviews/edit_comment_by_student.rhtml:15
+#: app/views/reviews/show.rhtml:15
+#: app/views/reviews/show_my_class_review.rhtml:4
+#: app/views/reviews/_author_list.rhtml:3
+#: app/views/reviews/show_my_review.rhtml:4
+msgid "author"
+msgstr ""
+
+#: app/views/shopitem/_shop.rhtml:5 app/views/shopitem/_spot.rhtml:9
+#: app/views/layouts/_maint_sidebar.rhtml:88
+#: app/views/layouts/_maint_sidebar.rhtml:126
+#: app/views/layouts/_maint_item.rhtml:4 app/views/layouts/_maint_item.rhtml:6
+#: app/views/layouts/_maint_nav.rhtml:7 app/views/layouts/_maint_nav.rhtml:37
+#: app/views/layouts/_maint_shop.rhtml:5 app/views/layouts/_maint_shop.rhtml:7
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:88
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:126
+#: app/views/layouts/_maint_review.rhtml:2
+#: app/views/layouts/_maint_shopitem.rhtml:6
+#: app/views/layouts/_maint_shopitem.rhtml:8 app/views/spot/list.rhtml:2
+#: app/views/item/_spot.rhtml:9
+msgid "New"
+msgstr ""
+
+#: app/views/shopitem/_shop.rhtml:13 app/views/shopitem/_spot.rhtml:17
+#: app/views/item/_spot.rhtml:17
+msgid "select"
+msgstr ""
+
+#: app/views/shopitem/edit_shop.rhtml:8 app/views/shopitem/edit.rhtml:20
+#: app/views/shopitem/edit_by_l2.rhtml:20 app/views/item/edit_spot.rhtml:8
+#: app/views/item/edit.rhtml:20
+msgid "Save changes"
+msgstr ""
+
+#: app/views/shopitem/_form_by_l2.rhtml:58
+#: app/views/shopitem/_showshopitem.rhtml:62
+#: app/views/shopitem/_form_edit_by_l2.rhtml:56
+msgid "shop_item_for_who"
+msgstr ""
+
+#: app/views/shopitem/_form_by_l2.rhtml:62
+#: app/views/shopitem/_form_edit_by_l2.rhtml:59
+msgid "shop_item_for_who_wk"
+msgstr ""
+
+#: app/views/shopitem/_form_by_l2.rhtml:94
+#: app/views/shopitem/_form_edit_by_l2.rhtml:69
+msgid "note1 for amazon_url"
+msgstr ""
+
+#: app/views/shopitem/_form_by_l2.rhtml:97
+#: app/views/shopitem/_form_edit_by_l2.rhtml:73
+msgid "note1 for shop"
+msgstr ""
+
+#: app/views/shopitem/_form_by_l2.rhtml:114
+#: app/views/shopitem/_form_edit_by_l2.rhtml:85
+msgid "note1 for tag"
+msgstr ""
+
+#: app/views/shopitem/_form_by_l2.rhtml:115
+#: app/views/shopitem/_form_edit_by_l2.rhtml:86
+msgid "note2 for tag"
+msgstr ""
+
+#: app/views/shopitem/_form_by_l2.rhtml:116
+#: app/views/shopitem/_form_edit_by_l2.rhtml:87
+msgid "note3 for tag"
+msgstr ""
+
+#: app/views/shopitem/_spot.rhtml:1
+msgid "shopitem_spot"
+msgstr ""
+
+#: app/views/shopitem/list_category.rhtml:1
+#: app/views/item/list_category.rhtml:1
+msgid "category list "
+msgstr ""
+
+#: app/views/shopitem/list_category.rhtml:5
+#: app/views/shopitem/_form_category.rhtml:3
+#: app/views/item/list_category.rhtml:5 app/views/item/_form_category.rhtml:3
+msgid "category name"
+msgstr ""
+
+#: app/views/shopitem/list_category.rhtml:11
+#: app/views/account/list_group_by_l2.rhtml:14
+#: app/views/account/list_user.rhtml:12
+#: app/views/account/list_user_by_l3.rhtml:12
+#: app/views/account/list_group.rhtml:14
+#: app/views/account/list_user_by_l2.rhtml:12
+#: app/views/account/list_group_by_l3.rhtml:14
+#: app/views/item/list_structure.rhtml:11
+#: app/views/item/list_facilitycat.rhtml:11 app/views/item/list_item.rhtml:40
+#: app/views/item/list_category.rhtml:11
+#: app/views/item/list_particularcat.rhtml:11
+#: app/views/item/list_particular.rhtml:15
+#: app/views/item/list_facility.rhtml:15
+#: app/views/student/_list_students.rhtml:39
+#: app/views/student/_list_students.rhtml:43
+#: app/views/student/_list_students.rhtml:48
+msgid "edit"
+msgstr ""
+
+#: app/views/shopitem/list_category.rhtml:17
+msgid "previous page"
+msgstr ""
+
+#: app/views/shopitem/list_category.rhtml:18
+msgid "next page"
+msgstr ""
+
+#: app/views/shopitem/list_category.rhtml:22
+#: app/views/item/list_category.rhtml:24
+msgid "add new category"
+msgstr ""
+
+#: app/views/shopitem/list_shop.rhtml:2
+msgid "keyword for search shop:"
+msgstr ""
+
+#: app/views/shopitem/new_category.rhtml:1 app/views/item/new_category.rhtml:1
+msgid "new category input"
+msgstr ""
+
+#: app/views/shopitem/new_category.rhtml:5 app/views/account/new_user.rhtml:5
+#: app/views/account/new_user_by_l3.rhtml:5
+#: app/views/account/new_user_by_l2.rhtml:5
+#: app/views/item/new_structure.rhtml:5
+#: app/views/item/new_particularcat.rhtml:5
+#: app/views/item/new_facility.rhtml:5 app/views/item/new_particular.rhtml:5
+#: app/views/item/new_facilitycat.rhtml:5 app/views/item/new_category.rhtml:5
+msgid "regist"
+msgstr ""
+
+#: app/views/shopitem/_showshopitem.rhtml:3
+#: app/views/item/_item_content.rhtml:6 app/views/item/list_item.rhtml:10
+#: app/views/item/_listitem.rhtml:3
+msgid "updated_at"
+msgstr ""
+
+#: app/views/shopitem/_showshopitem.rhtml:8
+msgid "foreign"
+msgstr ""
+
+#: app/views/shopitem/_showshopitem.rhtml:36
+msgid "shop_item_genre"
+msgstr ""
+
+#: app/views/shopitem/_showshopitem.rhtml:37
+msgid "shop_item_theme"
+msgstr ""
+
+#: app/views/shopitem/_showshopitem.rhtml:38
+msgid "shop_item_tag"
+msgstr ""
+
+#: app/views/shopitem/_showshopitem.rhtml:44
+msgid "shop_item_item_name"
+msgstr ""
+
+#: app/views/shopitem/_showshopitem.rhtml:47
+msgid "shop_item_spot_name"
+msgstr ""
+
+#: app/views/shopitem/_showshopitem.rhtml:74
+msgid "shop_item_shop_name"
+msgstr ""
+
+#: app/views/shopitem/_showshopitem.rhtml:93
+msgid "Reviews have been submitted by"
+msgstr ""
+
+#: app/views/shopitem/_showshopitem.rhtml:97
+#: app/views/review_comments/index.rhtml:6
+#: app/views/reviews/edit_comment_by_teachar.rhtml:25
+#: app/views/reviews/edit_comment_by_student.rhtml:25
+#: app/views/reviews/show.rhtml:29
+#: app/views/reviews/show_my_class_review.rhtml:13
+#: app/views/reviews/_author_list.rhtml:6
+#: app/views/reviews/_title_list.rhtml:5
+#: app/views/reviews/show_my_review.rhtml:13
+msgid "reviewer"
+msgstr ""
+
+#: app/views/shopitem/_showshopitem.rhtml:114
+#: app/views/item/_listitem.rhtml:423
+msgid "num_val_1_name"
+msgstr ""
+
+#: app/views/shopitem/_showshopitem.rhtml:114
+#: app/views/item/_listitem.rhtml:423
+msgid "num_val_1_unit"
+msgstr ""
+
+#: app/views/shopitem/_form_edit_by_l2.rhtml:44
+msgid "shop_item_lecturer"
+msgstr ""
+
+#: app/views/shopitem/list.rhtml:5 app/views/layouts/_maint_sidebar.rhtml:2
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:2
+#: app/views/layouts/_maint_search_bar.rhtml:4
+#: app/views/reviews/list_author_grade_7_9.rhtml:4
+#: app/views/reviews/list_grade_2_3.rhtml:4
+#: app/views/reviews/list_author_grade_13_16.rhtml:4
+#: app/views/reviews/list_author_grade_4_6.rhtml:4
+#: app/views/reviews/list_author_grade_2_3.rhtml:4
+#: app/views/reviews/list_grade_7_9.rhtml:4
+#: app/views/reviews/list_author_grade_k_1.rhtml:4
+#: app/views/reviews/_search_grade.rhtml:2
+#: app/views/reviews/list_author_grade_17.rhtml:4
+#: app/views/reviews/list_author_grade_10_12.rhtml:4
+#: app/views/reviews/list_grade_10_12.rhtml:4
+#: app/views/reviews/_search.rhtml:3
+#: app/views/reviews/list_grade_13_16.rhtml:4
+#: app/views/reviews/list_grade_k_1.rhtml:4
+#: app/views/reviews/list_grade_t.rhtml:4
+#: app/views/reviews/list_grade_17.rhtml:4
+#: app/views/reviews/list_author_grade_t.rhtml:4
+#: app/views/reviews/list_grade_4_6.rhtml:4 app/views/student/_search.rhtml:3
+msgid "keyword for search"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:4
+msgid "【学習】"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:5
+msgid "人権"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:6
+msgid "環境"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:7
+msgid "平和"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:8
+msgid "暮らし"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:9
+msgid "文化"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:10
+msgid "国際交流"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:11
+msgid "日本語教室"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:12
+msgid "パソコン"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:16
+msgid "【芸術】"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:17
+msgid "絵画"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:18
+msgid "書道"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:19
+msgid "映像"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:20
+msgid "舞踊"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:21
+msgid "フラワー"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:22
+msgid "彫刻"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:23
+msgid "音楽"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:27
+msgid "【スポーツ】"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:28
+msgid "ダンス"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:29
+msgid "バレーボール"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:30
+msgid "武道"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:31
+msgid "体操"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:32
+msgid "水泳"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:33
+msgid "ウォーキング"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:34
+msgid "ハイキング"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:40
+msgid "家族"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:41
+msgid "友だち"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:42
+msgid "先生"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:43
+msgid "愛"
+msgstr ""
+
+#: app/views/shopitem/_list_recommend_menu.rhtml:44
+msgid "動物"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:13
+#: app/views/layouts/application.rhtml:85
+#: app/views/layouts/application.rhtml:88
+#: app/views/layouts/application.rhtml:89
+#: app/views/layouts/application_api.rhtml:10
+#: app/views/layouts/application_org.rhtml:10
+msgid "Site Name: SN => Name of Site"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:26
+#: app/views/layouts/application_api.rhtml:12
+#: app/views/layouts/_maint_sidebar.rhtml:67
+#: app/views/layouts/application_org.rhtml:12
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:67
+msgid "Map"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:28
+#: app/views/layouts/application.rhtml:30
+#: app/views/layouts/application_api.rhtml:14
+#: app/views/layouts/application_api.rhtml:16
+#: app/views/layouts/_maint_sidebar.rhtml:69
+#: app/views/layouts/_maint_sidebar.rhtml:71
+#: app/views/layouts/_maint_sidebar.rhtml:97
+#: app/views/layouts/_maint_sidebar.rhtml:118
+#: app/views/layouts/_maint_sidebar.rhtml:125
+#: app/views/layouts/_maint_item.rhtml:2 app/views/layouts/_maint_nav.rhtml:18
+#: app/views/layouts/_maint_nav.rhtml:36 app/views/layouts/_maint_nav.rhtml:51
+#: app/views/layouts/_maint_nav.rhtml:64 app/views/layouts/_maint_shop.rhtml:2
+#: app/views/layouts/application_org.rhtml:14
+#: app/views/layouts/application_org.rhtml:16
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:69
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:71
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:97
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:118
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:125
+#: app/views/layouts/_maint_shopitem.rhtml:2
+msgid "List"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:31
+#: app/views/layouts/application_api.rhtml:17
+#: app/views/layouts/_maint_sidebar.rhtml:72
+#: app/views/layouts/application_org.rhtml:17
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:72
+msgid "Search_1"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:32
+#: app/views/layouts/application_api.rhtml:18
+#: app/views/layouts/_maint_sidebar.rhtml:73
+#: app/views/layouts/application_org.rhtml:18
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:73
+msgid "Search_2"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:34
+#: app/views/layouts/application_api.rhtml:20
+#: app/views/layouts/_maint_sidebar.rhtml:75
+#: app/views/layouts/application_org.rhtml:20
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:75
+msgid "Sum_List"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:35
+#: app/views/layouts/application_api.rhtml:21
+#: app/views/layouts/_maint_sidebar.rhtml:76
+#: app/views/layouts/application_org.rhtml:21
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:76
+msgid "Article"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:36
+#: app/views/layouts/application_api.rhtml:22
+#: app/views/layouts/_maint_sidebar.rhtml:77
+#: app/views/layouts/application_org.rhtml:22
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:77
+msgid "Link"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:37
+#: app/views/layouts/application_api.rhtml:23
+#: app/views/layouts/_maint_sidebar.rhtml:78
+#: app/views/layouts/application_org.rhtml:23
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:78
+msgid "Note"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:43
+#: app/views/layouts/application_api.rhtml:29
+#: app/views/layouts/_maint_sidebar.rhtml:84
+#: app/views/layouts/application_org.rhtml:29
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:84
+msgid "Message"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:45
+msgid "Application"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:48
+#: app/views/layouts/application_api.rhtml:32
+#: app/views/layouts/application_org.rhtml:32
+msgid "Group"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:50
+#: app/views/layouts/application_api.rhtml:34
+#: app/views/layouts/application_org.rhtml:34
+msgid "User"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:52
+#: app/views/layouts/application_api.rhtml:36
+#: app/views/layouts/application_org.rhtml:36
+msgid "Lvl"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:54
+#: app/views/layouts/application_api.rhtml:38
+#: app/views/layouts/_maint_sidebar.rhtml:104
+#: app/views/layouts/application_org.rhtml:38
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:104
+msgid "Logout"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:55
+#: app/views/layouts/application_api.rhtml:39
+#: app/views/layouts/_maint_sidebar.rhtml:105
+#: app/views/layouts/application_org.rhtml:39
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:105
+msgid "Change_profile"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:56
+msgid "Change_student"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:58
+#: app/views/layouts/application_api.rhtml:42
+#: app/views/layouts/_maint_sidebar.rhtml:143
+#: app/views/layouts/_maint_nav.rhtml:91
+#: app/views/layouts/application_org.rhtml:42
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:143
+#: app/views/account/login_bak.rhtml:26 app/views/account/login.rhtml:19
+#: app/views/user/login.rhtml:18
+msgid "Login"
+msgstr ""
+
+#: app/views/layouts/application.rhtml:59
+#: app/views/layouts/application_api.rhtml:43
+#: app/views/layouts/_maint_sidebar.rhtml:144
+#: app/views/layouts/_maint_nav.rhtml:92
+#: app/views/layouts/application_org.rhtml:43
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:144
+msgid "New_User_Signup"
+msgstr ""
+
+#: app/views/layouts/application_api.rhtml:63
+#: app/views/layouts/application_api.rhtml:64
+#: app/views/layouts/bak_item_bak.rhtml:13
+#: app/views/layouts/bak_item_bak.rhtml:14
+#: app/views/layouts/application_org.rhtml:63
+#: app/views/layouts/application_org.rhtml:64
+msgid "powered by CSIS Simple Geocoding Experiment("
+msgstr ""
+
+#: app/views/layouts/application_api.rhtml:63
+#: app/views/layouts/bak_item_bak.rhtml:13
+#: app/views/layouts/application_org.rhtml:63
+msgid "isj"
+msgstr ""
+
+#: app/views/layouts/application_api.rhtml:64
+#: app/views/layouts/bak_item_bak.rhtml:14
+#: app/views/layouts/application_org.rhtml:64
+msgid "ksj"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:5
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:5
+#: app/views/layouts/_maint_search_bar.rhtml:6
+msgid "bukken_name"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:13
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:13
+#: app/views/layouts/_maint_search_bar.rhtml:13
+#: app/views/student/_search.rhtml:14
+msgid "syubetu"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:24
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:24
+msgid "ensen_name"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:29
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:29
+msgid "hanbai_kakaku"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:30
+#: app/views/layouts/_maint_sidebar.rhtml:34
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:30
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:34
+msgid "up_to"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:33
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:33
+msgid "tintai_kakaku"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:61
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:61
+#: app/views/layouts/_maint_search_bar.rhtml:44
+msgid "show_map"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:110
+#: app/views/layouts/_maint_nav.rhtml:32 app/views/layouts/_maint_nav.rhtml:49
+#: app/views/layouts/_maint_nav.rhtml:62
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:110
+msgid "User Admin"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:111
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:111
+msgid "Facility Maint"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:112
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:112
+msgid "Facilitycat Maint"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:113
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:113
+msgid "Particular Maint"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:114
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:114
+msgid "Particularcat Maint"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:115
+#: app/views/layouts/_maint_nav.rhtml:33
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:115
+msgid "Category Maint"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:116
+#: app/views/layouts/_maint_nav.rhtml:34
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:116
+msgid "Structure Maint"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:117
+#: app/views/layouts/_maint_nav.rhtml:35 app/views/layouts/_maint_nav.rhtml:50
+#: app/views/layouts/_maint_nav.rhtml:63 app/views/layouts/_maint_shop.rhtml:1
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:117
+msgid "Maint_shop"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:124
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:124
+#: app/views/layouts/_maint_shopitem.rhtml:1
+msgid "Maint_shopitem"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:132
+#: app/views/layouts/_maint_nav.rhtml:82
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:132
+msgid "items.xml"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:133
+#: app/views/layouts/_maint_nav.rhtml:83
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:133
+msgid "spots.xml"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:134
+#: app/views/layouts/_maint_nav.rhtml:84
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:134
+msgid "categories.xml"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:135
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:135
+msgid "structures.xml"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:136
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:136
+msgid "facilities.xml"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:137
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:137
+msgid "particulars.xml"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:138
+#: app/views/layouts/_maint_nav.rhtml:85
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:138
+#: app/views/layouts/_maint_shopitem.rhtml:4
+msgid "shopitems.xml"
+msgstr ""
+
+#: app/views/layouts/_maint_sidebar.rhtml:139
+#: app/views/layouts/_maint_nav.rhtml:86
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:139
+msgid "shops.xml"
+msgstr ""
+
+#: app/views/layouts/bak_item_bak.rhtml:13
+#: app/views/layouts/bak_item_bak.rhtml:14
+msgid ")"
+msgstr ""
+
+#: app/views/layouts/_maint_item.rhtml:1 app/views/layouts/_maint_nav.rhtml:6
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:87
+msgid "Maint_item"
+msgstr ""
+
+#: app/views/layouts/_maint_nav.rhtml:17
+#: app/views/layouts/_maint_sidebar_form_remote_tag.rhtml:96
+msgid "Maint_spot"
+msgstr ""
+
+#: app/views/layouts/_maint_nav.rhtml:31 app/views/layouts/_maint_nav.rhtml:48
+#: app/views/layouts/_maint_nav.rhtml:61
+msgid "Maint_user"
+msgstr ""
+
+#: app/views/layouts/_header_nav.rhtml:4
+msgid "reviewers"
+msgstr ""
+
+#: app/views/layouts/_header_nav.rhtml:6 app/views/item/_listitem.rhtml:50
+msgid "titles"
+msgstr ""
+
+#: app/views/layouts/_header_nav.rhtml:8
+msgid "authors"
+msgstr ""
+
+#: app/views/layouts/_header_nav.rhtml:13
+msgid "about us"
+msgstr ""
+
+#: app/views/layouts/_header_nav.rhtml:15
+msgid "schools"
+msgstr ""
+
+#: app/views/layouts/_header_nav.rhtml:17
+msgid "clubhouse"
+msgstr ""
+
+#: app/views/layouts/_header_nav.rhtml:20
+msgid "reviews"
+msgstr ""
+
+#: app/views/layouts/_header_nav.rhtml:23
+msgid "review_comments"
+msgstr ""
+
+#: app/views/layouts/_header_nav.rhtml:26
+msgid "home"
+msgstr ""
+
+#: app/views/layouts/_maint_review.rhtml:1
+msgid "Maint_review"
+msgstr ""
+
+#: app/views/account/_form_user_by_l2.rhtml:3
+#: app/views/account/_form_user_by_user.rhtml:3
+#: app/views/account/_form_user_by_l3.rhtml:3
+msgid "group name :"
+msgstr ""
+
+#: app/views/account/_form_user_by_l2.rhtml:9
+#: app/views/account/_form_user.rhtml:14
+#: app/views/account/_form_user_by_user.rhtml:8
+#: app/views/account/_form_user_by_l3.rhtml:9
+msgid "user level"
+msgstr ""
+
+#: app/views/account/_form_user_by_l2.rhtml:12
+#: app/views/account/_form_user.rhtml:16
+#: app/views/account/_form_user_by_l3.rhtml:12
+msgid "please select"
+msgstr ""
+
+#: app/views/account/edit_group.rhtml:1
+#: app/views/account/edit_group_by_l3.rhtml:1
+#: app/views/account/edit_group_by_l2.rhtml:1
+msgid "change group name"
+msgstr ""
+
+#: app/views/account/welcome.rhtml:3
+msgid "Welcome"
+msgstr ""
+
+#: app/views/account/welcome.rhtml:5
+msgid "You are now logged into the system..."
+msgstr ""
+
+#: app/views/account/welcome.rhtml:7 app/views/account/welcome.rhtml:9
+msgid "welcom"
+msgstr ""
+
+#: app/views/account/welcome.rhtml:7
+msgid "san"
+msgstr ""
+
+#: app/views/account/welcome.rhtml:10
+msgid "no student info, please input student info."
+msgstr ""
+
+#: app/views/account/welcome.rhtml:11
+msgid "Regist_student"
+msgstr ""
+
+#: app/views/account/edit_user.rhtml:1
+#: app/views/account/edit_user_by_l2.rhtml:1
+#: app/views/account/edit_user_by_l3.rhtml:1
+#: app/views/account/edit_user_by_user.rhtml:1
+msgid "edit user"
+msgstr ""
+
+#: app/views/account/_student.rhtml:8 app/views/student/_form.rhtml:13
+#: app/views/student/show_by_student.rhtml:28 app/views/student/show.rhtml:29
+#: app/views/student/show.rhtml:50 app/views/student/_form_by_student.rhtml:18
+#: app/views/student/_list_students.rhtml:7
+msgid "l_name_initial"
+msgstr ""
+
+#: app/views/account/_student.rhtml:17 app/views/student/_form.rhtml:25
+#: app/views/student/show_by_student.rhtml:47 app/views/student/show.rhtml:48
+#: app/views/student/_form_by_student.rhtml:30
+#: app/views/student/_list_students.rhtml:6
+msgid "alias"
+msgstr ""
+
+#: app/views/account/_student.rhtml:46 app/views/student/_form.rhtml:58
+#: app/views/student/show_by_student.rhtml:56 app/views/student/show.rhtml:59
+#: app/views/student/_form_by_student.rhtml:64
+#: app/views/student/_list_students.rhtml:13
+msgid "birthday"
+msgstr ""
+
+#: app/views/account/_student.rhtml:52 app/views/student/_form.rhtml:64
+#: app/views/student/show_by_student.rhtml:66 app/views/student/show.rhtml:69
+#: app/views/student/_form_by_student.rhtml:70
+#: app/views/student/_list_students.rhtml:15
+msgid "sex"
+msgstr ""
+
+#: app/views/account/list_group_by_l2.rhtml:1
+#: app/views/account/list_group.rhtml:1
+#: app/views/account/list_group_by_l3.rhtml:1
+msgid "group list"
+msgstr ""
+
+#: app/views/account/list_group_by_l2.rhtml:5
+#: app/views/account/list_group.rhtml:5
+#: app/views/account/list_group_by_l3.rhtml:5
+#: app/views/account/_form_group.rhtml:5
+msgid "group name"
+msgstr ""
+
+#: app/views/account/list_group_by_l2.rhtml:6
+#: app/views/account/list_group.rhtml:6
+#: app/views/account/list_group_by_l3.rhtml:6
+#: app/views/account/_form_group.rhtml:9
+msgid "description"
+msgstr ""
+
+#: app/views/account/list_group_by_l2.rhtml:13
+#: app/views/account/list_group.rhtml:13
+#: app/views/account/list_group_by_l3.rhtml:13
+msgid "group user"
+msgstr ""
+
+#: app/views/account/new_user.rhtml:1 app/views/account/new_user_by_l3.rhtml:1
+#: app/views/account/new_user_by_l2.rhtml:1
+msgid "new user input"
+msgstr ""
+
+#: app/views/account/login_bak.rhtml:4 app/views/account/login.rhtml:4
+msgid "please login"
+msgstr ""
+
+#: app/views/account/login_bak.rhtml:13 app/views/account/login.rhtml:11
+msgid "login"
+msgstr ""
+
+#: app/views/account/login_bak.rhtml:21 app/views/account/login.rhtml:15
+msgid "password"
+msgstr ""
+
+#: app/views/account/list_user.rhtml:1
+#: app/views/account/list_user_by_l3.rhtml:1
+#: app/views/account/list_user_by_l2.rhtml:1
+msgid "user list group :"
+msgstr ""
+
+#: app/views/account/list_user.rhtml:5
+#: app/views/account/list_user_by_l3.rhtml:5
+#: app/views/account/_form_name_login_pass.rhtml:3
+#: app/views/account/list_user_by_l2.rhtml:5
+msgid "user name"
+msgstr ""
+
+#: app/views/account/list_user.rhtml:24
+#: app/views/account/list_user_by_l3.rhtml:24
+#: app/views/account/list_user_by_l2.rhtml:24
+msgid "add new user"
+msgstr ""
+
+#: app/views/account/_form_name_login_pass.rhtml:7
+msgid "login id(3ch upto 40)"
+msgstr ""
+
+#: app/views/account/_form_name_login_pass.rhtml:11
+msgid "password(5ch upto 40ch)"
+msgstr ""
+
+#: app/views/account/_form_name_login_pass.rhtml:15
+msgid "password confirmation"
+msgstr ""
+
+#: app/views/account/_form_user.rhtml:5
+msgid "select group name"
+msgstr ""
+
+#: app/views/account/new_group.rhtml:1
+msgid "create new group"
+msgstr ""
+
+#: app/views/account/new_group.rhtml:5 app/views/reviews/new.rhtml:19
+msgid "create"
+msgstr ""
+
+#: app/views/account/list_group.rhtml:27
+msgid "add new group"
+msgstr ""
+
+#: app/views/account/_form_email.rhtml:3
+msgid "user email_pc"
+msgstr ""
+
+#: app/views/account/_form_email.rhtml:7
+msgid "user email_cell"
+msgstr ""
+
+#: app/views/account/_form_email.rhtml:11
+msgid "warning: please input both password field anytime"
+msgstr ""
+
+#: app/views/user/_password.rhtml:3 app/views/user/login.rhtml:14
+msgid "Password"
+msgstr ""
+
+#: app/views/user/_password.rhtml:4
+msgid "Password Confirmation"
+msgstr ""
+
+#: app/views/user/_password.rhtml:6 app/views/user/change_password.rhtml:17
+msgid "Change password"
+msgstr ""
+
+#: app/views/user/_edit.rhtml:3
+msgid "Last Name"
+msgstr ""
+
+#: app/views/user/_edit.rhtml:4
+msgid "First Name"
+msgstr ""
+
+#: app/views/user/_edit.rhtml:5 app/views/user/login.rhtml:13
+msgid "Login ID"
+msgstr ""
+
+#: app/views/user/_edit.rhtml:6
+msgid "Email"
+msgstr ""
+
+#: app/views/user/_edit.rhtml:8 app/views/user/signup.rhtml:2
+#: app/views/user/signup.rhtml:12
+msgid "Signup"
+msgstr ""
+
+#: app/views/user/_edit.rhtml:8
+msgid "Change Settings"
+msgstr ""
+
+#: app/views/user/signup.rhtml:13 app/views/user/change_password.rhtml:18
+msgid "Cancel"
+msgstr ""
+
+#: app/views/user/login.rhtml:2
+msgid "Please Login"
+msgstr ""
+
+#: app/views/user/login.rhtml:20
+msgid "Register for an account"
+msgstr ""
+
+#: app/views/user/change_password.rhtml:2
+msgid "Change Password"
+msgstr ""
+
+#: app/views/user/change_password.rhtml:12
+msgid ""
+"Enter your new password in the fields below and click 'Change Password' to "
+"have a new password sent to your email inbox."
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:10 app/views/item/list_item.rhtml:39
+#: app/views/item/_listindex.rhtml:4
+msgid "view"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:14 app/views/item/_listindex.rhtml:8
+#: app/views/item/_listspot.rhtml:4
+msgid "spot_detail"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:20 app/views/item/_form.rhtml:13
+#: app/views/item/_listindex.rhtml:14
+msgid "item_str_val_6"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:44 app/views/item/_form.rhtml:47
+#: app/views/item/_listindex.rhtml:22 app/views/item/_listitem.rhtml:166
+msgid "item_num_val_h"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:47 app/views/item/_form.rhtml:49
+#: app/views/item/_listitem.rhtml:169
+msgid "item_num_val_i"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:50 app/views/item/_form.rhtml:10
+msgid "item_str_val_7"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:53 app/views/item/_form.rhtml:57
+#: app/views/item/_listitem.rhtml:181
+msgid "item_str_val_8"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:56 app/views/item/_form.rhtml:59
+#: app/views/item/_listitem.rhtml:184
+msgid "item_str_val_9"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:61 app/views/item/_form.rhtml:70
+#: app/views/item/_listindex.rhtml:26 app/views/item/_listitem.rhtml:192
+msgid "item_num_val_j"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:64 app/views/item/_form.rhtml:72
+#: app/views/item/_listitem.rhtml:195
+msgid "item_num_val_k"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:69 app/views/item/_form.rhtml:75
+#: app/views/item/_listindex.rhtml:30 app/views/item/_listitem.rhtml:200
+msgid "item_num_val_l"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:72 app/views/item/_form.rhtml:77
+#: app/views/item/_listitem.rhtml:203
+msgid "item_num_val_m"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:76 app/views/item/_form.rhtml:66
+#: app/views/item/list_item.rhtml:21 app/views/item/_listindex.rhtml:34
+#: app/views/item/_listitem.rhtml:207
+msgid "item_str_val_1"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:80 app/views/item/_form.rhtml:115
+#: app/views/item/list_item.rhtml:22 app/views/item/_listindex.rhtml:38
+#: app/views/item/_listitem.rhtml:211
+msgid "item_num_val_p"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:87 app/views/item/list_item.rhtml:23
+#: app/views/item/search_remote.rhtml:43 app/views/item/_listindex.rhtml:45
+#: app/views/item/_items.rhtml:42 app/views/item/_listitem.rhtml:223
+msgid "item_num_val_1"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:90 app/views/item/_form.rhtml:159
+#: app/views/item/search_remote.rhtml:46 app/views/item/_listindex.rhtml:48
+#: app/views/item/_items.rhtml:45 app/views/item/_listitem.rhtml:227
+msgid "item_check_box_02"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:93 app/views/item/_form.rhtml:160
+#: app/views/item/search_remote.rhtml:49 app/views/item/_listindex.rhtml:51
+#: app/views/item/_items.rhtml:48 app/views/item/_listitem.rhtml:230
+msgid "item_num_val_2"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:96 app/views/item/_form.rhtml:162
+#: app/views/item/search_remote.rhtml:52 app/views/item/_listindex.rhtml:54
+#: app/views/item/_items.rhtml:51 app/views/item/_listitem.rhtml:233
+msgid "item_num_val_3"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:99 app/views/item/_form.rhtml:164
+#: app/views/item/search_remote.rhtml:55 app/views/item/_listindex.rhtml:57
+#: app/views/item/_items.rhtml:54 app/views/item/_listitem.rhtml:236
+msgid "item_num_val_4"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:102 app/views/item/_form.rhtml:166
+#: app/views/item/search_remote.rhtml:58 app/views/item/_listindex.rhtml:60
+#: app/views/item/_items.rhtml:57 app/views/item/_listitem.rhtml:239
+msgid "item_num_val_5"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:105 app/views/item/_form.rhtml:168
+#: app/views/item/search_remote.rhtml:61 app/views/item/_listindex.rhtml:63
+#: app/views/item/_items.rhtml:60 app/views/item/_listitem.rhtml:242
+msgid "item_check_box_01"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:108 app/views/item/_form.rhtml:169
+#: app/views/item/search_remote.rhtml:64 app/views/item/_listindex.rhtml:66
+#: app/views/item/_items.rhtml:63 app/views/item/_listitem.rhtml:245
+msgid "item_num_val_6"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:111 app/views/item/_form.rhtml:171
+#: app/views/item/search_remote.rhtml:67 app/views/item/_listindex.rhtml:69
+#: app/views/item/_items.rhtml:66 app/views/item/_listitem.rhtml:248
+msgid "item_num_val_n"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:114 app/views/item/_form.rhtml:175
+#: app/views/item/search_remote.rhtml:70 app/views/item/_listindex.rhtml:72
+#: app/views/item/_items.rhtml:69 app/views/item/_listitem.rhtml:251
+msgid "item_num_val_c"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:117 app/views/item/_form.rhtml:177
+#: app/views/item/search_remote.rhtml:73 app/views/item/_listindex.rhtml:75
+#: app/views/item/_items.rhtml:72 app/views/item/_listitem.rhtml:254
+msgid "item_num_val_d"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:122 app/views/item/_form.rhtml:184
+#: app/views/item/list_item.rhtml:24 app/views/item/_listindex.rhtml:80
+#: app/views/item/_listitem.rhtml:259
+msgid "item_str_val_4"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:125 app/views/item/_form.rhtml:186
+#: app/views/item/list_item.rhtml:25 app/views/item/_listindex.rhtml:83
+#: app/views/item/_listitem.rhtml:262
+msgid "item_str_val_5"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:128 app/views/item/_form.rhtml:188
+#: app/views/item/_listitem.rhtml:265
+msgid "item_num_val_7"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:131 app/views/item/_form.rhtml:193
+#: app/views/item/search_remote.rhtml:86 app/views/item/_listindex.rhtml:89
+#: app/views/item/_items.rhtml:85 app/views/item/_listitem.rhtml:268
+msgid "item_num_val_8"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:134 app/views/item/_form.rhtml:195
+#: app/views/item/search_remote.rhtml:89 app/views/item/_listindex.rhtml:92
+#: app/views/item/_items.rhtml:88 app/views/item/_listitem.rhtml:271
+msgid "item_num_val_9"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:139 app/views/item/_form.rhtml:200
+#: app/views/item/search_remote.rhtml:93 app/views/item/_listindex.rhtml:97
+#: app/views/item/_items.rhtml:92 app/views/item/_listitem.rhtml:276
+msgid "item_num_val_a"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:142 app/views/item/_form.rhtml:202
+#: app/views/item/search_remote.rhtml:96 app/views/item/_listindex.rhtml:100
+#: app/views/item/_items.rhtml:95 app/views/item/_listitem.rhtml:279
+msgid "item_num_val_b"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:150 app/views/item/_form.rhtml:89
+#: app/views/item/search_remote.rhtml:106 app/views/item/_listindex.rhtml:108
+#: app/views/item/_items.rhtml:105 app/views/item/_listitem.rhtml:287
+msgid "item_num_val_e"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:153 app/views/item/_form.rhtml:87
+#: app/views/item/search_remote.rhtml:103 app/views/item/_listindex.rhtml:111
+#: app/views/item/_items.rhtml:102 app/views/item/_listitem.rhtml:290
+msgid "item_num_val_f"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:156 app/views/item/_form.rhtml:179
+#: app/views/item/search_remote.rhtml:109 app/views/item/_listindex.rhtml:114
+#: app/views/item/_items.rhtml:108 app/views/item/_listitem.rhtml:293
+msgid "item_num_val_g"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:159 app/views/item/_form.rhtml:93
+#: app/views/item/search_remote.rhtml:112 app/views/item/_listindex.rhtml:117
+#: app/views/item/_items.rhtml:111 app/views/item/_listitem.rhtml:298
+msgid "item_date_val_1"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:165 app/views/item/_listindex.rhtml:123
+msgid "nyukyo_jiki"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:167 app/views/item/_form.rhtml:96
+#: app/views/item/search_remote.rhtml:116 app/views/item/_listindex.rhtml:125
+#: app/views/item/_items.rhtml:115 app/views/item/_listitem.rhtml:301
+msgid "item_date_val_2"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:170 app/views/item/_form.rhtml:209
+#: app/views/item/search_remote.rhtml:119 app/views/item/_listindex.rhtml:128
+#: app/views/item/_items.rhtml:118 app/views/item/_listitem.rhtml:310
+msgid "item_check_box_00"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:173 app/views/item/_form.rhtml:210
+#: app/views/item/search_remote.rhtml:122 app/views/item/_listindex.rhtml:131
+#: app/views/item/_items.rhtml:121 app/views/item/_listitem.rhtml:313
+msgid "item_str_val_a"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:177 app/views/item/_form.rhtml:80
+#: app/views/item/_listindex.rhtml:135 app/views/item/_listitem.rhtml:317
+msgid "item_str_val_3"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:216
+#: app/views/item/_item_content.rhtml:230 app/views/item/_form.rhtml:242
+#: app/views/item/_listitem.rhtml:377 app/views/item/_listitem.rhtml:391
+msgid "particular_note"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:254 app/views/item/_listindex.rhtml:150
+#: app/views/item/_listitem.rhtml:415
+msgid "shop:"
+msgstr ""
+
+#: app/views/item/_item_content.rhtml:256 app/views/item/_form.rhtml:26
+#: app/views/item/_listitem.rhtml:416
+msgid "item_num_val_o"
+msgstr ""
+
+#: app/views/item/list_structure.rhtml:1
+msgid "structure list "
+msgstr ""
+
+#: app/views/item/list_structure.rhtml:5
+#: app/views/item/_form_structure.rhtml:3
+msgid "structure name"
+msgstr ""
+
+#: app/views/item/list_structure.rhtml:23
+msgid "add new structure"
+msgstr ""
+
+#: app/views/item/edit_structure.rhtml:1
+msgid "edit structure"
+msgstr ""
+
+#: app/views/item/list_spot.rhtml:2 app/views/item/list_item.rhtml:2
+#: app/views/item/list.rhtml:4
+msgid "keyword for search item_name or spot_name:"
+msgstr ""
+
+#: app/views/item/list_facilitycat.rhtml:1
+msgid "facilitycat list "
+msgstr ""
+
+#: app/views/item/list_facilitycat.rhtml:5
+#: app/views/item/_form_facilitycat.rhtml:3
+msgid "facilitycat name"
+msgstr ""
+
+#: app/views/item/list_facilitycat.rhtml:25
+msgid "add new facilitycat"
+msgstr ""
+
+#: app/views/item/_form.rhtml:2
+msgid "item_str_val_b"
+msgstr ""
+
+#: app/views/item/_form.rhtml:4
+msgid "item_str_val_c"
+msgstr ""
+
+#: app/views/item/_form.rhtml:7 app/views/item/list_item.rhtml:20
+msgid "item_nm"
+msgstr ""
+
+#: app/views/item/_form.rhtml:18
+msgid "syozoku_shop"
+msgstr ""
+
+#: app/views/item/_form.rhtml:28
+msgid "select_torihiki_taiyou"
+msgstr ""
+
+#: app/views/item/_form.rhtml:51 app/views/item/_listitem.rhtml:172
+msgid "item_num_val_q"
+msgstr ""
+
+#: app/views/item/_form.rhtml:53 app/views/item/_listitem.rhtml:175
+msgid "item_num_val_r"
+msgstr ""
+
+#: app/views/item/_form.rhtml:55 app/views/item/_listitem.rhtml:178
+msgid "item_str_val_d"
+msgstr ""
+
+#: app/views/item/_form.rhtml:61 app/views/item/_listitem.rhtml:187
+msgid "item_str_val_e"
+msgstr ""
+
+#: app/views/item/_form.rhtml:99 app/views/item/_listitem.rhtml:304
+msgid "item_date_val_3"
+msgstr ""
+
+#: app/views/item/_form.rhtml:118 app/views/item/_listitem.rhtml:215
+msgid "item_str_val_2"
+msgstr ""
+
+#: app/views/item/_form.rhtml:149
+msgid "item_for_who"
+msgstr ""
+
+#: app/views/item/_form.rhtml:152
+msgid "item_for_who_wk"
+msgstr ""
+
+#: app/views/item/_form.rhtml:215 app/views/item/_listitem.rhtml:322
+msgid "item_str_val_f"
+msgstr ""
+
+#: app/views/item/_form.rhtml:218 app/views/item/_listitem.rhtml:326
+msgid "item_str_val_g"
+msgstr ""
+
+#: app/views/item/_form.rhtml:221 app/views/item/_listitem.rhtml:330
+msgid "item_str_val_h"
+msgstr ""
+
+#: app/views/item/_form.rhtml:224 app/views/item/_listitem.rhtml:333
+msgid "item_str_val_i"
+msgstr ""
+
+#: app/views/item/_form.rhtml:227 app/views/item/_listitem.rhtml:336
+msgid "item_str_val_j"
+msgstr ""
+
+#: app/views/item/maint_table.rhtml:1
+msgid "maint table"
+msgstr ""
+
+#: app/views/item/edit_particularcat.rhtml:1
+msgid "edit particularcat"
+msgstr ""
+
+#: app/views/item/new_structure.rhtml:1
+msgid "new structure input"
+msgstr ""
+
+#: app/views/item/_form_particular.rhtml:3
+#: app/views/item/list_particular.rhtml:5
+msgid "particular seq"
+msgstr ""
+
+#: app/views/item/_form_particular.rhtml:9
+#: app/views/item/list_particular.rhtml:7
+msgid "particular name"
+msgstr ""
+
+#: app/views/item/new_particularcat.rhtml:1
+msgid "new particularcat input"
+msgstr ""
+
+#: app/views/item/new_facility.rhtml:1
+msgid "new facility input"
+msgstr ""
+
+#: app/views/item/new_particular.rhtml:1
+msgid "new particular input"
+msgstr ""
+
+#: app/views/item/edit_facilitycat.rhtml:1
+msgid "edit facilitycat"
+msgstr ""
+
+#: app/views/item/edit_particular.rhtml:1
+msgid "edit particular"
+msgstr ""
+
+#: app/views/item/new_facilitycat.rhtml:1
+msgid "new facilitycat input"
+msgstr ""
+
+#: app/views/item/search_remote.rhtml:23 app/views/item/_items.rhtml:22
+msgid "tochi"
+msgstr ""
+
+#: app/views/item/search_remote.rhtml:23 app/views/item/search_remote.rhtml:27
+#: app/views/item/search_remote.rhtml:31 app/views/item/_items.rhtml:22
+#: app/views/item/_items.rhtml:26 app/views/item/_items.rhtml:30
+msgid "heihou_meter"
+msgstr ""
+
+#: app/views/item/search_remote.rhtml:27 app/views/item/_items.rhtml:26
+msgid "tatemono"
+msgstr ""
+
+#: app/views/item/search_remote.rhtml:31 app/views/item/_items.rhtml:30
+msgid "senyu"
+msgstr ""
+
+#: app/views/item/search_remote.rhtml:39 app/views/item/_items.rhtml:38
+msgid "kakaku"
+msgstr ""
+
+#: app/views/item/search_remote.rhtml:39 app/views/item/_items.rhtml:38
+msgid "manen"
+msgstr ""
+
+#: app/views/item/search_remote.rhtml:83 app/views/item/_listindex.rhtml:86
+#: app/views/item/_items.rhtml:82
+msgid "kara_toho"
+msgstr ""
+
+#: app/views/item/search_remote.rhtml:83 app/views/item/_listindex.rhtml:86
+#: app/views/item/_items.rhtml:82
+msgid "min"
+msgstr ""
+
+#: app/views/item/_form_facility.rhtml:3 app/views/item/list_facility.rhtml:5
+msgid "facility seq"
+msgstr ""
+
+#: app/views/item/_form_facility.rhtml:9 app/views/item/list_facility.rhtml:7
+msgid "facility name"
+msgstr ""
+
+#: app/views/item/edit_facility.rhtml:1
+msgid "edit facility"
+msgstr ""
+
+#: app/views/item/_listitem.rhtml:56 app/views/item/_listitem.rhtml:58
+msgid "create_shopitem_from_item"
+msgstr ""
+
+#: app/views/item/_listitem.rhtml:82
+msgid "replicate"
+msgstr ""
+
+#: app/views/item/_listitem.rhtml:130
+msgid "our_reviews"
+msgstr ""
+
+#: app/views/item/list_particularcat.rhtml:1
+msgid "particularcat list "
+msgstr ""
+
+#: app/views/item/list_particularcat.rhtml:5
+#: app/views/item/_form_particularcat.rhtml:3
+msgid "particularcat name"
+msgstr ""
+
+#: app/views/item/list_particularcat.rhtml:22
+msgid "add new particularcat"
+msgstr ""
+
+#: app/views/item/list_particular.rhtml:1
+msgid "particular list "
+msgstr ""
+
+#: app/views/item/list_particular.rhtml:6
+msgid "particular cat"
+msgstr ""
+
+#: app/views/item/list_particular.rhtml:28
+msgid "add new particular"
+msgstr ""
+
+#: app/views/item/list_facility.rhtml:1
+msgid "facility list "
+msgstr ""
+
+#: app/views/item/list_facility.rhtml:6
+msgid "facility cat"
+msgstr ""
+
+#: app/views/item/list_facility.rhtml:21
+msgid "add new facility"
+msgstr ""
+
+#: app/views/review_comments/edit_by_teachar.rhtml:1
+#: app/views/review_comments/edit.rhtml:1
+#: app/views/review_comments/edit_by_student.rhtml:1
+msgid "Editing review_comment"
+msgstr ""
+
+#: app/views/review_comments/edit_by_teachar.rhtml:19
+#: app/views/review_comments/edit_by_student.rhtml:19
+msgid "edit_review_comment"
+msgstr ""
+
+#: app/views/review_comments/edit_by_teachar.rhtml:21
+#: app/views/review_comments/edit.rhtml:11
+#: app/views/review_comments/edit_by_student.rhtml:21
+#: app/views/reviews/edit_comment_by_teachar.rhtml:156
+#: app/views/reviews/edit_comment_by_student.rhtml:134
+#: app/views/reviews/show.rhtml:171
+#: app/views/reviews/show_my_class_review.rhtml:162
+msgid "comment_name"
+msgstr ""
+
+#: app/views/review_comments/edit_by_teachar.rhtml:25
+#: app/views/review_comments/edit.rhtml:15
+#: app/views/review_comments/edit_by_student.rhtml:25
+#: app/views/reviews/edit_comment_by_teachar.rhtml:159
+#: app/views/reviews/edit_comment_by_student.rhtml:137
+#: app/views/reviews/show.rhtml:174
+#: app/views/reviews/show_my_class_review.rhtml:165
+msgid "comment_body"
+msgstr ""
+
+#: app/views/review_comments/show.rhtml:15
+#: app/views/reviews/edit_comment_by_teachar.rhtml:68
+#: app/views/reviews/edit_comment_by_student.rhtml:70
+#: app/views/reviews/show.rhtml:76
+#: app/views/reviews/show_my_class_review.rhtml:67
+msgid "comment"
+msgstr ""
+
+#: app/views/reviews/list_author_grade_7_9.rhtml:5
+#: app/views/reviews/list_grade_2_3.rhtml:5
+#: app/views/reviews/list_author_grade_13_16.rhtml:5
+#: app/views/reviews/list_author_grade_4_6.rhtml:5
+#: app/views/reviews/list_author_grade_2_3.rhtml:5
+#: app/views/reviews/list_grade_7_9.rhtml:5
+#: app/views/reviews/list_author_grade_k_1.rhtml:5
+#: app/views/reviews/_search_grade.rhtml:3
+#: app/views/reviews/list_author_grade_17.rhtml:5
+#: app/views/reviews/list_author_grade_10_12.rhtml:5
+#: app/views/reviews/list_grade_10_12.rhtml:5
+#: app/views/reviews/_search.rhtml:6
+#: app/views/reviews/list_grade_13_16.rhtml:5
+#: app/views/reviews/list_grade_k_1.rhtml:5
+#: app/views/reviews/list_grade_t.rhtml:5
+#: app/views/reviews/list_grade_17.rhtml:5
+#: app/views/reviews/list_author_grade_t.rhtml:5
+#: app/views/reviews/list_grade_4_6.rhtml:5
+msgid "book_title_n_review_genre_n_review_hiro"
+msgstr ""
+
+#: app/views/reviews/list_author_grade_7_9.rhtml:12
+#: app/views/reviews/list_author_grade_13_16.rhtml:12
+#: app/views/reviews/list_author_grade_4_6.rhtml:12
+#: app/views/reviews/list_author_grade_2_3.rhtml:12
+#: app/views/reviews/list_author_grade_k_1.rhtml:12
+#: app/views/reviews/list_author_grade_17.rhtml:12
+#: app/views/reviews/list_author_grade_10_12.rhtml:12
+#: app/views/reviews/list_author_grade_t.rhtml:12
+msgid "Listing author"
+msgstr ""
+
+#: app/views/reviews/list_author_grade_7_9.rhtml:12
+#: app/views/reviews/list_grade_7_9.rhtml:13
+msgid "grade_7_9"
+msgstr ""
+
+#: app/views/reviews/list_grade_2_3.rhtml:13
+#: app/views/reviews/list_grade_7_9.rhtml:13
+#: app/views/reviews/list_grade_10_12.rhtml:13
+#: app/views/reviews/list_grade_13_16.rhtml:13
+#: app/views/reviews/list_grade_k_1.rhtml:13
+#: app/views/reviews/list_grade_t.rhtml:13
+#: app/views/reviews/list_grade_17.rhtml:13
+#: app/views/reviews/list_grade_4_6.rhtml:13
+msgid "Listing title"
+msgstr ""
+
+#: app/views/reviews/list_grade_2_3.rhtml:13
+#: app/views/reviews/list_author_grade_2_3.rhtml:12
+msgid "grade_2_3"
+msgstr ""
+
+#: app/views/reviews/edit_by_teachar.rhtml:1 app/views/reviews/edit.rhtml:1
+#: app/views/reviews/edit_by_student.rhtml:1
+msgid "Editing review"
+msgstr ""
+
+#: app/views/reviews/edit_by_teachar.rhtml:10 app/views/reviews/edit.rhtml:10
+#: app/views/reviews/edit_by_student.rhtml:9 app/views/student/edit.rhtml:7
+msgid "delete_pic"
+msgstr ""
+
+#: app/views/reviews/edit_comment_by_teachar.rhtml:3
+#: app/views/reviews/edit_comment_by_student.rhtml:3
+#: app/views/reviews/show.rhtml:3
+msgid "shopitem_id"
+msgstr ""
+
+#: app/views/reviews/edit_comment_by_teachar.rhtml:10
+#: app/views/reviews/_form.rhtml:5
+#: app/views/reviews/edit_comment_by_student.rhtml:10
+#: app/views/reviews/show.rhtml:10
+#: app/views/reviews/show_my_class_review.rhtml:2
+#: app/views/reviews/show_my_review.rhtml:2
+#: app/views/reviews/_form_bak.rhtml:1
+msgid "shopitem_name"
+msgstr ""
+
+#: app/views/reviews/edit_comment_by_teachar.rhtml:151
+#: app/views/reviews/edit_comment_by_student.rhtml:129
+#: app/views/reviews/show.rhtml:164
+#: app/views/reviews/show_my_class_review.rhtml:155
+msgid "new_review_comment"
+msgstr ""
+
+#: app/views/reviews/edit_comment_by_teachar.rhtml:164
+#: app/views/reviews/edit_comment_by_student.rhtml:142
+#: app/views/reviews/show.rhtml:179
+#: app/views/reviews/show_my_class_review.rhtml:170
+msgid "commenters_name"
+msgstr ""
+
+#: app/views/reviews/edit_comment_by_teachar.rhtml:181
+#: app/views/reviews/edit_comment_by_student.rhtml:156
+#: app/views/reviews/show.rhtml:192
+#: app/views/reviews/show_my_class_review.rhtml:183
+msgid "submit_comment"
+msgstr ""
+
+#: app/views/reviews/_form.rhtml:9
+msgid "if not, please regist new book, then back to here."
+msgstr ""
+
+#: app/views/reviews/_form.rhtml:9
+msgid "Regist book"
+msgstr ""
+
+#: app/views/reviews/_form.rhtml:14 app/views/reviews/_form_bak.rhtml:9
+msgid "student_alias"
+msgstr ""
+
+#: app/views/reviews/_form.rhtml:17 app/views/reviews/_form_bak.rhtml:12
+msgid "review_genre"
+msgstr ""
+
+#: app/views/reviews/_form.rhtml:20 app/views/reviews/_form_bak.rhtml:15
+msgid "review_hiro"
+msgstr ""
+
+#: app/views/reviews/_form.rhtml:23 app/views/reviews/_form_bak.rhtml:18
+msgid "review_body"
+msgstr ""
+
+#: app/views/reviews/list_author_grade_13_16.rhtml:12
+#: app/views/reviews/list_grade_13_16.rhtml:13
+msgid "grade_13_16"
+msgstr ""
+
+#: app/views/reviews/list_author_grade_4_6.rhtml:12
+#: app/views/reviews/list_grade_4_6.rhtml:13
+msgid "grade_4_6"
+msgstr ""
+
+#: app/views/reviews/show.rhtml:48
+#: app/views/reviews/show_my_class_review.rhtml:28
+#: app/views/reviews/show_my_review.rhtml:23
+msgid "(image_click_2_big)"
+msgstr ""
+
+#: app/views/reviews/list_author_grade_k_1.rhtml:12
+#: app/views/reviews/list_grade_k_1.rhtml:13
+msgid "grade_k_1"
+msgstr ""
+
+#: app/views/reviews/index_my_review.rhtml:3
+msgid "Listing_my_reviews"
+msgstr ""
+
+#: app/views/reviews/index_my_review.rhtml:11
+#: app/views/reviews/index_comment.rhtml:13
+#: app/views/reviews/index_my_class_review.rhtml:11
+#: app/views/reviews/index.rhtml:14
+msgid "review status"
+msgstr ""
+
+#: app/views/reviews/list_author_grade_10_12.rhtml:12
+#: app/views/reviews/list_grade_10_12.rhtml:13
+msgid "grade_10_12"
+msgstr ""
+
+#: app/views/reviews/_search.rhtml:23
+msgid "my_class_review"
+msgstr ""
+
+#: app/views/reviews/_search.rhtml:24
+msgid "my_review"
+msgstr ""
+
+#: app/views/reviews/_author_list.rhtml:5
+#: app/views/reviews/_title_list.rhtml:4 app/views/reviews/index.rhtml:13
+msgid "nr_of_comments"
+msgstr ""
+
+#: app/views/reviews/index_my_class_review.rhtml:3
+msgid "Listing_class_reviews"
+msgstr ""
+
+#: app/views/student/list_grade_2_3.rhtml:7
+#: app/views/student/list_grade_7_9.rhtml:7
+#: app/views/student/list_grade_10_12.rhtml:7
+#: app/views/student/list_grade_13_16.rhtml:7
+#: app/views/student/list_grade_k_1.rhtml:7
+#: app/views/student/list_grade_t.rhtml:7
+#: app/views/student/list_grade_17.rhtml:7
+#: app/views/student/list_grade_4_6.rhtml:7 app/views/student/index.rhtml:7
+msgid "Listing students"
+msgstr ""
+
+#: app/views/student/list_grade_2_3.rhtml:13
+#: app/views/student/list_grade_7_9.rhtml:13 app/views/student/new.rhtml:1
+#: app/views/student/list_grade_10_12.rhtml:13
+#: app/views/student/list_grade_13_16.rhtml:13
+#: app/views/student/list_grade_k_1.rhtml:13
+#: app/views/student/list_grade_t.rhtml:13
+#: app/views/student/list_grade_17.rhtml:13
+#: app/views/student/list_grade_4_6.rhtml:13 app/views/student/index.rhtml:13
+msgid "New student"
+msgstr ""
+
+#: app/views/student/_form.rhtml:10
+#: app/views/student/_form_by_student.rhtml:15
+msgid "l_name_kana"
+msgstr ""
+
+#: app/views/student/_form.rhtml:22
+#: app/views/student/_form_by_student.rhtml:27
+msgid "f_name_kana"
+msgstr ""
+
+#: app/views/student/_form.rhtml:28
+#: app/views/student/_form_by_student.rhtml:33
+msgid "alias_kana"
+msgstr ""
+
+#: app/views/student/_form.rhtml:66
+#: app/views/student/_form_by_student.rhtml:72
+msgid "select sex"
+msgstr ""
+
+#: app/views/student/show_by_student.rhtml:17 app/views/student/show.rhtml:17
+msgid "School or Group"
+msgstr ""
+
+#: app/views/student/show_by_student.rhtml:76 app/views/student/show.rhtml:80
+msgid "reviewed_books"
+msgstr ""
+
+#: app/views/student/show.rhtml:79
+msgid "yyyy/mm/dd day"
+msgstr ""
+
+#: app/views/student/_link_list_grade.rhtml:1
+msgid "Grade of student"
+msgstr ""
+
+#: app/views/student/edit.rhtml:1 app/views/student/edit_by_student.rhtml:1
+msgid "Editing student"
+msgstr ""
+
+#: app/views/student/_form_by_student.rhtml:3
+msgid "item_name"
+msgstr ""
+
+#: app/views/student/_list_students.rhtml:16
+msgid "reviews_count"
+msgstr ""
+
+#: app/views/student/_list_students.rhtml:17
+msgid "school or group"
+msgstr ""
+
+#: app/views/student/_list_students.rhtml:36
+msgid "show"
+msgstr ""

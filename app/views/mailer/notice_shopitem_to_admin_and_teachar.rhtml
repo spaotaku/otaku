@@ -1,0 +1,38 @@
+OTAKU生涯学習情報サイト　講座情報登録・変更通知サービス
+
+みなさま
+以下の講座情報が登録(更新)されました。
+参考情報として通知致します。
+
+(管理担当さま)
+登録情報を確認したうえで修正が必要であれば修正処理をお願いします。
+
+＜登録者情報＞
+グループ名:<%= @shopitem.user.student.item.name %>
+登録者名:<%= @shopitem.user.student.l_name %><%= @shopitem.user.student.f_name %>
+
+＜講座情報＞
+タイトル:<%= @shopitem.name %>
+(読み):<%= @shopitem.name_kana %>
+登録日:<%= @shopitem.created_at %>
+開始日時:<%= @shopitem.date_val_2.strftime('%Y/%m/%d %a %H:%M') %>
+終了日時:<%= @shopitem.date_val_3.strftime('%Y/%m/%d %a %H:%M') %>
+場所:<%= @shopitem.spot.name %> <%= @shopitem.str_val_1 %>
+内容:<%= @shopitem.content %>
+公開レベル:<%= @shopitem.publish_level %>
+ジャンル:<%= @shopitem.genre %>
+テーマ:<%= @shopitem.theme %>
+タグ:<%= @shopitem.tag %>
+講師名:<%= @shopitem.hero %>
+公開日:<%= @shopitem.publish_date %>
+主催者:<%= @shopitem.shop.name %>
+メモ:<%= @shopitem.memo %>
+
+講座情報は次のアドレス（URL）からご覧いただけます。
+http://otaku.spa.ath.cx/shopitem/show/<%= @shopitem.id %>
+
+このメールは、OTAKU生涯学習情報サイトから送信されたものです。
+心当たりのない方は、下記へご連絡く下さい。
+OTAKU生涯学習情報サイト
+mailto:info@spa.fsr.jp
+http://otaku.spa.ath.cx

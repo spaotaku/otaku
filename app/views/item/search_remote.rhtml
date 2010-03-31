@@ -1,0 +1,135 @@
+<% @items.each do |item| %>
+
+<div class='spotitem'>
+  	<span style="float: left">
+  	<div id="load_content_bottun_div_#{item.id}">
+      <%= link_to_remote(image_tag('/images/search.png'), {:url => { :action => 'load_content_remote', :id => item }}, :id => "load_content_button_#{item.id}") %>
+    </div>
+	</span>
+    <h3>
+
+      <%=h item.name %> < <%= h item.str_val_b %>-<%= h item.str_val_c %> > <span class='spacing'></span>
+      
+    </h3>
+    <span class='content'>
+
+      <div class='detail' >
+      <%= item.category.name %>
+
+      ■<%= link_to item.spot.address, :action => 'show_spot',
+        :id => item.spot.id %>
+
+      <% if item.num_val_h %>
+       | <%= h _('tochi') %>:<%= item.num_val_h %><%= h _('heihou_meter') %>
+      <% end %>
+
+      <% if item.num_val_j %>
+       | <%= h _('tatemono') %>:<%= item.num_val_j %><%= h _('heihou_meter') %>
+      <% end %>
+
+      <% if item.num_val_l %>
+       | <%= h _('senyu') %>:<%= item.num_val_l %><%= h _('heihou_meter') %>
+      <% end %>
+
+      <% if item.str_val_1 != '' %>
+       | <%= item.str_val_1 %>
+      <% end %>
+
+      <% if item.num_val_p %>
+       | <%= h _('kakaku') %>:<%= item.num_val_p %><%= h _('manen') %>
+      <% end %>
+
+      <% if item.num_val_1 %>
+        <%= h _('item_num_val_1') %>:<%= item.num_val_1 %>
+      <% end %>
+      <% if item.check_box_02 %>
+        <%= h _('item_check_box_02') %>
+      <% end %>
+      <% if item.num_val_2 %>
+        | <%= h _('item_num_val_2') %>:<%= item.num_val_2 %>
+      <% end %>
+      <% if item.num_val_3 %>
+        | <%= h _('item_num_val_3') %>:<%= item.num_val_3 %>
+      <% end %>
+      <% if item.num_val_4 %>
+        | <%= h _('item_num_val_4') %>:<%= item.num_val_4 %>
+      <% end %>
+      <% if item.num_val_5 %>
+        | <%= h _('item_num_val_5') %>:<%= item.num_val_5 %>
+      <% end %>
+      <% if item.check_box_01 %>
+        |<%= h _('item_check_box_01') %>
+      <% end %>
+      <% if item.num_val_6 %>
+        | <%= h _('item_num_val_6') %>:<%= item.num_val_6 %>
+      <% end %>
+      <% if item.num_val_n %>
+        | <%= h _('item_num_val_n') %>:<%= item.num_val_n %>
+      <% end %>
+      <% if item.num_val_c %>
+        | <%= h _('item_num_val_c') %>:<%= item.num_val_c %>
+      <% end %>
+      <% if item.num_val_d %>
+        | <%= h _('item_num_val_d') %>:<%= item.num_val_d %>
+      <% end %>
+	  
+      <% if item.str_val_4 != '' %>
+        | <%= item.str_val_4 %>
+      <% end %>
+      <% if item.str_val_5 != '' %>
+        :<%= item.str_val_5 %>
+      <% end %>
+      <% if item.num_val_7 %>
+        <%= h _('kara_toho') %><%= item.num_val_7 %><%= h _('min') %>
+      <% end %>
+      <% if item.num_val_8 %>
+        | <%= h _('item_num_val_8') %>:<%= item.num_val_8 %>
+      <% end %>
+      <% if item.num_val_9 %>
+        | <%= h _('item_num_val_9') %>:<%= item.num_val_9 %>
+      <% end %>
+   	  
+      <% if item.num_val_a %>
+         <%= h _('item_num_val_a') %>:<%= item.num_val_a %>
+      <% end %>
+      <% if item.num_val_b %>
+        | <%= h _('item_num_val_b') %>:<%= item.num_val_b %>
+      <% end %>
+	  
+      <% if item.structure_id %>
+        | <%= item.structure.name %>
+      <% end %>
+      <% if item.num_val_f %>
+        | <%= item.num_val_f %><%= h _('item_num_val_f') %>
+      <% end %>
+      <% if item.num_val_e %>
+        | <%= item.num_val_e %><%= h _('item_num_val_e') %>
+      <% end %>
+      <% if item.num_val_g %>
+        | <%= h _('item_num_val_g') %>:<%= item.num_val_g %>
+      <% end %>
+      <% if item.date_val_1 %>
+        | <%= h _('item_date_val_1') %>:<%= item.date_val_1.strftime('%Y/%m/%d') %>
+      <% end %>
+
+      <% if item.date_val_2 %>
+        | <%= h _('item_date_val_2') %>:<%= item.date_val_2.strftime('%Y/%m/%d') %>
+      <% end %>
+      <% if item.check_box_00 %>
+        | <%= h _('item_check_box_00') %>
+      <% end %>
+      <% if item.str_val_a != '' and item.str_val_a != nil %>
+         :<%= h _('item_str_val_a') %>:<%= item.str_val_a %>
+      <% end %>
+
+	  ◎ <%= link_to sanitize(item.shop.name), :controller => 'shopitem', :action => 'show_shop',
+        :id => item.shop_id %>	
+	  <% if item.num_val_o %>:<%= @torihiki_taiyou[item.num_val_o] %><% end %>
+
+	  
+    </div>
+
+    </span>
+<%=content_tag :div, '', :id => "item_#{item.id}" %>
+</div>    
+<% end %>

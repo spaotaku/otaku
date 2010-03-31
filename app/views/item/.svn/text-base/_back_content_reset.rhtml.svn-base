@@ -1,0 +1,1 @@
+<%= link_to_remote(image_tag('/images/search.png'), {:url => { :action => 'load_content_remote', :id => "#{@item.id}" }}, :id => "load_content_button_#{@item.id}") %>

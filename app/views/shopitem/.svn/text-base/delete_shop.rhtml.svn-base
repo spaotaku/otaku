@@ -1,0 +1,109 @@
+<script src="http://maps.google.com/maps?file=api&v=2&key=<%= h GOOGLE_MAPS_API_KEY%>"
+    type="text/javascript"></script>
+<div class="title"><h1><a href="<%=h @shop.homepage %>"><%= h @shop.name %></a></h1></div>
+<div class='spotitem'>
+  <div class='spot_detail'>
+
+
+ <% if @shop.image_url != "" and @shop.image_url != nil  %>
+    <a href="<%=h @shop.homepage %>">
+    <img src="<%=h @shop.image_url %>"/ ALT="no-image" align="left"></a>
+ <% end %>
+
+ <% if @shop.homepage != "" and @shop.homepage != nil  %>
+
+<!--
+    <a href="<%=h @shop.homepage %>">
+    <img src="http://img.simpleapi.net/small/<%=h @shop.homepage %>" alt="" width="128" height="128" hspace="4" vspace="4" align="left" border="0"></a>
+-->
+    <a href="<%=h @shop.homepage %>">
+    <img title="<%=h @shop.homepage %>" src="http://capture.heartrails.com/medium?<%=h @shop.homepage %>" alt="<%=h @shop.homepage %>" width="200" height="150"  hspace="4" vspace="4" align="left" border="0"/></a>
+ <% end %>
+
+
+
+    <% if @shop.zip != "" %><%=h _('zip') %>:<%= h @shop.zip %><br/><% end %>
+    <% if @shop.address != "" %><%=h _('address') %>:<%= h @shop.address %><br/><% end %>
+    <% if @shop.building != "" %><%=h _('building') %>:<%= h @shop.building %><br/><% end %>
+    <% if @shop.phone != "" %><%=h _('phone') %>:<%= h @shop.phone %><br/><% end %>
+    <% if @shop.fax != "" %><%=h _('fax') %>:<%= h @shop.fax %><br/><% end %>
+    <% if @shop.homepage != "" %><%=h _('homepage') %>:<a href="<%=h @shop.homepage %>"><%=h @shop.homepage %></a><br/><% end %>
+	<% if @shop.email_1 != "" %><%=h _('email_1') %>:<a href="mailto:<%=h @shop.email_1 %>"><%=h @shop.email_1 %></a><br/><% end %>
+
+    <!-- <%= hidden_field :spot, :longitude %> -->
+    <!-- <%= hidden_field :spot, :latitude %> -->
+  </div>
+<!--
+  <div class='spot_detail_sml'>
+    <%=h _('wgs84_dec') %>::
+    <%=h _('longitude') %>:<%= @shop.longitude %>
+    , <%=h _('latitude') %>:<%= @shop.latitude %><br/>
+
+    <%=h _('tokyo_datum_dec') %>::
+    <%=h _('longitude') %>:<%= @shop.longitude_tokyo_datum_dec %>
+    , <%=h _('latitude') %>:<%= @shop.latitude_tokyo_datum_dec %><br/>
+
+    <%=h _('tokyo_datum_ddmmss') %>::
+    <%=h _('longitude') %>:<%= @shop.longitude_tokyo_datum_ddmmsss %>
+    , <%=h _('latitude') %>:<%= @shop.latitude_tokyo_datum_ddmmsss %><br/>
+  </div> -->
+  <div class='spot_detail_sml'>
+    <%=h _('wgs84_dec') %>::
+    <%=h _('longitude') %>:<%= @shop.longitude %>
+    , <%=h _('latitude') %>:<%= @shop.latitude %><br/>
+  </div>
+  <div class='spot_detail'>
+    <%= link_to _('Show_spot_map'), :action => 'show_spot_map', :id => @shop.id %> |
+    <%= link_to _('Send_map_by_mail'), :action => 'send_spot_map_by_mail', :id => @shop.id %>
+
+
+  </div>
+  <span class='content'>
+    <div class='memo'>
+      <%= simple_format(sanitize(@shop.memo)) %>
+    </div>
+  </span>
+  <span id="map_area" style="display: none">
+    <div id="mapa" style="margin: 1em 5% 1em 5%; width: 90%; height: 400px"></div>
+  </span>
+</div>
+    
+<div class='spotlist'>
+  <%= render :partial => 'listitem', :collection => @shopitems,
+    :locals => {:size => ''} %>
+</div>
+<div class='pagination_link'>
+  <%= pagination_links @page %>
+</div>
+
+<% form_tag :action => 'remove_shop', :id => @shop.id do %>
+  <span style="margin-left: 2em;">
+  <%= submit_tag _('Delete') %>
+  </span>
+<% end %>
+
+
+<script type="text/javascript">
+function toggle_map() {
+  if ($F('spot_latitude') == '' || $F('spot_longitude') == '') {
+    alert("<%= h _('no longitude/latitude, please edit this record') %>");
+    return;
+  }
+  if ($('map_area').style.display == 'inline') {
+    $('map_area').style.display = 'none';
+  } else {
+    $('map_area').style.display = 'inline';
+    $('mapa').display_map();
+  }
+}
+$('mapa').display_map = function() {
+  var point = new GLatLng($F('spot_latitude'), $F('spot_longitude'));
+  var map = new GMap2($('mapa'));
+  map.setCenter(point, 15);
+  map.addControl(new GLargeMapControl());
+  map.addControl(new GScaleControl());
+  map.addControl(new GMapTypeControl());
+  map.addOverlay(new GMarker(point));
+  $('mapa').display_map = function() { false; }
+}
+</script>

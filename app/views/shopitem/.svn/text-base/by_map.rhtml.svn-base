@@ -1,0 +1,38 @@
+<script src="http://maps.google.com/maps?file=api&v=2&key=<%= h GOOGLE_MAPS_API_KEY%>"
+    type="text/javascript"></script>
+<span class="spotitem">
+<%=content_tag :div, '', :id => "mapa" %>
+</span>
+<script type="text/javascript">
+function createMarker(p, title, url, memo) {
+  var opt = new Object();
+  opt.title = title;
+  var marker = new GMarker(p, opt);
+  GEvent.addListener(marker, "click", function() {
+    marker.openInfoWindowHtml('<a href="' + url + '">' + title + '</a>' + memo);
+  });
+  return marker;
+}
+
+var map = new GMap2($('mapa'));
+<% start = false
+   @spots.each do |r|
+     next if r.latitude.nil? || r.longitude.nil?
+     unless start
+%>
+map.setCenter(new GLatLng(<%= h r.latitude%>, <%= h r.longitude%>), 9);
+map.addControl(new GLargeMapControl());
+map.addControl(new GScaleControl());
+map.addControl(new GMapTypeControl());
+<%
+       start = true
+     end
+%>
+map.addOverlay(createMarker(new GLatLng(<%= h r.latitude%>, <%= h r.longitude%>),
+               '<%= h r.name %>', '<%= url_for(:action => 'show_spot', :id => r.id) %>',
+               '<%= escape_javascript(simple_format(sanitize(r.memo))) %>'));
+<% end %>
+</script>
+<div class="pagination_link">
+  <%= pagination_links @page %>
+</div>

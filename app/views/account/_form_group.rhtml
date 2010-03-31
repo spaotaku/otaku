@@ -1,0 +1,16 @@
+<%= error_messages_for('group') %>
+
+<table align="center">
+  <tr>
+    <td><label for="group_name"><%= h _('group name') %></label></td>
+    <td><%= text_field('group', 'name') %></td>
+  </tr>
+  <tr>
+    <td><label for="group_description"><%= h _('description') %></label></td>
+    <td><%= text_field('group', 'description') %></td>
+  </tr>
+  <tr>
+    <td><label for="item_id"><%= h _('item_id') %></label></td>
+    <td><%= collection_select('group', 'item_id', Item.find(:all, :order => 'name'), :id, :name, :include_blank => true)%></td>
+  </tr>
+</table>

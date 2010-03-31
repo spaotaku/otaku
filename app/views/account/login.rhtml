@@ -1,0 +1,25 @@
+<% form_tag(:action => "login") do %>
+
+<div title="Account login" id="loginform" class="form">
+    <h3><%= h _('please login') %></h3>
+
+    <% if @message %>
+      <div id="message"><%= @message %></div>
+    <% end %>
+  <table align ="center">
+    <tr>
+      <td><label for="user_login"><%= h _('login') %>:</label></td>
+      <td><%= text_field 'user', 'login', :size => 20  %></td>
+    </tr>
+    <tr>
+      <td><label for="user_password"><%= h _('password') %>:</label></td>
+      <td><%= password_field 'user', 'password', :size => 20  %></td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="login" value= <%=h _("Login") %> class="primary" /></td>
+    </tr>
+  </table>
+</div>
+
+<% end %>
+

@@ -1,0 +1,6 @@
+<%= error_messages_for('category') %>
+
+<p><label for="category_name"><%= h _('category name') %></label><br />
+<%= text_field('category', 'name') %></p>
+<p><label for="category_memo"><%= h _('memo') %></label><br />
+<%= text_field('category', 'memo') %></p>

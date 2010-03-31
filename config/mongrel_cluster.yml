@@ -1,0 +1,8 @@
+---
+cwd: /ror/otaku
+log_file: /ror/otaku/log/mongrel.log
+port: 3220
+pid_file:: /ror/otaku/tmp/pids/mongrel.pid
+servers: 2
+environment: production
+

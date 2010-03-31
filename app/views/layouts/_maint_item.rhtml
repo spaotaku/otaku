@@ -1,0 +1,16 @@
+<br/><%=h _('Maint_item') %>
+  : <%= link_to _('List'), :action => 'list', :controller => 'item' %>
+  <% if session[:user] and session[:user].level <= 2 %>
+    | <%= link_to _('New'), :action => 'new_by_l2', :controller => 'item' %>
+  <% else %>
+    | <%= link_to _('New'), :action => 'new', :controller => 'item' %>
+  <% end %>
+
+  <% if session[:user] && @shopitem %>
+    <% if session[:user].level <= 2 %>
+      | <%= link_to _('Edit'), :action => 'edit_by_l2', :controller => 'item', :id => @shopitem.id %>
+    <% else %>
+      | <%= link_to _('Edit'), :action => 'edit', :controller => 'item', :id => @shopitem.id %>
+    <% end %>
+    | <%= link_to _('Delete'), :action => 'delete', :controller => 'item', :id => @shopitem.id %>
+  <% end %>

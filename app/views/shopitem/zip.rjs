@@ -1,0 +1,3 @@
+page << "if($('shop_address').value=='') {"
+page << "  $('shop_address').value = '%s';" % escape_javascript(@prefecture)
+page << "}"

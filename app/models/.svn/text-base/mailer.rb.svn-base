@@ -1,0 +1,24 @@
+class Mailer < ActionMailer::Base
+
+  def send_spot_map_by_mail(spot)
+    @subject    = 'WebNameCard Map send service'
+    @body["spot"] = spot
+    @recipients = $user_email_cell
+    @from       = 'info@spa.fsr.jp'
+#    @sent_on    = sent_at
+#    @headers    = {}
+  end
+
+#  def confirm(order)
+#    @subject    = 'Pragmatic Store Order Confirmation'
+#    @body["order"] = order
+#    @recipients = order.email
+#    @from       = 'info@spa.fsr.jp'
+#    @sent_on    = sent_at
+#    @headers    = {}
+#  end
+
+
+
+
+end

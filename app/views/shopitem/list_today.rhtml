@@ -1,0 +1,50 @@
+<div class="shopitemlistpage">
+  <br/>
+
+  <%= _('Period from doday') %>:
+  　<%= link_to _('1y-'),   :action => 'list_m1y' %>
+  　<%= link_to _('6m-'),   :action => 'list_m6m' %>
+  　<%= link_to _('3m-'),   :action => 'list_m3m' %>
+  　<%= link_to _('1m-'),   :action => 'list_m1m' %>
+  　<%= link_to _('1w-'),   :action => 'list_m1w' %>
+  　<%= link_to _('today'), :action => 'list_today' %>
+  　<%= link_to _('-1w'),   :action => 'list_p1w' %>
+  　<%= link_to _('-1m'),   :action => 'list_p1m' %>
+  　<%= link_to _('-3m'),   :action => 'list_p3m' %>
+  　<%= link_to _('-6m'),   :action => 'list_p6m' %>
+  　<%= link_to _('-1y'),   :action => 'list_p1y' %>
+  　<%= link_to _('all'),   :action => 'list_all' %>
+  <br/>
+
+
+<% form_tag :action => 'list_today', :method => 'get' do %>
+  <%=h _('keyword for search shopitem_name or shop_name:') %><%= text_field_tag 'keyword', params[:keyword] -%>
+  <%=h _('past_flg') %><%= check_box_tag 'past_flg', params[:past_flg] %>
+  <%= submit_tag _('Search') -%>
+
+<% end %>
+
+  <%= _('Grade of reviewers') %>: 
+  　<%= link_to _('k_1'),   :action => 'list_grade_k_1',   :controller => 'reviews' %>
+  　<%= link_to _('2_3'),   :action => 'list_grade_2_3',   :controller => 'reviews' %>
+  　<%= link_to _('4_6'),   :action => 'list_grade_4_6',   :controller => 'reviews' %>
+  　<%= link_to _('7_9'),   :action => 'list_grade_7_9',   :controller => 'reviews' %>
+  　<%= link_to _('10_12'), :action => 'list_grade_10_12', :controller => 'reviews' %>
+  　<%= link_to _('13_16'), :action => 'list_grade_13_16', :controller => 'reviews' %>
+  　<%= link_to _('t'),     :action => 'list_grade_t',     :controller => 'reviews' %>
+  　<%= link_to _('17'),    :action => 'list_grade_17',    :controller => 'reviews' %>
+  <br/>
+  <span style="text-align: right;font-size:small;"><p>備考:　( )内はレビュー件数　　</p></span>
+<div class="spotlist">
+  <%= render :partial => 'listitem', :collection => @shopitems,
+             :locals => {:size => ''} %>
+</div>
+
+<div class="pagination_link">
+ 
+  <%=h _('display_record_1') %>:　<%= @shopitems.offset + 1 %>　<%=h _('display_record_2') %>　<%= @shopitems.size %>　<%=h _('display_record_3') %>
+  <%= will_paginate @shopitems, :previous_label => _("prev"), :next_label => _("next") %>
+
+</div>
+
+</div>

@@ -1,0 +1,22 @@
+<script src="http://maps.google.com/maps?file=api&v=2&key=<%= h GOOGLE_MAPS_API_KEY%>"
+    type="text/javascript"></script>
+<%= render :partial => 'flash' %>
+<%= error_messages_for :shopitem %>
+<%= error_messages_for :picture %>
+
+<div class="edititem">
+<% form_tag({:action => 'update', :id => @shopitem.id}, :multipart => true) do %>
+  <p><label for="shopitem_created_at"><%= h _('created_at') %></label>
+    <%= select_datetime @shopitem.created_at %>
+  </p>
+  <%= render :partial => 'form' %>
+  <p><%= h _('Delete') %></p>
+  <% @shopitem.pictures.each do |pic| %>
+    <%= check_box :pic, pic.id, :onclick => "new Effect.Pulsate($(pic#{pic.id}));" %>
+    <%= image_tag(url_for(:action => :image, :id => pic.id), :size => '240x180',
+                  :id => "pic#{pic.id}") %>
+  <% end %>
+  </p>
+  <%= submit_tag _('Save changes') %>
+<% end %>
+</div>

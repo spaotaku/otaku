@@ -1,0 +1,147 @@
+<% form_tag(:action => 'index', :controller => 'item' ) do %>
+  <%=h _('keyword for search')%>
+  <br/>
+  <br/>
+  <%=h _('bukken_name')%>:
+  <input size="18" name="keyword_name"           value="<%=h params[:keyword_name] %>"/>
+
+  <br/><br/>
+  <%=h _('address')%>:
+  <input name="keyword_address"           value="<%=h params[:keyword_address] %>"/>
+
+
+<br/><br/><%= h _('syubetu') %>:
+<% if params[:category] %>
+<% current_category = params[:category] %>
+<% else %>
+<% current_category = 0 %>
+<% end %>
+
+ <%= select_tag('category',  
+     "<option value=0></option>" + options_from_collection_for_select( @categories, 'id', 'name' ,selected_value = params[:category].to_i )) %> 
+
+ <br/><br/>
+ <%= h _('ensen_name') %>:
+ <%= select_tag('ensen',  
+     options_from_collection_for_select( @ensens, 'str_val_4', 'str_val_4',selected_value = params[:ensen] )) %> 
+  <br/>
+  <br/>
+  <%=h _('hanbai_kakaku')%>:
+  <input size="5" name="keyword_kakaku"           value="<%=h params[:keyword_kakaku] %>"/><%=h _('up_to')%>
+  <br/>
+  <br/>
+  <%=h _('tintai_kakaku')%>:
+  <input size="5" name="keyword_tinryou"           value="<%=h params[:keyword_tinryou] %>"/><%=h _('up_to')%>
+
+  <br/>
+  <br/>
+
+
+
+ <%= submit_tag(_('search')) -%>
+<% end %>
+
+
+<% if params[:keyword_name] %>
+
+  <% form_tag(:action => 'index_by_map', :controller => 'item' ) do %>
+  <%= hidden_field_tag('keyword_name', params[:keyword_name] ) %> 
+  <%= hidden_field_tag('keyword_address', params[:keyword_address] ) %> 
+  <% if params[:category] %>
+    <% current_category = params[:category] %>
+  <% else %>
+    <% current_category = 0 %>
+  <% end %>
+
+  <%= hidden_field_tag('category', params[:category].to_i ) %> 
+  <%= hidden_field_tag('ensen', params[:ensen] ) %> 
+  <%= hidden_field_tag('keyword_kakaku', params[:keyword_kakaku] ) %> 
+  <%= hidden_field_tag('keyword_tinryou', params[:keyword_tinryou] ) %> 
+
+  <%= submit_tag(_('show_map'))%>
+  <% end %>
+<% end %>
+
+<hr />
+
+ <%= link_to _('Map'), :action => 'by_map', :controller => 'item' %>
+<!-- <% if session[:user] %>
+    | <%= link_to _('List'), :action => 'list', :controller => 'item' %>
+ <% end %>  -->
+    <br/><%= link_to _('List'), :action => 'list', :controller => 'item' %>
+    <br/><%= link_to _('Search_1'), :action => 'list_item', :controller => 'item' %>
+    <br/><%= link_to _('Search_2'), :action => 'index', :controller => 'item' %>
+<!--
+ <%= link_to _('Sum_List'), :action => 'sum_list', :controller => 'item' %> |
+ <%= link_to _('Article'), '/articles/index'%> |
+ <%= link_to _('Link'), :action => 'list', :controller => 'links'%> |
+ <%= link_to _('Note'), :action => 'list', :controller => 'notes'%>
+--> 
+ <% if @item %>
+    <br/><%= link_to _('Show'), :action => 'show', :id => @item.id %>
+ <% end %>
+
+ <br/><%= link_to _('Message'), :action => 'list', :controller => 'messages'%>
+
+ <% if session[:user] %>
+    <br/><%= _('Maint_item')%>: 
+     <%= link_to _('New'), :action => 'new', :controller => 'item' %>
+   <% if session[:user] && @item %>
+      | <%= link_to _('Edit'), :action => 'edit', :controller => 'item', :id => @item.id %>
+      | <%= link_to _('Delete'), :action => 'delete', :controller => 'item', :id => @item.id %>
+   <% end %>
+ <% end %>
+
+ <% if session[:user] && @spot %>
+   <br/><%= _('Maint_spot')%>: 
+     <%= link_to _('List'), :action => 'list_spot', :controller => 'item', :id => @spot.id %>
+    | <%= link_to _('Show'), :action => 'show_spot', :controller => 'item', :id => @spot.id %>
+    | <%= link_to _('Edit'), :action => 'edit_spot', :controller => 'item', :id => @spot.id %>
+    | <%= link_to _('Delete'), :action => 'delete_spot', :controller => 'item', :id => @spot.id %>
+ <% end %>
+ 
+ <% if session[:user] %>
+    <br/><%= link_to _('Logout'), '/account/logout'%>
+    <br/><%= link_to _('Change_profile'), '/account/edit_user_by_user'%>
+<% if session[:user].level == 0 %>
+
+         <hr />
+
+         <br/><%= link_to _('User Admin'), '/account/list_group'%>
+         <br/><%= link_to _('Facility Maint'), '/item/list_facility'%>
+         <br/><%= link_to _('Facilitycat Maint'), '/item/list_facilitycat'%>
+         <br/><%= link_to _('Particular Maint'), '/item/list_particular'%>
+         <br/><%= link_to _('Particularcat Maint'), '/item/list_particularcat'%>
+         <br/><%= link_to _('Category Maint'), '/item/list_category'%>
+         <br/><%= link_to _('Structure Maint'), '/item/list_structure'%>
+        <br/><%=h _('Maint_shop') %>
+          : <%= link_to _('List'), :action => 'list_shop', :controller => 'shopitem' %>
+        <% if session[:user] && @shop %>
+          | <%= link_to _('Show'), :action => 'show_shop', :controller => 'shopitem', :id => @shop.id %>
+          | <%= link_to _('Edit'), :action => 'edit_shop', :controller => 'shopitem', :id => @shop.id %>
+          | <%= link_to _('Delete'), :action => 'delete_shop', :controller => 'shopitem', :id => @shop.id %>
+        <% end %>
+        <br/><%=h _('Maint_shopitem') %>
+          : <%= link_to _('List'), :action => 'list', :controller => 'shopitem' %>
+	      | <%= link_to _('New'), :action => 'new', :controller => 'shopitem' %>
+        <% if session[:user] && @shopitem %>
+          | <%= link_to _('Edit'), :action => 'edit', :controller => 'shopitem', :id => @shopitem.id %>
+          | <%= link_to _('Delete'), :action => 'delete', :controller => 'shopitem', :id => @shopitem.id %>
+        <% end %>
+		<hr/>
+        <br/><%= link_to _('items.xml'), '/item/xml_export_item'%>
+		<br/><%= link_to _('spots.xml'), '/item/xml_export_spot'%>
+		<br/><%= link_to _('categories.xml'), '/item/xml_export_category'%>
+		<br/><%= link_to _('structures.xml'), '/item/xml_export_structure'%>
+		<br/><%= link_to _('facilities.xml'), '/item/xml_export_facility'%>
+		<br/><%= link_to _('particulars.xml'), '/item/xml_export_particular'%>
+        <br/><%= link_to _('shopitems.xml'), '/shopitem/xml_export_shopitem'%>
+		<br/><%= link_to _('shops.xml'), '/shopitem/xml_export_shop'%>
+
+      <% end %>
+ <% else %>
+    <br/><%= link_to _('Login'), '/account/login'%>
+    <br/><%= link_to _('New_User_Signup'), '/account/signup_user' %>
+    
+<!-- <%= link_to 'ユーザ登録', '/account/signup'%> -->
+  <% end %>

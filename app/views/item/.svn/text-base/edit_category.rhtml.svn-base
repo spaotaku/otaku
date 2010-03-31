@@ -1,0 +1,8 @@
+<h1><%= h _('edit category') %></h1>
+<hr />
+<% form_tag(:action => 'update_category', :id => @category) do %>
+  <%= render :partial => 'form_category' %>
+  <%= submit_tag _('update') %>
+<% end %>
+
+<%= link_to(_('back'), :action => 'list_category', :id => @category) %>

@@ -1,0 +1,43 @@
+<div class="spotitem">
+<h3><%=h _('Listing messages') %></h3>
+</div>
+
+<div class="sumlist">
+<table>
+  <tr>
+    <th><%= h _('priority') %></th>
+    <th><%= h _('title') %></th>
+    <th><%= h _(' ') %></th>
+ <% if session[:user] %>
+    <th><%= h _(' ') %></th>
+ <% end %>
+ <% if session[:user] %>
+    <th><%= h _(' ') %></th>
+ <% end %>
+    <th><%= h _('updated_on') %></th>
+  </tr>
+<% for message in @messages %>
+  <tr>
+    <td><%=h message.priority %></td>
+    <td><%=h message.title %></td>
+    <td><%= link_to _('Show'), :action => 'show', :id => message %></td>
+ <% if session[:user] %>
+    <td><%= link_to _('Edit'), :action => 'edit', :id => message %></td>
+ <% end %>
+ <% if session[:user] %>
+    <td><%= link_to _('Destroy'), { :action => 'destroy', :id => message }, :confirm => 'Are you sure?', :method => :post %></td>
+ <% end %>
+    <td><%=h message.updated_on.strftime('%y/%m/%d %H:%M') %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to _('Previous page'), { :page => @message_pages.current.previous } if @message_pages.current.previous %>
+<%= link_to _('Next page'), { :page => @message_pages.current.next } if @message_pages.current.next %> 
+
+<br />
+ <% if session[:user] %>
+  <%= link_to _('New message'), :action => 'new' %>
+ <br/><br/>
+ <% end %>
+</div> 

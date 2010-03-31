@@ -1,0 +1,23 @@
+<h1><%= h _('user list group :')%><%= @group.name %></h1>
+<hr />
+<table>
+  <tr>
+    <th><%= h _('user name') %></th>
+  </tr>
+  
+<% for user in @users %>
+  <tr>
+  <td><%= h(user.name) %></td>
+  <td><%= link_to(_('edit'), :action => 'edit_user', :id => user) %></td>
+  <td><%= link_to(_('destroy'), {:action => 'destroy_user', :id => user}, :confirm => 'Delete ?') %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to(_('previous page'), :page => @user_pages.current.previous) if @user_pages.current.previous %>
+<%= link_to(_('next page'), :page => @user_pages.current.next) if @user_pages.current.next %>
+
+<br />
+
+<%= link_to(_('add new user'), :action => 'new_user') %> |
+<%= link_to(_('back'), :action => 'list_group') %>

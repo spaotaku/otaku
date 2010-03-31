@@ -1,0 +1,102 @@
+<%= error_messages_for :shopitem %>
+
+<p><%=h _('input or set where * items.')%></p>
+<p><label for="shopitem_name"><%= h _('shop_item_nm') %>*</label>
+  <%= text_field :shopitem, :name %>
+<label for=shopitem_di_flg"><%=h _('di_flg') %></label><%= check_box :shopitem, :di_flg %></p>
+<p><label for="shopitem_name_kana"><%= h _('shop_item_nm_kana') %>*</label>
+  <%= text_field :shopitem, :name_kana %></p>
+<p><%= h _('note1 for author, illustrator, translator') %></p>
+<p><%= h _('note2 for author, illustrator, translator') %></p>
+<p><label for="shopitem_author"><%= h _('shop_item_author') %>*</label>
+  <%= text_field :shopitem, :author %></p>
+<p><label for="shopitem_author_kana"><%= h _('shop_item_author_kana') %>*</label>
+  <%= text_field :shopitem, :author_kana %></p>
+<p><label for="shopitem_illustrator"><%= h _('shop_item_illustrator') %></label>
+  <%= text_field :shopitem, :illustrator %></p>
+<p><label for="shopitem_illustrator_kana"><%= h _('shop_item_illustrator_kana') %></label>
+  <%= text_field :shopitem, :illustrator_kana %></p>
+<p><label for="shopitem_translator"><%= h _('shop_item_translator') %></label>
+  <%= text_field :shopitem, :translator %></p>
+<p><label for="shopitem_translator_kana"><%= h _('shop_item_translator_kana') %></label>
+  <%= text_field :shopitem, :translator_kana %></p>
+
+<p><label for="shopitem_genre"><%= h _('shop_item_genre_select') %>:</label>
+  <%= collection_select(:shopitem, :genre, Shopitem.find(:all, :order => 'genre', :group => 'genre'), :genre, :genre, :options => {:include_blank => true})%>
+</p>
+
+<p><label for="shopitem_genre_wk"><%= h _('shop_item_genre_wk') %></label>
+  <%= text_field :shopitem, :genre_wk %></p>
+
+<p><label for="shopitem_theme"><%= h _('shop_item_theme_select') %>:</label>
+  <%= collection_select(:shopitem, :theme, Shopitem.find(:all, :order => 'theme', :group => 'theme'), :theme, :theme, :options => {:include_blank => true})%>
+</p>
+
+<p><label for="shopitem_theme_wk"><%= h _('shop_item_theme_wk') %></label>
+  <%= text_field :shopitem, :theme_wk %></p>
+
+<!--
+<p><label for="shopitem_nr_pages"><%= h _('shop_item_nr_pages') %></label>
+  <%= text_field :shopitem, :nr_pages %></p>
+-->
+<p><label for="shopitem_hero"><%= h _('shop_item_hero') %></label>
+  <%= text_field :shopitem, :hero %></p>
+
+<p>
+  <label for="shopitem_publish_date"><%= h _('shop_item_publish_date') %>:</label>
+<%= date_select :shopitem, :publish_date, :use_month_numbers => true, :start_year => 1950, :end_year => Time.now.years_since(3).year, :include_blank => true %>
+</p>
+  <!--
+<p><label for="shopitem_amazon_url"><%= h _('shop_item_amazon_url') %></label>
+  <%= text_field :shopitem, :amazon_url %></p>
+-->
+<!-- <p><label for="shop_name"><%= h _('shop_name') %>*:</label><br/>
+  <%= text_field :shop, :name %></p> -->
+
+<%= render :partial => 'shop' %>
+
+<%= render :partial => 'form_date_val_123' %>
+
+<p><label for="shopitem_tag"><%= h _('tag') %></label>
+  <%= text_field :shopitem, :tag %></p>
+
+
+<p><label for="shopitem_publish_level"><%= h _('publish_level') %>*</label>
+<%=
+  options = [[ _('select publish_level'), ""]] +  [
+    [ _('close'),      0 ],
+    [ _('open_group'), 5 ],
+    [ _('open_all'),   9 ]
+  ]
+  select(:shopitem, :publish_level, options)
+%>
+</p>
+
+
+<p><label for="picture0_file"><%= h _('file') %></label>
+  <%= file_field :picture0, :file %>
+<label for="picture0_title"><%= h _('picture_title') %></label>
+  <%= text_field :picture0, :title %></p>
+  
+<p><label for="picture1_file"><%= h _('file') %></label>
+  <%= file_field :picture1, :file %>
+<label for="picture1_title"><%= h _('picture_title') %></label>
+  <%= text_field :picture1, :title %></p>
+
+<p><label for="picture2_file"><%= h _('file') %></label>
+  <%= file_field :picture2, :file %>
+<label for="picture2_title"><%= h _('picture_title') %></label>
+  <%= text_field :picture2, :title %></p>
+
+<p><label for="picture3_file"><%= h _('file') %></label>
+  <%= file_field :picture3, :file %>
+<label for="picture3_title"><%= h _('picture_title') %></label>
+  <%= text_field :picture3, :title %></p>
+
+<p><label for="picture4_file"><%= h _('file') %></label>
+  <%= file_field :picture4, :file %>
+<label for="picture4_title"><%= h _('picture_title') %></label>
+  <%= text_field :picture4, :title %></p>
+
+<p><label for="shopitem_memo"><%= h _('memo') %></label>
+  <%= text_area :shopitem, :memo, :cols => 50, :rows =>10 %></p>

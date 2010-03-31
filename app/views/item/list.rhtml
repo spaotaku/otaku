@@ -1,0 +1,16 @@
+<div class="scoollistpage">
+  <br/>
+<% form_tag :action => 'list', :method => 'get' do %>
+  <%=h _('keyword for search item_name or spot_name:') %><%= text_field_tag 'keyword', params[:keyword] -%>
+  <%= submit_tag _('Search') -%>
+<% end %>
+<div class="spotlist">
+  <%= render :partial => 'listitem', :collection => @items,
+             :locals => {:size => '100'} %>
+</div>
+
+<div class="pagination_link">
+  <%= will_paginate @items, :previous_label => _("prev"), :next_label => _("next") %>
+</div>
+
+</div>

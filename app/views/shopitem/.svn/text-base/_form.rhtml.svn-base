@@ -1,0 +1,42 @@
+<p><label for="shopitem_name"><%= h _('shop_item_nm') %></label>
+  <%= text_field :shopitem, :name %></p>
+<%= render :partial => 'shop' %>
+<p><label for="shopitem_tag"><%= h _('tag') %></label>
+  <%= text_field :shopitem, :tag %></p>
+
+
+<p><label for="shopitem_publish_level"><%= h _('publish_level') %></label>
+<%=
+  options = [[ _("select publish_level"), ""]] + Item::PUBLISH_LEVELS
+  select(:shopitem, :publish_level, options)
+%>
+</p>
+
+
+<p><label for="picture0_file"><%= h _('file') %></label>
+  <%= file_field :picture0, :file %>
+<label for="picture0_title"><%= h _('picture_title') %></label>
+  <%= text_field :picture0, :title %></p>
+  
+<p><label for="picture1_file"><%= h _('file') %></label>
+  <%= file_field :picture1, :file %>
+<label for="picture1_title"><%= h _('picture_title') %></label>
+  <%= text_field :picture1, :title %></p>
+
+<p><label for="picture2_file"><%= h _('file') %></label>
+  <%= file_field :picture2, :file %>
+<label for="picture2_title"><%= h _('picture_title') %></label>
+  <%= text_field :picture2, :title %></p>
+
+<p><label for="picture3_file"><%= h _('file') %></label>
+  <%= file_field :picture3, :file %>
+<label for="picture3_title"><%= h _('picture_title') %></label>
+  <%= text_field :picture3, :title %></p>
+
+<p><label for="picture4_file"><%= h _('file') %></label>
+  <%= file_field :picture4, :file %>
+<label for="picture4_title"><%= h _('picture_title') %></label>
+  <%= text_field :picture4, :title %></p>
+
+<p><label for="shopitem_memo"><%= h _('memo') %></label>
+  <%= text_area :shopitem, :memo, :cols => 50, :rows =>3 %></p>

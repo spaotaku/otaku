@@ -1,0 +1,13 @@
+<h1>Editing student</h1>
+
+<% form_tag({:action => _('update'), :id => @student.id}, :multipart => true) do %>
+
+  <%= render :partial => 'form' %>
+
+  <%= submit_tag %>
+<% end %>
+
+<%= link_to _('Show'), :action => 'show', :id => @student %> |
+<%= link_to _('Back'), :action => 'index' %>
+
+

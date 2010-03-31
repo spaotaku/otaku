@@ -1,0 +1,27 @@
+OTAKU生涯学習情報サイト主催者情報登録・変更通知サービス
+
+みなさま
+以下の主催者情報が登録(更新)されました。
+参考情報として通知致します。
+
+(管理担当さま)
+登録情報を確認したうえで修正が必要であれば修正処理をお願いします。
+
+＜登録者情報＞
+グループ名:<%= @shop.user.student.item.name %>
+登録者名:<%= @shop.user.student.l_name %><%= @shop.user.student.f_name %>
+
+＜主催者情報＞
+タイトル:<%= @shop.name %>
+メモ:<%= @shop.memo %>
+公開レベル:<%= @shop.publish_level %>
+
+
+主催者情報は次のアドレス（URL）からご覧いただけます。(ログインが必要です)
+http://otaku.spa.ath.cx/shopitem/show_shop/<%= @shop.id %>
+
+このメールは、OTAKU生涯学習情報サイトから送信されたものです。
+心当たりのない方は、下記へご連絡く下さい。
+OTAKU生涯学習情報サイト
+mailto:info@spa.fsr.jp
+http://otaku.spa.ath.cx

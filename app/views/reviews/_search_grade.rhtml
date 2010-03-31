@@ -1,0 +1,8 @@
+<% form_tag(:action => 'list_grade_k', :controller => 'reviews' ) do %>
+  <%=h _('keyword for search')%>
+  <%=h _('book_title_n_review_genre_n_review_hiro')%>:
+  <input name="keyword_booktitle"           value="<%=h params[:keyword_booktitle] %>"/>
+　<%= submit_tag _('search') -%>
+<% end %>
+
+

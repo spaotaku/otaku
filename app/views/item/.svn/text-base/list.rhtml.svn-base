@@ -1,0 +1,13 @@
+<% form_tag :action => 'list', :method => 'get' do %>
+  <%=h _('keyword for search item_name or spot_name:')%><%= text_field_tag 'keyword', params[:keyword] -%>
+  <%= submit_tag _('Search') -%>
+<% end %>
+<div class="spotlist">
+  <%= render :partial => 'listitem', :collection => @items,
+             :locals => {:size => ''} %>
+</div>
+
+<div class="pagination_link">
+  <%= _('All') %><%= @page.item_count -%><%= _('item_count') %> 
+  <%= pagination_links @page, :params => params  %>
+</div>

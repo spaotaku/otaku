@@ -1,0 +1,93 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title><%= h 'OTAKU 生涯学習情報サイト' %></title>
+  <%= stylesheet_link_tag  'sky_api', 'item_api' %>
+  <%= javascript_include_tag "prototype", "effects" %>
+</head>
+<body>
+  <div id="header">
+<!--    <h1 class="Searchable">Spaghetti Book Club</h1> -->
+    <p/>
+    
+    <div class="title"><h3><%= h _('Site Name: SN => Name of Site') %></h3></div>
+<!--    <p>
+    <a class="Promotion" href="/messages/sri1.html"> * SRI International reports on the success of Spaghetti Book Club in a Community Technology Center * </a>
+    </p>
+    <p>
+    <a class="Promotion" href="/sponsors">
+    <b>* friends and sponsors *</b>
+    </a>
+    </p> -->
+
+      <%= render :partial => 'layouts/header_nav' %>
+
+<div class="menu">
+    <%= link_to _('Map'), :action => 'by_map', :controller => 'item' %>
+<!-- <% if session[:user] %>
+    | <%= link_to _('List'), :action => 'list', :controller => 'item' %>
+     <% end %>  -->
+    | <%= link_to _('List'), :action => 'list', :controller => 'item' %>
+    | <%= link_to _('Search_1'), :action => 'list_item', :controller => 'item' %>
+    | <%= link_to _('Search_2'), :action => 'index', :controller => 'item' %>
+<!--
+      <%= link_to _('Sum_List'), :action => 'sum_list', :controller => 'item' %> |
+      <%= link_to _('Article'), '/articles/index'%> |
+      <%= link_to _('Link'), :action => 'list', :controller => 'links'%> |
+      <%= link_to _('Note'), :action => 'list', :controller => 'notes'%>
+--> 
+      <% if @item %>
+      | <%= link_to _('Show'), :action => 'show', :id => @item.id %>
+      <% end %>
+
+      | <%= link_to _('Message'), :action => 'list', :controller => 'messages'%>
+      | <%= link_to _('Inquiry'), :action => 'disp_mail_form1', :controller => 'messages'%>
+      | <%= link_to _('Application'), :action => 'disp_mail_form2', :controller => 'messages'%>
+
+ <% if session[:user] %>
+  <br/><%= h _('Group') %> :
+    <%= session[:user].group.name %> |
+    <%= h _('User') %> :
+    <%= session[:user].login %> |
+    <%= h _('Lvl') %> :
+    <%= session[:user].level %> |
+    <%= link_to _('Logout'), '/account/logout'%> |
+    <%= link_to _('Change_profile'), '/account/edit_user_by_user'%> |
+    <%= link_to _('Change_student'), '/student/edit_by_student'%>
+ <% else %>
+    | <%= link_to _('Login'), '/account/login'%> <!--|
+      <%= link_to _('New_User_Signup'), '/account/signup_user' %> 
+    -->
+<!-- <%= link_to 'ユーザ登録', '/account/signup'%> ||-->
+  <% end %>
+
+    </div>
+  </div>
+  <div id="content">
+    <div id="main">
+
+
+
+
+      <%= render :partial => 'layouts/maint_nav' %>
+      <%= render :partial => 'layouts/maint_search_bar' %> 
+
+      <%= render :partial => 'layouts/flash' %>
+
+      <%= yield  %> 
+
+      <%= render :partial => 'layouts/maint_nav' %>
+
+    </div>
+  </div>
+<div id="footer">
+  <br/>
+ <h3><%= h _('Site Name: SN => Name of Site') %></h3>
+
+      <%= render :partial => 'layouts/header_nav' %>
+<img width="300" title="<%= h _('Site Name: SN => Name of Site') %>" alt="<%= h _('Site Name: SN => Name of Site') %>" src="/images/SANY0001_800.JPG"/>
+<p class="Copyright"><%= h _('Site Name: SN => Name of Site') %></p>
+
+</div>
+</body>
+</html>

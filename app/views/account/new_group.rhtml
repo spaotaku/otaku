@@ -1,0 +1,8 @@
+<h1><%= h _('create new group') %></h1>
+<hr />
+<% form_tag(:action => 'create_group') do %>
+  <%= render(:partial => 'form_group') %>
+  <%= submit_tag(_('create'))%>
+<% end %>
+
+<%= link_to(_('back'), :action => 'list_group') %>

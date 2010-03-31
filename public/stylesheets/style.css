@@ -1,0 +1,201 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1.Searchable {
+  display: none;
+  visible: hidden;
+}
+
+h1 {
+  font-size: 200%;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 130%;
+  margin-bottom: 0px;
+}
+
+h3 {
+  margin-bottom: 0px;
+}
+
+.SubTitle {
+  font-size: 120%;
+}
+ 
+
+td, tr {
+  vertical-align: top;
+}
+
+A:link    { color: blue; }
+A:active  { color: red; }
+A:visited { color: blue; }
+
+a img {
+  border: none;
+}
+
+.ReviewYoung {
+  font-size: 120%;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  width: 75%;
+}
+
+.ReviewOld {
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  width: 75%;
+}
+
+.Announcement {
+  font-size: 105%;
+  font-weight: bold;
+}
+
+img.Header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.TableList {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  font-size: 90%;
+}
+
+.TableList th {
+  font-weight: bold;
+  font-size: 150%;
+  text-align: center;
+}
+
+.CentralizedList {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  line-height: 150%;
+}
+
+.CentralizedList h1 {
+  font-size: 150%;
+  text-align: center;
+}
+
+.CentralizedList h2 {
+  font-size: 120%;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.CentralizedList h3 {
+  font-size: 110%;
+  margin-bottom: 0px;
+}
+
+.CentralizedList div.Indent {
+  margin-left: 4%;
+}
+
+.HeaderNav {
+  text-align: center;
+}
+
+.Footer {
+  text-align: center;
+  font-size: 90%;
+}
+
+.Footer p, .HeaderNav p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+p.Copyright {
+  margin-top: 10px;
+  font-size: 75%;
+}
+
+.PrimaryLinks {
+  font-weight: bold;
+}
+
+.SecondaryLinks {
+  font-size: 75%;
+}
+
+
+.SchoolListPage {
+  background-color: #CBFFB0;
+}
+
+.AuthorListPage {
+  background-color: #99FF99;
+}
+  
+.AuthorListPage .TableList tr.OddRow, .AuthorListPage .TableList th {
+  background-color: #66ff66;
+}
+
+.AuthorListPage .TableListPage .TableList tr.EvenRow {
+  background-color: #99ff99;
+}
+
+
+
+.ReviewerListPage {
+  background-color: #FFcc14;
+}
+
+.ReviewerListPage .TableList tr.OddRow, .ReviewerListPage .TableList th {
+  background-color: #FFCB8F;
+}
+
+.ReviewerListPage .TableListPage .TableList tr.EvenRow {
+  background-color: #FF9914;
+}
+
+
+.TitleListPage {
+  background-color: #CC99FF;
+}
+
+.TitleListPage .TableList tr.OddRow, .TitleListPage .TableList th {
+  background-color: #CC66FF;
+}
+
+.TableListPage .TableList tr.EvenRow {
+  background-color: #CC99FF;
+}
+
+
+
+.MainPage, .MainPage td {
+  text-align: center;
+}
+
+.MainPage, .MainPage a {
+  color: #79473c;
+  background-color: #7AB3DE;
+}
+
+/* this oddly enough centers tables */
+.MainPage table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a.Promotion {
+  font-size: 80%;
+}
+

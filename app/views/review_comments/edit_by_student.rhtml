@@ -1,0 +1,49 @@
+<h1><%=h _('Editing review_comment') %></h1>
+
+<% form_tag({:action => 'update_by_student', :id => @review_comment.id}) do %>
+
+
+<p><b><%=h _('book_title') %>:</b><%=h @review_comment.review.shopitem.name %></p>
+
+<div id="review_body">
+<table width="300px" align="center">
+  <tr>
+  <th><%=h _('Body') %>:</th>
+  </tr>
+  <tr>
+  <td><%= simple_format(sanitize(@review_comment.review.body)) %></td>
+  </tr>
+</table>
+</div>
+
+<p><b><%=h _('edit_review_comment') %></b></p>
+
+  <p><%= h _('comment_name') %>:<br/>
+  <%= text_field :review_comment, :name, :size => '50' %>
+  </p>
+
+  <p><%= h _('comment_body') %>:<br/>
+  <%= text_area :review_comment, :content, :cols => '50', :rows => '3' %>
+  </p>
+
+  <p><%=h @review_comment.student.alias + ' ' + @review_comment.student.l_name_initial + '.' %></p>
+
+  <p><label for="status"><%= h _('status') %></label>
+<%=
+  options = [[ _('select status'), ""]] + [
+    [ _('working'),       0 ],
+    [ _('submited'),      1 ]
+  ]
+  select(:review_comment, :status, options)
+%>
+</p>
+
+
+  <p>
+    <p><%= submit_tag _('update') %></p>
+  </p>
+<% end %>
+
+<%= link_to _('Show'), :action => 'show', :id => @review_comment %> |
+<%= link_to _('Back'), :action => 'index' %>
+<br/>

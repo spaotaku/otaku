@@ -1,0 +1,25 @@
+<h1><%= h _('facilitycat list ')%></h1>
+<hr />
+<table>
+  <tr>
+    <th><%= h _('facilitycat name') %></th>
+  </tr>
+  
+<% for facilitycat in @facilitycats %>
+  <tr>
+  <td><%= h(facilitycat.name) %></td>
+  <td><%= link_to(_('edit'), :action => 'edit_facilitycat', :id => facilitycat) %></td>
+  <td><%= link_to(_('destroy'), {:action => 'destroy_facilitycat', :id => facilitycat}, :confirm => 'Delete ?') %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to(_('previous page'), :page => @facilitycat_pages.current.previous) if @facilitycat_pages.current.previous %>
+<%= link_to(_('next page'), :page => @facilitycat_pages.current.next) if @facilitycat_pages.current.next %>
+
+<br />
+
+<%= link_to(_('add new facilitycat'), :action => 'new_facilitycat') %> |
+<%= link_to(_('back'), :action => 'list_facilitycat') %>
+
+ 

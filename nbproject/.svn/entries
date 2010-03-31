@@ -1,0 +1,55 @@
+8
+
+dir
+78
+svn://192.168.0.7/bukken/nbproject
+svn://192.168.0.7
+
+
+
+2008-04-30T14:30:39.915110Z
+78
+murakami
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+956af1cf-7ece-484f-8e0a-ea02e7629058
+
+project.properties
+file
+
+
+
+
+2008-04-30T15:20:19.000000Z
+fbab3efb64f1437028477bb83446241e
+2008-04-30T14:30:39.915110Z
+78
+murakami
+
+project.xml
+file
+
+
+
+
+2008-04-30T15:20:19.000000Z
+7ab8b6c85b36595ce76e508683ce5570
+2008-04-30T14:30:39.915110Z
+78
+murakami
+
+private
+dir
+

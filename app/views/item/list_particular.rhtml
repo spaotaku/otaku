@@ -1,0 +1,31 @@
+<h1><%= h _('particular list ') %></h1>
+<hr />
+<table>
+  <tr>
+    <th><%= h _('particular seq') %></th>
+    <th><%= h _('particular cat') %></th>
+    <th><%= h _('particular name') %></th>
+  </tr>
+  
+<% for particular in @particulars %>
+  <tr>
+  <td><%= h(particular.seq) %></td>
+  <td><%= h(particular.particularcat.name) %></td>
+  <td><%= h(particular.name) %></td>
+  <td><%= link_to( _('edit'), :action => 'edit_particular', :id => particular) %></td>
+  <td><%= link_to( _('destroy'), {:action => 'destroy_particular', :id => particular}, :confirm => _('Delete ?')) %></td>
+  </tr>
+<% end %>
+</table>
+
+<div class="pagination_link">
+  <%= will_paginate @particulars, :prev_label => _('prev'), :next_label => _('next') %>
+</div>
+
+
+<br />
+
+<%= link_to( _('add new particular'), :action => 'new_particular') %> |
+<%= link_to( _('back'), :action => 'list_particular') %>
+
+ 

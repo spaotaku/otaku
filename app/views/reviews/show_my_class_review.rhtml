@@ -1,0 +1,190 @@
+<p>
+  <b><%=h _('shopitem_name') %>:</b>
+  <%= link_to @review.shopitem.name, :controller => 'shopitem', :action => 'show', :id => @review.shopitem_id %>
+  <b><%=h _('author') %>:</b><%=h @review.shopitem.author %>
+</p>
+
+<p>
+  <b><%=h _('item') %>:</b>
+  <%= link_to @review.item.name, :controller => 'item', :action => 'show', :id => @review.item_id %>
+</p>
+
+<p>
+  <b><%=h _('reviewer') %>:</b>
+  <% if session[:user] %><% if session[:user].level <= 3 %>
+    <%=h @review.student_id %>
+    <%=h @review.student.l_name %>
+    <%=h @review.student.f_name %>
+  <% end %><% end %>
+
+  <%= link_to @review.student.alias + @review.student.l_name_initial + "(" + @review.student.age.to_s + "才)", :controller => 'student', :action => 'show', :id => @review.student_id %>
+
+</p>
+
+<% @review.pictures.each do |pic| %>
+  <%= link_to(image_tag(url_for(:action => 'image', :id => pic.id), :width => '200',
+    :class => 'image'),
+    url_for(:action => 'image', :id => pic.id), :target => '_blank') %>
+  <br/><%= pic.title %>　<%=h _('(image_click_2_big)') %><br/>
+<% end %>
+
+<div id="review_body">
+<table width="300px" align="center">
+  <tr>
+  <th><%=h _('Body') %>:</th>
+  </tr>
+  <tr>
+  <td><%= simple_format(sanitize(@review.body)) %></td>
+  </tr>
+</table>
+</div>
+
+<% if session[:user] %>
+  <% if session[:user].level <= 3 %>
+    <% if session[:user].group.id == @review.student.user.group.id %>
+      <%= link_to _('Edit'), :action => 'edit_by_teachar', :id => @review %> |
+    <% end %>
+  <% else %>
+    <% if session[:user].id == @review.student.user_id %>
+      <%= link_to _('Edit'), :action => 'edit_by_student', :id => @review %> |
+    <% end %>
+  <% end %>
+<% end %>
+
+<% if session[:user] %>
+  <% if session[:user].level <= 3 %>
+    <% if session[:user].id == @review.student.user_id %>
+      <%= link_to _('Edit'), :action => 'edit', :id => @review %>
+    <% end %>
+  <% else %>
+    <% if session[:user].id == @review.student.user_id %>
+      <%= link_to _('Edit'), :action => 'edit_by_student', :id => @review %>
+    <% end %>
+  <% end %>
+<% end %>
+
+<% if @review.review_comment.count > 0 %>
+<p><b><%=h _('comment') %>:</b></p>
+<% end %>
+
+<% @review.review_comment.each do |comment| %>
+
+  <% if session[:user] %>
+    <% if session[:user].level == 0 %>
+  <table width="300px" align="center">
+<!--  <tr><td><b><%=h _('title') %>:　</b><%= comment.name %></td></tr> -->
+  <tr><td><font size=1><%= comment.content %></font></td></tr>
+  <tr><td><b><%=h _('by') %>:　</b><%= link_to comment.student.item.name + ' ' + comment.student.alias + ' ' + comment.student.l_name_initial + '.' , :controller => 'student', :action => 'show', :id => comment.student_id %></td></tr>
+  </table>
+  <table width="200px" align="center">
+  <tr>
+    <td><%= @status_list[comment.status] %></td>
+    <td><%= link_to _('Edit'), :action => 'edit_comment_by_teachar', :id => @review, :comment_id => comment %></td>
+    <td><%= link_to( _('destroy'), {:action => 'destroy', :controller => 'review_comments', :id => comment}, :confirm => _('Delete ?')) %></td>
+  </tr>
+  </table>
+  <br/>
+    <% elsif session[:user].level <= 3 %>
+      <% if session[:user].group.id == comment.student.user.group.id %>
+        <table width="300px" align="center">
+    <!--    <tr><td><b><%=h _('title') %>:　</b><%= comment.name %></td></tr> -->
+        <tr><td><font size=1><%= comment.content %></font></td></tr>
+        <tr><td><b><%=h _('by') %>:　</b><%= link_to comment.student.item.name + ' ' + comment.student.alias + ' ' + comment.student.l_name_initial + '.' , :controller => 'student', :action => 'show', :id => comment.student_id %></td></tr>
+        </table>
+        <table width="200px" align="center">
+          <tr>
+          <td><b><%= _('status') %>: </b><%= @status_list[comment.status] %></td>
+          <td><%= link_to _('Edit'), :action => 'edit_comment_by_teachar', :id => @review, :comment_id => comment %></td>
+          <td><%= link_to( _('destroy'), {:action => 'destroy', :controller => 'review_comments', :id => comment}, :confirm => _('Delete ?')) %></td>
+          </tr>
+        </table>
+        <br/>
+      <% else %>
+        <% if comment.status == 3 %>
+        <table width="300px" align="center">
+    <!--    <tr><td><b><%=h _('title') %>:　</b><%= comment.name %></td></tr> -->
+        <tr><td><font size=1><%= comment.content %></font></td></tr>
+        <tr><td><b><%=h _('by') %>:　</b><%= link_to comment.student.item.name + ' ' + comment.student.alias + ' ' + comment.student.l_name_initial + '.' , :controller => 'student', :action => 'show', :id => comment.student_id %></td></tr>
+        <tr><td> </td></tr>
+        </table>
+        <br/>
+        <% end %>
+      <% end %>
+    <% else %>
+      <% if session[:user].id == comment.student.user_id %>
+        <table width="300px" align="center">
+    <!--    <tr><td><b><%=h _('title') %>:　</b><%= comment.name %></td></tr> -->
+        <tr><td><font size=1><%= comment.content %></font></td></tr>
+        <tr><td><b><%=h _('by') %>:　</b><%= link_to comment.student.item.name + ' ' + comment.student.alias + ' ' + comment.student.l_name_initial + '.' , :controller => 'student', :action => 'show', :id => comment.student_id %></td></tr>
+        </table>
+        <table width="200px" align="center">
+        <tr>
+        <td><%= @status_list[comment.status] %></td>
+        <td><%= link_to _('Edit'), :action => 'edit_comment_by_student', :id => @review, :comment_id => comment %></td>
+        <td><%= link_to( _('destroy'), {:action => 'destroy', :controller => 'review_comments', :id => comment}, :confirm => _('Delete ?')) %></td>
+        </tr>
+        <tr> </tr>
+        </table>
+        <br/>
+      <% else %>
+        <% if comment.status == 3 %>
+        <table width="300px" align="center">
+    <!--    <tr><td><b><%=h _('title') %>:　</b><%= comment.name %></td></tr> -->
+        <tr><td><font size=1><%= comment.content %></font></td></tr>
+        <tr><td><b><%=h _('by') %>:　</b><%= link_to comment.student.item.name + ' ' + comment.student.alias + ' ' + comment.student.l_name_initial + '.' , :controller => 'student', :action => 'show', :id => comment.student_id %></td></tr>
+        </table>
+        <br/>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% else %>
+    <% if comment.status == 3 %>
+      <table width="300px" align="center">
+    <!--    <tr><td><b><%=h _('title') %>:　</b><%= comment.name %></td></tr> -->
+        <tr><td><font size=1><%= comment.content %></font></td></tr>
+        <tr><td><b><%=h _('by') %>:　</b><%= link_to comment.student.item.name + ' ' + comment.student.alias + ' ' + comment.student.l_name_initial + '.' , :controller => 'student', :action => 'show', :id => comment.student_id %></td></tr>
+      </table>
+      <br/>
+    <% end %>
+  <% end %>
+<% end %>
+
+
+
+<% if session[:user] %>
+<p><b><%=h _('new_review_comment') %></b></p>
+<%= error_messages_for('review_comment') %>
+<%= render :partial => 'layouts/flash' %>
+<p><%=h _('input or set where * items.')%></p>
+
+<% form_tag({:action => 'create', :controller => 'review_comments', :id => @review_comment.id}) do %>
+
+  <p><%= h _('comment_name') %>:<br/>
+  <%= text_field :review_comment, :name, :size => '50' %>
+  </p>
+  <p><%= h _('comment_body') %>*:<br/>
+  <%= text_area :review_comment, :content, :cols => '50', :rows => '5' %>
+  </p>
+  <p>
+  <%= hidden_field :review_comment, :review_id, :size => '5' %>
+  <%= h _('commenters_name') %>:　<%=h session[:user].student.alias %> <%=h session[:user].student.l_name_initial %>.
+  <%= hidden_field :review_comment, :student_id, :size => '5' %>
+  </p>
+  <label for="status"><%= h _('status') %>*</label>
+  <%=
+    options = [[ _('select status'), ""]] + [
+      [ _('working'),       0 ],
+      [ _('submited'),      1 ]
+    ]
+    select(:review_comment, :status, options)
+  %>
+  <br><br>
+
+  <%= submit_tag _('submit_comment') %>
+<% end %>
+
+<% end %>
+
+
+
+<%= link_to _('Back'), :action => 'index_my_class_review' %>

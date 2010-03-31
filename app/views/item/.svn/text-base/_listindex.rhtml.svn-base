@@ -1,0 +1,160 @@
+<div class='spotitem'>
+  <div class='item'>
+    <h3>
+      <%= link_to _('view'), :action => 'show', :id => listindex.id %>
+      <%= h listindex.name %>=<%= h listitem.str_val_b %>-<%= h listitem.str_val_c %><span class='spacing'></span>
+<!--      (<%= link_to sanitize(listindex.spot.name), :action => 'show_spot',
+        :id => listindex.spot.id %>) -->
+      (<%= link_to _('spot_detail'), :action => 'show_spot',
+        :id => listindex.spot.id %>)
+    </h3>
+    <span class='content'>
+
+      <% if listindex.str_val_6 %>
+        <%= h _('item_str_val_6') %>:<%= listindex.str_val_6 %><br/>
+      <% end %>
+
+      <div class='detail' >
+      <%=h _('category') %>:<%= listindex.category.name %>
+
+      <% if listindex.num_val_h or listindex.num_val_i or listindex.str_val_7 != '' or listindex.str_val_8 != '' or listindex.str_val_9 != '' %><br/><% end %>
+      <% if listindex.num_val_h %>
+        <%= h _('item_num_val_h') %>:<%= listindex.num_val_h %>
+      <% end %>
+
+      <% if listindex.num_val_j %>
+        <%= h _('item_num_val_j') %>:<%= listindex.num_val_j %>
+      <% end %>
+
+      <% if listindex.num_val_l %>
+        <%= h _('item_num_val_l') %>:<%= listindex.num_val_l %>
+      <% end %>
+
+      <% if listindex.str_val_1 != '' %><br/>
+        <%= h _('item_str_val_1') %>:<%= listindex.str_val_1 %>
+      <% end %>
+
+      <% if listindex.num_val_p %><br/>
+        <%= h _('item_num_val_p') %>:<%= listindex.num_val_p %>
+      <% end %>
+
+      <% if listindex.num_val_1 or listindex.check_box_02 or listindex.num_val_2 or listindex.num_val_3 or listindex.num_val_4 or
+              listindex.num_val_5 or listindex.check_box_01 or listindex.num_val_6 or listindex.num_val_n or
+              listindex.num_val_c or listindex.num_val_d %><br/><% end %>
+      <% if listindex.num_val_1 %>
+        <%= h _('item_num_val_1') %>:<%= listindex.num_val_1 %>
+      <% end %>
+      <% if listindex.check_box_02 %>
+        <%= h _('item_check_box_02') %>
+      <% end %>
+      <% if listindex.num_val_2 %>
+        | <%= h _('item_num_val_2') %>:<%= listindex.num_val_2 %>
+      <% end %>
+      <% if listindex.num_val_3 %>
+        | <%= h _('item_num_val_3') %>:<%= listindex.num_val_3 %>
+      <% end %>
+      <% if listindex.num_val_4 %>
+        | <%= h _('item_num_val_4') %>:<%= listindex.num_val_4 %>
+      <% end %>
+      <% if listindex.num_val_5 %>
+        | <%= h _('item_num_val_5') %>:<%= listindex.num_val_5 %>
+      <% end %>
+      <% if listindex.check_box_01 %>
+        |<%= h _('item_check_box_01') %>
+      <% end %>
+      <% if listindex.num_val_6 %>
+        | <%= h _('item_num_val_6') %>:<%= listindex.num_val_6 %>
+      <% end %>
+      <% if listindex.num_val_n %>
+        | <%= h _('item_num_val_n') %>:<%= listindex.num_val_n %>
+      <% end %>
+      <% if listindex.num_val_c %>
+        | <%= h _('item_num_val_c') %>:<%= listindex.num_val_c %>
+      <% end %>
+      <% if listindex.num_val_d %>
+        | <%= h _('item_num_val_d') %>:<%= listindex.num_val_d %>
+      <% end %>
+	  
+      <% if listindex.str_val_4 != '' or listindex.str_val_5 != '' or listindex.num_val_7 or listindex.num_val_8 or listindex.num_val_9 %><br/><% end %>
+      <% if listindex.str_val_4 != '' %>
+         <%= h _('item_str_val_4') %>:<%= listindex.str_val_4 %>
+      <% end %>
+      <% if listindex.str_val_5 != '' %>
+        | <%= h _('item_str_val_5') %>:<%= listindex.str_val_5 %>
+      <% end %>
+      <% if listindex.num_val_7 %>
+        <%= h _('kara_toho') %><%= listindex.num_val_7 %><%= h _('min') %>
+      <% end %>
+      <% if listindex.num_val_8 %>
+        | <%= h _('item_num_val_8') %>:<%= listindex.num_val_8 %>
+      <% end %>
+      <% if listindex.num_val_9 %>
+        | <%= h _('item_num_val_9') %>:<%= listindex.num_val_9 %>
+      <% end %>
+   	  
+      <% if listindex.num_val_a or listindex.num_val_b %><br/><% end %>
+      <% if listindex.num_val_a %>
+         <%= h _('item_num_val_a') %>:<%= listindex.num_val_a %>
+      <% end %>
+      <% if listindex.num_val_b %>
+        | <%= h _('item_num_val_b') %>:<%= listindex.num_val_b %>
+      <% end %>
+	  
+      <% if listindex.structure_id or listindex.num_val_e or listindex.num_val_f or listindex.num_val_g or listindex.date_val_1 %><br/><% end %>
+      <% if listindex.structure_id %>
+      <%=h _('structure') %>:<%= listindex.structure.name %>
+      <% end %>
+      <% if listindex.num_val_e %>
+        | <%= h _('item_num_val_e') %>:<%= listindex.num_val_e %>
+      <% end %>
+      <% if listindex.num_val_f %>
+        | <%= h _('item_num_val_f') %>:<%= listindex.num_val_f %>
+      <% end %>
+      <% if listindex.num_val_g %>
+        | <%= h _('item_num_val_g') %>:<%= listindex.num_val_g %>
+      <% end %>
+      <% if listindex.date_val_1 %>
+        | <%= h _('item_date_val_1') %>:<%= listindex.date_val_1.strftime('%Y/%m/%d') %>
+      <% end %>
+
+      <% if listindex.date_val_2 or 
+            listindex.check_box_00 or
+           ( listindex.str_val_a != '' and
+             listindex.str_val_a != nil )%><br/><%=h _('nyukyo_jiki') %><% end %>
+      <% if listindex.date_val_2 %>
+         :<%= h _('item_date_val_2') %>:<%= listindex.date_val_2.strftime('%Y/%m/%d') %>
+      <% end %>
+      <% if listindex.check_box_00 %>
+         :<%= h _('item_check_box_00') %>
+      <% end %>
+      <% if listindex.str_val_a != '' and listindex.str_val_a != nil %>
+         :<%= h _('item_str_val_a') %>:<%= listindex.str_val_a %>
+      <% end %>
+
+      <% if listindex.str_val_3 != ''  %><br/>
+        <%= h _('item_str_val_3') %>:<%= listindex.str_val_3 %>
+      <% end %>
+
+
+
+<br/>
+      <div class='memo'>
+        <%= simple_format(sanitize(listindex.memo)) %>
+      </div>
+  
+    <div class='link_map'>
+    <%= link_to _('Show_spot_map'), :action => 'show_spot_map', :id => listindex.spot_id %> |
+    </div>
+
+      <div class='link_shop'>
+	  <%=h _('shop:') %><%= link_to sanitize(listindex.shop.name), :controller => 'shopitem', :action => 'show_shop',
+        :id => listindex.shop_id %>	
+	  <% if listindex.num_val_o %>:<%= @torihiki_taiyou[listindex.num_val_o] %><% end %>
+
+      </div>
+	  
+    </div>
+
+    </span>
+  </div>              
+</div>    

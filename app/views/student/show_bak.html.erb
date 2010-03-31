@@ -1,0 +1,74 @@
+<%= render :partial => 'flash' %>
+
+<p>
+  <b>Item:</b>
+  <%=h @student.item_id %>
+</p>
+
+<% @student.pictures.each do |pic| %>
+	  <%= pic.title %>
+      <%= link_to(image_tag(url_for(:action => 'image', :id => pic.id), :width => '150',
+        :class => 'image'),
+        url_for(:action => 'image', :id => pic.id), :target => '_blank') %>
+
+<% end %>
+
+<p>
+  <b>School or Group:</b>
+  <%=h @student.item.name %>
+  <%= link_to _('visit_school'), :controller => 'item', :action => 'show', :id => @student.item_id %>
+</p>
+
+<p>
+  <b>F name:</b>
+  <%=h @student.f_name %>
+</p>
+
+<p>
+  <b>M name:</b>
+  <%=h @student.m_name %>
+</p>
+
+<p>
+  <b>L name:</b>
+  <%=h @student.l_name %>
+</p>
+
+<p>
+  <b>Grade:</b>
+  <%=h @student.grade %>
+</p>
+
+<% if @student.grade %><%=h _('grade') %>:<%= @grade_list[@student.grade] %><% end %>
+
+
+<p>
+  <b>Age:</b>
+  <%=h @student.age %>
+</p>
+
+<p>
+  <b>Memo:</b>
+  <%=h @student.memo %>
+</p>
+
+
+
+
+      <% @student.reviews.each do |review| %>
+ 	  <%= review.shopitem.name %>
+          <%= link_to _('show_this_review'), :controller => 'reviews', :action => 'show', :id => review.id %>
+        <br/>
+
+
+      <% end %>
+
+
+
+
+
+
+
+
+<%= link_to 'Edit', :action => 'edit', :id => @student %> |
+<%= link_to 'Back', :action => 'index' %>

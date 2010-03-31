@@ -1,0 +1,12 @@
+<h1><%= h _('New student') %></h1>
+
+<%= render :partial => 'flash' %>
+
+<% form_tag({:action => 'create', :id => @student.id}, :multipart => true) do %>
+
+  <%= render :partial => 'form' %>
+
+  <%= submit_tag _('Save') %>
+
+  <%= link_to _('Finish'), :action => 'index' %>
+<% end %>

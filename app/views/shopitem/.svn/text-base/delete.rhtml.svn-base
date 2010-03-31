@@ -1,0 +1,10 @@
+<div class='spotlist'>
+  <%= render :partial => 'listitem', :locals => {:listitem => @shopitem, :size => ''} %>
+</div>
+
+<% form_tag :action => 'remove', :id => @shopitem.id do %>
+  <span style="margin-left: 2em;">
+  <%= submit_tag _('Delete') %>
+  </span>
+<% end %>
+

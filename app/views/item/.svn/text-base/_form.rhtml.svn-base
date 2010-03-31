@@ -1,0 +1,200 @@
+<p><label for="item_str_val_b"><%= h _('item_str_val_b') %>:</label>
+  <%= text_field :item, :str_val_b, :size => 5 %>
+  <label for="item_str_val_c"><%= h _('item_str_val_c') %>:</label>
+  <%= text_field :item, :str_val_c, :size => 5 %></p>
+
+<p><label for="item_name"><%= h _('item_nm') %>:</label>
+  <%= text_field :item, :name %></p>
+
+
+<p><label for="item_str_val_6"><%= h _('item_str_val_6') %>:</label>
+  <%= text_field :item, :str_val_6 %></p>
+
+<%= render :partial => 'spot' %>
+
+<p><label for="item_shop"><%= h _('shop') %>:</label>
+<%= collection_select(:item, :shop_id, Shop.find(:all, :conditions=> ["group_id = ?", session[:user].group_id], :order => 'name'), :id, :name, :include_blank => true)%>
+
+ <label for="item_num_val_o"><%= h _('item_num_val_o') %>:</label>
+<%=
+  options = [[ _("select_torihiki_taiyou"), ""]] + Item::TORIHIKI_TAIYOU
+  select(:item, :num_val_o, options)
+%>
+</p>
+
+
+
+
+<p><label for="item_category"><%= h _('category') %>:</label>
+<%= collection_select(:item, :category_id, Category.find(:all, :order => 'name'), :id, :name, :include_blank => true)%>
+</p>
+
+<p><label for="item_num_val_h"><%= h _('item_num_val_h') %>:</label>
+<%= text_field :item, :num_val_h, :size => 5 %>
+<label for="item_num_val_i"><%= h _('item_num_val_i') %>:</label>
+<%= text_field :item, :num_val_i, :size => 5 %>
+<label for="item_num_val_q"><%= h _('item_num_val_q') %>:</label>
+<%= text_field :item, :num_val_q, :size => 5 %>
+<label for="item_num_val_r"><%= h _('item_num_val_r') %>:</label>
+<%= text_field :item, :num_val_r, :size => 5 %>
+<label for="item_str_val_d"><%= h _('item_str_val_d') %>:</label>
+<%= text_field :item, :str_val_d, :size => 5  %>
+<label for="item_str_val_8"><%= h _('item_str_val_8') %>:</label>
+<%= text_field :item, :str_val_8, :size => 5  %>
+<label for="item_str_val_9"><%= h _('item_str_val_9') %>:</label>
+<%= text_field :item, :str_val_9, :size => 5  %>
+<label for="item_str_val_e"><%= h _('item_str_val_e') %>:</label>
+<%= text_field :item, :str_val_e, :size => 5  %>
+<label for="item_str_val_7"><%= h _('item_str_val_7') %>:</label>
+<%= text_field :item, :str_val_7, :size => 5  %>
+</p>
+
+<p><label for="item_str_val_1"><%= h _('item_str_val_1') %>:</label>
+<%= text_field :item, :str_val_1 %>
+</p>
+
+<p><label for="item_num_val_j"><%= h _('item_num_val_j') %>:</label>
+<%= text_field :item, :num_val_j, :size => 5 %>
+<label for="item_num_val_k"><%= h _('item_num_val_k') %>:</label>
+<%= text_field :item, :num_val_k, :size => 5 %></p>
+
+<p><label for="item_num_val_l"><%= h _('item_num_val_l') %>:</label>
+<%= text_field :item, :num_val_l, :size => 5 %>
+<label for="item_num_val_m"><%= h _('item_num_val_m') %>:</label>
+<%= text_field :item, :num_val_m, :size => 5 %></p>
+
+<p><label for="item_str_val_3"><%= h _('item_str_val_3') %>:</label>
+<%= text_field :item, :str_val_3 %>
+</p>
+
+<p><label for="item_structure"><%= h _('structure') %>:</label>
+<%= collection_select(:item, :structure_id, Structure.find(:all, :order => 'name'), :id, :name, :include_blank => true)%>
+/<label for="item_num_val_f"></label>
+<%= text_field :item, :num_val_f, :size => 3 %><%= h _('item_num_val_f') %>
+/<label for="item_num_val_e"></label>
+<%= text_field :item, :num_val_e, :size => 3 %><%= h _('item_num_val_e') %>
+/<label for="item_date_val_1"><%= h _('item_date_val_1') %>:</label>
+<%= date_select :item, :date_val_1, :use_month_numbers => true, :start_year => 1980, :end_year => Time.now.years_since(3).year, :include_blank => true %>
+</p>
+
+
+<p><label for="item_publish_level"><%= h _('publish_level') %>:</label>
+<%=
+  options = [[ _("select publish_level"), ""]] + Item::PUBLISH_LEVELS
+  select(:item, :publish_level, options)
+%>
+</p>
+
+<p><label for="item_num_val_p"><%= h _('item_num_val_p') %>:</label>
+<%= text_field :item, :num_val_p, :size => 5 %></p>
+
+<p><label for="item_num_val_1"><%= h _('item_num_val_1') %>:</label>
+<%= text_field :item, :num_val_1, :size => 5 %>
+<label for="item_check_box_02"><%= h _('item_check_box_02') %>:</label><%= check_box :item, :check_box_02 %>
+/<label for="item_num_val_2"><%= h _('item_num_val_2') %>:</label>
+<%= text_field :item, :num_val_2, :size => 5 %>
+/<label for="item_num_val_3"><%= h _('item_num_val_3') %>:</label>
+<%= text_field :item, :num_val_3, :size => 5 %>
+/<label for="item_num_val_4"><%= h _('item_num_val_4') %>:</label>
+<%= text_field :item, :num_val_4, :size => 5 %>
+/<label for="item_num_val_5"><%= h _('item_num_val_5') %>:</label>
+<%= text_field :item, :num_val_5, :size => 5 %>
+/<label for="item_check_box_01"><%= h _('item_check_box_01') %>:</label><%= check_box :item, :check_box_01 %>
+/<label for="item_num_val_6"><%= h _('item_num_val_6') %>:</label>
+<%= text_field :item, :num_val_6, :size => 5 %>
+/<label for="item_num_val_n"><%= h _('item_num_val_n') %>:</label>
+<%= text_field :item, :num_val_n, :size => 3 %>
+
+<br/>
+<label for="item_num_val_c"><%= h _('item_num_val_c') %>:</label>
+<%= text_field :item, :num_val_c, :size => 5 %>
+/<label for="item_num_val_d"><%= h _('item_num_val_d') %>:</label>
+<%= text_field :item, :num_val_d, :size => 5 %>
+/<label for="item_num_val_g"><%= h _('item_num_val_g') %>:</label>
+<%= text_field :item, :num_val_g, :size => 5 %>
+</p>
+
+
+<p><label for="item_str_val_4"><%= h _('item_str_val_4') %>:</label>
+<%= text_field :item, :str_val_4, :size => 10 %>
+/<label for="item_str_val_5"><%= h _('item_str_val_5') %>:</label>
+<%= text_field :item, :str_val_5, :size => 10 %>
+/<label for="item_num_val_7"><%= h _('item_num_val_7') %>:</label>
+<%= text_field :item, :num_val_7, :size => 3 %>
+</p>
+
+
+<p><label for="item_num_val_8"><%= h _('item_num_val_8') %>:</label>
+<%= text_field :item, :num_val_8, :size => 3 %>
+/<label for="item_num_val_9"><%= h _('item_num_val_9') %>:</label>
+<%= text_field :item, :num_val_9, :size => 3 %>
+</p>
+
+
+<p><label for="item_num_val_a"><%= h _('item_num_val_a') %>:</label>
+<%= text_field :item, :num_val_a, :size => 3 %>
+/<label for="item_num_val_b"><%= h _('item_num_val_b') %>:</label>
+<%= text_field :item, :num_val_b, :size => 3 %>
+</p>
+
+
+
+
+<p><label for="item_date_val_2"><%= h _('item_date_val_2') %>:</label>
+<%= date_select :item, :date_val_2, :use_month_numbers => true, :start_year => Time.now.year, :include_blank => true %>
+/<label for="item_check_box_00"><%= h _('item_check_box_00') %>:</label><%= check_box :item, :check_box_00 %>
+/<label for="item_str_val_a"><%= h _('item_str_val_a') %>:</label>
+<%= text_field :item, :str_val_a, :size => 10 %>
+
+<h3><%= h _('facility')%></h3>
+<% for facility in @facilities %>
+  <% if facility.seq[1,1] == "0"%>
+    <% if facility.seq[0,2] != "00" %><br/><% end %>
+    <%=h "【" + facility.facilitycat.name + "】:" %>
+  <% else %>
+    <%=h "/" %>
+  <% end %>
+<label <%= "#{"for=item_facility_" + facility.seq}" %> >
+  <%=h facility.name %></label> <%= check_box :item, "#{"facility_" + facility.seq}" %>
+<% end %>
+
+<h3><%= h _('particular_note')%></h3>
+<% for particular in @particulars %>
+  <% if particular.seq[1,1] == "0"%>
+    <% if particular.seq[0,2] != "00" %><br/><% end %>
+    <%=h "【" + particular.particularcat.name + "】:" %>
+  <% else %>
+    <%=h "/" %>
+  <% end %>
+<label <%= "#{"for=item_particular_note_" + particular.seq}" %> >
+  <%=h particular.name %></label> <%= check_box :item, "#{"particular_note_" + particular.seq}" %>
+<% end %>
+
+<p><label for="picture0_file"><%= h _('file') %></label>
+  <%= file_field :picture0, :file %>
+<label for="picture0_title"><%= h _('picture_title') %></label>
+  <%= text_field :picture0, :title %></p>
+  
+<p><label for="picture1_file"><%= h _('file') %></label>
+  <%= file_field :picture1, :file %>
+<label for="picture1_title"><%= h _('picture_title') %></label>
+  <%= text_field :picture1, :title %></p>
+
+<p><label for="picture2_file"><%= h _('file') %></label>
+  <%= file_field :picture2, :file %>
+<label for="picture2_title"><%= h _('picture_title') %></label>
+  <%= text_field :picture2, :title %></p>
+
+<p><label for="picture3_file"><%= h _('file') %></label>
+  <%= file_field :picture3, :file %>
+<label for="picture3_title"><%= h _('picture_title') %></label>
+  <%= text_field :picture3, :title %></p>
+
+<p><label for="picture4_file"><%= h _('file') %></label>
+  <%= file_field :picture4, :file %>
+<label for="picture4_title"><%= h _('picture_title') %></label>
+  <%= text_field :picture4, :title %></p>
+
+
+<p><label for="item_memo"><%= h _('memo') %></label>
+  <%= text_area :item, :memo, :cols => 50, :rows =>3 %></p>
