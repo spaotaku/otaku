@@ -1,136 +1,0 @@
-8
-
-dir
-78
-svn://192.168.0.7/bukken
-svn://192.168.0.7
-
-
-
-2008-04-30T14:30:39.915110Z
-78
-murakami
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-956af1cf-7ece-484f-8e0a-ea02e7629058
-
-test
-dir
-
-app
-dir
-
-log
-dir
-
-Rakefile
-file
-
-
-
-
-2008-04-30T15:20:20.000000Z
-17f2f134da4cd31ea095d5868ca89e86
-2008-04-30T14:30:39.915110Z
-78
-murakami
-
-.project
-file
-
-
-
-
-2008-04-30T15:20:20.000000Z
-6992aef80c88273e6bbd14225736c0bc
-2008-04-30T14:30:39.915110Z
-78
-murakami
-
-components
-dir
-
-db
-dir
-
-nbproject
-dir
-
-google_api_key.txt
-file
-
-
-
-
-2008-04-30T15:20:20.000000Z
-e23d03793f880164df9faa9dda4562ff
-2008-04-30T14:30:39.915110Z
-78
-murakami
-
-vendor
-dir
-
-README
-file
-
-
-
-
-2008-04-30T15:20:20.000000Z
-2ffe7715fd6ba5509508a29022c22a17
-2008-04-30T14:30:39.915110Z
-78
-murakami
-
-locale
-dir
-
-tmp
-dir
-
-script
-dir
-
-config
-dir
-
-doc
-dir
-
-lib
-dir
-
-.loadpath
-file
-
-
-
-
-2008-04-30T15:20:20.000000Z
-ccd4b400feacf78d27cbef79bbf1ceaa
-2008-04-30T14:30:39.915110Z
-78
-murakami
-
-.settings
-dir
-
-po
-dir
-
-public
-dir
-
